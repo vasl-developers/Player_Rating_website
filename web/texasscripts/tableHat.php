@@ -65,6 +65,6 @@ $owners = mysqli_num_rows($result);
 <?php
 $username="<user>";
 $password="<password>";
-$host="localhost";
-$database="samt88_texasasl";
+$host="";
+$database="";
 ?>
