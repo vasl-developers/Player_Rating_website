@@ -33,8 +33,9 @@ $row = mysqli_fetch_assoc($result);
     while ($row = mysqli_fetch_assoc($result)) {
         $player = trim($row['Last Name'] . ', ' . $row['First Name']);
         $country  = trim($row['Country']) . "&nbsp;";
+        $id = $row['Id'] - 0;
 
-        echo "<tr><td>$player</td><td>$country</td><td>$i</td><td>$i</td></tr>";
+        echo "<tr><td>$player</td><td>$country</td><td>$id</td><td>$i</td></tr>";
 
         $i++;
     }
