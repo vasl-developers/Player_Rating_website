@@ -13,15 +13,17 @@ $row = mysqli_fetch_assoc($result);
 <html>
 
 <body>
-<h2>This is a test</h2>
-<p>This is a test display of the Person table from AREA, showing all of the table or a Query Result</p>
-<p> There are <b><?php echo $row['players'] ?></b> players in the table.</p>
+<h2>Alphabetical Listing of Currently Active ASL Players</h2>
+<p>This list includes all active players, meaning they have . . . . It includes results added as of adddate</p>
+
 
 <table cellPadding=3 border=1 style="border:black 2px outset;xwidth:100%;">
     <thead>
     <tr>
         <th>Name</th>
         <th>Country</th>
+        <th>Current Rating</th>
+        <th>Highest Rating</th>
     </tr>
     </thead>
     <tbody>
