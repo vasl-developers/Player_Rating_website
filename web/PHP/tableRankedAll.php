@@ -10,12 +10,9 @@ $query = "select count(*) as players from usn";
 $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
 ?>
-    <html>
-
+<html>
 <body>
 <h2>Ranked List of All ASL Players</h2>
-<p>This list includes all ASL Players who have . . . .It includes results added as of adddate</p>
-
 
 <table cellPadding=3 border=1 style="border:black 2px outset;xwidth:100%;">
     <thead>
@@ -28,19 +25,21 @@ $row = mysqli_fetch_assoc($result);
     </thead>
     <tbody>
     <?php
-    $query = "select * from usn";
+    $query = "select * from usn order by `Last Name` ASC";
     $result = mysqli_query($link, $query);
     mysqli_close($link);
 
+    $i = 1;
     while ($row = mysqli_fetch_assoc($result)) {
         $player = trim($row['Last Name'] . ', ' . $row['First Name']);
         $country  = trim($row['Country']) . "&nbsp;";
 
-        echo "<tr><td>$player</td><td>$country</td></tr>";
+        echo "<tr><td>$player</td><td>$country</td><td>$i</td><td>$i</td></tr>";
+
+        $i++;
     }
     ?>
     </tbody>
 </table>
 </body>
-
-    </html><?php
+</html>
