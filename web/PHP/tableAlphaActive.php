@@ -1,21 +1,21 @@
 <?php
-
 include("../PHP/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
+$mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
 ?>
-<html>
-
+<html lang="en">
+<head>
+<meta charset="utf-8" />
 <body>
+<div id="content">
 <h2>Alphabetical Listing of Currently Active ASL Players</h2>
-<p>This list includes all active players, meaning they have . . . . It includes results added as of adddate</p>
+<p>This list includes all active players, meaning they have . . . . It includes results added as of {a date}</p>
 
-
-<table cellPadding=3 border=1 style="border:black 2px outset;xwidth:100%;">
+<table class="table table-condensed table-striped">
     <thead>
     <tr>
         <th>Surname</th>
@@ -43,6 +43,6 @@ if (mysqli_connect_errno())
     ?>
     </tbody>
 </table>
+</div>
 </body>
-
 </html>

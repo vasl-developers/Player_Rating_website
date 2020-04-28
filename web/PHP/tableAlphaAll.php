@@ -41,5 +41,4 @@ $row = mysqli_fetch_assoc($result);
     </tbody>
 </table>
 </body>
-
-    </html><?php
+</html>

@@ -10,12 +10,10 @@ $query = "select count(*) as players from usn";
 $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
 ?>
-    <html>
-
+<html>
 <body>
 <h2>Ranked List of Active ASL Players</h2>
 <p>This list includes all active players, meaning they have . . . . It includes results added as of adddate</p>
-
 
 <table cellPadding=3 border=1 style="border:black 2px outset;xwidth:100%;">
     <thead>
@@ -42,5 +40,4 @@ $row = mysqli_fetch_assoc($result);
     </tbody>
 </table>
 </body>
-
-    </html><?php
+</html>

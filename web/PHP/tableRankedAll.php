@@ -5,7 +5,6 @@ if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
 $query = "select count(*) as players from usn";
 $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
