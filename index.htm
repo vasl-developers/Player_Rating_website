@@ -40,9 +40,9 @@ ga('send', 'pageview');
           <td class="top">
             <p>Welcome to the ASL Player Rating System. This tool replaces the AREA rating tool managed by Bruno Nitrosso until 2017 (which in turn stood on the shoulders of giants. See About AREA). While presenting a different interface it uses the same tournament-based information and rules algorithm for determining ratings and rankings as did Bruno's AREA. It is a player rating system whose goal is to support ranking/seeding players during tournament play.</p>
             <p><a class="content" data-href="web/PHP/tableAlphaActive.php">Alphabetical listing of Active Players</a></p>
-            <p><a href="web/PHP/tableRankedActive.php">Ranked listing of Active Players</a></p>
-            <p><a href="web/PHP/tableAlphaAll.php">Alphabetical listing of All Players</a></p>
-            <p><a href="web/PHP/tableRankedAll.php">Ranked listing of All Players</a></p>
+            <p><a class="content" data-href="web/PHP/tableRankedActive.php">Ranked listing of Active Players</a></p>
+            <p><a class="content" data-href="web/PHP/tableAlphaAll.php">Alphabetical listing of All Players</a></p>
+            <p><a class="content" data-href="web/PHP/tableRankedAll.php">Ranked listing of All Players</a></p>
             <p>The above represents the core functionality of the ASL Player Rating System and is the central part of its mandate.</p>
             <p>A guiding principle of this site is to ensure that the underlying dataset is treated as Open Data and is continuously available to anyone in the ASL community.</p>
           </td>
@@ -67,12 +67,14 @@ $(document).ready(function() {
   $("#navbar").load("web/include/navbar.htm", function() {
     $("ul.navbar-nav li.about").addClass("active");
   });
-  $("#link2").load("web/include/link2.html");
+
   $("footer").load("web/include/copyright2.html");
 
-  $("a.content").click(function(e) {
-    e.stopPropagation();
-    $("div.main-content").load($(this).data("href"));
+  $("#link2").load("web/include/link2.html", function() {
+    $("a.content").click(function(e) {
+      e.stopPropagation();
+      $("div.main-content").load($(this).data("href"));
+    });
   });
 });
 </script>
