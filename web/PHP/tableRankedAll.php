@@ -14,7 +14,7 @@ if (mysqli_connect_errno())
 <body>
 <h2>Ranked List of All ASL Players</h2>
 <P>During site development this table shows an alphabetical listing of players</P>
-<table cellPadding=3 border=1 style="border:black 2px outset;xwidth:100%;">
+<table class="table table-condensed table-striped">
     <thead>
     <tr>
         <th>Surname</th>
@@ -28,7 +28,7 @@ if (mysqli_connect_errno())
     <tbody>
     <?php
 
-    $sql = "select * from players";
+    $sql = "select * from players order by Surname, First_Name";
     $res = $mysqli->query($sql);
 
     while ($row = $res->fetch_assoc()) {

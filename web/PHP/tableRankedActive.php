@@ -15,7 +15,7 @@ if (mysqli_connect_errno())
 <h2>Ranked List of Active ASL Players</h2>
 <p>This list includes all active players, meaning they have . . . . It includes results added as of {a date}</p>
 <P>During site development this table shows an alphabetical listing of players</P>
-<table cellPadding=3 border=1 style="border:black 2px outset;xwidth:100%;">
+<table class="table table-condensed table-striped">
     <thead>
     <tr>
         <th>Surname</th>

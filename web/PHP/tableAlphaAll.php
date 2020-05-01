@@ -15,7 +15,7 @@ if (mysqli_connect_errno())
 <h2>Alphabetical List of All ASL Players</h2>
 <p>This list includes all ASL Players who have . . . .It includes results added as of {a date}</p>
 
-<table cellPadding=3 border=1 style="border:black 2px outset;xwidth:100%;">
+<table class="table table-condensed table-striped">
     <thead>
     <tr>
         <th>Surname</th>
@@ -29,7 +29,7 @@ if (mysqli_connect_errno())
     <tbody>
     <?php
 
-    $sql = "select * from players";
+    $sql = "select * from players order by Surname, First_Name";
     $res = $mysqli->query($sql);
 
     while ($row = $res->fetch_assoc()) {
