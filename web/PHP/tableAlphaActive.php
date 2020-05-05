@@ -29,7 +29,7 @@ if (mysqli_connect_errno())
     <tbody>
     <?php
 
-    $sql = "select * from players order by Surname, First_Name";
+    $sql = "select * from players WHERE Hidden IS FALSE order by Surname, First_Name";
     $res = $mysqli->query($sql);
 
     while ($row = $res->fetch_assoc()) {
