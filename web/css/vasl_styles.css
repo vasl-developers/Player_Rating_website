@@ -18,12 +18,8 @@ h5 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-w
 .smText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; }
 ul.clean { list-style-type: none;padding: 4px 0px;margin: 0px; }
 
-div.quotes p { text-align: center; }
+div.quotes p { text-align: left; }
 
-.container-fluid {
-  margin-top: 170px;
-  margin-bottom: 34px;
-}
 .copyright {
   text-align: center;
   padding-top: 10px;
@@ -45,15 +41,11 @@ div.panel-heading {
   cursor: pointer;
 }
 div.navbar-fixed-top {
-  background-image: url(http://vasl.info/images/header.jpg);
-  background-position: 169px 0;
+  background-image: url(../images/header.jpg);
   height: 93px;
 }
-div.navbar-fixed-top div.container {
-  margin-top: 92px;
-  margin-right: 0;
-  background-color: white;
-  padding-right: 10px;
+div.navbar-fixed-top div.nav-container {
+  margin: 92px 10px 0 0;
 }
 
 .main-content table {
@@ -83,3 +75,12 @@ div.userHeader + * {
   color: black;
   font-weight: bold;
 }
+li a.content {
+  cursor: pointer;
+}
+
+span.help-block { font-size: .7em; }
+form label { font-weight: normal; }
+.success_msg { color: '#218823'; }
+.form { border-radius: 5px; border: 1px solid #d1d1d1; padding: 0px 10px 0px 10px; margin-bottom: 50px; }
+#image_display { height: 90px; width: 80px; float: right; margin-right: 10px; }
