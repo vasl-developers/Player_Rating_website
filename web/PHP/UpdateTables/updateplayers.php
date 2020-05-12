@@ -13,8 +13,7 @@
         <div class="divB">
             <div class="divD">
                 <form action="web/PHP/UpdateTables/updateplayers.php" method="post">
-                    First Name: <input type="text" name="firstterm" /><br />
-                    Last Name: <input type="text" name="secondterm" /><br />
+                    Name: <input type="text" name="playername" /><br />
                     <input type="submit" name="input_search" value="Search" />
                 </form>
 
@@ -26,12 +25,11 @@
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                 }
                 if (isset($_POST['input_search'])) {
-                    $firstterm = $_POST['firstterm'];
-                    $secondterm = $_POST['secondterm'];
-                    /* Prepared statement, stage 1: prepare */
-                    $stmt = $mysqli->prepare("SELECT * FROM players WHERE First_Name=? AND Surname=?");
+                    $pname = $_POST['playername'];
+                     /* Prepared statement, stage 1: prepare */
+                    $stmt = $mysqli->prepare("SELECT * FROM players WHERE Fullname=?");
                     /* bind the parameters*/
-                    $stmt->bind_param("ss", $firstterm, $secondterm);
+                    $stmt->bind_param("s", $pname);
                     $stmt->execute();
                     $result = $stmt->get_result(); // get the mysqli result
                     $row = $result->fetch_assoc(); // fetch data
@@ -49,11 +47,8 @@
                     echo "<hr/>";
                     echo"<input class='input' type='hidden' name='pnc' value='{$row1['Player_Namecode']}' />";
                     echo "<br />";
-                    echo "<label>" . "First Name:" . "</label>" . "<br />";
-                    echo"<input class='input' type='text' name='fname' value='{$row1['First_Name']}' />";
-                    echo "<br />";
-                    echo "<label>" . "Surname:" . "</label>" . "<br />";
-                    echo"<input class='input' type='text' name='sname' value='{$row1['Surname']}' />";
+                    echo "<label>" . "Name:" . "</label>" . "<br />";
+                    echo"<input class='input' type='text' name='fname' value='{$row1['Fullname']}' />";
                     echo "<br />";
                     echo "<label>" . "Country:" . "</label>" . "<br />";
                     echo"<input class='input' type='text' name='country' value='{$row1['Country']}' />";
@@ -73,8 +68,7 @@
 
                 }
                 if (isset($_POST['input_submit'])) {
-                        $firstname = $_POST['fname'];
-                        $surname = $_POST['sname'];
+                        $fullname = $_POST['fname'];
                         $country = $_POST['country'];
                         $playernamecode = $_POST['pnc'];
                         $hidden = $_POST['hid'];
@@ -84,15 +78,14 @@
                             $hide=0;
                         }
                         /* Prepared statement, stage 1: prepare */
-                        if (!($stmt = $mysqli->prepare("UPDATE players SET First_Name=?, Surname=?, Country=?, Hidden=? WHERE Player_Namecode=?"))) {
+                        if (!($stmt = $mysqli->prepare("UPDATE players SET Fullname=?, Country=?, Hidden=? WHERE Player_Namecode=?"))) {
                             echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                         }
                         /* bind the parameters*/
-                        $stmt->bind_param("sssis", $firstname, $surname, $country, $hide, $playernamecode);
+                        $stmt->bind_param("ssis", $fullname,  $country, $hide, $playernamecode);
                         /* set parameters and execute */
                         $stmt->execute();
                         $stmt->close();
-                        $fullname = $firstname . ' ' . $surname;
                         echo $fullname . ' ' . "updated in Database";
                 }
                 ?>
