@@ -18,8 +18,7 @@ if (mysqli_connect_errno())
 <table class="table table-condensed table-striped">
     <thead>
     <tr>
-        <th>Surname</th>
-        <th>First Name</th>
+        <th>Name</th>
         <th>Country</th>
         <th>Namecode</th>
         <th>Current Rating</th>
@@ -33,11 +32,10 @@ if (mysqli_connect_errno())
     $res = $mysqli->query($sql);
 
     while ($row = $res->fetch_assoc()) {
-        $surname = trim($row["Surname"]);
-        $first_name = trim($row["First_Name"]);
+        $name = trim($row["Fullname"]);
         $country  = trim($row["Country"]);
         $player_namecode = $row["Player_Namecode"];
-        echo "<tr><td>$surname</td><td>$first_name</td><td>$country</td><td>$player_namecode</td></tr>";
+        echo "<tr><td>$name</td><td>$country</td><td>$player_namecode</td></tr>";
     }
     $mysqli->close();
     ?>

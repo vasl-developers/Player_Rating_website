@@ -21,17 +21,23 @@ if (mysqli_connect_errno())
     <?php
     $tournament_id="";
     /* Prepared statement, stage 1: prepare */
-    if (!($stmt = $mysqli->prepare("Select * FROM tournaments ORDER BY Year_Held"))) {
+    if (!($stmt = $mysqli->prepare("Select * FROM tournaments WHERE ! Date_Held =? ORDER BY DATE(Date_Held) ASC"))) {
         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;        }
-   /* execute - no binding needed as no params */
+    /* bind the parameters*/
+    $passnull = "null";
+    $stmt->bind_param("s", $passnull);
+   /* execute */
     $stmt->execute();
     $result=$stmt->get_result(); // get the mysqli result
     $firstarray = [];
     $secondarray=[];
+    include("../PHP/showtournamentstable.php");
+    /*
     while($newrow = $result->fetch_assoc()){
         $firstarray[]=$newrow;
         $secondarray[]=$newrow;
     }
+
     $previousyear=0;
     foreach ($firstarray as $row) {
         if ($row["Year_Held"] > $previousyear) {
@@ -74,6 +80,7 @@ if (mysqli_connect_errno())
         <?php
         }
     }
+    */
     $stmt->close();
     $mysqli->close();
     ?>
