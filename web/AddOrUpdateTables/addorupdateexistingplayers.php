@@ -140,13 +140,7 @@ if (isset($_POST['mode'])) {
                 </table>
             </form> </p>
         </div>
-
-       <!-- </div>
-    </div>
-
-        //edit mode adds a pre-populated form
-            if ($mode == "edit") {
-            Print '--> <h2>Edit Player</h2>
+            <h2>Edit Player</h2>
             <p>
             <form action="" method="post">
                 <table>
@@ -170,73 +164,7 @@ if (isset($_POST['mode'])) {
                 </table>
             </form> <p>';
             }
-<!--
-            //edited mode updates the data for a given playerName
-            if ($mode == "edited") {
-            if ($first > "") {
-            $query = "update Player set Name = '$first $last', first_name = '$first', last_name = '$last', phone1 = '$phone1', phone2 = '$phone2', phone3 = '$phone3', email = '$email', city = '$city', inactive = 0 where Name = '$playerName'";
-            $result = mysqli_query($link, $query);
-            Print "Data Updated!<p>";
-            } else {
-            $query = "delete from Player where Name == ''";
-            mysqli_query($mysqli, $query);
-            Print "Record Deleted!<p>";
-            }
-            }
 
-            //This pulls the data and puts it into an array, then prints in alphabetical order based on name
-            $data = mysqli_query($mysqli, "SELECT * FROM players ORDER BY first_name ASC") or die(mysqli_error());
-            Print "<h2>Player List</h2><p>";
-            Print "<table border cellpadding=3>";
-            Print "
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Phone1</th>
-                <th>Phone2</th>
-                <th>Phone3</th>
-                <th>Email</th>
-                <th>City</th>
-                <th>Inactive</th>
-                <th>Admin</th>
-            </tr>";
-            Print "<td colspan=9 align=right><a href=" . $_SERVER['PHP_SELF'] . "?mode=add>Add Player</a></td>";
-            while ($info = mysqli_fetch_array($data)) {
-            $nm = ckNullEmpty($info['Name']);
-            $fn = ckNullEmpty($info['first_name']);
-            $ln = ckNullEmpty($info['last_name']);
-            $p1 = ckNullEmpty($info['phone1']);
-            $p2 = ckNullEmpty($info['phone2']);
-            $p3 = ckNullEmpty($info['phone3']);
-            $em = ckNullEmpty($info['email']);
-            $ct = ckNullEmpty($info['city']);
-            $ia = ckNullEmpty($info['inactive']);
-            if ($ia == 1) {
-            $iaText = "Inactive";
-            }
-
-            if ($ia == 0) {
-            $iaText = "";
-            }
-
-            Print "<tr>\n";
-                Print "<td>" . $fn . "</td>";
-                Print "<td>" . $ln . "</td>";
-                Print "<td>" . $p1 . "</td>";
-                Print "<td>" . $p2 . "</td>";
-                Print "<td>" . $p3 . "</td>";
-                Print "<td>" . $em . "</td>";
-                Print "<td>" . $ct . "</td>";
-                Print "<td>" . $iaText . "</td>";
-                Print "<td><a href=" . $_SERVER['PHP_SELF'] . "?playerName=" . urlencode($nm) . "&first=" . urlencode($fn) . "&last=" .
-urlencode($ln) . "&phone1=" . urlencode($p1) . "&phone2=" . urlencode($p2) . "&phone3=" . urlencode($p3) . "&email=" . $em . "&city=" . urlencode($ct) . "&inactive=" . urlencode($ia) .
-"&mode=edit>Edit</a></td>";
-                Print "</tr>\n";
-            }
-            Print "</table>";
-
-            ?>
-        </div>-->
         </div>
         </div>
     </div>

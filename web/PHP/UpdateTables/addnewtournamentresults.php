@@ -50,37 +50,41 @@ if(isset($_FILES["fileToUpload"]["error"])){
 $row = 1;
 if (($handle = fopen($target_file, "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-        $tournid=$data[0];
-        $roundno=$data[1];
-        $rounddatetext=$data[2];
-        $scenid=$data[3];
-        $play1name=$data[4];
-        $play1nc = getnamecode($play1name); // get name code
-        $play1attdef=$data[5];
-        $play1alax=$data[6];
-        $play1res=$data[7];
-        $play2name=$data[8];
-        $play2nc = getnamecode($play2name); // get name code
-        $play2attdef=$data[9];
-        $play2alax=$data[10];
-        $play2res=$data[11];
-        $rounddatereal=$data[12];
-        //need to check for essential data and correct format
-        if($tournid != null and $roundno != null and $rounddatereal != null and $scenid != null
-        and $play1nc != null and $play1res != null and $play2nc != null and $play2nc != null){
-        // add more format checks
-            /* Prepared statement, stage 1: prepare */
-            if (!($stmt = $mysqli->prepare("INSERT INTO match_results (Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result) VALUES
-            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"))) {
-                echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+        if(!($row ==1)){ //first row is header; ignore
+            $tournid=$data[0];
+            $roundno=$data[1];
+            $rounddatetext=$data[2];
+            $scenid=$data[3];
+            $play1name=$data[4];
+            $play1nc = getnamecode($play1name); // get name code
+            $play1attdef=$data[5];
+            $play1alax=$data[6];
+            $play1res=$data[7];
+            $play2name=$data[8];
+            $play2nc = getnamecode($play2name); // get name code
+            $play2attdef=$data[9];
+            $play2alax=$data[10];
+            $play2res=$data[11];
+            $rounddatereal=$data[12];
+            //need to check for essential data and correct format
+            if($tournid != null and $roundno != null and $rounddatereal != null and $scenid != null
+            and $play1nc != null and $play1res != null and $play2nc != null and $play2nc != null) {
+                // add more format checks
+                /* Prepared statement, stage 1: prepare */
+                if (!($stmt = $mysqli->prepare("INSERT INTO match_results (Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode, 
+                           Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, RoundDate) VALUES
+                (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"))) {
+                    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+                }
+                /* bind the parameters*/
+                $stmt->bind_param("sisssssssssss", $tournid, $roundno, $rounddate, $scenid, $play1nc, $play1attdef,
+                    $play1alax, $play1res, $play2nc, $play2attdef, $play2alax, $play2res, $rounddatereal);
+                /* execute */
+                $stmt->execute();
+                echo "New Results Added to Database.";
             }
-            /* bind the parameters*/
-            $stmt->bind_param("sisssssssssss", $tournid, $roundno, $rounddate, $scenid, $play1nc, $play1attdef,
-            $play1alax, $play1res, $play2nc, $play2attdef, $play2alax, $play2res, $rounddatereal);
-            /* execute */
-            $stmt->execute();
-            echo "New Results Added to Database.";
         }
+        $row++;
     }
     fclose($handle);
 }

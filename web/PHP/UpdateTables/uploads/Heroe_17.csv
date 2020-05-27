@@ -1,0 +1,65 @@
+TOURNAMENT ID,ROUND NO.,LEAVE BLANK,SCENARIO ID,PLAYER 1 NAME,PLAYER 1 ATTACKER OR DEFENDER,PLAYER 1 ALLIES OR AXIS,PLAYER 1 RESULT,PLAYER 2 NAME,PLAYER 2 ATTACKER OR DEFENDER,PLAYER 2 ALLIES OR AXIS,PLAYER 2 RESULT,DATE
+HEROE_17,0,,T10,Martin Mayers,,Allies,W,Gary Norman,,axis,win,2017-03-01
+HEROE_17,0,,SP259,Michael Davies,,Allies,L,Simon Staniforth,,axis,win,2017-03-01
+HEROE_17,0,,SP258,Matthew Ellis,,Allies,W,Andrew Campen,,axis,win,2017-03-01
+HEROE_17,0,,J 86,Mark Blackmore,,Axis,W,David Blackwood,,allies,win,2017-03-01
+HEROE_17,0,,J166,Pete Phillipps,,Axis,W,Gary Norman,,allies,win,2017-03-02
+HEROE_17,0,,J166,Gerard Burton,,Axis,W,David Blackwood,,allies,win,2017-03-02
+HEROE_17,0,,DB131,Martin Mayers,,Allies,W,Simon Staniforth,,axis,lost,2017-03-02
+HEROE_17,0,,J161,Ulric Schwela,,Axis,W,Matthew Ellis,,allies,lost,2017-03-02
+HEROE_17,0,,J103,Ian Willey,,Allies,W,James Short,,axis,lost,2017-03-02
+HEROE_17,0,,A104,Pete Phillipps,,Allies,W,Ian Morris,,axis,lost,2017-03-02
+HEROE_17,0,,V14,Ray Porter,,Axis,L,David Blackwood,,allies,win,2017-03-02
+HEROE_17,0,,J 43,Simon Staniforth,,Axis,W,Gary Norman,,allies,lost,2017-03-02
+HEROE_17,0,,J105,Gerard Burton,,Allies,W,James Short,,axis,lost,2017-03-02
+HEROE_17,0,,A104,Nick Ranson,,Allies,L,Rich Domovic,,axis,win,2017-03-02
+HEROE_17,0,,AP69,Craig Benn,,Axis,W,Ray Porter,,allies,lost,2017-03-02
+HEROE_17,0,,BFP83,Michael Davies,,Allies,L,Mark Blackmore,,axis,win,2017-03-02
+HEROE_17,0,,KGP 4,Ian Willey,,Allies,L,James Short,,axis,win,2017-03-02
+HEROE_17,0,,SP258,Paul Legg,,Allies,W,Matthew Ellis,,axis,lost,2017-03-02
+HEROE_17,0,,A103,Nick Ranson,,Allies,L,Ray Porter,,axis,win,2017-03-03
+HEROE_17,0,,J 76,Paul Legg,,Axis,L,Gary Norman,,allies,win,2017-03-03
+HEROE_17,0,,VotG27,Pete Phillipps,,Axis,L,Ulric Schwela,,allies,win,2017-03-03
+HEROE_17,0,,AP14,William Binns,,Allies,W,Alan Hume,,axis,lost,2017-03-03
+HEROE_17,0,,AP14,Mark Blackmore,,Axis,W,Matthew Ellis,,allies,lost,2017-03-03
+HEROE_17,0,,J178,Craig Benn,,Axis,L,Gerard Burton,,allies,win,2017-03-03
+HEROE_17,0,,J178,John Martin,,Allies,L,Ian Morris,,axis,win,2017-03-03
+HEROE_17,0,,ITR11,Ian Willey,,Axis,W,James Short,,allies,lost,2017-03-03
+HEROE_17,0,,AP14,Simon Staniforth,,Axis,W,Magnus Rimvall,,allies,lost,2017-03-03
+HEROE_17,0,,J178,Rich Domovic,,Allies,W,John Tait,,axis,lost,2017-03-03
+HEROE_17,0,,AP 3,Paul Legg,,Allies,W,Ray Porter,,axis,lost,2017-03-03
+HEROE_17,0,,J178,Joe Arthur,,Axis,W,David Blackwood,,allies,lost,2017-03-03
+HEROE_17,0,,A103,Pete Phillipps,,Allies,W,William Binns,,axis,lost,2017-03-03
+HEROE_17,0,,FT167,Nick Ranson,,Axis,W,Andrew Campen,,allies,lost,2017-03-03
+HEROE_17,0,,BFP89,David Blackwood,,Allies,L,Ian Morris,,axis,win,2017-03-03
+HEROE_17,0,,SP 29,Martin Mayers,,Axis,W,Ray Porter,,allies,lost,2017-03-03
+HEROE_17,0,,WO 7,Ian Willey,,Axis,W,David Blackwood,,allies,lost,2017-03-04
+HEROE_17,0,,SP258,Nick Ranson,,Axis,L,David Blackwood,,allies,win,2017-03-04
+HEROE_17,0,,OzB1,Ian Willey,,Axis,L,James Short,,allies,win,2017-03-04
+HEROE_17,0,,SP258,Ray Porter,,Axis,W,Magnus Rimvall,,allies,lost,2017-03-04
+HEROE_17,0,,J161,Mark Blackmore,,Allies,W,Rich Domovic,,axis,lost,2017-03-04
+HEROE_17,0,,BFP117,Michael Davies,,Allies,W,Gary Norman,,axis,lost,2017-03-04
+HEROE_17,0,,J161,Paul Legg,,Axis,L,Ian Morris,,allies,win,2017-03-04
+HEROE_17,0,,SP258,Gerard Burton,,Allies,L,Simon Staniforth,,axis,win,2017-03-04
+HEROE_17,0,,SP258,Joe Arthur,,Axis,L,William Binns,,allies,win,2017-03-04
+HEROE_17,0,,SP258,Craig Benn,,Allies,W,John Martin,,axis,lost,2017-03-04
+HEROE_17,0,,SP258,John Tait,,Axis,L,Matthew Ellis,,allies,win,2017-03-04
+HEROE_17,0,,AP65,Ian Pollard,,Axis,W,Andrew Campen,,allies,lost,2017-03-04
+HEROE_17,0,,FrF76,Mark Blackmore,,Axis,L,Simon Staniforth,,allies,win,2017-03-04
+HEROE_17,0,,FrF76,Joe Arthur,,Allies,L,Gerard Burton,,axis,win,2017-03-04
+HEROE_17,0,,BFP89,Craig Benn,,Axis,W,Rich Domovic,,allies,lost,2017-03-04
+HEROE_17,0,,BFP89,John Martin,,Allies,L,Magnus Rimvall,,axis,win,2017-03-04
+HEROE_17,0,,J190,Craig Benn,,Allies,L,Mark Blackmore,,axis,win,2017-03-04
+HEROE_17,0,,BFP89,Paul Legg,,Axis,L,Matthew Ellis,,allies,win,2017-03-04
+HEROE_17,0,,SP114,Ray Porter,,Axis,L,David Blackwood,,allies,win,2017-03-04
+HEROE_17,0,,BFP89,Nick Ranson,,Axis,L,John Tait,,allies,win,2017-03-04
+HEROE_17,0,,BFP89,William Binns,,Allies,L,Ian Morris,,axis,win,2017-03-04
+HEROE_17,0,,SP256,Pete Phillipps,,Axis,L,Ian Pollard,,allies,win,2017-03-05
+HEROE_17,0,,A104,Gerard Burton,,Allies,L,Mark Blackmore,,axis,win,2017-03-05
+HEROE_17,0,,SP 22,Gary Norman,,Allies,W,Andrew Campen,,axis,lost,2017-03-05
+HEROE_17,0,,SP220,Craig Benn,,Allies,W,David Blackwood,,axis,lost,2017-03-05
+HEROE_17,0,,SP220,Ray Porter,,Allies,L,John Tait,,axis,win,2017-03-05
+HEROE_17,0,,A104,Joe Arthur,,Axis,W,Magnus Rimvall,,allies,lost,2017-03-05
+HEROE_17,0,,SP220,Paul Legg,,Allies,L,Matthew Ellis,,axis,win,2017-03-05
+HEROE_17,0,,A104,Simon Staniforth,,Axis,L,Ian Morris,,allies,win,2017-03-05
+HEROE_17,0,,A104,Nick Ranson,,Axis,W,John Martin,,allies,lost,2017-03-05

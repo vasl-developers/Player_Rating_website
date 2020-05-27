@@ -13,11 +13,12 @@ if (mysqli_connect_errno())
     <meta charset="utf-8" />
 <body>
 <h2>Ranked List of Active ASL Players</h2>
-<p>This list includes all active players, meaning they have . . . . It includes results added as of {a date}</p>
-<P>During site development this table shows an alphabetical listing of players</P>
+<p>This list includes all active players, meaning they have played in a tournament within 800 days before the last update to the database. It includes results added as of August, 2017.</p>
+
 <table class="table table-condensed table-striped">
     <thead>
     <tr>
+        <th>#</th>
         <th>Name</th>
         <th>Country</th>
         <th>Namecode</th>
@@ -28,14 +29,33 @@ if (mysqli_connect_errno())
     <tbody>
     <?php
 
-    $sql = "select * from players";
-    $res = $mysqli->query($sql);
-
-    while ($row = $res->fetch_assoc()) {
-        $name = trim($row["Fullname"]);
-        $country  = trim($row["Country"]);
-        $player_namecode = $row["Player_Namecode"];
-        echo "<tr><td>$name</td><td>$country</td><td>$player_namecode</td></tr>";
+    $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark, player_ratings.Active, player_ratings.Provisional from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY player_ratings.ELO DESC";
+    if (!($stmt = $mysqli->prepare($sql))) {
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;        }
+    $stmt->execute();
+    $result=$stmt->get_result(); // get the mysqli result
+    $stmt->close();
+    $i=0;
+    while ($row = $result->fetch_assoc()) {
+        $active = $row["Active"];
+        $provisional = $row["Provisional"];
+        if($active ==1 and $row["Hidden"] == 0) {
+            $i++;
+            $name = trim($row["Fullname"]);
+            $country = trim($row["Country"]);
+            $player_namecode = $row["Player_Namecode"];
+            $ELO = $row["ELO"];
+            $HWM = $row["HighWaterMark"];
+            echo "<tr><td>$i</td>";
+            echo "<td>$name</td>";
+            echo "<td>$country</td>";
+            ?>
+            <td class="top">
+                <p><a class="content" href="/web/PHP/tablePlayerGameResults.php?playercode=<?php echo $player_namecode?>"><?php echo $player_namecode?></a></p>
+            </td>
+            <?PHP
+            echo "<td>$ELO</td><td>$HWM</td></tr>";
+        }
     }
     $mysqli->close();
     ?>

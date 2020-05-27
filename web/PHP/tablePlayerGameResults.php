@@ -10,6 +10,15 @@ if (mysqli_connect_errno())
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="max-age=86400"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="web/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="web/favicon.ico" type="image/x-icon" />
+    <link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="web/css/vasl_styles.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+    </script>
 </head>
 <body>
 <div id="content">
@@ -17,16 +26,16 @@ if (mysqli_connect_errno())
 
     <?php
     /* Prepared statement, stage 1: prepare */
-    if (!($stmt = $mysqli->prepare("Select * FROM match_results WHERE Player1_Namecode=? OR Player2_Namecode=? ORDER BY Round_Date"))) {
+    if (!($stmt = $mysqli->prepare("Select * FROM match_results WHERE Player1_Namecode=? OR Player2_Namecode=? ORDER BY RoundDate"))) {
         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;        }
     /* bind the parameters*/
-    $passplayercode = $_GET['playercode'];  //playercode is passed from tableGameResultsforTournaments.php
+    $passplayercode = $_GET['playercode'];  //playercode is passed from tableGameResultsforTournaments.php and tableRankedActive.php
     $stmt->bind_param("ss", $passplayercode, $passplayercode);
     // execute
     $stmt->execute();
     $result=$stmt->get_result(); // get the mysqli result
     ?>
-    <h2>Player: </h2>
+    <h2>Player: <?PHP echo getplayername($passplayercode)?></h2>
     <table class="table table-condensed table-striped">
         <thead>
             <tr>
@@ -39,6 +48,8 @@ if (mysqli_connect_errno())
                 <th>Al/Ax</th>
                 <th></th>
                 <th>Scenario</th>
+                <th>Date</th>
+                <th>Tour. ID</th>
             </tr>
         </thead>
         <tbody>
@@ -53,6 +64,8 @@ if (mysqli_connect_errno())
             $p2attdef = trim($newrow["Player2_AttDef"]);
             $p2alax = trim($newrow["Player2_AlliesAxis"]);
             $scenario = trim($newrow["Scenario_ID"]);
+            $rounddate = trim($newrow["Round_Date"]);
+            $tourid= trim($newrow["Tournament_ID"]);
 
             ?>
             <tr>
@@ -65,6 +78,8 @@ if (mysqli_connect_errno())
                 <td><?php echo $p2alax ?></td>
                 <td>in</td>
                 <td><?php echo $scenario ?></td>
+                <td><?php echo $rounddate ?></td>
+                <td><?php echo $tourid ?></td>
             </tr>
             <?php
         }
@@ -98,5 +113,26 @@ function getplayername($playercode){
 }
 
 ?>
+
+<footer></footer>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#navbar").load("web/include/navbar.htm", function() {
+            $("ul.navbar-nav li.homepage").addClass("active");
+        });
+
+        $("footer").load("web/include/copyright2.html");
+
+        $("#link2").load("web/include/link2.html", function() {
+            $("a.content").click(function(e) {
+                e.stopPropagation();
+                $("div.main-content").load($(this).data("href"));
+            });
+        });
+    });
+
 </body>
 </html>
