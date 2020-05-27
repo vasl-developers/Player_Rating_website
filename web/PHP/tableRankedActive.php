@@ -30,13 +30,15 @@ if (mysqli_connect_errno())
     <?php
 
     $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark, player_ratings.Active, player_ratings.Provisional from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY player_ratings.ELO DESC";
-    if (!($stmt = $mysqli->prepare($sql))) {
-        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;        }
-    $stmt->execute();
-    $result=$stmt->get_result(); // get the mysqli result
-    $stmt->close();
+    // if (!($stmt = $mysqli->prepare($sql))) {
+    //     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;        }
+    // $stmt->execute();
+    // $result=$stmt->get_result(); // get the mysqli result
+    // $stmt->close();
     $i=0;
-    while ($row = $result->fetch_assoc()) {
+    $result_sc = mysqli_query($mysqli, $sql);
+    while ($row = mysqli_fetch_assoc($result_sc)) {
+    // while ($row = $result->fetch_assoc()) {
         $active = $row["Active"];
         $provisional = $row["Provisional"];
         if($active ==1 and $row["Hidden"] == 0) {
