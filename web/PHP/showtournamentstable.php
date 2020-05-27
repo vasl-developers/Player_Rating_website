@@ -34,7 +34,7 @@ foreach ($firstarray as $row) {
                         <td><?php echo $tournamentname?></td>
                         <td><?php echo $location?></td>
                         <td class="top">
-                            <p><a class="content" href="web/PHP/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament_id?>"><?php echo $tournament_id?></a></p>
+                            <p><a class="content" target="_parent" href="web/PHP/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament_id?>"><?php echo $tournament_id?></a></p>
                         </td>
                     </tr>
                     <?PHP
