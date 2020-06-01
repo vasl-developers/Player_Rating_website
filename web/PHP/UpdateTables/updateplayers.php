@@ -16,6 +16,7 @@
                     Name: <input type="text" name="playername" /><br />
                     <input type="submit" name="input_search" value="Search" />
                 </form>
+                <a id="addplayer" class="track btn btn-large btn-primary" target="" href="web/PHP/UPdateTables/addnewplayers.php">Add a New Player</a>
 
                 <?php
                 include ("../connection.php");
