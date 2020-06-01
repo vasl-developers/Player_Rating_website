@@ -1,11 +1,12 @@
 <?php
 include("connection.php");
-$mysqli = mysqli_connect($host, $username, $password, $database);
-$mysqli->set_charset("utf8");
+$mysqli = new mysqli($host, $username, $password, $database);
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
 }
+$mysqli->set_charset("utf8");
 ?>
 <html lang="en">
 <head>
@@ -27,28 +28,28 @@ if (mysqli_connect_errno())
   <tbody>
   <?php
     $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark, player_ratings.Active, player_ratings.Provisional from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY player_ratings.ELO DESC";
-    $i=0;
-    $result = mysqli_query($mysqli, $sql);
-    while ($row = mysqli_fetch_assoc($result)) {
-      $provisional = $row["Provisional"];
-      if($row["Active"] == 1 and $row["Hidden"] == 0) {
-        $i++;
-        $name = ucwords(strtolower(trim($row["Fullname"])), " .-\t\r\n\f\v");
-        $country = trim($row["Country"]);
-        $player_namecode = $row["Player_Namecode"];
-        $ELO = $row["ELO"];
-        $HWM = $row["HighWaterMark"];
-        echo "<tr><td>$i</td>";
-        echo "<td>$name</td>";
-        echo "<td>$country</td>";
-        ?>
-        <td class="top">
-          <p><a class="content" href="/web/PHP/tablePlayerGameResults.php?playercode=<?php echo $player_namecode?>"><?php echo $player_namecode?></a></p>
-        </td>
-        <?php
-        echo "<td>$ELO</td><td>$HWM</td></tr>";
+
+    if ($stmt = $mysqli->prepare($sql)) {
+      $stmt->execute();
+      $stmt->bind_result($name, $country, $nameCode, $hidden, $elo, $highWaterMark, $active, $provisional);
+
+      $i=0;
+      while ($row = $stmt->fetch()) {
+        if($active == 1 and $hidden == 0) {
+          $i++;
+          $name = ucwords(strtolower(trim($name)), " .-\t\r\n\f\v");
+          $country = trim($country);
+          echo "<tr><td>$i</td><td>$name</td><td>$country</td>";
+          ?>
+          <td class="top">
+            <p><a class="content" href="/web/PHP/tablePlayerGameResults.php?playercode=<?php echo $nameCode?>"><?php echo $nameCode?></a></p>
+          </td>
+          <?php
+          echo "<td>$elo</td><td>$highWaterMark</td></tr>";
+        }
       }
     }
+    $stmt->close();
     $mysqli->close();
     ?>
   </tbody>
