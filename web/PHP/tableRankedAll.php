@@ -13,6 +13,8 @@ $mysqli->set_charset("utf8");
   <meta charset="utf-8" />
 <body>
 <h2>Ranked List of All ASL Players</h2>
+<p></p>
+<p>To view game-by-game results for a player, click on the link under ID</p>
 <table class="table table-condensed table-striped">
   <thead>
   <tr>

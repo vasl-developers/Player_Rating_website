@@ -54,13 +54,18 @@ if (mysqli_connect_errno())
           $player1 = getplayername(trim($newrow["Player1_Namecode"]));
           $p1attdef = trim($newrow["Player1_AttDef"]);
           $p1alax = trim($newrow["Player1_AlliesAxis"]);
-
+          if(trim($newrow["Player1_Result"])=="draw"){
+              $gameres="draws";
+          } else {
+              $gameres = "beats";
+          }
           $playercode2 = trim($newrow["Player2_Namecode"]);
           $player2 = getplayername(trim($newrow["Player2_Namecode"]));
           $p2attdef = trim($newrow["Player2_AttDef"]);
           $p2alax = trim($newrow["Player2_AlliesAxis"]);
-
           $scenario = trim($newrow["Scenario_ID"]);
+          $linktext="";
+          if ($scenario != null){$linktext = "in";}
           $rounddate = trim($newrow["Round_Date"]);
           $tourid= trim($newrow["Tournament_ID"]);
       ?>
@@ -68,11 +73,11 @@ if (mysqli_connect_errno())
           <td><?php echo $player1 ?></td>
           <td><?php echo $p1attdef ?></td>
           <td><?php echo $p1alax ?></td>
-          <td>beats</td>
+          <td><?php echo $gameres ?></td>
           <td><?php echo $player2 ?></td>
           <td><?php echo $p2attdef ?></td>
           <td><?php echo $p2alax ?></td>
-          <td>in</td>
+          <td><?php echo $linktext ?></td>
           <td><?php echo $scenario ?></td>
           <td><?php echo $rounddate ?></td>
           <td><?php echo $tourid ?></td>
@@ -104,6 +109,7 @@ function getplayername($playercode){
   return $pname;
 }
 ?>
+
 <footer></footer>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

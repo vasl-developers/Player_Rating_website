@@ -13,13 +13,14 @@ if (mysqli_connect_errno())
 <body>
 <h2>Alphabetical List of All ASL Players</h2>
 <p>This list includes ASL Players who have played in a submitted tournament. It includes results added as of August, 2017</p>
-
+<p></p>
+<p>To view game-by-game results for a player, click on the link under ID</p>
 <table class="table table-condensed table-striped">
   <thead>
   <tr>
     <th>Name</th>
     <th>Country</th>
-    <th>Namecode</th>
+    <th>ID</th>
     <th>Current Rating</th>
     <th>Highest Rating</th>
   </tr>

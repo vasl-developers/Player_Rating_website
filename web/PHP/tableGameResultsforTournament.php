@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="max-age=86400"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="web/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="web/favicon.ico" type="image/x-icon" />
+    <link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="web/css/vasl_styles.css" rel="stylesheet" />
+</head>
 <?php
 include("../PHP/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
@@ -7,16 +18,7 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 ?>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="Cache-Control" content="max-age=86400"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="web/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="web/favicon.ico" type="image/x-icon" />
-  <link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="web/css/vasl_styles.css" rel="stylesheet" />
-</head>
+
 <body>
 <div id="navbar"></div>
 <div id="content">

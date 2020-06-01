@@ -1,5 +1,5 @@
 <?php
-  include("connection.php");
+  include("PHP/connection.php");
   $mysqli = mysqli_connect($host, $username, $password, $database);
   $sql = "select * from match_results WHERE Tournament_ID = " . $tournamenttoshow . " ORDER BY Round_No";
   $result = mysqli_query($mysqli, $sql);
