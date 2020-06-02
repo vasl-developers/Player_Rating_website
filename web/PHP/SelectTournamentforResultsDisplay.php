@@ -15,40 +15,41 @@
     <div class="divB">
       <div class="divD">
         <?php
-          include ("../PHP/connection.php");
-          $mysqli = mysqli_connect($host, $username, $password, $database);
-          $mysqli->set_charset("utf8");
-          if (mysqli_connect_errno()) {
-              echo "Failed to connect to MySQL: " . mysqli_connect_error();
-          }
-          $sql = "select Base_Name, Year_Held, Tournament_id from tournaments";
-          $result = mysqli_query($mysqli, $sql);
+        if (isset($_GET['tournamentid'])) {
+            $tournamenttoshow = trim($_GET["tournamentid"]);
+            include("../PHP/showgameresultstable.php");
+        } else {
+            include("../PHP/connection.php");
+            $mysqli = mysqli_connect($host, $username, $password, $database);
+            $mysqli->set_charset("utf8");
+            if (mysqli_connect_errno()) {
+                echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            }
+            $sql = "select Base_Name, Year_Held, Tournament_id from tournaments";
+            $result = mysqli_query($mysqli, $sql);
 
-          $tournamentlist = [];
-          while ($row = mysqli_fetch_assoc($result)) {
-            $tournamentlist[] = $row;
-          }
-          $mysqli->close();
-        ?>
-        <p>Type or Select Tournament to View Game Results:</p>
-        <form method="post" action="web/PHP/SelectTournamentforResultsDisplay.php">
-          <input type="text" list="tournaments" name="tournament">
-          <datalist id="tournaments" autocomplete="on">
-            <?php
-              foreach ($tournamentlist as $tournament) {
+            $tournamentlist = [];
+            while ($row = mysqli_fetch_assoc($result)) {
+                $tournamentlist[] = $row;
+            }
+            $mysqli->close();
             ?>
-                <option value="<?php echo $tournament["Tournament_id"];?>"><?php echo $tournament["Base_Name"] . " " . $tournament["Year_Held"] . " " . $tournament["Tournament_id"] ?></option>
-            <?php
-              }
-            ?>
-          </datalist>
-          <input type="submit" value="Select" />
-        </form>
+            <p>Type or Select Tournament to View Game Results:</p>
+            <form method="get" action="web/PHP/SelectTournamentforResultsDisplay.php">
+                <input type="text" list="tournaments" name="tournamentid">
+                <datalist id="tournaments" autocomplete="on">
+                    <?php
+                    foreach ($tournamentlist as $tournament) {
+                    ?>
+                    <option value="<?php echo $tournament["Tournament_id"];?>"><?php echo $tournament["Base_Name"] . " " . $tournament["Year_Held"] . " " . $tournament["Tournament_id"] ?></option>
+                    <?php
+                    }
+                    ?>
+                </datalist>
+                <input type="submit" value="Select" />
+            </form>
         <?php
-        // if (isset($_POST['tournament'])) {
-        //   $tournamenttoshow=trim($_POST["tournament"]);
-        // }
-        // include("../PHP/showgameresultstable.php");
+        }
         ?>
       </div>
     </div>
