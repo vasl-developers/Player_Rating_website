@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Submit A Correction</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8"/>
+  <title>Submit a Correction</title>
 </head>
 <body>
-<h2>Submit A Correction</h2>
+<h2>Submit a Correction</h2>
 <p></p>
 <p>Use this page to submit a correction to a Tournament Result</p>
 <p></p>

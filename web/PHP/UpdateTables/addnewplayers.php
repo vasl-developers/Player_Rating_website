@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <title></title>
 </head>
 <body>
 <?php
@@ -11,7 +10,7 @@ $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
 {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 ?>
 <div class="maindiv">
@@ -42,7 +41,7 @@ if (mysqli_connect_errno())
                 $stmt->close();
             }
             /* Prepared statement, stage 1: prepare */
-            if (!($stmt = $mysqli->prepare("INSERT INTO players (Surname, First_Name, Fullname, Country, 
+            if (!($stmt = $mysqli->prepare("INSERT INTO players (Surname, First_Name, Fullname, Country,
                      Player_Namecode, Hidden) VALUES (?, ?, ?, ?, ?, ?)"))) {
                         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
             }

@@ -41,7 +41,7 @@ div.panel-heading {
   cursor: pointer;
 }
 div.navbar-fixed-top {
-  background-image: url(../images/header.jpg);
+  background-image: url(/web/images/header.jpg);
   height: 93px;
 }
 div.navbar-fixed-top div.nav-container {
@@ -75,7 +75,7 @@ div.userHeader + * {
   color: black;
   font-weight: bold;
 }
-li a.content {
+a.content {
   cursor: pointer;
 }
 
@@ -84,3 +84,13 @@ form label { font-weight: normal; }
 .success_msg { color: '#218823'; }
 .form { border-radius: 5px; border: 1px solid #d1d1d1; padding: 0px 10px 0px 10px; margin-bottom: 50px; }
 #image_display { height: 90px; width: 80px; float: right; margin-right: 10px; }
+
+div.home.container-fluid {
+  margin-top:143px;
+}
+
+td.headline {
+  font-weight: bold;
+  color: white;
+  background-color: #337ab7;
+}

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <title></title>
 </head>
 <body>
 <div class="maindiv">
@@ -112,7 +111,7 @@ if (isset($_POST["tournamentgame"])) {
         //$roundrealdate = $rounddate;
         $gameid = $_POST['gameid'];
         /* Prepared statement, stage 1: prepare */
-        if (!($stmt = $mysqli->prepare("Update match_results SET Tournament_ID=?, Round_No=?, Round_Date=?, Scenario_ID=?, Player1_Namecode=?, 
+        if (!($stmt = $mysqli->prepare("Update match_results SET Tournament_ID=?, Round_No=?, Round_Date=?, Scenario_ID=?, Player1_Namecode=?,
             Player1_AttDef=?, Player1_AlliesAxis=?, Player1_Result=?, Player2_Namecode=?, Player2_AttDef=?, Player2_AlliesAxis=?, Player2_Result=?, RoundDate=? WHERE id=?"))) {
             echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
         }

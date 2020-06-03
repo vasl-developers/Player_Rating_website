@@ -1,14 +1,14 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Update existing players</title>
-    <meta http-equiv="expires" content="0">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="../css/style.css?counter=<?php echo time(); ?>" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Update existing players</title>
+  <meta http-equiv="expires" content="0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- < link href="../css/style.css?counter=<?php echo time(); ?>" rel="stylesheet" > -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </head>
 <body>
 
