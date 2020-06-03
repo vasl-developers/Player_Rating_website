@@ -62,7 +62,7 @@ if ($stmt = $mysqli->prepare($sql)) {
             <td><?php echo $name ?></td>
             <td><?php echo $location ?></td>
             <td class="top">
-              <p><a class="content" target="_parent" href="web/PHP/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament_id?>" title="<?php echo $date ?>">
+              <p><a href="tableGameResultsforTournament.php?tournamentid=<?php echo $tournament ?>" title="<?php echo $date ?>">
                 <?php echo $tournament ?></a>
               </p>
             </td>

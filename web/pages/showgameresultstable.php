@@ -38,7 +38,7 @@
             $previousRoundNo = $roundNo;
         ?>
         <tr>
-          <td colspan=9>Round <?php echo $roundNo ?></th>
+          <td colspan=9 class="headline">Round <?php echo $roundNo ?></th>
         </tr>
           <?php
           }
