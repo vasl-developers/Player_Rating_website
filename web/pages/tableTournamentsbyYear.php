@@ -62,7 +62,7 @@ if (mysqli_connect_errno())
             <td><?php echo $name ?></td>
             <td><?php echo $location ?></td>
             <td class="top">
-              <p><a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament_id?>" title="<?php echo $date ?>">
+              <p><a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament?>" title="<?php echo $date ?>">
                 <?php echo $tournament ?></a>
               </p>
             </td>
