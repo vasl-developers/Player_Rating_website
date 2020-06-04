@@ -1,6 +1,9 @@
 <html lang="en">
-<?php set_include_path($_SERVER['DOCUMENT_ROOT']); ?>
-<?php include_once("web/include/header.php"); ?>
+<?php
+$ROOT = '../../';
+set_include_path($_SERVER['DOCUMENT_ROOT']);
+include_once("web/include/header.php");
+?>
 <body>
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
@@ -9,7 +12,7 @@
     <div class="main-content col-md-8">
 
 <?php
-include_once("web/PHP/connection.php");
+include_once("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
@@ -22,13 +25,12 @@ if (mysqli_connect_errno())
   <p>This list includes all Tournaments submitted to ASL Player Ratings . . . . It includes results added as of {a date}</p>
   <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
   <?php
-    // $sql = "select * from tournaments where Date_Held IS NOT NULL order by DATE(Date_Held) ASC";
-$sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Held IS NOT NULL order by Year_Held, Month_Held asc";
+    $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Held IS NOT NULL order by Year_Held, Month_Held asc";
 
-if ($stmt = $mysqli->prepare($sql)) {
-  $stmt->execute();
-  $stmt->bind_result($year,$month,$date,$name,$location,$country,$tournament);
-?>
+    if ($stmt = $mysqli->prepare($sql)) {
+      $stmt->execute();
+      $stmt->bind_result($year,$month,$date,$name,$location,$country,$tournament);
+    ?>
     <table class="table table-condensed table-striped">
       <thead>
       <tr>
@@ -60,7 +62,7 @@ if ($stmt = $mysqli->prepare($sql)) {
             <td><?php echo $name ?></td>
             <td><?php echo $location ?></td>
             <td class="top">
-              <p><a class="content" target="_parent" href="web/PHP/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament_id?>" title="<?php echo $date ?>">
+              <p><a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament_id?>" title="<?php echo $date ?>">
                 <?php echo $tournament ?></a>
               </p>
             </td>
@@ -70,14 +72,11 @@ if ($stmt = $mysqli->prepare($sql)) {
         ?>
       </tbody>
     </table>
-
 <?php
 }
 $stmt->close();
 $mysqli->close();
 ?>
-
-
 
     </div>
     <?php include_once("web/include/right-sidebar.php"); ?>
@@ -86,6 +85,6 @@ $mysqli->close();
 <?php include_once("web/include/footer.php"); ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="web/include/ready.js"></script>
+<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>

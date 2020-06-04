@@ -1,6 +1,6 @@
 <?php
   set_include_path($_SERVER['DOCUMENT_ROOT']);
-  include("web/PHP/connection.php");
+  include("web/pages/connection.php");
   $mysqli = new mysqli($host, $username, $password, $database);
   if (mysqli_connect_errno())
   {

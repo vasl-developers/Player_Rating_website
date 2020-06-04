@@ -1,6 +1,9 @@
 <html lang="en">
-<?php set_include_path($_SERVER['DOCUMENT_ROOT']); ?>
-<?php include_once("web/include/header.php"); ?>
+<?php
+$ROOT = '../../';
+set_include_path($_SERVER['DOCUMENT_ROOT']);
+include_once("web/include/header.php");
+?>
 <body>
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
@@ -9,7 +12,7 @@
     <div class="main-content col-md-8">
 
 <?php
-include_once("web/PHP/connection.php");
+include_once("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
@@ -60,6 +63,6 @@ if (mysqli_connect_errno())
 <?php include_once("web/include/footer.php"); ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="web/include/ready.js"></script>
+<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>
