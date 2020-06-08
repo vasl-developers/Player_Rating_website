@@ -9,7 +9,7 @@
     <a class="list-group-item content" data-href="web/Tools_Support/DownloadScenarioList.html">Download Scenario List</a>
     <a class="list-group-item content" data-href="web/Tools_Support/GetHelp.html">Get Help</a>
     <a class="list-group-item content" data-href="web/Tools_Support/GetTheData.html">Get The Data!</a>
-    <a class="list-group-item content" data-href="web/PHP/Tools/SubmitCorrection.php">Submit A Correction</a>
+    <a class="list-group-item content" href="web/pages/toolSubmitGameCorrection.php">Submit A Correction</a>
     <a class="list-group-item content" data-href="web/PHP/UpdateTables/updateplayers.php">Add or Update Players</a>
     <a class="list-group-item content" data-href="web/Tools_Support/HideYourData.html">Hide Your Data</a>
   </div>
