@@ -1,6 +1,6 @@
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT']);
-include("web/pages/connection.php");
+include_once("web/pages/connection.php");
 $mysqli = new mysqli($host, $username, $password, $database);
 if (mysqli_connect_errno())
 {
@@ -14,12 +14,13 @@ if (isset($_POST['tournamentgame'])) {
 } else {
     $mysqli->set_charset("utf8");
     // get game results for tournament
-    $sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Round_No, Scenario_ID, Tournament_ID, id, player1.Fullname, player1.Player_Namecode, player2.Fullname, player2.Player_Namecode from match_results INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode WHERE Tournament_ID=? ORDER BY Round_NO";
-    if ($stmt = $mysqli->prepare($sql)) {
+    $sql = "select Scenario_ID, Tournament_ID, match_results.id, player1.Fullname, player2.Fullname from match_results INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode WHERE Tournament_ID=? ORDER BY player1.Fullname";
+    if (!($stmt = $mysqli->prepare($sql))) {
+      echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    } else {
         $stmt->bind_param("s", $tournamenttoshow);
         $stmt->execute();
-        $stmt->bind_result($p1Code, $p1AttDef, $p1AlliAxis, $p1Result, $p2Code, $p2AttDef, $p2AlliAxis, $roundNo, $scenario, $tourId, $gameid, $player1, $player1code, $player2, $player2code);
-        // display all game results for tournament in a dropdown box for selection
+        $stmt->bind_result($scenario, $tourId, $gameid, $player1, $player2);
         ?>
         <h1>Submit a Correction</h1>
         <h2>Selected Tournament: <?php echo $tournamenttoshow; ?></h2>

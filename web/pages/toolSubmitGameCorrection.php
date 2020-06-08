@@ -23,7 +23,7 @@ include_once("web/include/header.php");
 
             if (isset($_GET['tournamentid'])) {
                 $tournamenttoshow = trim($_GET["tournamentid"]);
-                include_once("web/pages/gamecorrection.php");
+                include_once("gamecorrection.php");
             } else {
                 $sql = "select Base_Name, Year_Held, Tournament_id from tournaments";
                 $result = mysqli_query($mysqli, $sql);
