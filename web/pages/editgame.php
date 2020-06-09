@@ -71,6 +71,8 @@ include_once("web/include/header.php");
                         $initscenario = $scenario;
                         $inittourId = $tourId;
                     }
+                } else {
+                    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                 }
             }
             ?>
