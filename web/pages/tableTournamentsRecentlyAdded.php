@@ -28,7 +28,7 @@ $mysqli->set_charset("utf8");
 // $sql = "select Year_Held,Month_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Added between date_sub(current_date(), interval 15 month) and current_date() order by date(Date_Held) asc";
 
 // temp - show all tournaments since none are in last 3 months
-$sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments order by Year_Held, Month_Held asc";
+$sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments order by Date_Held desc";
 
 if ($stmt = $mysqli->prepare($sql)) {
   $stmt->execute();

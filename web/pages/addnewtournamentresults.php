@@ -96,7 +96,7 @@ if ($uploadOK==1) {
                         $playernamecodelist[] = getplayernamecodelist();
                     }
                     /* Prepared statement, stage 1: prepare */
-                    if (!($stmt = $mysqli->prepare("INSERT INTO match_results (Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode, 
+                    if (!($stmt = $mysqli->prepare("INSERT INTO match_results (Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode,
                            Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, RoundDate) VALUES
                 (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"))) {
                         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;

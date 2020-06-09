@@ -25,7 +25,7 @@ if (mysqli_connect_errno())
   <p>This list includes all Tournaments submitted to ASL Player Ratings . . . . It includes results added as of {a date}</p>
   <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
   <?php
-    $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Held IS NOT NULL order by Year_Held, Month_Held asc";
+    $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Held IS NOT NULL order by Date_Held desc";
 
     if ($stmt = $mysqli->prepare($sql)) {
       $stmt->execute();
