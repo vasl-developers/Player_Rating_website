@@ -45,7 +45,10 @@ div.navbar-fixed-top {
   height: 93px;
 }
 div.navbar-fixed-top div.nav-container {
-  margin: 92px 10px 0 0;
+  margin: 56px 10px 0 0;
+}
+div.navbar-fixed-top div.nav-container li a {
+  color: white;
 }
 
 .main-content table {
@@ -86,7 +89,7 @@ form label { font-weight: normal; }
 #image_display { height: 90px; width: 80px; float: right; margin-right: 10px; }
 
 div.home.container-fluid {
-  margin-top:143px;
+  margin-top:100px;
 }
 
 td.headline {
@@ -94,3 +97,19 @@ td.headline {
   color: white;
   background-color: #337ab7;
 }
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: gold;
+}
+
+
+/* one way to get a fixed table header */
+
+.tableFixHead          { overflow-y: auto; height: 600px; }
+.tableFixHead thead th { position: sticky; top: 0; }
+
+/* Just common table stuff. Really. */
+.tableFixHead table  { border-collapse: collapse; width: 100%; }
+.tableFixHead th, .tableFixHead td { padding: 8px 16px; }
+.tableFixHead th  { background:#eee; }
