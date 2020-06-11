@@ -21,10 +21,11 @@ if (mysqli_connect_errno())
   exit();
 }
 ?>
-<h2>Alphabetical List of All ASL Players</h2>
+<h1>Alphabetical List of All ASL Players</h1>
 <p>This list includes ASL Players who have played in a submitted tournament. It includes results added as of August, 2017</p>
-<p></p>
+
 <p>To view game-by-game results for a player, click on the link under ID</p>
+<div class="tableFixHead">
 <table class="table table-condensed table-striped">
   <thead>
   <tr>
@@ -59,7 +60,7 @@ if (mysqli_connect_errno())
     ?>
   </tbody>
 </table>
-
+</div>
 
     </div>
     <?php include_once("web/include/right-sidebar.php"); ?>

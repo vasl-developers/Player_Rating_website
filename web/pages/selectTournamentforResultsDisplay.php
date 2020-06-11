@@ -21,9 +21,10 @@ if (mysqli_connect_errno())
   exit();
 }
 ?>
-    <h2>List of All Games Played in a Tournament included in ASL Player Ratings</h2>
-    <p>To select a tournament, select from the List. You can scroll or type the Name, including the Year </p>
 
+    <h1>List of All Games Played in a Tournament included in ASL Player Ratings</h1>
+    <p>To select a tournament, select from the List. You can scroll or type the Name, including the Year </p>
+    <div class="tableFixHead">
     <?php
     if (isset($_GET['tournamentid'])) {
         $tournamenttoshow = trim($_GET["tournamentid"]);
@@ -55,7 +56,7 @@ if (mysqli_connect_errno())
     <?php
     }
     ?>
-
+    </div>
     </div>
     <?php include_once("web/include/right-sidebar.php"); ?>
   </div>

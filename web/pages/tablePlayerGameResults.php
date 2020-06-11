@@ -21,7 +21,7 @@ if (mysqli_connect_errno())
   exit();
 }
 ?>
-  <h2>List of All Games Played by Player included in ASL Player Ratings</h2>
+  <h1>List of All Games Played by Player included in ASL Player Ratings</h1>
   <?php
     $passplayercode = $_GET['playercode'];  //playercode is passed from tableGameResultsforTournaments.php and tableRankedActive.php
 
@@ -44,6 +44,7 @@ if (mysqli_connect_errno())
       $stmt->bind_result($p1Code, $p1AttDef, $p1AlliAxis, $p1Result, $p2Code, $p2AttDef, $p2AlliAxis, $roundDate, $scenario, $tourId, $player1, $player1code, $player2, $player2code);
   ?>
   <h2>Player: <?php echo $name . ' (' . $passplayercode . ')' ?></h2>
+  <div class="tableFixHead">
   <table class="table table-condensed table-striped">
     <thead>
       <tr>
@@ -94,7 +95,7 @@ if (mysqli_connect_errno())
   ?>
     </tbody>
   </table>
-
+  </div>
 
     </div>
     <?php include_once("web/include/right-sidebar.php"); ?>
