@@ -5,7 +5,7 @@
   <title>Submit a Correction</title>
 </head>
 <body>
-<h2>Submit a Correction</h2>
+<h1>Submit a Correction</h1>
 <p></p>
 <p>Use this page to submit a correction to a Tournament Result</p>
 <p></p>

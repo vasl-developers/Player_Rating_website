@@ -12,7 +12,7 @@ if (mysqli_connect_errno())
 <meta charset="utf-8" />
 <body>
 <div id="content">
-<h2>Alphabetical Listing of Currently Active ASL Players</h2>
+<h1>Alphabetical Listing of Currently Active ASL Players</h1>
 <p>This list includes all active players, meaning they have played in a tournament within 800 days before the last update to the database. It includes results added as of August, 2017.</p>
 <p></p>
 <p>To view game-by-game results for a player, click on the link under ID</p>

@@ -55,10 +55,10 @@ if (isset($_POST["tournamentgame"])) {
         $player1name = getplayername($selected_val["Player1_Namecode"]);
         echo"<input class='input' type='text' name='fpnc' value='{$player1name}' />";
         echo "<br />";
-        echo "<label>" . "Player 1 Att or Def:" . "</label>" . "<br />";
+        echo "<label>" . "Player 1 Att or Def (Enter attacker or defender only):" . "</label>" . "<br />";
         echo"<input class='input' type='text' name='fattdef' value='{$selected_val["Player1_AttDef"]}' />";
         echo "<br />";
-        echo "<label>" . "Player 1 Allies or Axis:" . "</label>" . "<br />";
+        echo "<label>" . "Player 1 Allies or Axis (Enter Allies or Axis only):" . "</label>" . "<br />";
         echo"<input class='input' type='text' name='falax' value='{$selected_val["Player1_AlliesAxis"]}' />";
         echo "<br />";
         echo "<label>" . "Player 1 Result (win/lost/draw):" . "</label>" . "<br />";
@@ -68,10 +68,10 @@ if (isset($_POST["tournamentgame"])) {
         $player2name = getplayername($selected_val["Player2_Namecode"]);
         echo"<input class='input' type='text' name='spnc' value='{$player2name}' />";
         echo "<br />";
-        echo "<label>" . "Player 2 Att or Def:" . "</label>" . "<br />";
+        echo "<label>" . "Player 2 Att or Def (Enter attacker or defender only):" . "</label>" . "<br />";
         echo"<input class='input' type='text' name='sattdef' value='{$selected_val["Player2_AttDef"]}' />";
         echo "<br />";
-        echo "<label>" . "Player 2 Allies or Axis:" . "</label>" . "<br />";
+        echo "<label>" . "Player 2 Allies or Axis (Enter Allies or Axis only):" . "</label>" . "<br />";
         echo"<input class='input' type='text' name='salax' value='{$selected_val["Player2_AlliesAxis"]}' />";
         echo "<br />";
         echo "<label>" . "Player 2 Result (win/lost/draw):" . "</label>" . "<br />";

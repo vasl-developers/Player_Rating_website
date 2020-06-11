@@ -21,10 +21,11 @@ if (mysqli_connect_errno())
   exit();
 }
 ?>
-<h2>Alphabetical Listing of Currently Active ASL Players</h2>
+<h1>Alphabetical Listing of Currently Active ASL Players</h1>
 <p>This list includes all active players, meaning they have played in a tournament within 800 days before the last update to the database. It includes results added as of August, 2017.</p>
 <p></p>
 <p>To view game-by-game results for a player, click on the link under ID</p>
+<div class="tableFixHead">
 <table class="table table-condensed table-striped">
   <thead>
   <tr>
@@ -61,7 +62,7 @@ if (mysqli_connect_errno())
     ?>
   </tbody>
 </table>
-
+</div>
 
     </div>
     <?php include_once("web/include/right-sidebar.php"); ?>

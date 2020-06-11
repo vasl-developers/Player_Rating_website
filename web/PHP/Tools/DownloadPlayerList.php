@@ -57,7 +57,7 @@ function array_to_csv_download($array, $filename, $delimiter) {
     // open the "output" stream
     // see http://www.php.net/manual/en/wrappers.php.php#refsect2-wrappers.php-unknown-unknown-unknown-descriptioq
     $f = fopen($filename, 'w');
-    $csv = "Name,Namecode \n"; //column headers
+    $csv = "Name,Namecode\n"; //column headers
     foreach ($array as $line) {
         //fputcsv($f, $line, $delimiter);
         $csv.= $line["name"].','.$line["namecode"]."\n"; //Append data to csv

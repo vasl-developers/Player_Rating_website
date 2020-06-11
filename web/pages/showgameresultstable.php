@@ -17,6 +17,7 @@
 
     $previousRoundNo="";
 ?>
+
     <table class="table table-condensed table-striped">
       <thead>
       <tr>
@@ -63,6 +64,7 @@
         ?>
       </tbody>
     </table>
+
 <?php
     $mysqli->close();
   } else {

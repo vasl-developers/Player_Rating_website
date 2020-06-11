@@ -69,6 +69,9 @@
                 }
                 if (isset($_POST['input_submit'])) {
                         $fullname = $_POST['fname'];
+                        // need to parse and update surname and firstname
+                    $last_name = (strpos($playername, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $playername);
+                    $first_name = trim( preg_replace('#'.$last_name.'#', '', $playername ) );
                         $country = $_POST['country'];
                         $playernamecode = $_POST['pnc'];
                         $hidden = $_POST['hid'];

@@ -21,7 +21,7 @@ if (mysqli_connect_errno())
 }
 $mysqli->set_charset("utf8");
 ?>
-<h2>List of Tournaments Added To ASL Player Ratings in the past 3 months</h2>
+<h1>List of Tournaments Added To ASL Player Ratings in the past 3 months</h1>
 <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
 <?php
 
