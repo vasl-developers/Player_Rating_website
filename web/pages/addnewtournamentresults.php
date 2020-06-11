@@ -137,13 +137,12 @@ if ($uploadOK==1) {
 function getnamecode($playername){
     global $mysqli;
     $playername=trim($playername);
-    if($stmt5= $mysqli->prepare("SELECT * FROM players")){;
+    if($stmt5= $mysqli->prepare("SELECT Fullname, Player_Namecode FROM players")){
         $stmt5->execute();
-        $result5 = $stmt5->get_result(); // get the mysqli result
-        while ($row5 = $result5->fetch_assoc()) {
-            $testplayername = $row5["Fullname"];
-            if (strcasecmp(trim($testplayername), trim($playername))==0) {
-                $pnc = $row5["Player_Namecode"];
+        $stmt5->bind_result($playerfullname, $namecode);
+        while ($row = $stmt5->fetch()) {
+            if (strcasecmp(trim($playerfullname), trim($playername))==0) {
+                $pnc = $namecode;
                 $stmt5->close();
                 return $pnc;
             }
