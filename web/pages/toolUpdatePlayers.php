@@ -20,14 +20,40 @@ include_once("web/include/header.php");
             }
             if (isset($_POST['inputsearch'])) {
                 $pname = $_POST['playername'];
-                /* Prepared statement, stage 1: prepare */
-                if($stmt = $mysqli->prepare("SELECT * FROM players WHERE Fullname=?")){
-                    /* bind the parameters*/
+                $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden from players WHERE Fullname=?";
+                if ($stmt = $mysqli->prepare($sql)) {
                     $stmt->bind_param("s", $pname);
                     $stmt->execute();
-                    $result = $stmt->get_result(); // get the mysqli result
-                    $row = $result->fetch_assoc(); // fetch data
-                    if($row == null){
+                    $stmt->bind_result($name, $country, $nameCode, $hidden);
+                    $row = $stmt->fetch();
+                    if(!($row==null)){
+                          ?>
+                          <form action="" target="" method='post'>
+                          <?PHP
+                            echo "<h1>Update Player</h1>";
+                            echo "<br>";
+                            echo"<input class='input' type='hidden' name='pnc' value='$nameCode'>";
+                            echo "<label><strong>" . "Name:" . "</strong></label>";
+                            echo "<br>";
+                            echo"<input class='input' type='text' name='fname' value='$name'>";
+                            echo "<br>";
+                            echo "<label><strong>" . "Country:" . "</strong></label>";
+                            echo "<br>";
+                            echo"<input class='input' type='text' name='country' value='$country'>";
+                            echo "<br>";
+                            echo "<label><strong>" . "Hidden (true/false)" . ":" . "</strong></label>";
+                            echo "<br>";
+                            if($hidden==1){
+                                $hidstatus = "true";
+                            } else {
+                                $hidstatus = "false";
+                            }
+                            echo"<input class='input' type='text' name='hid' value='$hidstatus'>";
+                            echo "<br>";
+                            echo "<br>";
+                            echo "<button class='btn btn-primary pl-5' name='inputsubmit' type='submit' value='Update'>Update</button>";
+                          echo "</form>";
+                    } else {
                         ?>
                         <h1>Update Player or Add new Player</h1>
                         <br>
@@ -41,34 +67,9 @@ include_once("web/include/header.php");
                         <br>
                         <?php
                         echo "No match found. Re-enter name or Add A New Player";
-                    } else {
-                        ?>
-                        <form action="" target="" method='post'>
-                        <?PHP
-                        echo "<h1>Update Player</h1>";
-                        echo "<br>";
-                        echo"<input class='input' type='hidden' name='pnc' value='{$row['Player_Namecode']}'>";
-                        echo "<label><strong>" . "Name:" . "</strong></label>";
-                        echo "<br>";
-                        echo"<input class='input' type='text' name='fname' value='{$row['Fullname']}'>";
-                        echo "<br>";
-                        echo "<label><strong>" . "Country:" . "</strong></label>";
-                        echo "<br>";
-                        echo"<input class='input' type='text' name='country' value='{$row['Country']}'>";
-                        echo "<br>";
-                        echo "<label><strong>" . "Hidden (true/false)" . ":" . "</strong></label>";
-                        echo "<br>";
-                        if($row['Hidden']==1){
-                            $hidstatus = "true";
-                        } else {
-                            $hidstatus = "false";
-                        }
-                        echo"<input class='input' type='text' name='hid' value='$hidstatus'>";
-                        echo "<br>";
-                        echo "<br>";
-                        echo "<button class='btn btn-primary pl-5' name='inputsubmit' type='submit' value='Update'>Update</button>";
-                        echo "</form>";
                     }
+
+
                     $stmt->close();
                 } else {
                     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;

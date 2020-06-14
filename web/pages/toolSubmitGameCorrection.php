@@ -33,12 +33,14 @@ include_once("web/include/header.php");
                 }
                 $mysqli->close();
                 ?>
-                <h1>Submit a Correction</h1>
+                <h1>Submit a Tournament Game Correction</h1>
                 <p>Use this page to submit a correction to a Tournament Result</p>
                 <p>1. Select the Tournament from the Tournaments dropdown list</p>
                 <p>2. Select a game from the Tournament Games dropdown list OR choose Add Missing Game</p>
                 <p>3. Enter revised or new information</p>
                 <p>4. Save</p>
+                <br>
+                <p>NOTE: If all you are doing is changing a player's name (ie from Mike Brown to Michael Brown) and it is still the same player, don't do it here. Go to Update Player.</p>
                 <br>
                 <br>
                 <p><strong>1. Select the Tournament from the Tournaments dropdown list</strong></p>
