@@ -15,6 +15,7 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
     <a class="list-group-item" href="<?php echo $ROOT; ?>web/pages/toolGetTheData.php">Get The Data!</a>
     <a class="list-group-item" href="<?php echo $ROOT; ?>web/pages/toolSubmitGameCorrection.php">Submit A Correction</a>
     <a class="list-group-item" href="<?php echo $ROOT; ?>web/pages/toolUpdatePlayers.php">Add or Update Players</a>
-    <a class="list-group-item" href="<?php echo $ROOT; ?>web/Tools_Support/HideYourData.html">Hide Your Data</a>
+    <a class="list-group-item" href="<?php echo $ROOT; ?>web/pages/toolUpdateTournaments.php">Update A Tournament</a>
+    <a class="list-group-item" href="<?php echo $ROOT; ?>web/pages/toolHideYourData.php">Hide Your Data</a>
   </div>
 </div>

@@ -26,8 +26,8 @@ include_once("web/include/header.php");
             <br>
             <br>
             <p>Database files, view and save:</p>
-            <a id="downloadcreatetables" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating database create scripts/createdbtables.txt">Create Tables scripts, php format</a>
-            <a id="downloadvisualization" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating data files/area_schema visualization_latest.png">Database Visualization</a>
+            <a id="downloadcreatetables" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating database create scripts/createdbtables.zip">Create Tables scripts, php format</a>
+            <a id="downloadvisualization" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating data files/area_schema visualization_latest.zip">Database Visualization</a>
         </div>
         <?php include_once("web/include/right-sidebar.php"); ?>
     </div>

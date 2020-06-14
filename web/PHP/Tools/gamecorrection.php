@@ -112,7 +112,7 @@ if (isset($_POST["tournamentgame"])) {
         $gameid = $_POST['gameid'];
         /* Prepared statement, stage 1: prepare */
         if (!($stmt = $mysqli->prepare("Update match_results SET Tournament_ID=?, Round_No=?, Round_Date=?, Scenario_ID=?, Player1_Namecode=?,
-            Player1_AttDef=?, Player1_AlliesAxis=?, Player1_Result=?, Player2_Namecode=?, Player2_AttDef=?, Player2_AlliesAxis=?, Player2_Result=?, RoundDate=? WHERE id=?"))) {
+            Player1_AttDef=?, Player1_AlliesAxis=?, Player1_Result=?, Player2_Namecode=?, Player2_AttDef=?, Player2_AlliesAxis=?, Player2_Result=?, RoundDate=? WHERE match_results.id=?"))) {
             echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
         }
         /* bind the parameters*/
