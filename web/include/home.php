@@ -1,5 +1,5 @@
       <h1>ASL Player Rating System</h1>
-      <h1>THIS SITE IS UNDER DEVELOPMENT AND IS SHARED FOR REVIEW AND COMMENT. MOST LINKS WILL WORK AND THE DATA IS 'REAL'. PLEASE NOTIFY IF ERRORS FOUND</h1>
+      <br>
       <table>
         <tr>
           <td class="top">
