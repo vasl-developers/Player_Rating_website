@@ -85,7 +85,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Submit') {
     if(!(mail($emailtosend,"Remove Data Request",$msg, $headers))){
         echo "some kind of error. Come on!";
     };
-    echo "Email has been sent to " . $administrator . ".";
+    echo "Email has been sent to " . $person . ".";
 } else {
 ?>
 
