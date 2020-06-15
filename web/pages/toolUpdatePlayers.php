@@ -58,8 +58,11 @@ include_once("web/include/header.php");
                         <h1>Update Player or Add new Player</h1>
                         <br>
                         <form action="toolUpdatePlayers.php" method="post" target="">
-                            Player to Update: <input type="text" name="playername" /><br />
+                          <div class="col-xs-4">
+                            <label for="playertohide">Player to Update:</label>
+                            <input tyclass="form-control" pe="text" id="playername" name="playername" /><br />
                             <button class="btn btn-primary pl-5" name="inputsearch" type="submit" value="Search">Search</button>
+                          </div>
                         </form>
                         <br>
                         <a id="addplayer" class="track btn btn-large btn-primary" target="" href="addnewplayers.php">Add a new Player</a>
@@ -100,8 +103,11 @@ include_once("web/include/header.php");
                         <h1>Update Player or Add new Player</h1>
                         <br>
                         <form action="toolUpdatePlayers.php" method="post" target="">
-                                Player to Update: <input type="text" name="playername" /><br />
-                                <button class="btn btn-primary pl-5" name="inputsearch" type="submit" value="Search">Search</button>
+                          <div class="col-xs-4">
+                            <label for="playertohide">Player to Update:</label>
+                            <input type="text" name="playername" class="form-control" id="playername" /><br />
+                            <button class="btn btn-primary pl-5" name="inputsearch" type="submit" value="Search">Search</button>
+                          </div>
                         </form>
                         <br>
                         <a id="addplayer" class="track btn btn-large btn-primary" target="" href="addnewplayers.php">Add a new Player</a>
@@ -113,14 +119,20 @@ include_once("web/include/header.php");
                 <h1>Update Player or Add new Player</h1>
                 <br>
                 <form action="toolUpdatePlayers.php" method="post" target="">
-                    Player to Update: <input type="text" name="playername" /><br />
+                  <div class="col-xs-4">
+                    <label for="playertohide">Player to Update:</label>
+                    <input type="text" name="playername" class="form-control" id="playername" />
+                    <br>
                     <button class="btn btn-primary pl-5" name="inputsearch" type="submit" value="Search">Search</button>
+                    <br>
+                    <br>
+                    <a id="addplayer" class="track btn btn-large btn-primary" target="" href="addnewplayers.php">Add a new Player</a>
+                  </div>
                 </form>
-                <br>
-                <a id="addplayer" class="track btn btn-large btn-primary" target="" href="addnewplayers.php">Add a new Player</a>
                 <?php
             }
             ?>
+
         </div>
         <?php include_once("web/include/right-sidebar.php"); ?>
     </div>

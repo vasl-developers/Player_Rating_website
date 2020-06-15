@@ -72,20 +72,20 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Submit') {
         }
     }
 } elseif(isset($_POST['remove_submit']) && $_POST['remove_submit'] == 'Submit') {
-    $administrator="Doug Rimmer";
-    $adminemail="dougerimmer@gmail.com";
+    $administrator = "Doug Rimmer gm";
+    $adminemail = "dougerimmer@gmail.com";
     $headers = "From: dougerimmer@gmail.com";
     $person = trim($_POST["playertoremove"]);
     $emailtosend = trim($_POST["playeremail"]);
-    // the message
-    $msg = "Hi" . " " . $person . " " . "You have asked for your data to be removed from the ASL Player Rating System. 
-    Please contact " . $administrator . " at " . $adminemail . " to confirm your identity and obtain additional information";
+
+    $msg = "Hi" . " " . $person . " " . "You have asked for your data to be removed from the ASL Player Rating System. Please contact " . $administrator . " at " . $adminemail . " to confirm your identity and provide additional information.";
     // use wordwrap() if lines are longer than 70 characters
     $msg = wordwrap($msg,70);
     // send email
     if(!(mail($emailtosend,"Remove Data Request",$msg, $headers))){
         echo "some kind of error. Come on!";
     };
+    echo "Email has been sent to " . $administrator . ".";
 } else {
 ?>
 
@@ -96,10 +96,11 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Submit') {
     <div class="form-group row">
         <div class="col-xs-4">
         <label for="playertohide">Player Name:</label>
-        <input type="text" class="form-control" name="playertohide">
+        <input type="text" class="form-control" name="playertohide" id="playertohide" />
         </div>
     </div>
-    <button class="btn btn-primary pl-5" name="submit" type="submit" value="Submit">Submit</button>
+    <button class="btn btn-primary pl-5" type="submit">Submit</button>
+    <input type="hidden" name="submit" value="Submit" />
 </form>
 <br>
 <p><strong>Remove My Data (2017 and earlier)</strong></p>
@@ -117,7 +118,8 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Submit') {
         <input type="text" class="form-control" name="playeremail">
         </div>
     </div>
-    <button class="btn btn-primary pt-25" name="remove_submit" type="submit" value="Submit">Submit</button>
+    <button class="btn btn-primary pt-25" type="submit">Submit</button>
+    <input type="hidden" name="remove_submit" value="Submit" />
 </form>
 <?php } ?>
         </div>

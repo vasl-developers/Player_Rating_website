@@ -3,4 +3,6 @@ $(document).ready(function() {
   //   e.stopPropagation();
   //   $("div.main-content").load($(this).data("href"));
   // });
+  $('#playername').focus();
+  $('#playertohide').focus();
 });
