@@ -33,36 +33,36 @@ include_once("web/include/header.php");
             $sql = "select players.Fullname, players.Player_Namecode, players.Hidden, player_ratings.Active from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY players.Surname, players.First_Name";
             if ($stmt = $mysqli->prepare($sql)) {
                 $stmt->execute();
-                $result=$stmt->get_result();
+                $stmt->bind_result($name, $nameCode, $hidden, $active);
+                $i=0;
+                $activearray = array();
+                $allarray = array();
+                while ($row = $stmt->fetch()) {
+                    // put data into arrays: active/all
+                    if ($active == 1) {
+                        if ($hidden == 1) {
+                            $activename = "Hidden";
+                        } else {
+                            $activename = trim($name);
+                        }
+                        $activenamecode = $nameCode;
+                        $arrayitem = array("name" => $activename, "namecode" => $activenamecode);
+                        array_push($activearray, $arrayitem);
+                    }
+                    if ($hidden == 1) {
+                        $allname = "Hidden";
+                    } else {
+                        $allname = trim($name);
+                    }
+                    $allnamecode = $nameCode;
+                    $arrayitem = array("name" => $allname, "namecode" => $allnamecode);
+                    array_push($allarray, $arrayitem);
+                }
             } else {
                 echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                 exit();
             }
-            // put data into arrays: active/all
-            $i=0;
-            $activearray = array();
-            $allarray = array();
-            while ($row = $result->fetch_assoc()) {
-                $active = $row["Active"];
-                if($active ==1) { // and $row["Hidden"] == 0) {
-                    if ($row["Hidden"] ==1) {
-                        $activename = "Hidden";
-                    } else {
-                        $activename = trim($row["Fullname"]);
-                    }
-                    $activenamecode = $row["Player_Namecode"];
-                    $arrayitem= array("name"=>$activename, "namecode"=>$activenamecode);
-                    array_push ($activearray, $arrayitem);
-                }
-                if ($row["Hidden"] ==1) {
-                    $allname = "Hidden";
-                } else {
-                    $allname = trim($row["Fullname"]);
-                }
-                $allnamecode = $row["Player_Namecode"];
-                $arrayitem= array("name"=>$allname, "namecode"=>$allnamecode);
-                array_push ($allarray, $arrayitem);
-            }
+
             // now format arrays - csv
             array_to_csv_download($activearray, $activefilename, ",");
             array_to_csv_download($allarray, $allfilename, ",");
@@ -77,7 +77,7 @@ include_once("web/include/header.php");
             <p></p>
             <p>Choose which Player List to Download</p>
             <a id="downloadactivecsv" class="track btn btn-large btn-primary" href="<?php echo $activefilename ?>">Active Players, csv format</a>
-            <a id="downloadallcsv" class="track btn btn-large btn-primary" href="<?php echo $activefilename ?>">All Players, csv format</a>
+            <a id="downloadallcsv" class="track btn btn-large btn-primary" href="<?php echo $allfilename ?>">All Players, csv format</a>
         </div>
     <?php include_once("web/include/right-sidebar.php"); ?>
     </div>
