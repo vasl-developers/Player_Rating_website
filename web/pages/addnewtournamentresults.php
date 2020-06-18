@@ -74,13 +74,13 @@ if ($uploadOK==1) {
                 $scenid = $data[3];
                 $play1name = $data[4];
                 $play1nc = getnamecode($play1name); // get name code
-                $play1attdef = $data[5];
-                $play1alax = $data[6];
+                $play1attdef = strtolower($data[5]);
+                $play1alax = strtolower($data[6]);
                 $play1res = $data[7];
                 $play2name = $data[8];
                 $play2nc = getnamecode($play2name); // get name code
-                $play2attdef = $data[9];
-                $play2alax = $data[10];
+                $play2attdef = strtolower($data[9]);
+                $play2alax = strtolower($data[10]);
                 $play2res = $data[11];
                 $rounddatereal = $data[12];
                 if ($rounddatetext == null or $rounddatetext == ""){$rounddatetext = $rounddatereal;}
@@ -155,8 +155,13 @@ function getnamecode($playername){
 }
 function getnewnamecode($playername, $playernamecode){
     global $rebuildpnclist;
-    $last_name = (strpos($playername, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $playername);
-    $first_name = trim( preg_replace('#'.$last_name.'#', '', $playername ) );
+    $names = explode(" ", $playername);
+    $last_name=end($names);
+    $first_name = $names[0];
+    $namecount = count($names);
+    for ($i = 1; $i < (count($names)-1); $i++)  {
+        $first_name = $first_name . " ". $names[$i];
+    }
     //Get the length of the string.
     $length = strlen($last_name);
     //Get the array index of the last character.

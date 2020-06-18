@@ -80,8 +80,13 @@ include_once("web/include/header.php");
             } elseif (isset($_POST['inputsubmit'])) {
                         $fullname = $_POST['fname'];
                         // need to parse and update surname and firstname
-                        $last_name = (strpos($fullname, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $fullname);
-                        $first_name = trim( preg_replace('#'.$last_name.'#', '', $fullname ) );
+                        $names = explode(" ", $fullname);
+                        $last_name=end($names);
+                        $first_name = $names[0];
+                        $namecount = count($names);
+                        for ($i = 1; $i < (count($names)-1); $i++)  {
+                            $first_name = $first_name . " ". $names[$i];
+                        }
                         $country = $_POST['country'];
                         $playernamecode = $_POST['pnc'];
                         $hidden = $_POST['hid'];
