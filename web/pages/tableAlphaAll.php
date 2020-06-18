@@ -1,5 +1,7 @@
 <html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <?php
+header("Content-Type: text/html;charset=UTF-8");
 $ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
@@ -15,6 +17,7 @@ include_once("web/include/header.php");
 include_once("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
+mysqli_set_charset($mysqli, "utf8");
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();

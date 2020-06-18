@@ -27,7 +27,7 @@ include_once("web/include/header.php");
                 <p><strong>Select file to upload (.csv format only at present):</strong></p>
                 <form action="toolUploadTournamentResults.php" target ="_self" method="post" enctype="multipart/form-data">
                     <div class="input-group">
-                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="file" class="form-control-file" name="fileToUpload" id="fileToUpload">
                         <br>
                         <button class="btn btn-primary pt-5" name="submit" type="submit" value="Select">Upload & Add to Database</button>
                     </div>

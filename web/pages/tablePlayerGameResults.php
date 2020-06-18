@@ -66,8 +66,10 @@ if (mysqli_connect_errno())
         while ($row = $stmt->fetch()) {
           $player1 = ucwords(strtolower(trim($player1)), " .-\t\r\n\f\v");
           $player2 = ucwords(strtolower(trim($player2)), " .-\t\r\n\f\v");
-          if(trim($p1Result)=="draw"){
+          if(trim(strtolower($p1Result))=="draw"){
             $p1Result = "draws";
+          } elseif(trim(strtolower($p1Result))=="lost") {
+            $p1Result = "loses to";
           } else {
             $p1Result = "beats";
           }
