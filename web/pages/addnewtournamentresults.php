@@ -76,12 +76,12 @@ if ($uploadOK==1) {
                 $play1nc = getnamecode($play1name); // get name code
                 $play1attdef = strtolower($data[5]);
                 $play1alax = strtolower($data[6]);
-                $play1res = $data[7];
+                $play1res = strtolower($data[7]);
                 $play2name = $data[8];
                 $play2nc = getnamecode($play2name); // get name code
                 $play2attdef = strtolower($data[9]);
                 $play2alax = strtolower($data[10]);
-                $play2res = $data[11];
+                $play2res = strtolower($data[11]);
                 $rounddatereal = $data[12];
                 if ($rounddatetext == null or $rounddatetext == ""){$rounddatetext = $rounddatereal;}
                 //need to check for essential data and correct format
@@ -94,6 +94,16 @@ if ($uploadOK==1) {
                     if($rebuildpnclist){
                         //update pnc list to contain new players just created
                         $playernamecodelist[] = getplayernamecodelist();
+                    }
+                    if($play1res=="won") {
+                        $play1res = "win";
+                    } elseif($play1res=="loss"){
+                        $play1res="lost";
+                    }
+                    if($play2res=="won") {
+                        $play2res = "win";
+                    } elseif($play2res=="loss"){
+                        $play2res="lost";
                     }
                     /* Prepared statement, stage 1: prepare */
                     if (!($stmt = $mysqli->prepare("INSERT INTO match_results (Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode,
@@ -125,7 +135,7 @@ if ($uploadOK==1) {
                 $date_added = date("Y-m-d");
                 $stmt8->execute();
                 $stmt8->close();
-                echo "<br>Tournament" . $tournament_id . " created in Tournaments in Database. Go to Update Tournament Info to add additional tournament data.<br>";
+                echo "<br>Tournament " . $tournament_id . " created in Tournaments in Database. Go to Update Tournament Info to add additional tournament data.<br>";
             } else {
                 echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
             }
