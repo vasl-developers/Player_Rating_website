@@ -28,7 +28,7 @@ ANDERSON,Paul,Paul ANDERSON,USA,ANA,Parcours/ANA.html,0
 ANDERSSON,Robert,Robert ANDERSSON,Sweden,ANR,Parcours/ANR.html,0
 ANDERSSON,Göran,Göran ANDERSSON,Sweden,ANG,Parcours/ANG.html,0
 ANDREU,Jorge,Jorge ANDREU,Spain,AUJ,Parcours/AUJ.html,0
-ANDREWS,Niel,Niel ANDREWS,Australia,A1N,Parcours/A1N.html,0
+Andrews,Neil,Neil Andrews,Australia,A1N,Parcours/A1N.html,0
 ANGELL,Cloyde,Cloyde ANGELL,USA,ALC,Parcours/ALC.html,0
 ANGRISANI,Dave,Dave ANGRISANI,USA,AID,Parcours/AID.html,0
 ANSELIN,Pierre,Pierre ANSELIN,France,ANP,Parcours/ANP.html,0
@@ -131,7 +131,7 @@ BILLS,Alan,Alan BILLS,USA,BS1,Parcours/BS1.html,0
 BINNS,William,William BINNS,UK,BSW,Parcours/BSW.html,0
 BIRD,Bill,Bill BIRD,Canada,BDW,Parcours/BDW.html,0
 BISERNI,Alberto,Alberto BISERNI,Italy,BIA,Parcours/BIA.html,0
-BISHOP,Jim,Jim BISHOP,USA,BPJ,Parcours/BPJ.html,0
+BISHOP,Jim,Jim BISHOP,USA,BPJ,Parcours/BPJ.html,1
 BISHOP,David,David BISHOP,Australia,BPD,Parcours/BPD.html,0
 BISS,Francis G.,Francis G. BISS,USA,B1F,Parcours/B1F.html,0
 BISTODEAU,Mike,Mike BISTODEAU,USA,BUM,Parcours/BUM.html,0
@@ -140,7 +140,7 @@ BLACK,Michael,Michael BLACK,USA,BK1,Parcours/BK1.html,0
 BLACKMORE,Mark,Mark BLACKMORE,UK,BER,Parcours/BER.html,0
 BLACKWOOD,David,David BLACKWOOD,UK,B7B,Parcours/B7B.html,0
 BLAD,Brian,Brian BLAD,USA,BD1,Parcours/BD1.html,0
-BLAIR,Nigel,Nigel BLAIR,UK,BRL,Parcours/BRL.html,0
+Blair,Nigella,Nigella Blair,UK,BRL,Parcours/BRL.html,0
 BLANKENSHIP,Paul,Paul BLANKENSHIP,USA,BPP,Parcours/BPP.html,0
 BLANTON,Scott,Scott BLANTON,USA,BNS,Parcours/BNS.html,0
 BLASCO FORNOS,Daniel,Daniel BLASCO FORNOS,Spain,BOD,Parcours/BOD.html,0
@@ -225,7 +225,7 @@ BUSER,Jeff,Jeff BUSER,USA,23J,Parcours/23J.html,0
 BYRNE,Scott,Scott BYRNE,New Zealand,BES,Parcours/BES.html,0
 BYWATER,Rob,Rob BYWATER,UK,B33,Parcours/B33.html,0
 BøE,Ole,Ole BøE,Norway,BEO,Parcours/BEO.html,0
-CABEEN,Ted,Ted CABEEN,USA,0NT,Parcours/0NT.html,0
+CABEEN,Ted,Ted CABEEN,USA,S0NT,Parcours/0NT.html,0
 CABRé,Marti,Marti CABRé,Spain,C8M,Parcours/C8M.html,0
 CADIEUX,Mike,Mike CADIEUX,USA,CXM,Parcours/CXM.html,0
 CAIRETA,Lluis,Lluis CAIRETA,Spain,CAU,Parcours/CAU.html,0
@@ -235,11 +235,11 @@ CALLEN,Bob,Bob CALLEN,USA,CN2,Parcours/CN2.html,0
 CALLEN,Rodney,Rodney CALLEN,USA,CNR,Parcours/CNR.html,0
 CALLEN,Andrew,Andrew CALLEN,USA,C2A,Parcours/C2A.html,0
 CALVEN,Jean-Philippe,Jean-Philippe CALVEN,France,CLJ,Parcours/CLJ.html,0
-CAMERON,malcolm,malcolm CAMERON,Australia,026,Parcours/026.html,0
+CAMERON,malcolm,malcolm CAMERON,Australia,S026,Parcours/026.html,0
 CAMERON,Jason,Jason CAMERON,USA,C2J,Parcours/C2J.html,0
 CAMERON,Ernie,Ernie CAMERON,Canada,CNE,Parcours/CNE.html,0
 CAMPBELL,Thomas,Thomas CAMPBELL,USA,CLT,Parcours/CLT.html,0
-CAMPBELL,John,John CAMPBELL,USA,0LJ,Parcours/0LJ.html,0
+CAMPBELL,John,John CAMPBELL,USA,S0LJ,Parcours/0LJ.html,0
 CAMPFIELD,Michael R,Michael R CAMPFIELD,USA,CDM,Parcours/CDM.html,0
 CANEVESE,Alessandro,Alessandro CANEVESE,Italy,CEN,Parcours/CEN.html,0
 CANN,Al,Al CANN,USA,CN1,Parcours/CN1.html,0
@@ -248,7 +248,7 @@ CANNON,Devin,Devin CANNON,USA,CND,Parcours/CND.html,0
 CAPUTO,Piergiorgio,Piergiorgio CAPUTO,Italy,COI,Parcours/COI.html,0
 CARBONIE,Toni,Toni CARBONIE,Spain,CET,Parcours/CET.html,0
 CARDENAS,Daniel,Daniel CARDENAS,Spain,C1D,Parcours/C1D.html,0
-CAREY,Sam,Sam CAREY,USA,0Y1,Parcours/0Y1.html,0
+CAREY,Sam,Sam CAREY,USA,S0Y1,Parcours/0Y1.html,0
 CARIAGA,Dade,Dade CARIAGA,USA,CA7,Parcours/CA7.html,0
 CARIOLATO,Paolo,Paolo CARIOLATO,Italy,COA,Parcours/COA.html,0
 CARLSSON,Andreas,Andreas CARLSSON,Sweden,CNA,Parcours/CNA.html,0
@@ -268,7 +268,7 @@ CASE,Paul,Paul CASE,UK,CEP,Parcours/CEP.html,0
 CASEY,Davidson,Davidson CASEY,USA,CYD,Parcours/CYD.html,0
 CASTELLANA,Chris,Chris CASTELLANA,USA,CA0,Parcours/CA0.html,0
 CASTELLà,Manuel,Manuel CASTELLà,Spain,CAM,Parcours/CAM.html,0
-CASTEN,Chris,Chris CASTEN,USA,0N0,Parcours/0N0.html,0
+CASTEN,Chris,Chris CASTEN,USA,S0N0,Parcours/0N0.html,0
 CATANI,Gabriele,Gabriele CATANI,Italy,CIG,Parcours/CIG.html,0
 CATANZARO,Enrico,Enrico CATANZARO,Italy,COE,Parcours/COE.html,0
 CAUBLE,Bill,Bill CAUBLE,USA,CEW,Parcours/CEW.html,0
@@ -295,7 +295,7 @@ CILLUFFO,Pierre-Jean,Pierre-Jean CILLUFFO,France,COP,Parcours/COP.html,0
 CIRILLO,Bill,Bill CIRILLO,USA,COW,Parcours/COW.html,0
 CIRRINCIONE,Michael,Michael CIRRINCIONE,USA,C86,Parcours/C86.html,0
 CISA,Enric,Enric CISA,Spain,CA8,Parcours/CA8.html,0
-CLAMOUR,Brice,Brice CLAMOUR,France,03B,Parcours/03B.html,0
+CLAMOUR,Brice,Brice CLAMOUR,France,S03B,Parcours/03B.html,0
 CLARK,Mick,Mick CLARK,USA,CKM,Parcours/CKM.html,0
 CLARK,Brendan,Brendan CLARK,UK,CKB,Parcours/CKB.html,0
 CLARKE,Andy,Andy CLARKE,USA,CED,Parcours/CED.html,0
@@ -322,7 +322,7 @@ CONTRERAS,José,José CONTRERAS,Spain,CSJ,Parcours/CSJ.html,0
 COOK,Walt,Walt COOK,USA,CKW,Parcours/CKW.html,0
 COOK,Steve,Steve COOK,UK,CKS,Parcours/CKS.html,0
 COOPER,Steve,Steve COOPER,Canada,C31,Parcours/C31.html,0
-COOPER,Stuart,Stuart COOPER,Canada,0R1,Parcours/0R1.html,0
+COOPER,Stuart,Stuart COOPER,Canada,S0R1,Parcours/0R1.html,0
 COPELAND,Bill,Bill COPELAND,usa,CDB,Parcours/CDB.html,0
 CORIASCO,Sandro,Sandro CORIASCO,Italy,COS,Parcours/COS.html,0
 CORNEILLE,Mike,Mike CORNEILLE,USA,CEM,Parcours/CEM.html,0
@@ -331,7 +331,7 @@ CORRADINI,Claudio,Claudio CORRADINI,Italy,CIC,Parcours/CIC.html,0
 CORRIGAN,Eoin,Eoin CORRIGAN,Ireland,C2E,Parcours/C2E.html,0
 CORSO,Federico,Federico CORSO,Italy,COF,Parcours/COF.html,0
 COUPé,Laurent,Laurent COUPé,France,CEL,Parcours/CEL.html,0
-COVEY,Joel,Joel COVEY,USA,0YJ,Parcours/0YJ.html,0
+COVEY,Joel,Joel COVEY,USA,S0YJ,Parcours/0YJ.html,0
 COWARD,Geoff,Geoff COWARD,USA,C7G,Parcours/C7G.html,0
 COX,Derek,Derek COX,UK,CXD,Parcours/CXD.html,0
 COYLE,Jeff,Jeff COYLE,USA,CEJ,Parcours/CEJ.html,0
@@ -451,7 +451,7 @@ DRINKWATER,Nick,Nick DRINKWATER,USA,DRN,Parcours/DRN.html,0
 DUCAS,Billy,Billy DUCAS,USA,D1W,Parcours/D1W.html,0
 DUENSKIE,Ron,Ron DUENSKIE,USA,DE2,Parcours/DE2.html,0
 DUKE,Randy,Randy DUKE,Canada,7ER,Parcours/7ER.html,0
-DUKE,Steven,Steven DUKE,USA,7E1,Parcours/7E1.html,0
+DUKE,Steven,Steven DUKE,USA,S7E1,Parcours/7E1.html,0
 DUMONT,Patrick,Patrick DUMONT,France,DTP,Parcours/DTP.html,0
 DUNN,Ken,Ken DUNN,USA,DNK,Parcours/DNK.html,0
 DUNN,Derek,Derek DUNN,USA,DND,Parcours/DND.html,0
@@ -640,7 +640,6 @@ GRAVES,Kevin,Kevin GRAVES,USA,GSK,Parcours/GSK.html,0
 GRAY,Terry,Terry GRAY,USA,GYT,Parcours/GYT.html,0
 GRAY,Oliver,Oliver GRAY,UK,GYO,Parcours/GYO.html,0
 GREEN,Matt,Matt GREEN,USA,G2M,Parcours/G2M.html,0
-GREGORSON,Lars-Robert,Lars-Robert GREGORSON,Sweden,GNL,Parcours/GNL.html,0
 GREGORSON,Lars Robert,Lars Robert GREGORSON,Sweden,SDL,Parcours/SDL.html,0
 GRENON,Dave,Dave GRENON,USA,G27,Parcours/G27.html,0
 GRIES,Doug,Doug GRIES,USA,GSD,Parcours/GSD.html,0
@@ -677,7 +676,6 @@ HALLGREN,Fredrik,Fredrik HALLGREN,Sweden,HNE,Parcours/HNE.html,0
 HALSøR,Marius,Marius HALSøR,Norway,HRS,Parcours/HRS.html,0
 HALVORSEN,Bjørn,Bjørn HALVORSEN,Norway,HNO,Parcours/HNO.html,0
 HAMILTON,Charlie,Charlie HAMILTON,USA,HNL,Parcours/HNL.html,0
-HAMILTON,Charles,Charles HAMILTON,USA,H2L,Parcours/H2L.html,0
 HAMMOND,Charles,Charles HAMMOND,USA,H7C,Parcours/H7C.html,0
 HAMMOND,Robert,Robert HAMMOND,USA,HD3,Parcours/HD3.html,0
 HAMMOND,Mike,Mike HAMMOND,USA,HDI,Parcours/HDI.html,0
@@ -692,7 +690,7 @@ HANSEN,Ray,Ray HANSEN,USA,H23,Parcours/H23.html,0
 HANSON,William,William HANSON,Denmark,HNW,Parcours/HNW.html,0
 HANSSON,Frederik,Frederik HANSSON,Sweden,H2F,Parcours/H2F.html,0
 HARDIE,H,H HARDIE,USA,HE,Parcours/HE.html,0
-HARDIMAN,Francis,Francis HARDIMAN,USA,02F,Parcours/02F.html,0
+HARDIMAN,Francis,Francis HARDIMAN,USA,S02F,Parcours/02F.html,0
 HARDWAY,Robert,Robert HARDWAY,USA,H5R,Parcours/H5R.html,0
 HARE,Cliff,Cliff HARE,USA,H80,Parcours/H80.html,0
 HARJO,Thomas,Thomas HARJO,Norway,HOT,Parcours/HOT.html,0
@@ -822,7 +820,6 @@ JEUNE,Stéphane,Stéphane JEUNE,France,JES,Parcours/JES.html,0
 JINX,Dale,Dale JINX,USA,JXD,Parcours/JXD.html,0
 JOHANSSON,Magnus,Magnus JOHANSSON,Sweden,JNM,Parcours/JNM.html,0
 JOHANSSON,Rasmus,Rasmus JOHANSSON,Sweden,JNA,Parcours/JNA.html,0
-JOHN,Farris,Farris JOHN,USA,JN1,Parcours/JN1.html,0
 JOHNS,John Jr.,John Jr. JOHNS,USA,JJJ,Parcours/JJJ.html,0
 JOHNS,Steve (Stephen),Steve (Stephen) JOHNS,USA,JSS,Parcours/JSS.html,0
 JOHNSON,Dave,Dave JOHNSON,USA,JND,Parcours/JND.html,0
@@ -839,7 +836,6 @@ JONES,Phillip,Phillip JONES,UK,JSP,Parcours/JSP.html,0
 JONES,Keith,Keith JONES,USA,JSK,Parcours/JSK.html,0
 JONES,Todd,Todd JONES,USA,JST,Parcours/JST.html,0
 JOYNER,Ken,Ken JOYNER,USA,JRK,Parcours/JRK.html,0
-JSU,Jsu (sleath),Jsu (sleath) JSU,Canada,XX1,Parcours/XX1.html,0
 JUPP,Gordon,Gordon JUPP,UK,JPG,Parcours/JPG.html,0
 JYVÄSJÄRVI,Sauli,Sauli JYVÄSJÄRVI,Finland,JI1,Parcours/JI1.html,0
 JøRGENSEN,Torben,Torben JøRGENSEN,Denmark,JNT,Parcours/JNT.html,0
@@ -1075,7 +1071,6 @@ MC GINLEY,Rob,Rob MC GINLEY,Australia,MYR,Parcours/MYR.html,0
 MCCLELLAND,Gordon,Gordon MCCLELLAND,Australia,MDG,Parcours/MDG.html,0
 MCCLOSKEY,Murray,Murray MCCLOSKEY,Australia,6Y6,Parcours/6Y6.html,0
 MCDIARMID,John,John MCDIARMID,Canada,MDO,Parcours/MDO.html,0
-MCDONALD,Rob,Rob MCDONALD,Canada,6DR,Parcours/6DR.html,0
 MCDONALD,Ralph,Ralph MCDONALD,USA,MDR,Parcours/MDR.html,0
 MCDOWELL,Miguel,Miguel MCDOWELL,USA,ML6,Parcours/ML6.html,0
 MCGILCHRIST,Mark,Mark MCGILCHRIST,Australia,MTM,Parcours/MTM.html,0
@@ -1365,7 +1360,7 @@ ROBIDA,Eric,Eric ROBIDA,USA,RAE,Parcours/RAE.html,0
 ROBIN,Andy,Andy ROBIN,USA,RNA,Parcours/RNA.html,0
 ROCHETEAU,Frédéric,Frédéric ROCHETEAU,France,RUR,Parcours/RUR.html,0
 ROCKWELL,John,John ROCKWELL,USA,RLJ,Parcours/RLJ.html,0
-RODGERS,Mike,Mike RODGERS,Canada,RS2,Parcours/RS2.html,0
+RODGERS,Michael,Michael RODGERS,Canada,RS2,Parcours/RS2.html,0
 RODRIGUEZ,David,David RODRIGUEZ,USA,3ZD,Parcours/3ZD.html,0
 ROGERS,Steve,Steve ROGERS,USA,RSS,Parcours/RSS.html,0
 ROGERS,Andrew,Andrew ROGERS,Australia,R1A,Parcours/R1A.html,0
@@ -1585,7 +1580,7 @@ SULLIVAN,Mike,Mike SULLIVAN,USA,SNE,Parcours/SNE.html,0
 SULLIVAN,Jim,Jim SULLIVAN,USA,SN1,Parcours/SN1.html,0
 SULZBY,Steven,Steven SULZBY,USA,SYS,Parcours/SYS.html,0
 SUTTON,Ross,Ross SUTTON,usa,SNO,Parcours/SNO.html,0
-SVARE,Steve,Steve SVARE,USA,1E1,Parcours/1E1.html,0
+SVARE,Steve,Steve SVARE,USA,S1E1,Parcours/1E1.html,0
 SVäRD,Martin,Martin SVäRD,Sweden,SDM,Parcours/SDM.html,0
 SWANN,Steve,Steve SWANN,USA,SNS,Parcours/SNS.html,0
 SWIFT,Barry,Barry SWIFT,USA,STB,Parcours/STB.html,0
@@ -1863,3 +1858,10 @@ ELLIS,Matthew,Matthew ELLIS,UK,E1M,,0
 CAMPEN,Andrew,Andrew CAMPEN,UK,O2A,,0
 HUME,Alan,Alan HUME,UK,HEA,,0
 HOSKINS,Andrew,Andrew HOSKINS,USA,H1A,,0
+HEMMINGER,Eldon,Eldon HEMMINGER,Canada,HRE1,,0
+LEE,Larry,Larry LEE,Canada,LEL1,,0
+Trébosc,François,François Trébosc,,TcF1,,0
+Djordjevic,Ljubomir,Ljubomir Djordjevic,,DcL1,,0
+Duchon,Philippe,Philippe Duchon,,DnP1,,0
+Javanabal,Bruno,Bruno Javanabal,,JlB1,,0
+JOUIN,Eric,Eric JOUIN,,JNE1,,0
