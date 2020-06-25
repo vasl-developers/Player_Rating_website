@@ -85,7 +85,7 @@ if ($uploadOK==1) {
                 $rounddatereal = $data[12];
                 if ($rounddatetext == null or $rounddatetext == ""){$rounddatetext = $rounddatereal;}
                 //need to check for essential data and correct format
-                if ($tournid != null and $roundno != null and $rounddatereal != null and $scenid != null
+                if ($tournid != null and $roundno != null and $rounddatereal != null
                     and $play1res != null and $play2res != null) {
                     // add more format checks
                     $rebuildpnclist=false;

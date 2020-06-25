@@ -20,9 +20,11 @@ if (mysqli_connect_errno())
   exit();
 }
 $mysqli->set_charset("utf8");
+
 ?>
   <h1>List of All Games Played in a Tournament included in ASL Player Ratings</h1>
   <p>To view Game-by-Game results for a particular Player, click on the link.</p>
+
   <div class="tableFixHead">
   <?php
     $tournamenttoshow=$_GET['tournamentid']; //$tournamentid is passed from showtournamentstable.php

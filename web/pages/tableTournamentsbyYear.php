@@ -28,7 +28,7 @@ if (mysqli_connect_errno())
   <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
   <div class="tableFixHead">
   <?php
-    $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments order by Year_Held desc, Month_Held asc";
+    $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments order by Year_Held desc, Date_Held asc";
 
     if ($stmt = $mysqli->prepare($sql)) {
       $stmt->execute();
