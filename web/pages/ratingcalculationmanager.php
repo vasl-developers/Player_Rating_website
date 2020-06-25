@@ -39,7 +39,7 @@ $sql = "select players.Fullname, players.Country, players.Player_Namecode from p
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
     $stmt->bind_result($getplayername, $getcountry, $playernamecode);
-    echo "Players initialization started";
+    //echo "Players initialization started";
     while ($row = $stmt->fetch()) {
         //create empty arrays for each player
         //$playernamecode=$row["Player_Namecode"];

@@ -25,7 +25,7 @@ include_once("web/include/header.php");
                 $tournamenttoshow = trim($_GET["tournamentid"]);
                 include_once("gamecorrection.php");
             } else {
-                $sql = "select Base_Name, Year_Held, Tournament_id from tournaments";
+                $sql = "select Base_Name, Year_Held, Tournament_id from tournaments ORDER BY Base_Name";
                 $result = mysqli_query($mysqli, $sql);
                 $tournamentlist = [];
                 while ($row = mysqli_fetch_assoc($result)) {
@@ -40,7 +40,8 @@ include_once("web/include/header.php");
                 <p>3. Enter revised or new information</p>
                 <p>4. Save</p>
                 <br>
-                <p>NOTE: If all you are doing is changing a player's name (ie from Mike Brown to Michael Brown) and it is still the same player, don't do it here. Go to Update Player.</p>
+                <p>NOTE: If you are changing a game from one player to another (to merge duplicate entries for the same person, for example), do it here. </p>
+                <p>If you want to change a player's name (ie from Mike Brown to Michael Brown) for all games for that player, don't do it here. Go to Update Player.</p>
                 <br>
                 <br>
                 <p><strong>1. Select the Tournament from the Tournaments dropdown list</strong></p>

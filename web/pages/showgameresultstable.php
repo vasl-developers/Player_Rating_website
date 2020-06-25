@@ -17,7 +17,9 @@
 
     $previousRoundNo="";
 ?>
-
+    <br>
+    <h2>Tournament: <?php echo $_GET["tournamentid"]?></h2>
+    <br>
     <table class="table table-condensed table-striped">
       <thead>
       <tr>
