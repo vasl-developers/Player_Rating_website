@@ -20,11 +20,11 @@ include_once("web/include/header.php");
             }
             if (isset($_POST['inputsearch'])) {
                 $pname = $_POST['playername'];
-                $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden from players WHERE Fullname=?";
+                $sql = "select players.Fullname, players.First_Name, players.Surname, players.Country, players.Player_Namecode, players.Hidden from players WHERE Fullname=?";
                 if ($stmt = $mysqli->prepare($sql)) {
                     $stmt->bind_param("s", $pname);
                     $stmt->execute();
-                    $stmt->bind_result($name, $country, $nameCode, $hidden);
+                    $stmt->bind_result($name, $first_name, $surname, $country, $nameCode, $hidden);
                     $row = $stmt->fetch();
                     if(!($row==null)){
                           ?>
@@ -33,9 +33,13 @@ include_once("web/include/header.php");
                             echo "<h1>Update Player</h1>";
                             echo "<br>";
                             echo"<input class='input' type='hidden' name='pnc' value='$nameCode'>";
-                            echo "<label><strong>" . "Name:" . "</strong></label>";
+                            echo "<label><strong>" . "First Name:" . "</strong></label>";
                             echo "<br>";
-                            echo"<input class='input' type='text' name='fname' value='$name'>";
+                            echo"<input class='input' type='text' name='firstname' value='$first_name'>";
+                            echo "<br>";
+                            echo "<label><strong>" . "Surname:" . "</strong></label>";
+                            echo "<br>";
+                            echo"<input class='input' type='text' name='surname' value='$surname'>";
                             echo "<br>";
                             echo "<label><strong>" . "Country:" . "</strong></label>";
                             echo "<br>";
@@ -78,15 +82,9 @@ include_once("web/include/header.php");
                     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                 }
             } elseif (isset($_POST['inputsubmit'])) {
-                        $fullname = $_POST['fname'];
-                        // need to parse and update surname and firstname
-                        $names = explode(" ", $fullname);
-                        $last_name=end($names);
-                        $first_name = $names[0];
-                        $namecount = count($names);
-                        for ($i = 1; $i < (count($names)-1); $i++)  {
-                            $first_name = $first_name . " ". $names[$i];
-                        }
+                        $first_name = $_POST['firstname'];
+                        $surname=$_POST['surname'];
+                        $fullname= $first_name . " " . $surname;
                         $country = $_POST['country'];
                         $playernamecode = $_POST['pnc'];
                         $hidden = $_POST['hid'];
@@ -100,7 +98,7 @@ include_once("web/include/header.php");
                             echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                         }
                         /* bind the parameters*/
-                        $stmt->bind_param("ssssis", $last_name, $first_name, $fullname,  $country, $hide, $playernamecode);
+                        $stmt->bind_param("ssssis", $surname, $first_name, $fullname,  $country, $hide, $playernamecode);
                         /* set parameters and execute */
                         $stmt->execute();
                         $stmt->close();
