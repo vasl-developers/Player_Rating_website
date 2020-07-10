@@ -22,7 +22,7 @@ include_once("web/include/header.php");
         <h1>List of Tournaments Added To ASL Player Ratings in the past 3 months</h1>
         <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
         <?php
-        $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Added between date_sub(current_date(), interval 15 month) and current_date() order by date(Date_Held) desc";
+        $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Added between date_sub(current_date(), interval 15 month) and current_date() order by Year_Held desc, date(Date_Held) asc";
         if ($stmt = $mysqli->prepare($sql)) {
             $stmt->execute();
             $stmt->bind_result($year,$month,$date,$name,$location,$country,$tournament);

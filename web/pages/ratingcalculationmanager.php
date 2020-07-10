@@ -320,7 +320,7 @@ foreach (array_keys($last) as $t) {
     $date3=date_create($date1);
     $depuis  = date_diff($date2,$date3);
     $sincelastgame = $depuis->format('%a');
-	if ($sincelastgame < 2000) {
+	if ($sincelastgame < 1500) {
         $active=1; // 1=yes
     } else {
         $active=0; // 0=no

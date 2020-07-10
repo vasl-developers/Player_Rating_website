@@ -22,6 +22,7 @@ include_once("web/include/header.php");
     ?>
         <h1>Ranked List of All ASL Players</h1>
         <br>
+        <p>This list includes ASL Players who have played in a submitted tournament. It includes results added as of July, 2020</p>
         <p>To view game-by-game results for a player, click on the link under ID</p>
         <div class="tableFixHead">
           <table class="table table-condensed table-striped">

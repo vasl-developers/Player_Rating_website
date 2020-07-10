@@ -20,7 +20,7 @@ if (mysqli_connect_errno()) {
 $mysqli->set_charset("utf8");
 ?>
 <h1>Ranked List of Active ASL Players</h1>
-<p>This list includes all active players, meaning they have played in a tournament within 800 days before the last update to the database. It includes results added as of August, 2017.</p>
+<p>This list includes all active players, meaning they have played in a tournament within 800 days before the last update to the database. It includes results added as of July, 2020.</p>
 <p>To view game-by-game results for a player, click on the link under ID</p>
 <div class="tableFixHead">
 <table class="table table-condensed table-striped">
