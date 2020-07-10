@@ -19,8 +19,6 @@ if ($stmt = $mysqli->prepare($sql)) {
     $stmt->bind_result($p1Code, $p1AttDef, $p1AlliAxis, $p1Result, $p2Code, $p2AttDef, $p2AlliAxis, $roundNo, $scenario, $player1, $play1hide, $player2,  $play2hide);
 
     $previousRoundNo="";
-    //$play1hide=0;
-    //$play2hide=0;
 ?>
     <br>
     <h2>Tournament: <?php echo $_GET["tournamentid"]?></h2>
