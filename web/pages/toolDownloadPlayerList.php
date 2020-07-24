@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -8,8 +7,7 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
     <div class="row">
-        <?php include_once("web/include/left-sidebar.php"); ?>
-        <div class="main-content col-md-8">
+        <div class="main-content col-md-10 offset-md-1">
             <?php
             include_once("web/pages/connection.php");
             $mysqli = mysqli_connect($host, $username, $password, $database);
@@ -20,8 +18,8 @@ include_once("web/include/header.php");
                 exit();
             }
             ?>
-            <h1>Download list of all players included in ASL Player Ratings</h1>
-            <p></p>
+            <h2>Download list of all players included in ASL Player Ratings</h2>
+
             <?php
             //set filenames
             $activefilename = "../Data/downloads/activeplayers.csv";
@@ -71,21 +69,17 @@ include_once("web/include/header.php");
 
             ?>
             <h2>Download Player List</h2>
-            <p></p>
+
             <p>This page will allow TD's and others to download a list of all active ASL players or all ASL players.</p>
             <p>Use of the names from this list (and the accompanying namecodes) in tournament recording will enable easier, faster, and more accurate uploading of results to ASL PLayer Ratings.</p>
-            <p></p>
+
             <p>Choose which Player List to Download</p>
             <a id="downloadactivecsv" class="track btn btn-large btn-primary" href="<?php echo $activefilename ?>">Active Players, csv format</a>
             <a id="downloadallcsv" class="track btn btn-large btn-primary" href="<?php echo $allfilename ?>">All Players, csv format</a>
         </div>
-    <?php include_once("web/include/right-sidebar.php"); ?>
     </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>
 

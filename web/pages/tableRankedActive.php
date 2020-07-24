@@ -8,8 +8,7 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
   <div class="row">
-    <?php include_once("web/include/left-sidebar.php"); ?>
-    <div class="main-content col-md-8">
+    <div class="main-content col-md-10 offset-md-1">
     <?php
 include("web/pages/connection.php");
 $mysqli = new mysqli($host, $username, $password, $database);
@@ -19,11 +18,11 @@ if (mysqli_connect_errno()) {
 }
 $mysqli->set_charset("utf8");
 ?>
-<h1>Ranked List of Active ASL Players</h1>
+<h2>Ranked List of Active ASL Players</h2>
 <p>This list includes all active players, meaning they have played in a tournament within 800 days before the last update to the database. It includes results added as of July, 2020.</p>
 <p>To view game-by-game results for a player, click on the link under ID</p>
 <div class="tableFixHead">
-<table class="table table-condensed table-striped">
+<table class="table table-sm table-striped table-hover">
   <thead>
   <tr>
     <th>#</th>
@@ -48,8 +47,8 @@ $mysqli->set_charset("utf8");
           $country = trim($country);
           echo "<tr><td>$i</td><td>$name</td><td>$country</td>";
           ?>
-          <td class="top">
-            <p><a class="content" href="<?php echo $ROOT; ?>web/pages/tablePlayerGameResults.php?playercode=<?php echo $nameCode?>"><?php echo $nameCode?></a></p>
+          <td>
+            <a class="content" href="<?php echo $ROOT; ?>web/pages/tablePlayerGameResults.php?playercode=<?php echo $nameCode?>"><?php echo $nameCode?></a>
           </td>
           <?php
           echo "<td>$elo</td><td>$highWaterMark</td></tr>";
@@ -63,12 +62,8 @@ $mysqli->set_charset("utf8");
 </table>
 </div>
     </div>
-    <?php include_once("web/include/right-sidebar.php"); ?>
   </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>

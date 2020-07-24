@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -8,11 +7,10 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
     <div class="row">
-        <?php include_once("web/include/left-sidebar.php"); ?>
-        <div class="main-content col-md-8">
-            <h1>Submit a Correction</h1>
+        <div class="main-content col-md-10 offset-md-1">
+            <h2>Submit a Correction</h2>
             <br>
-            <p><strong>4. Save</p></strong></p>
+            <h3>4. Save</h3>
             <br>
             <?php
             include("web/pages/connection.php");
@@ -52,7 +50,7 @@ include_once("web/include/header.php");
                     $roundrealdate = date("Y-m-d", strtotime($rounddate));
                     $gameid = $_POST['gameid'];
                     if($gameid==0){  // insert new game
-                        if ($stmt = $mysqli->prepare("INSERT INTO match_results (Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode, 
+                        if ($stmt = $mysqli->prepare("INSERT INTO match_results (Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode,
                             Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, RoundDate) VALUES
                             (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
                             /* bind the parameters*/
@@ -84,13 +82,9 @@ include_once("web/include/header.php");
             $mysqli->close();
             ?>
         </div>
-        <?php include_once("web/include/right-sidebar.php"); ?>
     </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>
 <?php

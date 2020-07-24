@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -8,8 +7,7 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
   <div class="row">
-    <?php include_once("web/include/left-sidebar.php"); ?>
-    <div class="main-content col-md-8">
+    <div class="main-content col-md-10 offset-md-1">
         <?php
         include_once("web/pages/connection.php");
         $mysqli = new mysqli($host, $username, $password, $database);
@@ -19,7 +17,7 @@ include_once("web/include/header.php");
         }
         $mysqli->set_charset("utf8");
         ?>
-        <h1>List of Tournaments Added To ASL Player Ratings in the past 3 months</h1>
+        <h2>List of Tournaments Added To ASL Player Ratings in the past 3 months</h2>
         <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
         <?php
         $sql = "select Year_Held,Month_Held,Date_Held,Base_Name,Location_CityOrRegion,Location_Country,Tournament_id from tournaments where Date_Added between date_sub(current_date(), interval 15 month) and current_date() order by Year_Held desc, date(Date_Held) asc";
@@ -28,7 +26,7 @@ include_once("web/include/header.php");
             $stmt->bind_result($year,$month,$date,$name,$location,$country,$tournament);
             ?>
             <div class="tableFixHead">
-              <table class="table table-condensed table-striped">
+              <table class="table table-sm table-striped table-hover">
                 <thead>
                     <tr>
                         <th>Month</th>
@@ -58,7 +56,7 @@ include_once("web/include/header.php");
                             <td><?php echo $month ?></td>
                             <td><?php echo $name ?></td>
                             <td><?php echo $location ?></td>
-                            <td class="top">
+                            <td>
                                 <p><a href="tableGameResultsforTournament.php?tournamentid=<?php echo $tournament ?>" title="<?php echo $date ?>"><?php echo $tournament ?></a></p>
                             </td>
                         </tr>
@@ -74,12 +72,8 @@ include_once("web/include/header.php");
         $mysqli->close();
         ?>
     </div>
-    <?php include_once("web/include/right-sidebar.php"); ?>
   </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>

@@ -23,11 +23,11 @@ if (isset($_POST['submit'])) {
         $stmt->bind_result($basename, $monthheld, $yearheld, $dateheld, $tourId, $locationCorR, $locationcountry, $tourtype, $iterationname, $winner1, $winner2, $winner3, $dateadded);
         while ($row = $stmt->fetch()) {
           ?>
-          <h1>Update A Tournament</h1>
+          <h2>Update A Tournament</h2>
           <br>
           <h2>Selected Tournament: <?php echo $tournamenttoshow; ?></h2>
           <br>
-          <p><strong>2. Enter revised or new information</p></strong></p>
+          <h3>2. Enter revised or new information</h3>
           <form method="post" action="updatetournaments.php" id="content" role="form">
             <?php
             echo "<div class='form-row'>";
@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
             echo "<br>";
             echo "<br>";
             echo "<br>";
-            echo "<p><strong>3. Save Changes</p></strong></p>";
+            echo "<h3>3. Save Changes</h3>";
             echo "<br>";
             echo "<div class='form-row col-md-3'>";
             echo "<button type='submit' class='btn btn-primary' name='submit'>Save</button>";

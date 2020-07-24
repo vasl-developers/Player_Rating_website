@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -8,8 +7,7 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
     <div class="row">
-        <?php include_once("web/include/left-sidebar.php"); ?>
-        <div class="main-content col-md-8">
+        <div class="main-content col-md-10 offset-md-1">
             <?php
             include_once("web/pages/connection.php");
             $mysqli = mysqli_connect($host, $username, $password, $database);
@@ -30,7 +28,7 @@ include_once("web/include/header.php");
                           ?>
                           <form action="" target="" method='post'>
                           <?PHP
-                            echo "<h1>Update Player</h1>";
+                            echo "<h2>Update Player</h2>";
                             echo "<br>";
                             echo"<input class='input' type='hidden' name='pnc' value='$nameCode'>";
                             echo "<label><strong>" . "First Name:" . "</strong></label>";
@@ -55,17 +53,17 @@ include_once("web/include/header.php");
                             echo"<input class='input' type='text' name='hid' value='$hidstatus'>";
                             echo "<br>";
                             echo "<br>";
-                            echo "<button class='btn btn-primary pl-5' name='inputsubmit' type='submit' value='Update'>Update</button>";
+                            echo "<button class='btn btn-primary' name='inputsubmit' type='submit' value='Update'>Update</button>";
                           echo "</form>";
                     } else {
                         ?>
-                        <h1>Update Player or Add new Player</h1>
+                        <h2>Update or Add Player</h2>
                         <br>
                         <form action="toolUpdatePlayers.php" method="post" target="">
                           <div class="col-xs-4">
-                            <label for="playertohide">Player to Update:</label>
+                            <label for="playername">Player to Update:</label>
                             <input tyclass="form-control" pe="text" id="playername" name="playername" /><br />
-                            <button class="btn btn-primary pl-5" name="inputsearch" type="submit" value="Search">Search</button>
+                            <button class="btn btn-primary" name="inputsearch" type="submit" value="Search">Search1</button>
                           </div>
                         </form>
                         <br>
@@ -103,13 +101,22 @@ include_once("web/include/header.php");
                         $stmt->execute();
                         $stmt->close();
                         ?>
-                        <h1>Update Player or Add new Player</h1>
+                        <h2>Update or Add Player</h2>
                         <br>
                         <form action="toolUpdatePlayers.php" method="post" target="">
+                          <div class="col-md-6">
+                            <div class="input-group mb-5">
+                              <input type="text" class="form-control" name="playername" class="form-control" id="playername" placeholder="Player's Name" aria-label="Player to Update" aria-describedby="inputsearch">
+                              <button class="btn btn-primary" type="search" name="inputsearch" id="inputsearch">Search</button>
+                            </div>
+
+                            <a id="addplayer" class="track btn btn-large btn-primary" target="" href="addnewplayers.php">Add a new Player</a>
+                          </div>
+
+
                           <div class="col-xs-4">
-                            <label for="playertohide">Player to Update:</label>
                             <input type="text" name="playername" class="form-control" id="playername" /><br />
-                            <button class="btn btn-primary pl-5" name="inputsearch" type="submit" value="Search">Search</button>
+                            <button class="btn btn-primary" name="inputsearch" type="submit" value="Search">Search2</button>
                           </div>
                         </form>
                         <br>
@@ -119,16 +126,15 @@ include_once("web/include/header.php");
                         echo $fullname . ' ' . "updated in Database";
             } else {
                 ?>
-                <h1>Update Player or Add new Player</h1>
+                <h2>Update or Add Player</h2>
                 <br>
                 <form action="toolUpdatePlayers.php" method="post" target="">
-                  <div class="col-xs-4">
-                    <label for="playertohide">Player to Update:</label>
-                    <input type="text" name="playername" class="form-control" id="playername" />
-                    <br>
-                    <button class="btn btn-primary pl-5" name="inputsearch" type="submit" value="Search">Search</button>
-                    <br>
-                    <br>
+                  <div class="col-md-6">
+                    <div class="input-group mb-5">
+                      <input type="text" class="form-control" name="playername" class="form-control" id="playername" placeholder="Player's Name" aria-label="Player to Update" aria-describedby="inputsearch">
+                      <button class="btn btn-primary" type="search" name="inputsearch" id="inputsearch">Search</button>
+                    </div>
+
                     <a id="addplayer" class="track btn btn-large btn-primary" target="" href="addnewplayers.php">Add a new Player</a>
                   </div>
                 </form>
@@ -137,15 +143,15 @@ include_once("web/include/header.php");
             ?>
 
         </div>
-        <?php include_once("web/include/right-sidebar.php"); ?>
     </div>
 </div>
+<?php $mysqli->close(); ?>
 <?php include_once("web/include/footer.php"); ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
-<?php
-$mysqli->close();
-?>
+<script type="text/javascript" >
+$(document).ready(function() {
+  $('#playername').focus();
+});
+</script>
 </body>
 </html>

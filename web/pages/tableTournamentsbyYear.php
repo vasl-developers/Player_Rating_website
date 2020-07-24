@@ -8,8 +8,7 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
   <div class="row">
-    <?php include_once("web/include/left-sidebar.php"); ?>
-    <div class="main-content col-md-8">
+    <div class="main-content col-md-10 offset-md-1">
 
 <?php
 include_once("web/pages/connection.php");
@@ -22,7 +21,7 @@ if (mysqli_connect_errno())
 }
 ?>
 
-  <h1>List of All Tournaments Included in ASL Player Ratings</h1>
+  <h2>List of All Tournaments Included in ASL Player Ratings</h2>
   <br>
   <p>This list includes all Tournaments submitted to ASL Player Ratings . . . . It includes results added as of June 2020</p>
   <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
@@ -34,7 +33,7 @@ if (mysqli_connect_errno())
       $stmt->execute();
       $stmt->bind_result($year,$month,$date,$name,$location,$country,$tournament);
     ?>
-    <table class="table table-condensed table-striped">
+    <table class="table table-sm table-striped table-hover">
       <thead>
       <tr>
         <th>Month</th>
@@ -64,10 +63,8 @@ if (mysqli_connect_errno())
             <td><?php echo $month ?></td>
             <td><?php echo $name ?></td>
             <td><?php echo $location ?></td>
-            <td class="top">
-              <p><a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament?>" title="<?php echo $date ?>">
-                <?php echo $tournament ?></a>
-              </p>
+            <td>
+              <a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tournament?>" title="<?php echo $date ?>"><?php echo $tournament ?></a>
             </td>
           </tr>
         <?php
@@ -82,12 +79,8 @@ $mysqli->close();
 ?>
   </div>
     </div>
-    <?php include_once("web/include/right-sidebar.php"); ?>
   </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -8,8 +7,7 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
     <div class="row">
-        <?php include_once("web/include/left-sidebar.php"); ?>
-        <div class="main-content col-md-8">
+        <div class="main-content col-md-10 offset-md-1">
 
             <?php
             include_once("web/pages/connection.php");
@@ -33,7 +31,7 @@ include_once("web/include/header.php");
                 }
                 $mysqli->close();
                 ?>
-                <h1>Update a Tournament</h1>
+                <h2>Update a Tournament</h2>
                 <br>
                 <p>Use this page to update information about a Tournament</p>
                 <p>1. Select the Tournament from the Tournaments dropdown list</p>
@@ -41,7 +39,7 @@ include_once("web/include/header.php");
                 <p>3. Save</p>
                 <br>
                 <br>
-                <p><strong>1. Select the Tournament from the Tournaments dropdown list</strong></p>
+                <h3>1. Select the Tournament from the Tournaments dropdown list</h3>
                 <form class="form-inline" method="get" action="toolUpdateTournaments.php">
                     <div class="input-group-lg">
                         <select class="select " id="tournamentid" name="tournamentid" autocomplete="on" >
@@ -61,13 +59,9 @@ include_once("web/include/header.php");
             }
             ?>
         </div>
-        <?php include_once("web/include/right-sidebar.php"); ?>
     </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>
 

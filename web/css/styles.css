@@ -1,0 +1,61 @@
+/*
+p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; text-align: justify}
+h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #666600}
+.quote { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 14px; color: #000000}
+.quoteSource { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px; color: #666666}
+.quoteHead { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic; font-weight: bold; color: #990000}
+.copyright { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #999999}
+.question { font-style: italic; color: #666600}
+h2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold}
+h3 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #666600}
+ol { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px}
+ul { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px}
+li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px}
+h5 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bolder; color: #666666}
+*/
+ul.clean { list-style-type: none;padding: 4px 0px;margin: 0px; }
+
+.copyright {
+  text-align: left;
+  padding-top: 10px;
+}
+.main-content {
+  padding-bottom: 60px;
+}
+nav.fixed-top div.container-fluid li a.nav-link:focus,
+nav.fixed-top div.container-fluid li a.nav-link:hover {
+  color: gold;
+}
+.no-margin-top {
+  margin-top: 0;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+.menu a.active {
+  color: black;
+  font-weight: bold;
+}
+
+form label { font-weight: normal; }
+.success_msg { color: '#218823'; }
+.form { border-radius: 5px; border: 1px solid #d1d1d1; padding: 0px 10px 0px 10px; margin-bottom: 50px; }
+#image_display { height: 90px; width: 80px; float: right; margin-right: 10px; }
+
+div.home.container-fluid {
+  margin-top:10px;
+}
+
+td.headline {
+  font-weight: bold;
+  color: white;
+  background-color: #337ab7;
+}
+
+/* fixed table header */
+.tableFixHead          { overflow-y: auto; height: 600px; }
+.tableFixHead thead th { position: sticky; top: 0; }
+.tableFixHead th  { background:#eee; }

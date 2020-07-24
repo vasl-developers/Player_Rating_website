@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 header('Content-type: text/plain; charset=utf-8');
@@ -108,7 +107,7 @@ $ratingsfilename = "../Data/ASL Player Rating data files/area_schema_player_rati
 // delete existing data file
 $test = unlink($ratingsfilename);
 // get ratings data
-$sql = "SELECT Player1_Namecode, Fullname, Country, Active, Provisional, FirstDate, LastDate, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, 
+$sql = "SELECT Player1_Namecode, Fullname, Country, Active, Provisional, FirstDate, LastDate, HighWaterMark, ELO, Games, Wins, GamesAsAttacker,
        WinsAsAttacker, GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak, HighestStreak FROM player_ratings";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();

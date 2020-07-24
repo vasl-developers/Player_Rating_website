@@ -62,7 +62,7 @@ if ($uploadOK==1) {
     // if csv format
     $row = 1;
     $newtournamentid ="";
-    echo "<h1>Upload New Tournament Results</h1>";
+    echo "<h2>Upload New Tournament Results</h2>";
     echo "<br>";
     echo $uploadinfo;
     if (($handle = fopen($target_file, "r")) !== FALSE) {
@@ -230,4 +230,9 @@ function getplayernamecodelist(){
     }
     return $pnclist;
 }
+
+$(document).ready(function() {
+  $('#playername').focus();
+  $('#playertohide').focus();
+});
 ?>

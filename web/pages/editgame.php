@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -8,8 +7,7 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
     <div class="row">
-        <?php include_once("web/include/left-sidebar.php"); ?>
-        <div class="main-content col-md-8">
+        <div class="main-content col-md-10 offset-md-1">
             <?php
             include("web/pages/connection.php");
             $mysqli = new mysqli($host, $username, $password, $database);
@@ -76,9 +74,9 @@ include_once("web/include/header.php");
                 }
             }
             ?>
-            <h1>Submit a Correction</h1>
+            <h2>Submit a Correction</h2>
             <br>
-            <p><strong>3. Enter revised or new information</p></strong></p>
+            <h3>3. Enter revised or new information</h3>
 
             <form method="post" action="processedit.php" id="content" role="form">
                     <?php
@@ -191,17 +189,13 @@ include_once("web/include/header.php");
                     echo "<input class='input' type='hidden' name='gameid' value='{$gametoedit}' />";
                     ?>
                     <br>
-                    <p><strong>4. Save Changes</p></strong></p>
+                    <h3>4. Save Changes</h3>
                     <br>
                     <button type='submit' class='btn btn-primary' name='submit'>Save</button>
             </form>
         </div>
-        <?php include_once("web/include/right-sidebar.php"); ?>
     </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>

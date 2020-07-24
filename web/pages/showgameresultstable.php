@@ -9,9 +9,9 @@
   }
   $mysqli->set_charset("utf8");
 
-$sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Round_No, Scenario_ID, player1.Fullname, player1.Hidden, player2.Fullname, player2.Hidden from match_results 
-        INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode 
-        INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode 
+$sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Round_No, Scenario_ID, player1.Fullname, player1.Hidden, player2.Fullname, player2.Hidden from match_results
+        INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode
+        INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode
         where Tournament_ID = '" . $_GET["tournamentid"] . "' order by Round_No";
 
 if ($stmt = $mysqli->prepare($sql)) {
@@ -20,10 +20,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 
     $previousRoundNo="";
 ?>
-    <br>
-    <h2>Tournament: <?php echo $_GET["tournamentid"]?></h2>
-    <br>
-    <table class="table table-condensed table-striped">
+    <table class="table table-sm table-striped table-hover">
       <thead>
       <tr>
         <th>Player</th>
@@ -50,7 +47,7 @@ if ($stmt = $mysqli->prepare($sql)) {
           }
           ?>
         <tr>
-          <td class="top">
+          <td>
               <?php
               if($play1hide==1){$player1="Hidden";}
               if($play2hide==1){$player2="Hidden";}
@@ -60,7 +57,7 @@ if ($stmt = $mysqli->prepare($sql)) {
                   <?php
               } else {
                   ?>
-                  <p><a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p1Code ?>"><?php echo $player1 ?></a></p>
+                  <a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p1Code ?>"><?php echo $player1 ?></a>
                   <?php
               }
               ?>
@@ -77,7 +74,7 @@ if ($stmt = $mysqli->prepare($sql)) {
           }
           ?>
           <td><?php echo $p1Result ?></td>
-          <td class="top">
+          <td>
               <?php
               if($player2=="Hidden") {
                   ?>
@@ -85,7 +82,7 @@ if ($stmt = $mysqli->prepare($sql)) {
                   <?php
               } else {
                   ?>
-                  <p><a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p2Code ?>"><?php echo $player2 ?></a></p>
+                  <a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p2Code ?>"><?php echo $player2 ?></a>
                   <?php
               }
               ?>

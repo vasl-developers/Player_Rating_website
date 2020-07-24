@@ -18,34 +18,35 @@ if (isset($_POST['tournamentgame'])) {
     if (!($stmt = $mysqli->prepare($sql))) {
       echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     } else {
+        if (isset($_GET['tournamentid'])) {
+          $tournamenttoshow = trim($_GET["tournamentid"]);
+        }
         $stmt->bind_param("s", $tournamenttoshow);
         $stmt->execute();
         $stmt->bind_result($scenario, $tourId, $gameid, $player1, $player2);
         ?>
-        <h1>Submit a Correction</h1>
-        <h2>Selected Tournament: <?php echo $tournamenttoshow; ?></h2>
-        <br>
-        <p><strong>2. Select a game from the Tournament Games dropdown list to edit OR choose Add Missing Game</strong></p>
-        <form class="form-inline" method="post" action="gamecorrection.php" >
 
-            <select name="tournamentgame">
-                <option selected>Choose...</option>
-                <option value="0">Add Missing Game</option>
+        <h3>Submit a Correction for <?php echo $tournamenttoshow; ?></h3>
+        <h4>2. Select a game from the Tournament Games dropdown list to edit OR choose Add Missing Game</h4>
+
+        <form class="form-inline col-5" method="post" action="gamecorrection.php" >
+          <div class="input-group">
+            <select class="form-select" name="tournamentgame">
+              <option selected>Choose...</option>
+              <option value="0">Add Missing Game</option>
             <?php
             while ($row = $stmt->fetch()) {
-                $player1 = ucwords(strtolower(trim($player1)), " .-\t\r\n\f\v");
-                $player2 = ucwords(strtolower(trim($player2)), " .-\t\r\n\f\v");
-                ?>
-                <option value="<?PHP echo $gameid; ?>"><?PHP echo $player1." vs ".$player2." - ".$scenario;?></option>
+              $player1 = ucwords(strtolower(trim($player1)), " .-\t\r\n\f\v");
+              $player2 = ucwords(strtolower(trim($player2)), " .-\t\r\n\f\v");
+              ?>
+              <option value="<?PHP echo $gameid; ?>"><?PHP echo $player1." vs ".$player2." - ".$scenario;?></option>
             <?php
             }
             ?>
             </select>
-            <?php
-            echo "<input class='input' type='hidden' name='showtour' value='{$tournamenttoshow}' />";
-            ?>
-            <button class="btn btn-primary pl-5" name="submit" type="submit" value="Select">Select</button>
-
+            <button class="btn btn-primary" name="submit" type="submit" value="Select">Select</button>
+            <input class="input" type="hidden" name="showtour" value="<?php echo $tournamenttoshow; ?>" />
+          </div>
         </form>
         <?php
     }

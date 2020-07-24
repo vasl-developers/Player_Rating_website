@@ -1,6 +1,5 @@
 <html lang="en">
 <?php
-$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -8,9 +7,8 @@ include_once("web/include/header.php");
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
     <div class="row">
-        <?php include_once("web/include/left-sidebar.php"); ?>
-        <div class="main-content col-md-8">
-            <h1>Get The Data</h1>
+        <div class="main-content col-md-10 offset-md-1">
+            <h2>Get The Data</h2>
             <br>
             <p>This page allows people to download a copy of the database to ensure it remains accessible to the entire community to whom it belongs</p>
             <br>
@@ -29,12 +27,8 @@ include_once("web/include/header.php");
             <a id="downloadcreatetables" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating database create scripts/createdbtables.zip">Create Tables scripts, php format</a>
             <a id="downloadvisualization" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating data files/area_schema visualization_latest.zip">Database Visualization</a>
         </div>
-        <?php include_once("web/include/right-sidebar.php"); ?>
     </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $ROOT; ?>web/include/ready.js"></script>
 </body>
 </html>
