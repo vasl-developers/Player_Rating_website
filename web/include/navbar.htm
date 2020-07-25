@@ -8,8 +8,8 @@
         <li class="nav-item"><a class="nav-link" href="http://area.texas-asl.com/">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="http://www.multimanpublishing.com" target="_blank">ASL Info</a></li>
         <li class="nav-item"><a class="nav-link" href="http://vasl.info/intro.htm" target="_blank">VASL Site</a></li>
-        <li class="nav-item"><a class="nav-link" href="http://www.asl-area.org/theory.html" target="_blank">Rating Methodology</a></li>
         <li class="nav-item"><a class="nav-link" href="http://www.asl-area.org/" target="_blank">About AREA</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#theoryModal" data-whatever="@styson">Rating Methodology</a></li>
         <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#whyModal" data-whatever="@styson">Why AREA?</a></li>
         <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#copyrightModal" data-whatever="@styson">Copyright</a></li>
 
@@ -73,6 +73,97 @@
 
         <p>&copy; 2008 Bruno Nitrosso<br/>&copy; 2020 updates by <a href="mailto:styson@gmail.com" target="_blank">Sam Tyson</a> and <a href="mailto:dougerimmer@gmail.com" target="_blank">Doug Rimmer</a></p>
 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="theoryModal" tabindex="-1" aria-labelledby="theoryLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="theoryLabel">ELO Rating Theory</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body quotes">
+        <p>Last update : 09 February 2011 (<a href='http://www.asl-area.org/theory.html' target="_blank">asl-area.org</a>)</p>
+
+        <p>The Elo rating system, developed by Arpad Elo in the early 1960's, is the first rating system based on a probabilistic approach.</p>
+
+        <p>A player does not get a subjective amount of points for his/her achievements. In such a system, a guy would score say 120 points for being the Grofaz and another 85 for finishing second at ASLOK whereas a third player would have 80 for winning a local tournament.</p>
+
+        <p>A well-known example of this approach is the ATP rating used in Tennis.</p>
+
+        <p>Here, the approach is very different. The idea is that a more skilled player will have a higher probability of beating a less skilled one and ratings reflect that probability. Player X's rating would then be representative of how likely it is he or she would beat another player Y who has another given rating. This specific probability of winning is calculated using the formula below:</p>
+
+        <p><img src="/web/images/RATING1.gif" class="m-2 w-25" /></p>
+
+        <p>We is the specific win-expectancy (probability), R1 is the players current rating, and R2 the opponents current rating.</p>
+
+        <p>In our previous X against Y example, a value of 0.62 for We would mean X should beat Y 62 times out of a hundred.</p>
+
+        <p>If we have players X and Y play each other a hundred times and see that X beats Y 58 times, that could be indicative that their rating difference is a bit too high and we'd rather adjust them. How much? This is question 2.</p>
+
+        <p>Now, one could have them play only 10 times and, having X score 6 wins (instead of 6.2 !), decide to update the ratings accordingly.</p>
+
+        <p>One could even have them play just once and, having X win 1 (instead of 0.62 !), decide to update the ratings.</p>
+
+        <p>So this is question 1 : how often do we adjust ratings?</p>
+
+        <p>And assuming you do decide to upgrade ratings after a series of wins : how much would you upgrade them? If the former rating difference corresponded to a 0.62 while the recent series implies a 0.7 : would you ignore the former history and only stick to the recent one?</p>
+
+        <p>So question 2 is : how much weight are we to give to former games and new games?</p>
+
+        <h3>Question 1 : How often to update ratings</h3>
+
+        <p>In ASL, updating after everygame has been a common practice : AH AREA, Tactiques European AREA, ASO ratings and probably WEASL and aslratings.</p>
+
+        <p>Some internet sources on the ELO system for chess suggest every 3 to 5 games. On can understand the rationale because just winning or losing a single game doesn't mean enough. After playing the better of 5, 2 player's relative strength becomes clearer.</p>
+
+        <p>Crusader, the British ladder, updates ratings and the end of a tournament. It's a clever idea for a typical tournament has 3 to 5 games played on 2 to 3 days. It is also useful when you just don't know the exact order of playings which happens with tournament with loose format (typically Oktoberfest). So, all in all Derek's approach seems a clever one.</p>
+
+        <p>Yet, I found that inappropriate for my site because I have to deal with too many atypical situations. For instance, tournaments over internet span for a whole year or so.</p>
+
+        <p>So, I decided to update ratings... once a day ! A typical tournament day will see people playing 2 or 3 games, but sometimes it maybe only 1 and sometimes 5 (around October, if you see what I mean).</p>
+
+        <h3>Question 2 : How much to update ratings</h3>
+
+        <p>If rating difference between X and Y used to give a We of 62%, based on a series of 40+ games each, and after playing 2 games one see a 100% win of X... does this mean the "correct" rating difference is the one that leads to 100% victories? Or 67%? Or what figure between the historical 62 and the marginal 100?</p>
+
+        <p>The way ELO works, there is a parameter, the K factor, that gives the inertia or resilience of ratings.</p>
+
+        <p>Here is the formula:</p>
+
+        <p>Rn is the players new rating, Rp is the players previous rating, W is the expectancy based on the new games, We is the previous win-expectancy based on the current ratings difference.</p>
+
+        <p>As for K, it is the factor that weights more or less the impact on ratings of the new games results.</p>
+
+        <p>A high value would give a lot of importance to newest games, a low one would pretty much leave unchanged the ratings.</p>
+
+        <p>The idea is to use different values for K depending on circumstances.</p>
+
+        <p>Ideally, one would like evolving people with evolving skill level to have their rating move faster than players in a more mature stage. But how could one know?</p>
+
+        <p>An easy one is to give higher K-factor to new players, which I do : first 10 games count double, so to speak.</p>
+
+        <p>Another one, is to believe that players with a high rating achieve it after a large experience and are therefore, probably, at more mature stage. This is done usually for ELO. (see Table).</p>
+
+        <table class="table table-sm table-striped table-hover w-25">
+          <thead>
+            <tr>
+              <th>Rating</th>
+              <th>K-Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0 .. 1800</td><td>40</td></tr>
+            <tr><td>1800 .. 2000</td><td>30</td></tr>
+            <tr><td>2000 .. 2200</td><td>20</td></tr>
+            <tr><td>2200+</td><td>10</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
