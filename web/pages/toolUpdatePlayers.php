@@ -54,6 +54,9 @@ include_once("web/include/header.php");
                             echo "<br>";
                             echo "<br>";
                             echo "<button class='btn btn-primary' name='inputsubmit' type='submit' value='Update'>Update</button>";
+                            echo "<br>";
+                            echo "<br>";
+                            echo "<button class='btn btn-primary' name='inputdelete' type='submit' value='Delete'>Delete</button>";
                           echo "</form>";
                     } else {
                         ?>
@@ -79,6 +82,18 @@ include_once("web/include/header.php");
                 } else {
                     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                 }
+            } elseif (isset($_POST['inputdelete'])) {
+                $deletepnc = $_POST['pnc'];
+                $fullname= $_POST['firstname'] . " " . $_POST['surname'];
+                $sql = "DELETE from players Where Player_Namecode=?";
+                if (!($stmt = $mysqli->prepare($sql ))) {
+                    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+                    exit();
+                }
+                $stmt->bind_param("s", $deletepnc);
+                $stmt->execute();
+                echo "<br>";
+                echo "<li><strong>Player Deleted from Database</strong></li>";
             } elseif (isset($_POST['inputsubmit'])) {
                         $first_name = $_POST['firstname'];
                         $surname=$_POST['surname'];

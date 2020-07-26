@@ -192,6 +192,7 @@ include_once("web/include/header.php");
                     <h3>4. Save Changes</h3>
                     <br>
                     <button type='submit' class='btn btn-primary' name='submit'>Save</button>
+                    <button type='submit' class='btn btn-primary' name='delete'>Delete Game</button>
             </form>
         </div>
     </div>

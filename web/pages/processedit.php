@@ -22,6 +22,7 @@ include_once("web/include/header.php");
             $mysqli->set_charset("utf8");
 
             if (isset($_POST['tour_name'])) {
+                if (isset($_POST['submit'])) {
                 $nameerror = false;
                 $player1namecode = getnamecode($_POST['fpnc']);
                 if ($player1namecode == null) {
@@ -75,6 +76,18 @@ include_once("web/include/header.php");
                         }
                     }
 
+                    }
+                } elseif (isset($_POST['delete'])) {
+                    $gameid = $_POST['gameid'];
+                    $sql = "DELETE from match_results Where match_results.id=?";
+                    if (!($stmt = $mysqli->prepare($sql ))) {
+                        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+                        exit();
+                    }
+                    $stmt->bind_param("i", $gameid);
+                    $stmt->execute();
+                    echo "<br>";
+                    echo "<li><strong>Game Instance Deleted from Database</strong></li>";
                 }
             } else {
 
