@@ -27,7 +27,7 @@ include_once("web/include/header.php");
                     <div class="input-group">
                         <input type="file" class="form-control-file" name="fileToUpload" id="fileToUpload">
                         <br>
-                        <button class="btn btn-primary pt-5" name="submit" type="submit" value="Select">Upload & Add to Database</button>
+                        <button class="btn btn-primary pl-5" name="submit" type="submit" value="Select">Upload & Add to Database</button>
                     </div>
                 </form>
             <?php } ?>
