@@ -91,10 +91,14 @@ if ($uploadOK==1) {
                     // add more format checks
                     $rebuildpnclist=false;
                     if ($play1nc == null ){$play1nc = getnewnamecode($play1name, $playernamecodelist);}
+                    if($rebuildpnclist){
+                        //update pnc list to contain new players just created
+                        $playernamecodelist = getplayernamecodelist();
+                    }
                     if ($play2nc == null ){$play2nc = getnewnamecode($play2name, $playernamecodelist);}
                     if($rebuildpnclist){
                         //update pnc list to contain new players just created
-                        $playernamecodelist[] = getplayernamecodelist();
+                        $playernamecodelist = getplayernamecodelist();
                     }
                     if($play1res=="won") {
                         $play1res = "win";
@@ -209,8 +213,10 @@ function createnewplayer($playername, $lastname, $firstname, $newnamecode){
         $stmt6->execute();
         $stmt6->close();
         echo $playername . ' ' . "added to Players in Database<br>";
+        return true;
     } else {
         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+        return false;
     }
 }
 function getplayernamecodelist(){
