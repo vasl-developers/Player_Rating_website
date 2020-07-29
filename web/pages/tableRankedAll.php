@@ -23,6 +23,7 @@ include_once("web/include/header.php");
         <br>
         <p>This list includes ASL Players who have played in a submitted tournament. It includes results added as of July, 2020</p>
         <p>To view game-by-game results for a player, click on the link under ID</p>
+            <p>New players added since the last Rating recalcuation will have a rating of 0 until ratings are recalculated on the first of the month</p>
         <div class="tableFixHead">
           <table class="table table-sm table-striped table-hover">
             <thead>
