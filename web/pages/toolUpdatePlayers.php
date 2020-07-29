@@ -92,8 +92,16 @@ include_once("web/include/header.php");
                 }
                 $stmt->bind_param("s", $deletepnc);
                 $stmt->execute();
+                $stmt->close();
+                $sql = "DELETE from player_ratings Where Player1_Namecode=?";
+                if (!($stmt = $mysqli->prepare($sql ))) {
+                    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;                                 exit();
+                }
+                $stmt->bind_param("s", $deletepnc);
+                $stmt->execute();
+                $stmt->close();
                 echo "<br>";
-                echo "<li><strong>Player Deleted from Database</strong></li>";
+                echo "<li><strong>" . $fullname . " Deleted from Database</strong></li>";
             } elseif (isset($_POST['inputsubmit'])) {
                         $first_name = $_POST['firstname'];
                         $surname=$_POST['surname'];

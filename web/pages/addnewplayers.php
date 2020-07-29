@@ -51,6 +51,19 @@ include_once("web/include/header.php");
         /* execute */
         $stmt->execute();
         $stmt->close();
+        // add to player_ratings table; set initial values
+        $country=""; $active=1; $provisional=0; $firstdate=null; $lastdate=null; $hwm=0; $elo=0; $games=0; $wins=0; $gaa=0; $waa=0; $gad=0; $wad=0; $gaax=0; $waax=0;$gaal=0; $waal=0; $currentstreak=0; $higheststreak=0;
+        if ($stmt6 = $mysqli->prepare("INSERT INTO player_ratings (Player1_Namecode, Fullname, Country, Active, Provisional, FirstDate, LastDate, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, WinsAsAttacker, GamesAsDefender, WinsAsDefender,GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak, HighestStreak)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
+            /* bind the parameters*/
+            $stmt6->bind_param("sssiissddiiiiiiiiiiii", $playernamecode, $fullname, $country, $active, $provisional, $firstdate, $lastdate, $hwm, $elo, $games, $wins, $gaa, $waa, $gad, $wad, $gaax, $waax, $gaal, $waal, $currentstreak, $higheststreak);
+            /* execute */
+            $stmt6->execute();
+            $stmt6->close();
+        } else {
+            echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+            return false;
+        }
         echo $fullname . ' ' . "added to Database";
     } else {
         ?>
