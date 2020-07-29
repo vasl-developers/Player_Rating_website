@@ -43,6 +43,8 @@ if (isset($_FILES["fileToUpload"]["error"])) {
                 } else {
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                         $uploadinfo = $_FILES["fileToUpload"]["name"] . " was uploaded successfully.</br>";
+                        $txt= date("Y-m-d") . " " . "Game Results file uploaded: " . $_FILES["name"] . "\n";
+                        include("web/pages/storetransactionstofile.php");
                     } else {
                         echo "Error: There was a problem uploading the file - please try again.";
                         $uploadOK=0;
@@ -122,6 +124,8 @@ if ($uploadOK==1) {
                     /* execute */
                     $stmt->execute();
                     echo "New Results Added to Database. " . $play1name . " vs " . $play2name . "<br>";
+                    $txt= date("Y-m-d"). " New Game Result added to match_results: " . $play1name . " vs " . $play2name . "\n";
+                    include("web/pages/storetransactionstofile.php");
                 } else {
                     echo "Missing Mandatory Fields. Record not uploaded to db: " . $play1name . " vs " . $play2name . "<br>";
                 }
@@ -141,6 +145,8 @@ if ($uploadOK==1) {
                 $stmt8->execute();
                 $stmt8->close();
                 echo "<br>Tournament " . $tournament_id . " created in Tournaments in Database. Go to Update Tournament Info to add additional tournament data.<br>";
+                $txt= date("Y-m-d"). " Tournament " . $tournament_id . " created in tournaments" . "\n";
+                include("web/pages/storetransactionstofile.php");
             } else {
                 echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
             }
@@ -229,6 +235,8 @@ function createnewplayer($playername, $lastname, $firstname, $newnamecode){
         }
 
         echo $playername . ' ' . "added to Players in Database<br>";
+        $txt= date("Y-m-d"). $playername . " added to players" . "\n";
+        include("web/pages/storetransactionstofile.php");
         return true;
     } else {
         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;

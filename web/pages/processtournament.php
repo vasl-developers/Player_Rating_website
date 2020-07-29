@@ -41,7 +41,9 @@ include_once("web/include/header.php");
                          $tourtype, $iterationname, $winner, $secondplace, $thirdplace, $tourid);
                     $stmt->execute();
                     echo "<br>";
-                    echo "<li><strong>Tournament Update Added to Database</strong></li>";
+                    echo $tourname . " " . "<li><strong>Tournament Update Added to Database</strong></li>";
+                    $txt= date("Y-m-d"). " " . $tourname . "(" . $tourid . ") updated in tournaments" . "\n";
+                    include("web/pages/storetransactionstofile.php");
                 } else {
                     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                 }

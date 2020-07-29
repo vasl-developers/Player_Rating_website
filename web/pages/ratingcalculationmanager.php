@@ -339,7 +339,9 @@ foreach (array_keys($last) as $t) {
         /* set parameters and execute */
     $stmt->execute();
     $stmt->close();
-
+    echo "Recalculation complete";
+    $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
+    include("web/pages/storetransactionstofile.php");
 }
 
 /*#==========function===============================

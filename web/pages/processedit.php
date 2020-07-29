@@ -59,7 +59,9 @@ include_once("web/include/header.php");
                                 $player1AlliesAxis, $player1result, $player2namecode, $player2attdef, $player2AlliesAxis, $player2result, $roundrealdate);
                             $stmt->execute();
                             echo "<br>";
-                            echo "<li><strong>Game Correction Added to Database</strong></li>";
+                            echo "<li><strong>New Game Added to Database</strong></li>";
+                            $txt= date("Y-m-d"). " New game (" . $_POST['fpnc'] . " vs " . $_POST['spnc'] . ") added to match_results" . "\n";
+                            include("web/pages/storetransactionstofile.php");
                         } else {
                             echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                         }
@@ -71,6 +73,8 @@ include_once("web/include/header.php");
                                 $stmt->execute();
                                 echo "<br>";
                                 echo "<li><strong>Game Correction Added to Database</strong></li>";
+                                $txt= date("Y-m-d"). " Existing game (" . $_POST['fpnc'] . " vs " . $_POST['spnc'] . ") updated in match_results" . "\n";
+                                include("web/pages/storetransactionstofile.php");
                         } else {
                                 echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                         }
@@ -88,6 +92,8 @@ include_once("web/include/header.php");
                     $stmt->execute();
                     echo "<br>";
                     echo "<li><strong>Game Instance Deleted from Database</strong></li>";
+                    $txt= date("Y-m-d"). " Existing game (" . $_POST['fpnc'] . " vs " . $_POST['spnc'] . ") deleted from match_results" . "\n";
+                    include("web/pages/storetransactionstofile.php");
                 }
             } else {
 
