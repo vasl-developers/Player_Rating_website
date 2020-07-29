@@ -102,6 +102,8 @@ include_once("web/include/header.php");
                 $stmt->close();
                 echo "<br>";
                 echo "<li><strong>" . $fullname . " Deleted from Database</strong></li>";
+                $txt = date("Y-m-d") . " " . $fullname . " deleted from players" . "\n";
+                include("web/pages/storetransactionstofile.php");
             } elseif (isset($_POST['inputsubmit'])) {
                         $first_name = $_POST['firstname'];
                         $surname=$_POST['surname'];
@@ -147,6 +149,8 @@ include_once("web/include/header.php");
                         <br>
                         <?php
                         echo $fullname . ' ' . "updated in Database";
+                        $txt = date("Y-m-d") . " " . $fullname . " updated in players". "\n";
+                        include("web/pages/storetransactionstofile.php");
             } else {
                 ?>
                 <h2>Update or Add Player</h2>

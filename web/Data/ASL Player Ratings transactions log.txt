@@ -1,0 +1,10 @@
+This file contains a log of ASL Player Ratings website database transactions. 
+
+It covers the period from August 2020 - present.
+
+Transactions recorded in this log inculde:
+- adding, changing and deleting players
+- adding and changing tournaments
+- adding, changing and deleting game results
+
+

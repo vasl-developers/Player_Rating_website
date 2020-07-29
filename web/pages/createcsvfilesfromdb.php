@@ -138,4 +138,6 @@ foreach ($ratingarray as $line) {
 }
 fclose($j);
 $mysqli->close();
+$txt= date("Y-m-d"). " Monthly data export to csv files completed" . "\n";
+include("web/pages/storetransactionstofile.php");
 ?>

@@ -65,6 +65,8 @@ include_once("web/include/header.php");
             return false;
         }
         echo $fullname . ' ' . "added to Database";
+        $txt = date("Y-m-d") . " " . $fullname . " added to players". "\n";
+        include("web/pages/storetransactionstofile.php");
     } else {
         ?>
         <form action="" target="" method='post'>
