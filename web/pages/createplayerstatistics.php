@@ -5,8 +5,10 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
 <body>
-<?php include_once("web/include/navbar.htm");
+<?php
+include_once("web/include/navbar.htm");
 include_once("web/pages/connection.php");
+include_once("web/pages/functions.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno()) {
@@ -20,7 +22,6 @@ if ($getPlayer = $mysqli->prepare($sql)) {
     $getPlayer->execute();
     $getPlayer->bind_result($name);
     $row = $getPlayer->fetch();
-    $name = ucwords(strtolower(trim($name)), " .-\t\r\n\f\v");
 }
 $getPlayer->close();
 
@@ -58,10 +59,10 @@ while ($row = $stmt->fetch()) {
     }
 ?>
     <div class="container">
-        <h2>Statistical Summary for <?php echo $name?></h2>
+        <h3 class="mt-3">Statistical Summary for <?php echo prettyName($name)?></h3>
         <br>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 bg-light text-black">
-            <div class="col"><?php echo $fullname?></div>
+            <div class="col"><?php echo prettyName($fullname)?></div>
             <div class="col"><?php echo $country?></div>
             <div class="col">Highest Rating:</div>
             <div class="col"><?php echo $hwm?></div>

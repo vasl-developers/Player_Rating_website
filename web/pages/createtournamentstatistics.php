@@ -23,7 +23,8 @@ if ($getTourney = $mysqli->prepare($sql)) {
 }
 $getTourney->close();
 
-$sql = " select Scenario_ID, Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result from match_results where Tournament_ID=?" ;
+$sql = "select Scenario_ID, Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result from match_results where Tournament_ID=? order by Scenario_ID";
+
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->bind_param("s", $passtournamentcode);
     $stmt->execute();
