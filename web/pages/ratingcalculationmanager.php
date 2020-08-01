@@ -131,17 +131,8 @@ foreach ($gamedays as $gamedate) {
             $last[$f_pnc] = $date;
             $last[$s_pnc] = $date;
             // assign results values to arrays
-            if(isset($games[$f_pnc])){
-                $games[$f_pnc]++;
-            }else {
-                $reg="rtue";
-            }
-            if(isset($games[$s_pnc])){
-                $games[$s_pnc]++;
-            }else {
-                $reg="rtue";
-            }
-
+            if(isset($games[$f_pnc])){$games[$f_pnc]++;}
+            if(isset($games[$s_pnc])){$games[$s_pnc]++;}
             if ($games[$f_pnc] > 10) {
                 $provisional[$f_pnc] = 0; //0=no
             } else {

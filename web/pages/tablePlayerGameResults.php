@@ -1,5 +1,6 @@
 <html lang="en">
 <?php
+$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -41,7 +42,7 @@ if (mysqli_connect_errno())
       $stmt->execute();
       $stmt->bind_result($p1Code, $p1AttDef, $p1AlliAxis, $p1Result, $p2Code, $p2AttDef, $p2AlliAxis, $roundDate, $scenario, $tourId, $player1, $player1code, $player2, $player2code);
   ?>
-  <h3>Player: <?php echo $name . ' (' . $passplayercode . ')' ?></h3>
+  <h3>Player: <?php echo $name . ' (' . $passplayercode . ')' ?><a class="content" href="<?php echo $ROOT; ?>web/pages/createplayerstatistics.php?playercode=<?php echo $passplayercode?>" style="float:right;">See Statistical Summary</a></h3>
   <div class="tableFixHead">
   <table class="table table-sm table-striped table-hover">
     <thead>
