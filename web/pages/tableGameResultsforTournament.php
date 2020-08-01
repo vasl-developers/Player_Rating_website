@@ -1,5 +1,6 @@
 <html lang="en">
 <?php
+$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -24,7 +25,7 @@ $mysqli->set_charset("utf8");
       <?php
         $tournamenttoshow=$_GET['tournamentid']; //$tournamentid is passed from showtournamentstable.php
       ?>
-      <h2>Tournament: <?php echo $_GET["tournamentid"]?></h2>
+      <h2>Tournament: <?php echo $_GET["tournamentid"]?><a class="content" href="<?php echo $ROOT; ?>web/pages/createtournamentstatistics.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Statistical Summary</a></h2>
       <div class="tableFixHead">
       <?php
         include_once("web/pages/showgameresultstable.php");
