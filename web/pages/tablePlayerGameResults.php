@@ -3,7 +3,7 @@
 $ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
-?>
+  ?>
 <body>
 <?php include_once("web/include/navbar.htm"); ?>
 <div class="home container-fluid">
@@ -12,6 +12,7 @@ include_once("web/include/header.php");
 
 <?php
 include_once("web/pages/connection.php");
+include_once("web/pages/functions.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
@@ -76,11 +77,11 @@ if (mysqli_connect_errno())
           if ($scenario != null){$linktext = "in";}
       ?>
         <tr>
-          <td><?php echo $player1 ?></td>
+          <td><a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p1Code ?>"><?php echo prettyName($player1) ?></a></td>
           <td><?php echo $p1AttDef ?></td>
           <td><?php echo $p1AlliAxis ?></td>
           <td><?php echo $p1Result ?></td>
-          <td><?php echo $player2 ?></td>
+          <td><a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p2Code ?>"><?php echo prettyName($player2) ?></a></td>
           <td><?php echo $p2AttDef ?></td>
           <td><?php echo $p2AlliAxis ?></td>
           <td><?php echo $linktext ?></td>
