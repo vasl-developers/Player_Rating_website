@@ -21,7 +21,7 @@ include_once("web/include/header.php");
       <h2>Alphabetical Listing of Currently Active ASL Players</h2>
       <p>This list includes all active players, meaning they have played in a tournament within 800 days before the last update to the database. It includes results added as of July, 2020.</p>
       <p>To view game-by-game results for a player, click on the player's name.</p>
-        <p>New players added since the last Rating recalcuation will have a rating of 0 until ratings are recalculated on the first of the month</p>
+      <p>New players added since the last Rating recalcuation will have a rating of 0 until ratings are recalculated on the first of the month.</p>
       <div class="tableFixHead">
       <table class="table table-sm table-striped table-hover">
         <thead>

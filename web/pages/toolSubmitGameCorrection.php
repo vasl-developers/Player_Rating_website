@@ -43,7 +43,7 @@ include_once("web/include/header.php");
         <p>NOTE: If you are changing a game from one player to another (to merge duplicate entries for the same person, for example), do it here.</p>
         <p>If you want to change a player's name (ie from Mike Brown to Michael Brown) for all games for that player, don't do it here. Go to Update Player.</p>
 
-        <h4>1. Select the Tournament from the Tournaments dropdown list</h4>
+        <h4>Select the Tournament:</h4>
         <form class="form-inline col-5" method="get" action="toolSubmitGameCorrection.php">
           <div class="input-group">
             <select class="form-select" id="tournamentid" name="tournamentid" autocomplete="on">

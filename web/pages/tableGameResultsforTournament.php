@@ -23,9 +23,9 @@ $mysqli->set_charset("utf8");
       <h2>Tournament Games included in ASL Player Ratings</h2>
       <p>To view Game-by-Game results for a particular player, click on the player's name.</p>
       <?php
-        $tournamenttoshow=$_GET['tournamentid']; //$tournamentid is passed from showtournamentstable.php
+        $tournamenttoshow=$_GET['tournamentid'];
       ?>
-      <h2>Tournament: <?php echo $_GET["tournamentid"]?><a class="content" href="<?php echo $ROOT; ?>web/pages/createtournamentstatistics.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Statistical Summary</a></h2>
+      <h3>Tournament: <?php echo $_GET["tournamentid"]?><a class="content" href="<?php echo $ROOT; ?>web/pages/createtournamentstatistics.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Statistical Summary</a></h3>
       <div class="tableFixHead">
       <?php
         include_once("web/pages/showgameresultstable.php");

@@ -68,7 +68,7 @@ while ($row = $stmt->fetch()) {
         if (strtolower($player1alax) == "axis") {
             $axwin[$scenarioid]++;
             $alloss[$scenarioid]++;
-        } else if (strtolower($player1alax) == "allies") {
+        } else if (strtolower($player1attdef) == "allies") {
             $alwin[$scenarioid]++;
             $axloss[$scenarioid]++;
         }
@@ -83,7 +83,7 @@ while ($row = $stmt->fetch()) {
         if (strtolower($player1alax) == "axis") {
             $axloss[$scenarioid]++;
             $alwin[$scenarioid]++;
-        } else if (strtolower($player1alax) == "allies") {
+        } else if (strtolower($player1attdef) == "allies") {
             $alloss[$scenarioid]++;
             $axwin[$scenarioid]++;
         }
@@ -98,7 +98,7 @@ while ($row = $stmt->fetch()) {
         if (strtolower($player1alax) == "axis") {
             $axdraw[$scenarioid]++;
             $aldraw[$scenarioid]++;
-        } else if (strtolower($player1alax) == "allies") {
+        } else if (strtolower($player1attdef) == "allies") {
             $aldraw[$scenarioid]++;
             $axdraw[$scenarioid]++;
         }

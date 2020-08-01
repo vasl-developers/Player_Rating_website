@@ -17,18 +17,17 @@ include_once("web/include/header.php");
       exit();
     }
     ?>
-    <h2>List of All Games Played in a Tournament included in ASL Player Ratings</h2>
-    <p>To select a tournament, select from the List. You can scroll or type the Name, including the Year </p>
-      <?php
-        $tournamenttoshow = trim($_GET["tournamentid"]);
-      ?>
-      <h2>Tournament: <?php echo $tournamenttoshow ?></h2>
+    <h3>List of All Games Played in a Tournament included in ASL Player Ratings</h3>
+      <?php $tournamenttoshow = trim($_GET["tournamentid"]); ?>
       <div class="tableFixHead">
       <?php
-      if (isset($_GET['tournamentid'])) {
+      if (isset($_GET['tournamentid']) && $_GET['tournamentid'] != 'Choose...') {
+      ?>
+        <h2>Tournament: <?php echo $tournamenttoshow ?></h2>
+      <?php
         include_once("web/pages/showgameresultstable.php");
       } else {
-        $sql = "select Base_Name, Year_Held, Tournament_id from tournaments";
+        $sql = "select Base_Name, Year_Held, Tournament_id from tournaments order by Base_Name";
         $result = mysqli_query($mysqli, $sql);
         $tournamentlist = [];
         while ($row = mysqli_fetch_assoc($result)) {
@@ -36,19 +35,23 @@ include_once("web/include/header.php");
         }
         $mysqli->close();
         ?>
-        <p>Type or Select Tournament to View Game Results:</p>
-        <form method="get" action="selectTournamentforResultsDisplay.php">
-          <input type="text" list="tournaments" name="tournamentid">
-          <datalist id="tournaments" autocomplete="on">
-            <?php
-            foreach ($tournamentlist as $tournament) {
-            ?>
-            <option value="<?php echo $tournament["Tournament_id"];?>"><?php echo $tournament["Base_Name"] . " " . $tournament["Year_Held"] . " " . $tournament["Tournament_id"] ?></option>
-            <?php
-            }
-            ?>
-          </datalist>
-          <input type="submit" value="Select" />
+        <h4 class="mt-3">Select the Tournament:</h4>
+        <form class="form-inline col-5" method="get" action="selectTournamentforResultsDisplay.php">
+          <div class="input-group">
+            <select class="form-select" id="tournamentid" name="tournamentid" autocomplete="on">
+              <option selected>Choose...</option>
+              <?php
+                foreach ($tournamentlist as $tournament) {
+              ?>
+              <option value="<?php echo $tournament["Tournament_id"];?>">
+                <?php echo $tournament["Base_Name"] . " " . $tournament["Year_Held"] . " " . $tournament["Tournament_id"] ?>
+              </option>
+              <?php
+                }
+              ?>
+            </select>
+            <button class="btn btn-primary" name="submit" type="submit" value="Select">Select</button>
+          </div>
         </form>
       <?php } ?>
       </div>
