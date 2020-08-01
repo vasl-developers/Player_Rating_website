@@ -31,7 +31,11 @@ if ($stmt = $mysqli->prepare($sql)) {
 }
 
 // initialize scenario array
-$scenario["firstarrayitem"]="";
+$scenario["totalgames"]="totalgames";
+$gp["totalgames"] = 0; $attwin["totalgames"] = 0; $defwin["totalgames"] = 0; $alwin["totalgames"] = 0;
+$axwin["totalgames"] = 0; $attloss["totalgames"] = 0; $defloss["totalgames"] = 0; $alloss["totalgames"] = 0;
+$axloss["totalgames"] = 0; $attdraw["totalgames"] = 0; $defdraw["totalgames"] = 0; $aldraw["totalgames"] = 0;
+$axdraw["totalgames"] = 0;
 while ($row = $stmt->fetch()) {
     if (strtolower($player1res) == "won") {
         $player1res = "win";
@@ -39,6 +43,8 @@ while ($row = $stmt->fetch()) {
         $player1res = "loss";
     }
     // create array item for each new scenario played
+    if ($scenarioid=="" || $scenarioid==null){"noname";}
+    if ($scenarioid=="totalgames") {continue;}
     if (!in_array($scenarioid, $scenario)) {
         $scenario[$scenarioid] = $scenarioid;
         $gp[$scenarioid] = 0;
@@ -57,61 +63,86 @@ while ($row = $stmt->fetch()) {
     }
     // set array values
     $gp[$scenarioid]++;
+    $gp["totalgames"]++;
     if (strtolower($player1res) == "win") {
         if (strtolower($player1attdef) == "attacker") {
             $attwin[$scenarioid]++;
             $defloss[$scenarioid]++;
+            $attwin["totalgames"]++;
+            $defloss["totalgames"]++;
         } else if (strtolower($player1attdef) == "defender") {
             $defwin[$scenarioid]++;
             $attloss[$scenarioid]++;
+            $defwin["totalgames"]++;
+            $attloss["totalgames"]++;
         }
         if (strtolower($player1alax) == "axis") {
             $axwin[$scenarioid]++;
             $alloss[$scenarioid]++;
-        } else if (strtolower($player1attdef) == "allies") {
+            $axwin["totalgames"]++;
+            $alloss["totalgames"]++;
+        } else if (strtolower($player1alax) == "allies") {
             $alwin[$scenarioid]++;
             $axloss[$scenarioid]++;
+            $alwin["totalgames"]++;
+            $axloss["totalgames"]++;
         }
     } else if (strtolower($player1res) == "loss") {
         if (strtolower($player1attdef) == "attacker") {
             $attloss[$scenarioid]++;
             $defwin[$scenarioid]++;
+            $attloss["totalgames"]++;
+            $defwin["totalgames"]++;
         } else if (strtolower($player1attdef) == "defender") {
             $defloss[$scenarioid]++;
             $attwin[$scenarioid]++;
+            $defloss["totalgames"]++;
+            $attwin["totalgames"]++;
         }
         if (strtolower($player1alax) == "axis") {
             $axloss[$scenarioid]++;
             $alwin[$scenarioid]++;
-        } else if (strtolower($player1attdef) == "allies") {
+            $axloss["totalgames"]++;
+            $alwin["totalgames"]++;
+
+        } else if (strtolower($player1alax) == "allies") {
             $alloss[$scenarioid]++;
             $axwin[$scenarioid]++;
+            $alloss["totalgames"]++;
+            $axwin["totalgames"]++;
         }
     } else {  //draw
         if (strtolower($player1attdef) == "attacker") {
             $attdraw[$scenarioid]++;
             $defdraw[$scenarioid]++;
+            $attdraw["totalgames"]++;
+            $defdraw["totalgames"]++;
         } else if (strtolower($player1attdef) == "defender") {
             $defdraw[$scenarioid]++;
             $attdraw[$scenarioid]++;
+            $attdraw["totalgames"]++;
+            $defdraw["totalgames"]++;
         }
         if (strtolower($player1alax) == "axis") {
             $axdraw[$scenarioid]++;
             $aldraw[$scenarioid]++;
-        } else if (strtolower($player1attdef) == "allies") {
+            $axdraw["totalgames"]++;
+            $aldraw["totalgames"]++;
+        } else if (strtolower($player1alax) == "allies") {
             $aldraw[$scenarioid]++;
             $axdraw[$scenarioid]++;
+            $aldraw["totalgames"]++;
+            $axdraw["totalgames"]++;
         }
     }
 }
 ?>
 <div class="container">
-<h2>Statistical Summary for <?php echo $tourname?></h2>
+<h2>Statistical Summary for <?php echo $tourname . "   " . $passtournamentcode?></h2>
 </div>
 <br>
 <?php
 foreach (array_keys($scenario) as $scen){
-    if ($scen == "firstarrayitem") {continue;}
 ?>
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 bg-light text-black">
