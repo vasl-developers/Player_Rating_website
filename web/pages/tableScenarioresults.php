@@ -71,7 +71,7 @@ include_once("web/include/header.php");
                             <td><a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p2Code ?>"><?php echo prettyName($player2) ?></a></td>
                             <td><?php echo $p2AttDef ?></td>
                             <td><?php echo $p2AlliAxis ?></td>
-                            <td><?php echo $roundDate ?></td>
+                            <td class="date"><?php echo $roundDate ?></td>
                             <td>
                                 <a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tourId ?>"><?php echo $tourId ?></a>
                             </td>

@@ -84,15 +84,15 @@ if (mysqli_connect_errno())
           <td><?php echo $p2AlliAxis ?></td>
           <td><?php echo $linktext ?></td>
           <td>
-              <a class="content" href="tableScenarioresults.php?scenarioid=<?php echo $scenario ?>"><?php echo $scenario ?></a>
+            <a class="content" href="tableScenarioresults.php?scenarioid=<?php echo $scenario ?>"><?php echo $scenario ?></a>
           </td>
-          <td><?php echo $roundDate ?></td>
+          <td class="date"><?php echo $roundDate ?></td>
           <td>
-                <a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tourId ?>"><?php echo $tourId ?></a>
+            <a class="content" href="<?php echo $ROOT; ?>web/pages/tableGameResultsforTournament.php?tournamentid=<?php echo $tourId ?>"><?php echo $tourId ?></a>
           </td>
         </tr>
       <?php
-        }
+      }
     }
     $stmt->close();
     $mysqli->close();
