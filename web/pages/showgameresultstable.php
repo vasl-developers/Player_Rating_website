@@ -91,7 +91,9 @@
           <td><?php echo $p2AttDef ?></td>
           <td><?php echo $p2AlliAxis ?></td>
           <td><?php if($scenario > '') echo 'in'; ?></td>
-          <td><?php echo $scenario ?></td>
+          <td>
+              <a class="content" href="tableScenarioresults.php?scenarioid=<?php echo $scenario ?>"><?php echo $scenario ?></a>
+          </td>
         </tr>
         <?php
           }
