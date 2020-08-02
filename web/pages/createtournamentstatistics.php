@@ -31,7 +31,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 }
 
 // initialize scenario array
-$scenario["totalgames"]="totalgames";
+$scenario["totalgames"]="Total Games";
 $gp["totalgames"] = 0; $attwin["totalgames"] = 0; $defwin["totalgames"] = 0; $alwin["totalgames"] = 0;
 $axwin["totalgames"] = 0; $attloss["totalgames"] = 0; $defloss["totalgames"] = 0; $alloss["totalgames"] = 0;
 $axloss["totalgames"] = 0; $attdraw["totalgames"] = 0; $defdraw["totalgames"] = 0; $aldraw["totalgames"] = 0;

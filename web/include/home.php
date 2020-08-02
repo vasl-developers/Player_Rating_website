@@ -11,7 +11,7 @@
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableAlphaAll.php">Alphabetical listing of All Players</a>
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableRankedAll.php">Ranked listing of All Players</a>
     </div>
-    <div class="col-md-9 mt-3">
+    <div class="col-md-12 mt-3">
       <p>The above represents the core functionality of the ASL Player Rating System and is the central part of its mandate.</p>
       <p>A guiding principle of this site is to ensure that the underlying dataset is treated as Open Data and is continuously available to anyone in the ASL community.</p>
     </div>

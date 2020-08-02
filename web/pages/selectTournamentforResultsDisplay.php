@@ -1,5 +1,6 @@
 <html lang="en">
 <?php
+$ROOT = '../../';
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
 ?>
@@ -19,11 +20,11 @@ include_once("web/include/header.php");
     ?>
     <h3>List of All Games Played in a Tournament included in ASL Player Ratings</h3>
       <?php $tournamenttoshow = trim($_GET["tournamentid"]); ?>
+        <h4>Tournament: <?php echo $tournamenttoshow ?><a class="content" href="<?php echo $ROOT; ?>web/pages/createtournamentstatistics.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Statistical Summary</a></h4>
       <div class="tableFixHead">
       <?php
       if (isset($_GET['tournamentid']) && $_GET['tournamentid'] != 'Choose...') {
       ?>
-        <h2>Tournament: <?php echo $tournamenttoshow ?></h2>
       <?php
         include_once("web/pages/showgameresultstable.php");
       } else {
