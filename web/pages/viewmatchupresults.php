@@ -146,50 +146,46 @@ include_once("web/pages/functions.php");
         </div>
     </div>
     <div class="row">
-        <div class="main-content col-md-10 offset-md-1">
-
+      <div class="col-5 offset-md-1">
         <h2>Statistical Summary</h2>
-        <br>
 
-                <div class="row col-2 col-1">
-                    <div class="col-sm">All Games:</div>
-                    <div class="col-sm"><?php echo $totalgames?></div>
-                </div>
-
-                <div class="row bg-light text-black" >
-                    <div class="col-sm"><?php echo $player1name ?></div>
-                    <div class="col-sm">Wins:</div>
-                    <div class="col-sm"><?php echo $player1win?></div>
-                    <div class="col-sm">Losses:</div>
-                    <div class="col-sm"><?php echo $player1loss ?></div>
-                    <div class="col-sm">Win %:</div>
-                    <div class="col-sm"><?php echo number_format(($player1win/($player1win + $player1loss)), 2, '.', '') ?></div>
-                    <div class="col-sm">Draws:</div>
-                    <div class="col-sm"><?php echo $player1draw?></div>
-                </div>
-                <br>
-                <div class="row bg-light text-black" >
-                    <div class="col-sm"><?php echo $player2name ?></div>
-                    <div class="col-sm">Wins:</div>
-                    <div class="col-sm"><?php echo $player2win?></div>
-                    <div class="col-sm">Losses:</div>
-                    <div class="col-sm"><?php echo $player2loss ?></div>
-                    <div class="col-sm">Win %:</div>
-                    <div class="col-sm"><?php echo number_format(($player2win/($player2win + $player2loss)), 2, '.', '') ?></div>
-                    <div class="col-sm">Draws:</div>
-                    <div class="col-sm"><?php echo $player2draw?></div>
-                </div>
-
-
-        </div>
+        <table class="table table-sm table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>Draws</th>
+              <th>Winning %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><?php echo $player1name ?></td>
+              <td><?php echo $player1win?></td>
+              <td><?php echo $player1loss ?></td>
+              <td><?php echo $player1draw?></td>
+              <td><?php echo number_format(($player1win/($player1win + $player1loss)), 2, '.', '') ?></td>
+            </tr>
+            <tr>
+              <td><?php echo $player2name ?></td>
+              <td><?php echo $player2win?></td>
+              <td><?php echo $player2loss ?></td>
+              <td><?php echo $player2draw?></td>
+              <td><?php echo number_format(($player2win/($player2win + $player2loss)), 2, '.', '') ?></td>
+            </tr>
+            <tr>
+              <td><b>Total Games</b></td>
+              <td><?php echo $totalgames?></td>
+              <td colspan=3></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 </div>
 <?php include_once("web/include/footer.php"); ?>
-<?php
-$mysqli->close();
-?>
+<?php $mysqli->close(); ?>
 </body>
 </html>
 <?PHP
-
-
