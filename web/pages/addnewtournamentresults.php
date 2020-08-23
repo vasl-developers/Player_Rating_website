@@ -234,7 +234,7 @@ function createnewplayer($playername, $lastname, $firstname, $newnamecode){
             return false;
         }
 
-        echo $playername . ' ' . "added to Players in Database<br>";
+        echo $playername . ' ' . " added to Players in Database<br>";
         $txt= date("Y-m-d"). $playername . " added to players" . "\n";
         include("web/pages/storetransactionstofile.php");
         return true;
