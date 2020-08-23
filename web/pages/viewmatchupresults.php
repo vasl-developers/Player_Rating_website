@@ -165,14 +165,26 @@ include_once("web/pages/functions.php");
               <td><?php echo $player1win?></td>
               <td><?php echo $player1loss ?></td>
               <td><?php echo $player1draw?></td>
-              <td><?php echo number_format(($player1win/($player1win + $player1loss)), 2, '.', '') ?></td>
+              <td>
+                  <?php
+                  if ($player1win + $player1loss > 0){
+                    echo number_format(($player1win / ($player1win + $player1loss)), 2, '.', '');
+                  }
+                  ?>
+              </td>
             </tr>
             <tr>
               <td><?php echo $player2name ?></td>
               <td><?php echo $player2win?></td>
               <td><?php echo $player2loss ?></td>
               <td><?php echo $player2draw?></td>
-              <td><?php echo number_format(($player2win/($player2win + $player2loss)), 2, '.', '') ?></td>
+              <td>
+                  <?php
+                  if ($player2win + $player2loss > 0) {
+                      echo number_format(($player2win / ($player2win + $player2loss)), 2, '.', '');
+                  }
+                  ?>
+              </td>
             </tr>
             <tr>
               <td><b>Total Games</b></td>
