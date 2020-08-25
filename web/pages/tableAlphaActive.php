@@ -35,13 +35,13 @@ include_once("web/include/header.php");
         </thead>
         <tbody>
         <?php
-          $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark, player_ratings.Active, player_ratings.Provisional from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY players.Surname, players.First_Name";
+          $sql = "select players.Surname, players.First_Name, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark, player_ratings.Active, player_ratings.Provisional from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY players.Surname, players.First_Name";
           $result = mysqli_query($mysqli, $sql);
           while ($row = mysqli_fetch_assoc($result)) {
             $active = $row["Active"];
             $provisional = $row["Provisional"];
             if($active ==1 and $row["Hidden"] == 0) {
-              $name = ucwords(strtolower(trim($row["Fullname"])), " .-\t\r\n\f\v");
+              $name = ucwords(strtolower(trim($row["Surname"]) . ", " . trim($row["First_Name"])), " .-\t\r\n\f\v");
               $country = trim($row["Country"]);
               $player_namecode = $row["Player_Namecode"];
               $ELO = $row["ELO"];
