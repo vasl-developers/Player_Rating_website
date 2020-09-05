@@ -94,5 +94,3 @@ create table tournaments
 		unique (Tournament_id)
 )
 comment 'ASL Tournaments';
-
-

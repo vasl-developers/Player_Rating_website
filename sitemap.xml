@@ -23,34 +23,4 @@
   <url>
     <loc>http://asl-ratings.org/web/pages/tableTournamentsbyYear.php</loc>
   </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolDownloadPlayerList.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolGetHelp.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolGetTheData.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolHideYourData.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolPlayervPlayer.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolSubmitGameCorrection.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolUpdatePlayers.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolUpdateTournaments.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolUploadTournamentResults.php</loc>
-  </url>
-  <url>
-    <loc>http://asl-ratings.org/web/pages/toolviewtransactions.php</loc>
-  </url>
 </urlset>

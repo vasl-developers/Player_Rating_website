@@ -1,0 +1,25 @@
+CREATE VIEW gameResults AS 
+SELECT 
+    m.Tournament_ID,
+    m.Player1_Namecode,
+    m.Player1_AttDef,
+    m.Player1_AlliesAxis,
+    m.Player1_Result,
+    m.Player2_Namecode,
+    m.Player2_AttDef,
+    m.Player2_AlliesAxis,
+    m.Round_No,
+    m.Scenario_ID,
+    p1.Fullname p1Name,
+    p1.Hidden p1Hidden,
+    p2.Fullname p2Name,
+    p2.Hidden p2Hidden,
+    s.name scenName
+FROM
+    match_results m
+INNER JOIN
+    players p1 ON p1.Player_Namecode=m.Player1_Namecode
+INNER JOIN
+    players p2 ON p2.Player_Namecode=m.Player2_Namecode
+LEFT OUTER JOIN
+    scenarios s ON m.Scenario_ID=s.scenario_id;
