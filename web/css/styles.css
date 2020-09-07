@@ -60,3 +60,7 @@ td.headline {
 .tableFixHead thead th { position: sticky; top: 0; }
 .tableFixHead th  { background:#eee; }
 .tableFixHead td.date { white-space: nowrap; }
+
+a {
+  text-decoration: none;
+}
