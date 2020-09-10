@@ -13,7 +13,6 @@
     </div>
     <div class="col-md-12 mt-3">
       <p>The above represents the core functionality of the ASL Player Rating System and is the central part of its mandate.</p>
-      <p>A guiding principle of this site is to ensure that the underlying dataset is treated as Open Data and is continuously available to anyone in the ASL community.</p>
     </div>
   </div>
 
@@ -23,6 +22,15 @@
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableTournamentsRecentlyAdded.php">Tournaments Recently Added</a>
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableTournamentsbyYear.php">Tournaments Included</a>
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/selectTournamentforResultsDisplay.php">Show Tournament Results</a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-5 offset-md-5">
+    <h3>Scenario Information</h3>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/mostPlayedScenarios.php">Most Played Scenarios</a>
     </div>
   </div>
 </div>
