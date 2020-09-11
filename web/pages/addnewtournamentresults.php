@@ -43,7 +43,7 @@ if (isset($_FILES["fileToUpload"]["error"])) {
                 } else {
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                         $uploadinfo = $_FILES["fileToUpload"]["name"] . " was uploaded successfully.</br>";
-                        $txt= date("Y-m-d") . " " . "Game Results file uploaded: " . $_FILES["name"] . "\n";
+                        $txt= date("Y-m-d") . " " . "Game Results file uploaded: " . $_FILES["fileToUpload"]["name"] . "\n";
                         include("web/pages/storetransactionstofile.php");
                     } else {
                         echo "Error: There was a problem uploading the file - please try again.";
