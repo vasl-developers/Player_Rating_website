@@ -20,20 +20,19 @@ include_once("web/include/header.php");
                 exit();
             }
             $mysqli->set_charset("utf8");
-
+            $tourname = $_POST['tour_name'];
+            $monthheld = $_POST['MonthHeld'];
+            $yearheld = $_POST['YearHeld'];
+            $dateheld = $_POST['DateHeld'];
+            $locationcorr = $_POST['LocationCorR'];
+            $locationcountry = $_POST['LocationCountry'];
+            $tourtype = $_POST['TourType'];
+            $iterationname = $_POST['IterationName'];
+            $winner = $_POST['Winner'];
+            $secondplace = $_POST['SecondPlace'];
+            $thirdplace = $_POST['ThirdPlace'];
+            $tourid = $_POST['TourID'];
             if (isset($_POST['submit'])) {
-                $tourname = $_POST['tour_name'];
-                $monthheld = $_POST['MonthHeld'];
-                $yearheld = $_POST['YearHeld'];
-                $dateheld = $_POST['DateHeld'];
-                $locationcorr = $_POST['LocationCorR'];
-                $locationcountry = $_POST['LocationCountry'];
-                $tourtype = $_POST['TourType'];
-                $iterationname = $_POST['IterationName'];
-                $winner = $_POST['Winner'];
-                $secondplace = $_POST['SecondPlace'];
-                $thirdplace = $_POST['ThirdPlace'];
-                $tourid = $_POST['TourID'];
                 // update existing tournament
                 if ($stmt = $mysqli->prepare("Update tournaments SET Base_Name=?, Month_Held=?, Year_Held=?, Date_Held=?, Tournament_ID=?,
                         Location_CityOrRegion=?, Location_Country=?, Tour_Type=?, Iteration_Name=?, Winner1=?, Winner2=?, Winner3=? WHERE Tournament_ID=?")) {
@@ -47,9 +46,27 @@ include_once("web/include/header.php");
                 } else {
                     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                 }
-                $mysqli->close();
-            }
 
+            } elseif (isset($_POST['AddNew'])) {
+                $dateadded=date("Y/m/d");
+                // add new tournament to db
+                if ($stmt = $mysqli->prepare("INSERT INTO tournaments (Base_Name, Month_Held, Year_Held, Date_Held, Tournament_ID,
+                        Location_CityOrRegion, Location_Country, Tour_Type, Iteration_Name, Winner1, Winner2, Winner3, Date_Added)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
+                    /* bind the parameters*/
+                    $stmt->bind_param("ssissssssssss", $tourname, $monthheld, $yearheld, $dateheld, $tourid, $locationcorr, $locationcountry,
+                        $tourtype, $iterationname, $winner, $secondplace, $thirdplace, $dateadded);
+                    /* execute */
+                    $stmt->execute();
+                    echo $tourname . " " . "<li><strong>Tournament Added to Database</strong></li>";
+                    $txt = date("Y-m-d") . " " . $tourname . " added to tournaments". "\n";
+                    include("web/pages/storetransactionstofile.php");
+                } else {
+                    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+                    return false;
+                }
+            }
+            $mysqli->close();
             ?>
         </div>
     </div>
