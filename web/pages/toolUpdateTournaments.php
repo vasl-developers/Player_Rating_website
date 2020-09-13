@@ -31,10 +31,11 @@ include_once("web/include/header.php");
                 }
                 $mysqli->close();
                 ?>
-                <h2>Update a Tournament</h2>
+                <h2>Add or Update a Tournament</h2>
                 <br>
-                <p>Use this page to update information about a Tournament</p>
-                <p>1. Select the Tournament from the Tournaments dropdown list</p>
+                <p>Use this page to create a new Tournament or update information about an existing Tournament</p>
+                <p>To upload Tournament Results, use the Upload Tournament Data option first</p>
+                <p>1. Select the Tournament from the Tournaments dropdown list; use AddNew for a new Tournament</p>
                 <p>2. Enter revised or new information</p>
                 <p>3. Save</p>
                 <br>
@@ -44,6 +45,7 @@ include_once("web/include/header.php");
                     <div class="input-group-lg">
                         <select class="select " id="tournamentid" name="tournamentid" autocomplete="on" >
                             <option selected>Choose...</option>
+                            <option value = "AddNew">Add New</option>
                             <?php
                             foreach ($tournamentlist as $tournament) {
                                 ?>
