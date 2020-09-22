@@ -35,7 +35,7 @@ include_once "web/pages/showgameresultstable.php";
 	}
 	$mysqli->close();
 	?>
-        <h4 class="mt-3">Select the Tournament: <?php echo $tournamenttoshow ?><a class="content" href="<?php echo $ROOT; ?>web/pages/createtournamentstatistics.php?tournamentcode=<?php echo $tournamenttoshow ?>" style="float:right;">See Statistical Summary</a></h4>
+        <h4 class="mt-3">Select the Tournament: <?php echo $tournamenttoshow ?><a class="content" href="<?php echo $ROOT; ?>web/pages/Tournament Statistical Summary.php?tournamentcode=<?php echo $tournamenttoshow ?>" style="float:right;">See Statistical Summary</a></h4>
         <form class="form-inline col-5" method="get" action="selectTournamentforResultsDisplay.php">
           <div class="input-group">
             <select class="form-select" id="tournamentid" name="tournamentid" autocomplete="on">

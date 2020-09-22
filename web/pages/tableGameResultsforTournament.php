@@ -25,7 +25,7 @@ $mysqli->set_charset("utf8");
       <?php
         $tournamenttoshow=$_GET['tournamentid'];
       ?>
-      <h3>Tournament: <?php echo $_GET["tournamentid"]?><a class="content" href="<?php echo $ROOT; ?>web/pages/createtournamentstatistics.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Statistical Summary</a></h3>
+      <h3>Tournament: <?php echo $_GET["tournamentid"]?><a class="content" href="<?php echo $ROOT; ?>web/pages/Tournament Statistical Summary.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Statistical Summary</a></h3>
       <div class="tableFixHead">
       <?php
         include_once("web/pages/showgameresultstable.php");

@@ -22,7 +22,7 @@ if (mysqli_connect_errno()) {
 ?>
   <h2>List of Games by Player included in ASL Player Ratings</h2>
   <?php
-$passplayercode = $_GET['playercode']; //playercode is passed from tableGameResultsforTournaments.php and tableRankedActive.php
+$passplayercode = $_GET['playercode']; //playercode is passed from tableGameResultsforTournaments.php and RankedListingofActivePlayers.php
 
 $sql = "select Fullname from players where Player_Namecode = ?";
 

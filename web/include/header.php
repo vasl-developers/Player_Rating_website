@@ -2,7 +2,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="Cache-Control" content="max-age=86400" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ASL Player Rating System is intended for recreational use only." />
+  <meta name="description" content="ASL Player Rating System provides rankings for Advanced Squad Leaders players based on tournament play. It also displays game results of ASL Tournaments." />
   <link rel="shortcut icon" href="/web/images/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/web/images/favicon.ico" type="image/x-icon" />
   <title>ASL Player Ratings</title>

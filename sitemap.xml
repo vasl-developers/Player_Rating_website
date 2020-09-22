@@ -6,16 +6,16 @@
     <loc>http://asl-ratings.org/web/pages/selectTournamentforResultsDisplay.php</loc>
   </url>
   <url>
-    <loc>http://asl-ratings.org/web/pages/tableAlphaActive.php</loc>
+    <loc>http://asl-ratings.org/web/pages/AlphabeticalListingofActivePlayers.php</loc>
   </url>
   <url>
-    <loc>http://asl-ratings.org/web/pages/tableAlphaAll.php</loc>
+    <loc>http://asl-ratings.org/web/pages/AlphabeticalListingofAllPlayers.php</loc>
   </url>
   <url>
-    <loc>http://asl-ratings.org/web/pages/tableRankedActive.php</loc>
+    <loc>http://asl-ratings.org/web/pages/RankedListingofActivePlayers.php</loc>
   </url>
   <url>
-    <loc>http://asl-ratings.org/web/pages/tableRankedAll.php</loc>
+    <loc>http://asl-ratings.org/web/pages/RankedListingofAllPlayers.php</loc>
   </url>
   <url>
     <loc>http://asl-ratings.org/web/pages/tableTournamentsRecentlyAdded.php</loc>

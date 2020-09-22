@@ -1,23 +1,25 @@
 <h2>ASL Player Rating System</h2>
 
-<p>Welcome to the ASL Player Rating System. This tool replaces the AREA rating tool managed by Bruno Nitrosso until 2017 (which in turn stood on the shoulders of giants. See About AREA). While presenting a different interface it uses the same tournament-based information and rules algorithm for determining ratings and rankings as did Bruno's AREA. It is a player rating system whose goal is to support ranking/seeding players during tournament play.</p>
+<p>View player rankings, ratings, and game-by-game results. See tournament listings and game-by-game results.</p>
+<p>Statistical reports by player, tournament and scenario. Check player vs player matchups.</p>
+<br>
 
 <div class="row">
   <div class="col-md-5">
-    <h3>Player Information</h3>
+    <h3>ASL Player Rating Information: Rankings and Alphabetical Display</h3>
     <div class="list-group">
-      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableAlphaActive.php">Alphabetical listing of Active Players</a>
-      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableRankedActive.php">Ranked listing of Active Players</a>
-      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableAlphaAll.php">Alphabetical listing of All Players</a>
-      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableRankedAll.php">Ranked listing of All Players</a>
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/AlphabeticalListingofActivePlayers.php">Alphabetical listing of Active Players</a>
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/RankedListingofActivePlayers.php">Ranked listing of Active Players</a>
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/AlphabeticalListingofAllPlayers.php">Alphabetical listing of All Players</a>
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/RankedListingofAllPlayers.php">Ranked listing of All Players</a>
     </div>
     <div class="col-md-12 mt-3">
-      <p>The above represents the core functionality of the ASL Player Rating System and is the central part of its mandate.</p>
+      <p>This tool replaces the <a href="http://asl-area.org" target="_blank">AREA rating tool</a> managed by Bruno Nitrosso until 2017. It uses the same tournament-based information and rules algorithm for determining ratings and rankings as did Bruno's AREA. It is a player rating system whose goal is to support ranking/seeding players during tournament play.</p>
     </div>
   </div>
 
   <div class="col-md-5">
-    <h3>Tournament Information</h3>
+    <h3>ASL Tournament Information: Tournament List and Game Results</h3>
     <div class="list-group">
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableTournamentsRecentlyAdded.php">Tournaments Recently Added</a>
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/tableTournamentsbyYear.php">Tournaments Included</a>
@@ -28,7 +30,7 @@
 
 <div class="row">
   <div class="col-md-5 offset-md-5">
-    <h3>Scenario Information</h3>
+    <h3>ASL Scenario Information</h3>
     <div class="list-group">
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/mostPlayedScenarios.php">Most Played Scenarios</a>
     </div>
