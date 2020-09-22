@@ -18,7 +18,7 @@ if (mysqli_connect_errno()) {
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	exit();
 }
-$passplayercode = $_GET['playercode']; //playercode is passed from tableGameResultsforTournaments.php and tableRankedActive.php
+$passplayercode = $_GET['playercode']; //playercode is passed from tableGameResultsforTournaments.php and RankedListingofActivePlayers.php
 $sql = "select Fullname from players where Player_Namecode = ?";
 if ($getPlayer = $mysqli->prepare($sql)) {
 	$getPlayer->bind_param("s", $passplayercode);

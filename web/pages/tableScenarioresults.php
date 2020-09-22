@@ -41,7 +41,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 		if ($first) {
 			$first = false;
 			?>
-    <h3>Scenario: <?php echo $passscenarioid . ' ' . $scenName ?> <a class="content" href="<?php echo $ROOT; ?>web/pages/createscenariostatistics.php?scenarioid=<?php echo $passscenarioid ?>" style="float:right;">See Statistical Summary</a></h3>
+    <h3>Scenario: <?php echo $passscenarioid . ' ' . $scenName ?> <a class="content" href="<?php echo $ROOT; ?>web/pages/Scenario Statistical Summary.php?scenarioid=<?php echo $passscenarioid ?>" style="float:right;">See Statistical Summary</a></h3>
     <div class="tableFixHead">
       <table class="table table-sm table-striped table-hover">
         <thead>
