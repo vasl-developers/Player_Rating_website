@@ -21,6 +21,7 @@ include_once("web/include/header.php");
             <a id="downloadtournamentscsv" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating data files/area_schema_tournaments.csv">Tournaments, csv format</a>
             <a id="downloadmatchresultscsv" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating data files/area_schema_match_results.csv">Game Results, csv format</a>
             <a id="downloadplayerratingscsv" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating data files/area_schema_player_ratings.csv">Player Ratings, csv format</a>
+            <a id="downloadscenarioscsv" class="track btn btn-large btn-primary" href="../Data/ASL Player Rating data files/area_schema_scenarios.csv">Scenarios, csv format</a>
             <br>
             <br>
             <p>Database files, view and save:</p>

@@ -80,7 +80,7 @@ if (($handle = fopen("../Data/init_elo.csv", "r")) !== FALSE) {
     fclose($handle);
 }
 #pour zoomer sur un gars donne - test code
-//$gars="FZG";
+//$gars="HA6";
 //$paselo=$elo[$gars];
 
 /*-----------------------------------------------------
@@ -131,13 +131,17 @@ foreach ($gamedays as $gamedate) {
             $last[$f_pnc] = $date;
             $last[$s_pnc] = $date;
             // assign results values to arrays
-            if(isset($games[$f_pnc])){$games[$f_pnc]++;}
-            if(isset($games[$s_pnc])){$games[$s_pnc]++;}
-            if ($games[$f_pnc] > 10) {
-                $provisional[$f_pnc] = 0; //0=no
-            } else {
-                $provisional[$f_pnc] = 1;
+            if(isset($games[$f_pnc])){
+                $games[$f_pnc]++;
             }
+            if(isset($games[$s_pnc])){$games[$s_pnc]++;}
+
+            if ($games[$f_pnc] > 10) {
+                    $provisional[$f_pnc] = 0; //0=no
+            } else {
+                    $provisional[$f_pnc] = 1;
+            }
+
             if ($games[$s_pnc] > 10) {
                 $provisional[$s_pnc] = 0; //0=no
             } else {
@@ -330,11 +334,9 @@ foreach (array_keys($last) as $t) {
         /* set parameters and execute */
     $stmt->execute();
     $stmt->close();
-    echo "Recalculation complete";
-    $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
-    include("web/pages/storetransactionstofile.php");
 }
-
+$txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
+include("web/pages/storetransactionstofile.php");
 /*#==========function===============================
 elo : r+=k*(w-we)
 16 to 32
