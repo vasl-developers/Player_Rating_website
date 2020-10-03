@@ -35,12 +35,12 @@ if ($getPlayer = $mysqli->prepare($sql)) {
 }
 $getPlayer->close();
 
-$sql = "select m.Player1_Namecode, m.Player1_AttDef, m.Player1_AlliesAxis, m.Player1_Result, m.Player2_Namecode, m.Player2_AttDef, m.Player2_AlliesAxis, m.Round_Date, m.Scenario_ID, m.Tournament_ID, p1.Fullname, p1.Player_Namecode, p2.Fullname, p2.Player_Namecode, s.name from match_results m INNER JOIN players p1 ON p1.Player_Namecode=m.Player1_Namecode INNER JOIN players p2 ON p2.Player_Namecode=m.Player2_Namecode LEFT JOIN scenarios s ON m.Scenario_ID=s.scenario_id WHERE m.Player1_Namecode=? OR m.Player2_Namecode=? ORDER BY m.Round_Date desc";
+$sql = "select m.Player1_Namecode, m.Player1_AttDef, m.Player1_AlliesAxis, m.Player1_Result, m.Player2_Namecode, m.Player2_AttDef, m.Player2_AlliesAxis, m.Round_Date, m.Scenario_ID, m.Tournament_ID, p1.Fullname, p1.Player_Namecode, p1.Hidden, p2.Fullname, p2.Player_Namecode, p2.Hidden, s.name from match_results m INNER JOIN players p1 ON p1.Player_Namecode=m.Player1_Namecode INNER JOIN players p2 ON p2.Player_Namecode=m.Player2_Namecode LEFT JOIN scenarios s ON m.Scenario_ID=s.scenario_id WHERE m.Player1_Namecode=? OR m.Player2_Namecode=? ORDER BY m.Round_Date desc";
 
 if ($stmt = $mysqli->prepare($sql)) {
 	$stmt->bind_param("ss", $passplayercode, $passplayercode);
 	$stmt->execute();
-	$stmt->bind_result($p1Code, $p1AttDef, $p1AlliAxis, $p1Result, $p2Code, $p2AttDef, $p2AlliAxis, $roundDate, $scenario, $tourId, $player1, $player1code, $player2, $player2code, $scenarioName);
+	$stmt->bind_result($p1Code, $p1AttDef, $p1AlliAxis, $p1Result, $p2Code, $p2AttDef, $p2AlliAxis, $roundDate, $scenario, $tourId, $player1, $player1code, $play1hide, $player2, $player2code, $play2hide, $scenarioName);
 	?>
   <h3>Player: <?php echo $name . ' (' . $passplayercode . ')' ?><a class="content" href="<?php echo $ROOT; ?>web/pages/createplayerstatistics.php?playercode=<?php echo $passplayercode ?>" style="float:right;">See Statistical Summary</a></h3>
   <div class="tableFixHead">
@@ -69,13 +69,41 @@ while ($row = $stmt->fetch()) {
 		} else {
 			$p1Result = "beats";
 		}
+        if ($play1hide == 1) {$player1 = "Hidden";}
+        if ($play2hide == 1) {$player2 = "Hidden";}
 		?>
       <tr>
-        <td><a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p1Code ?>"><?php echo prettyName($player1) ?></a></td>
+          <td>
+              <?php
+              if ($player1 == "Hidden") {
+                  ?>
+                  <?php echo prettyName($player1) ?>
+                  <?php
+              } else {
+                  ?>
+                  <a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p1Code ?>">
+                      <?php echo prettyName($player1) ?></a>
+                  <?php
+              }
+              ?>
+          </td>
         <td><?php echo $p1AttDef ?></td>
         <td><?php echo $p1AlliAxis ?></td>
         <td><?php echo $p1Result ?></td>
-        <td><a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p2Code ?>"><?php echo prettyName($player2) ?></a></td>
+          <td>
+              <?php
+              if ($player2 == "Hidden") {
+                  ?>
+                  <?php echo prettyName($player2) ?>
+                  <?php
+              } else {
+                  ?>
+                  <a class="content" href="tablePlayerGameResults.php?playercode=<?php echo $p2Code ?>">
+                      <?php echo prettyName($player2) ?></a>
+                  <?php
+              }
+              ?>
+          </td>
         <td><?php echo $p2AttDef ?></td>
         <td><?php echo $p2AlliAxis ?></td>
         <td>

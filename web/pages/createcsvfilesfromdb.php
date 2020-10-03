@@ -137,6 +137,38 @@ foreach ($ratingarray as $line) {
     fputcsv($j, $line);
 }
 fclose($j);
+
+// scenarios
+//set filename
+$scenariosfilename = "../Data/ASL Player Rating data files/area_schema_scenarios.csv";
+// delete existing data file
+$test = unlink($scenariosfilename);
+// get scenario data
+$sql = "SELECT scenario_id, name, publication, firstplayer_sidename, firstplayer_sideresult, secondplayer_sidename, secondplayer_sideresult, url FROM scenarios";
+if ($stmt = $mysqli->prepare($sql)) {
+    $stmt->execute();
+    $stmt->bind_result($scenid, $name, $pub, $fplayerside, $fplayersideres, $splayerside, $splayersideres, $url);
+    $scenarioarray = array();
+    $csv = array("scenario_id"=>"scenario id", "name"=>"scen name", "publication"=>"pub name",  "firstplayer_sideresult"=>"first side result", "secondplayer_sidename"=>"second side name", "secondplayer_sideresult"=>"second side result", "url"=>"url link"); //column headers
+    array_push($scenarioarray, $csv);
+    while ($row = $stmt->fetch()) {
+        // put data into array
+        $arrayitem = array("scenario_id"=>$scenid, "name"=>$name, "publication"=>$pub, "firstplayer_sidename"=>$fplayerside, "firstplayer_sideresult"=>$fplayersideres, "secondplayer_sidename"=>$splayerside, "secondplayer_sideresult"=>$splayersideres, "url"=>$url);
+        array_push($scenarioarray, $arrayitem);
+    }
+} else {
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    exit();
+}
+// now format array - csv
+$k = fopen($scenariosfilename, 'w');
+foreach ($scenarioarray as $line) {
+    fputcsv($k, $line);
+}
+fclose($k);
+
+
+
 $mysqli->close();
 $txt= date("Y-m-d"). " Monthly data export to csv files completed" . "\n";
 include("web/pages/storetransactionstofile.php");
