@@ -29,7 +29,16 @@
 </div>
 
 <div class="row">
-  <div class="col-md-5 offset-md-5">
+    <div class="col-md-5">
+        <h3>ASL Top Ten Information</h3>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptens.php">Player Leaders</a>
+        </div>
+        <div class="col-md-12 mt-3">
+            <p>Which players have won the most tournament games, who has the best winning percentage? Find out this and more in these links which are based on recorded tournament games. Find the rankings behind the ratings!</p>
+        </div>
+    </div>
+  <div class="col-md-5">
     <h3>ASL Scenario Information</h3>
     <div class="list-group">
       <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/mostPlayedScenarios.php">Most Played Scenarios</a>
