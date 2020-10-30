@@ -133,6 +133,44 @@ $stmt->close();
 ?>
       </div>
     </div>
+
+      <div class="row">
+          <div class="col-md-3 offset-md-1">
+              <?php
+              $sql = "SELECT Fullname, HighestStreak, Player1_Namecode FROM player_ratings ORDER BY HighestStreak DESC LIMIT 10";
+              if ($stmt = $mysqli->prepare($sql)) {
+                  $stmt->execute();
+                  $stmt->bind_result($fullname, $streak, $pnc);
+                  ?>
+                  <div class="tableFixHead">
+                      <table class="table table-sm table-striped table-hover">
+                          <thead>
+                          <tr>
+                              <th>Player</th>
+                              <th>Win Streak</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <?php while ($row = $stmt->fetch()) {
+                              $name = trim($fullname);
+                              ?>
+                              <tr>
+                                  <td><a class="content" href="../pages/tablePlayerGameResults.php?playercode=<?php echo $pnc ?>"><?php echo prettyname($name) ?></a></td>
+                                  <td><?php echo $streak ?></td>
+                              </tr>
+                              <?php
+                          }
+                          ?>
+                          </tbody>
+                      </table>
+                  </div>
+                  <?php
+              }
+              $stmt->close();
+              ?>
+          </div>
+      </div>
+
   </div>
   <?php
 $mysqli->close();
