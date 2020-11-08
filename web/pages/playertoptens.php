@@ -30,7 +30,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 	$stmt->execute();
 	$stmt->bind_result($fullname, $gamesplayed, $pnc);
 	?>
-        <div class="tableFixHead">
+        <div class="tableFixHead autoHeight">
           <table class="table table-sm table-striped table-hover">
             <thead>
               <tr>
@@ -65,7 +65,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 	$stmt->execute();
 	$stmt->bind_result($fullname, $gameswon, $pnc);
 	?>
-        <div class="tableFixHead">
+        <div class="tableFixHead autoHeight">
           <table class="table table-sm table-striped table-hover">
             <thead>
               <tr>
@@ -100,7 +100,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 	$stmt->execute();
 	$stmt->bind_result($fullname, $games, $gameswon, $winpct, $pnc);
 	?>
-        <div class="tableFixHead">
+        <div class="tableFixHead autoHeight">
           <table class="table table-sm table-striped table-hover">
             <thead>
               <tr>
@@ -137,12 +137,12 @@ $stmt->close();
       <div class="row">
           <div class="col-md-3 offset-md-1">
               <?php
-              $sql = "SELECT Fullname, HighestStreak, Player1_Namecode FROM player_ratings ORDER BY HighestStreak DESC LIMIT 10";
-              if ($stmt = $mysqli->prepare($sql)) {
-                  $stmt->execute();
-                  $stmt->bind_result($fullname, $streak, $pnc);
-                  ?>
-                  <div class="tableFixHead">
+$sql = "SELECT Fullname, HighestStreak, Player1_Namecode FROM player_ratings ORDER BY HighestStreak DESC LIMIT 10";
+if ($stmt = $mysqli->prepare($sql)) {
+	$stmt->execute();
+	$stmt->bind_result($fullname, $streak, $pnc);
+	?>
+                  <div class="tableFixHead autoHeight">
                       <table class="table table-sm table-striped table-hover">
                           <thead>
                           <tr>
@@ -152,25 +152,24 @@ $stmt->close();
                           </thead>
                           <tbody>
                           <?php while ($row = $stmt->fetch()) {
-                              $name = trim($fullname);
-                              ?>
+		$name = trim($fullname);
+		?>
                               <tr>
                                   <td><a class="content" href="../pages/tablePlayerGameResults.php?playercode=<?php echo $pnc ?>"><?php echo prettyname($name) ?></a></td>
                                   <td><?php echo $streak ?></td>
                               </tr>
                               <?php
-                          }
-                          ?>
+}
+	?>
                           </tbody>
                       </table>
                   </div>
                   <?php
-              }
-              $stmt->close();
-              ?>
+}
+$stmt->close();
+?>
           </div>
       </div>
-
   </div>
   <?php
 $mysqli->close();

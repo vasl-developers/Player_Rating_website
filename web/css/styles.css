@@ -61,6 +61,8 @@ td.headline {
 .tableFixHead th  { background:#eee; }
 .tableFixHead td.date { white-space: nowrap; }
 
+.tableFixHead.autoHeight { height: auto; }
+
 a {
   text-decoration: none;
 }
