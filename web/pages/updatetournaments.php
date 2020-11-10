@@ -7,7 +7,22 @@ if (mysqli_connect_errno()) {
 	exit();
 }
 if (isset($_POST['submit']) || isset($_POST['AddNew'])) {
-	include_once "web/pages/processtournament.php";
+    include_once "web/pages/processtournament.php";
+} else if (isset($_POST['Delete']))  {
+    $deletetour = $_POST['TourID'];
+    $tourname = $_POST['tour_name'];
+    $sql = "DELETE from tournaments Where Tournament_id=?";
+    if (!($stmt = $mysqli->prepare($sql ))) {
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+        exit();
+    }
+    $stmt->bind_param("s", $deletetour);
+    $stmt->execute();
+    $stmt->close();
+    echo "<br>";
+    echo "<li><strong>" . $tourname . " Deleted from Database</strong></li>";
+    $txt = date("Y-m-d") . " " . $tourname . " deleted from players" . "\n";
+    include("web/pages/storetransactionstofile.php");
 } else {
 	$mysqli->set_charset("utf8");
 	if ($tournamenttoshow == "AddNew") {
@@ -135,8 +150,6 @@ echo "<div class='form-row'>";
 	echo "</div>";
 	echo "<br>";
 	echo "<br>";
-	echo "<br>";
-	echo "<br>";
 	echo "<h3>3. Save Changes</h3>";
 	echo "<br>";
 	echo "<div class='form-row col-md-3'>";
@@ -146,7 +159,11 @@ echo "<div class='form-row'>";
 		$savetype = "submit";
 	}
 	echo "<button type='submit' class='btn btn-primary' name='$savetype' >Save</button>";
-	echo "</div>";
+    echo "</div>";
+    echo "<br>";
+    echo "<div class='form-row col-md-3'>";
+    echo "<button type='submit' class='btn btn-primary' name='Delete' >Delete</button>";
+    echo "</div>";
 	echo "</form>";
 	$mysqli->close();
 
