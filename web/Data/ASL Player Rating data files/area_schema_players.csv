@@ -136,7 +136,7 @@ BISHOP,Jim,Jim BISHOP,USA,BPJ,1
 BISHOP,David,David BISHOP,Australia,BPD,0
 BISS,Francis G.,Francis G. BISS,USA,B1F,0
 BISTODEAU,Mike,Mike BISTODEAU,USA,BUM,0
-BJORKÅS,Øyvind,Øyvind BJORKÅS,Norway,BSY,0
+BJØRKÅS,Øyvind,Øyvind BJØRKÅS,Norway,BSY,0
 BLACK,Michael,Michael BLACK,USA,BK1,0
 BLACKMORE,Mark,Mark BLACKMORE,UK,BER,0
 BLACKWOOD,David,David BLACKWOOD,UK,B7B,0
@@ -1885,7 +1885,6 @@ Ayres,Joel,Joel Ayres,,AsJ1,0
 Howison-Haworth,Jeremy,Jeremy Howison-Haworth,,HhJ1,0
 Bagley,Andy,Andy Bagley,,ByA1,0
 Greenshields,Frazer,Frazer Greenshields,,GsF1,0
-Gericke,Gerrit,Gerrit Gericke,,GeG1,0
 Strasser,Frank,Frank Strasser,,SrF1,0
 Bellini,Jim,Jim Bellini,,BiJ1,0
 Wallace,David,David Wallace,,WeD1,0
@@ -1895,20 +1894,20 @@ Chamberland,Paul ,Paul  Chamberland,,CdP1,0
 Roundhill,Vs Brian,Vs Brian Roundhill,,RlV1,0
 Killeen,Kevin ,Kevin  Killeen,,KnK1,0
 Richardson,Brenda,Brenda Richardson,Canada,RnB2,0
-Dejean,Cédric,Cédric Dejean,,DnC1,0
+Sachau,Michael,Michael Sachau,Germany,SuM1,0
 Geryk,Bruce,Bruce Geryk,,GkB2,0
 Demeocq,André,André Demeocq,,DqA1,0
-Dejean,Cédric,Cédric Dejean,,DnC1,0
+Estevan,Juanjo,Juanjo Estevan,,EnJ1,0
 Coté,René,René Coté,,CeR1,0
-Dejean,Cédric,Cédric Dejean,,DnC1,0
-Dejean,Cédric,Cédric Dejean,,DnC1,0
-Dejean,Cédric,Cédric Dejean,,DnC1,0
-Caltabiano,Alessandro,Alessandro Caltabiano,,CoA1,0
+Rodgers,Greg,Greg Rodgers,,RsG1,0
+Garcia,Pablo,Pablo Garcia,,GaP1,0
 Dempsey,Jack,Jack Dempsey,,DyJ1,0
 Martinez,Juanjo,Juanjo Martinez,,MzJ1,0
 Nicola,Bud,Bud Nicola,,NaB1,0
+Wirthlin,Julius,Julius Wirthlin,,WnJ2,0
 Coté,R.,R. Coté,,C,0
 Van Hoy,Michael,Michael Van Hoy,,VyM2,0
+Holland,Donald,Donald Holland,,HdD1,0
 Goldin,Andrew,Andrew Goldin,,GnA1,0
 Kirkpatrick,Albert,Albert Kirkpatrick,,KkA1,0
 Weiss,Raymond,Raymond Weiss,,WsR1,0
@@ -1917,7 +1916,7 @@ Shilling,Curt,Curt Shilling,,SgC1,0
 O'donnell,Hugh,Hugh O'donnell,,OlH1,0
 Sherer,Scott,Scott Sherer,,SrS1,0
 Kock,Kris,Kris Kock,,KkK1,0
-Dye,Charles,Charles Dye,,DeC1,0
+Radjah,Javanabal,Javanabal Radjah,,RhJ1,0
 Dragonetti,Jay,Jay Dragonetti,,DiJ1,0
 Catacchini,Maurizio,Maurizio Catacchini,,CiM1,0
 Deissler,Tobias,Tobias Deissler,,DrT1,0
@@ -1958,7 +1957,7 @@ Washington,Paul,Paul Washington,,WnP1,0
 Grabow,Barry,Barry Grabow,,GwB1,0
 Courtnay,Peter,Peter Courtnay,,CyP1,0
 Cook,Steven,Steven Cook,,CkS1,0
-Wirthlin,Julius,Julius Wirthlin,,WnJ1,0
+Williamson,Justin,Justin Williamson,,WnJ1,0
 LaRochelle,Joseph,Joseph LaRochelle,,LeJ1,0
 Brooks,Jacob,Jacob Brooks,,BsJ2,0
 Sørensen,Søren Sandager,Søren Sandager Sørensen,,SnS1,0
@@ -2002,7 +2001,7 @@ Dahlbäck,Matias,Matias Dahlbäck,,DkM1,0
 Urquhart,Michael,Michael Urquhart,,UtM1,0
 perret,jm,jm perret,,ptj1,0
 Walmetz,Eric,Eric Walmetz,,WzE1,0
-Grolivier,Unknown,Unknown Grolivier,,GrU1,0
+Ramaille,Olivier,Olivier Ramaille,France,GrU1,0
 Boileau,Pascal,Pascal Boileau,,BuP1,0
 Ward,Renaud,Renaud Ward,,WdR1,0
 Keurejian,Matthew,Matthew Keurejian,,KnM3,0
@@ -2013,7 +2012,7 @@ Lannier,Christophe,Christophe Lannier,,LrC2,0
 Von Hoy,Mike,Mike Von Hoy,,VyM1,0
 Gambain,Gérard,Gérard Gambain,,GnG1,0
 Rogers,Michael,Michael Rogers,,RsM1,0
-Drewdal,Oddgeir,Oddgeir Drewdal,,DlO2,0
+Drevdal,Oddgeir,Oddgeir Drevdal,Norway,DlO2,0
 Led,Jesper,Jesper Led,,LdJ1,0
 Barba,Santiago Lopez,Santiago Lopez Barba,,BaS1,0
 Soong,Milton,Milton Soong,,SgM1,0
@@ -2021,7 +2020,7 @@ Finne,Styrk,Styrk Finne,,FeS1,0
 Barnes,J Edmund,J Edmund Barnes,,BsJ1,0
 Garlic,Dmitri,Dmitri Garlic,,GcD1,0
 Santacruz,Juan,Juan Santacruz,,SzJ1,0
-Martin,Luca,Luca Martin,,MnL1,0
+Otrompke,John,John Otrompke,,OeJ1,0
 Ready,Varick,Varick Ready,,RyV1,0
 Edmunds,Phil,Phil Edmunds,,EsP1,0
 Gibson,Anthony,Anthony Gibson,,GnA2,0
@@ -2039,15 +2038,13 @@ Burton,Drew,Drew Burton,,BnD1,0
 Ekengren,Neal,Neal Ekengren,,EnN1,0
 Sullivan,Dan,Dan Sullivan,,SnD1,0
 Kocot,Dave,Dave Kocot,,KtD1,0
-Kay,Johnathan,Johnathan Kay,,KyJ1,0
 Stibits,Mike,Mike Stibits,,SsM1,0
 Loper,Rob,Rob Loper,,LrR1,0
 Arietta,Rob,Rob Arietta,,AaR1,0
 Mioiduski,Ken,Ken Mioiduski,,MiK1,0
 Grandjean,Nicolas,Nicolas Grandjean,,GnN1,0
-Willows,William,William Willows,,WsW1,0
 Hogenhaug,Ketil,Ketil Hogenhaug,,HgK2,0
-Ellet,Ryan,Ryan Ellet,,EtR1,0
+Newell,Jeff,Jeff Newell,,NlJ1,0
 Saarinen,Mikko,Mikko Saarinen,,SnM1,0
 Rudd,Mike,Mike Rudd,UK,RdM1,0
 Sockwell,Mark,Mark Sockwell,,SlM1,0
@@ -2059,7 +2056,7 @@ Rogers,Dean,Dean Rogers,,RsD1,0
 Boles,Amanda,Amanda Boles,,BsA1,0
 Fenton,Don,Don Fenton,,FnD1,0
 McBee,Stephen,Stephen McBee,,MeS1,0
-Zavala,Felipe,Felipe Zavala,,ZaF1,0
+Zavala,Felipe,Felipe Zavala,USA,ZaF1,0
 Ortiz,Orlando,Orlando Ortiz,,OzO1,0
 Pandori,Mark,Mark Pandori,,PiM1,0
 Lee,Woody,Woody Lee,,LeW1,0
@@ -2067,13 +2064,22 @@ Anderson,Chuck,Chuck Anderson,,AnC1,0
 Davidson,Devon,Devon Davidson,,DnD1,0
 Powell,John,John Powell,,J1,0
 Nailing,David,David Nailing,,NgD1,0
-,Jim Svette,Jim Svette ,,J2,0
+Svette,Jim,Jim Svette,,J2,0
 Blackman,Matt,Matt Blackman,,BnM1,0
 Douglas,David,David Douglas,,DsD1,0
 Bott,George,George Bott,,BtG1,0
-,Bill Thomson,Bill Thomson ,,B1,0
+Thomson,Bill,Bill Thomson,,B1,0
 Douglas,Art,Art Douglas,,DsA1,0
 Finan,David,David Finan,,FnD2,0
 Cheever,Dave,Dave Cheever,,CrD1,0
 Bert,Jim,Jim Bert,,BtJ1,0
 Dobbs,Trent,Trent Dobbs,USA,DsT1,0
+Castellana,Lester,Lester Castellana,,CaL1,0
+Castander,David,David Castander,,CrD2,0
+Cameron,Ernie,Ernie Cameron,Canada,CnE1,0
+Albrechtsen,Peter,Peter Albrechtsen,,AnP1,0
+Garc,Ricardo,Ricardo Garc,,GaR3,0
+Hill,Leo,Leo Hill,,HlL1,0
+Wert,Gabriel,Gabriel Wert,,WtG1,0
+Ready,David,David Ready,,RyD1,0
+Garc,Ricardo,Ricardo Garc,,GaR2,0
