@@ -139,6 +139,7 @@ while ($row = $stmt->fetch()) {
 ?>
 <div class="container">
     <h2>Scenario Statistical Summary for <?php echo $passscenarioid ?></h2>
+    <p>Updated on the 1st of every month. Games added during a month will appear in the Summary next month.</p>
 </div>
 <br>
 <?php

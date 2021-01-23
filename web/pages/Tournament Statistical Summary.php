@@ -165,6 +165,7 @@ while ($row = $stmt->fetch()) {
 ?>
 <div class="container">
   <h2>Statistical Summary for <?php echo $tourname . ' ' . $passtournamentcode ?></h2>
+    <p>Updated on the 1st of every month. Games added during a month will appear in the Summary next month.</p>
   <div class="row">
     <table class="table table-sm table-striped table-hover mb-1">
       <thead>
