@@ -242,7 +242,7 @@ OPEN_17,4,2017-04-01,,SRK,,,win,GNI,,,lost,2017-04-01,240
 OPEN_17,4,2017-04-01,,HDB,,,win,RZD,,,lost,2017-04-01,241
 OPEN_17,4,2017-04-01,,BCR,,,win,RRJ,,,lost,2017-04-01,242
 OPEN_17,4,2017-04-01,,MRO,,,win,BNO,,,lost,2017-04-01,243
-OPEN_17,4,2017-04-01,DB84,HNB,attacker,allies,win,TEG,defender,axis,lost,2017-04-01,244
+OPEN_17,4,2017-04-01,"DB084 Pot of Stew ",HNB,defender,allies,win,TEG,attacker,axis,lost,2017-04-01,244
 OPEN_17,4,2017-04-01,,VNW,,,win,SRP,,,lost,2017-04-01,245
 OPEN_17,4,2017-04-01,,BSC,,,win,RSS,,,lost,2017-04-01,246
 OPEN_17,4,2017-04-01,,SYI,,,win,CIJ,,,lost,2017-04-01,247
@@ -1714,110 +1714,99 @@ B-END_15,2015,2015-05-03,FT199,DRJ,,,win,RR1,,,lost,2015-05-03,1710
 B-END_15,2015,2015-05-03,AP74,SUP,attacker,axis,win,COW,defender,allies,lost,2015-05-03,1711
 B-END_15,2015,2015-05-03,FRF52,HAM,,,win,FNN,,,lost,2015-05-03,1712
 B-END_15,2015,2015-05-03,BFP102,SSD,,,win,CEJ,,,lost,2015-05-03,1713
-TEXAS_15,2015,2015-06-25,AP41,MSK,defender,allies,win,CY1,attacker,axis,lost,2015-06-25,1714
-TEXAS_15,2015,2015-06-25,J152,TAG,defender,axis,win,BUM,attacker,allies,lost,2015-06-25,1715
-TEXAS_15,2015,2015-06-25,TX6,SKM,defender,axis,win,MSK,attacker,allies,lost,2015-06-25,1716
-TEXAS_15,2015,2015-06-25,RPT11,NNH,attacker,allies,win,HKE,defender,axis,lost,2015-06-25,1717
-TEXAS_15,2015,2015-06-25,SP205,JSL,defender,axis,win,1N1,attacker,allies,lost,2015-06-25,1718
-TEXAS_15,2015,2015-06-25,"BOF 2",RE1,attacker,allies,win,NNH,defender,axis,lost,2015-06-25,1719
-TEXAS_15,2015,2015-06-25,FT174,K4R,attacker,allies,win,EAR,defender,axis,lost,2015-06-25,1720
-TEXAS_15,2015,2015-06-25,G27,CY1,attacker,allies,win,B4D,defender,axis,lost,2015-06-25,1721
-TEXAS_15,2015,2015-06-25,J155,SNK,attacker,allies,win,CRM,defender,axis,lost,2015-06-25,1722
-TEXAS_15,2015,2015-06-25,S51,MAP,attacker,allies,win,63A,defender,axis,lost,2015-06-25,1723
-TEXAS_15,2015,2015-06-25,BFP101,GGE,attacker,allies,win,HS1,defender,axis,lost,2015-06-25,1724
-TEXAS_15,2015,2015-06-25,AP41,MSD,defender,allies,win,ONJ,attacker,axis,lost,2015-06-25,1725
-TEXAS_15,2015,2015-06-25,RPT52,SGP,attacker,allies,win,SLM,defender,axis,lost,2015-06-25,1726
-TEXAS_15,2015,2015-06-25,"BOF 3",RS2,attacker,allies,win,VKD,defender,axis,lost,2015-06-25,1727
-TEXAS_15,2015,2015-06-25,SP1,VKA,defender,axis,win,HRJ,attacker,allies,lost,2015-06-25,1728
-TEXAS_15,2015,2015-06-25,SP,HRJ,defender,axis,win,1N1,attacker,allies,lost,2015-06-25,1729
-TEXAS_15,2015,2015-06-25,BFP99,GGE,defender,axis,win,J2P,attacker,allies,lost,2015-06-25,1730
-TEXAS_15,2015,2015-06-25,J110,HY1,defender,axis,win,GGB,attacker,allies,lost,2015-06-25,1731
-TEXAS_15,2015,2015-06-25,J155,RE1,attacker,allies,win,LTD,defender,axis,lost,2015-06-25,1732
-TEXAS_15,2015,2015-06-25,AP32,RLB,defender,axis,win,NNH,attacker,allies,lost,2015-06-25,1733
-TEXAS_15,2015,2015-06-25,AP58,B4D,attacker,allies,win,BN2,defender,axis,lost,2015-06-25,1734
-TEXAS_15,2015,2015-06-25,J158,SNK,defender,axis,win,HS1,attacker,allies,lost,2015-06-25,1735
-TEXAS_15,2015,2015-06-25,WO2,MSD,attacker,allies,win,KKC,defender,axis,lost,2015-06-25,1736
-TEXAS_15,2015,2015-06-25,BOF12,LTD,defender,axis,win,GGB,attacker,allies,lost,2015-06-25,1737
-TEXAS_15,2015,2015-06-25,BOF12,RE1,defender,axis,win,NNH,attacker,allies,lost,2015-06-25,1738
-TEXAS_15,2015,2015-06-25,BOF7,BN2,attacker,axis,win,HRJ,defender,allies,lost,2015-06-25,1739
-TEXAS_15,2015,2015-06-25,BOF7,JSL,defender,allies,win,VKA,attacker,axis,lost,2015-06-25,1740
-TEXAS_15,2015,2015-06-25,21,LTD,defender,axis,win,MSK,attacker,allies,lost,2015-06-25,1741
-TEXAS_15,2015,2015-06-25,AP14,BLS,attacker,allies,win,HY1,defender,axis,lost,2015-06-25,1742
-TEXAS_15,2015,2015-06-25,A,HKE,defender,axis,win,CRR,attacker,allies,lost,2015-06-25,1743
-TEXAS_15,2015,2015-06-25,BFP35,HS1,defender,allies,win,CY1,attacker,axis,lost,2015-06-25,1744
-TEXAS_15,2015,2015-06-25,ESG18,RE1,defender,allies,win,GGE,attacker,axis,lost,2015-06-25,1745
-TEXAS_15,2015,2015-06-25,SP11,BRC,defender,allies,win,RS2,attacker,axis,lost,2015-06-25,1746
-TEXAS_15,2015,2015-06-25,PRP05,BUM,attacker,axis,win,B4D,defender,allies,lost,2015-06-25,1747
-TEXAS_15,2015,2015-06-25,U39,KKC,attacker,axis,win,ONJ,defender,allies,lost,2015-06-25,1748
-TEXAS_15,2015,2015-06-25,"BOF 5",HY1,defender,allies,win,VKD,attacker,axis,lost,2015-06-25,1749
-TEXAS_15,2015,2015-06-25,A5,J2P,attacker,allies,win,MSK,defender,axis,lost,2015-06-25,1750
-TEXAS_15,2015,2015-06-25,BFP52,SGP,attacker,allies,win,RS2,defender,axis,lost,2015-06-25,1751
-TEXAS_15,2015,2015-06-25,LFT185,KKC,defender,allies,win,B4D,attacker,axis,lost,2015-06-25,1752
-TEXAS_15,2015,2015-06-25,U39,WWW,defender,allies,win,SGP,attacker,axis,lost,2015-06-25,1753
-TEXAS_15,2015,2015-06-25,AP68,SGP,attacker,axis,win,BUM,defender,allies,lost,2015-06-25,1754
-TEXAS_15,2015,2015-06-25,J159,PAS,attacker,axis,win,TI1,defender,allies,lost,2015-06-25,1755
-TEXAS_15,2015,2015-06-25,ESG95,GGB,attacker,axis,win,SLM,defender,allies,lost,2015-06-25,1756
-TEXAS_15,2015,2015-06-25,"BOF 1",B4D,defender,allies,win,GGB,attacker,axis,lost,2015-06-25,1757
-TEXAS_15,2015,2015-06-25,J155,KKC,defender,allies,win,RLB,attacker,axis,lost,2015-06-25,1758
-TEXAS_15,2015,2015-06-25,BFP102,GGE,attacker,axis,win,HRJ,defender,allies,lost,2015-06-25,1759
-TEXAS_15,2015,2015-06-25,19,VKD,attacker,axis,win,J2P,defender,allies,lost,2015-06-25,1760
-TEXAS_15,2015,2015-06-25,FRF30,RLB,attacker,axis,win,VKA,defender,allies,lost,2015-06-25,1761
-TEXAS_15,2015,2015-06-25,J148,CRM,defender,allies,win,NNH,attacker,axis,lost,2015-06-25,1762
-TEXAS_15,2015,2015-06-25,GD9,BN2,attacker,axis,win,MSD,defender,allies,lost,2015-06-25,1763
-TEXAS_15,2015,2015-06-25,SP80,TAG,defender,allies,win,SKM,attacker,axis,lost,2015-06-25,1764
-TEXAS_15,2015,2015-06-25,AP78,LTD,attacker,allies,win,RLB,defender,axis,lost,2015-06-25,1765
-TEXAS_15,2015,2015-06-25,SP80,GGB,defender,allies,win,RLB,attacker,axis,lost,2015-06-25,1766
-TEXAS_15,2015,2015-06-25,122,RLB,defender,allies,win,PN1,attacker,axis,lost,2015-06-25,1767
-TEXAS_15,2015,2015-06-25,SP80,63A,defender,allies,win,B4D,attacker,axis,lost,2015-06-25,1768
-TEXAS_15,2015,2015-06-25,SP80,CY1,defender,allies,win,SLM,attacker,axis,lost,2015-06-25,1769
-TEXAS_15,2015,2015-06-25,T1,VKD,attacker,allies,win,HKE,defender,axis,lost,2015-06-25,1770
-TEXAS_15,2015,2015-06-25,J146,BLS,defender,axis,win,SGP,attacker,allies,lost,2015-06-25,1771
-TEXAS_15,2015,2015-06-25,FRF30,K4R,attacker,axis,win,VKA,defender,allies,lost,2015-06-25,1772
-TEXAS_15,2015,2015-06-25,50,MSD,attacker,allies,win,J2P,defender,axis,lost,2015-06-25,1773
-TEXAS_15,2015,2015-06-25,BFP86,HRJ,defender,axis,win,KKC,attacker,allies,lost,2015-06-25,1774
-TEXAS_15,2015,2015-06-25,WO7,SKM,defender,axis,win,RS2,attacker,allies,lost,2015-06-25,1775
-TEXAS_15,2015,2015-06-25,102,RE1,defender,axis,win,HY1,attacker,allies,lost,2015-06-25,1776
-TEXAS_15,2015,2015-06-25,27,BUM,attacker,allies,win,J2P,defender,axis,lost,2015-06-25,1777
-TEXAS_15,2015,2015-06-25,FRF20,J2J,defender,allies,win,1N1,attacker,axis,lost,2015-06-25,1778
-TEXAS_15,2015,2015-06-25,SP80,RS2,defender,allies,win,RE1,attacker,axis,lost,2015-06-25,1779
-TEXAS_15,2015,2015-06-25,U27,MSK,,allies,win,B4D,,axis,lost,2015-06-25,1780
-TEXAS_15,2015,2015-06-25,U27,BUM,,axis,win,MSD,,allies,lost,2015-06-25,1781
-TEXAS_15,2015,2015-06-25,143,J2P,attacker,allies,win,SLM,defender,axis,lost,2015-06-25,1782
-TEXAS_15,2015,2015-06-25,SP178,SKM,attacker,allies,win,63A,defender,axis,lost,2015-06-25,1783
-TEXAS_15,2015,2015-06-25,OA7,PN1,defender,axis,win,J2J,attacker,allies,lost,2015-06-25,1784
-TEXAS_15,2015,2015-06-25,FT58,BN2,attacker,allies,win,VKD,defender,axis,lost,2015-06-25,1785
-TEXAS_15,2015,2015-06-25,FE109,BLS,attacker,axis,win,CY1,defender,allies,lost,2015-06-25,1786
-TEXAS_15,2015,2015-06-25,BFP95,HS1,defender,allies,win,SZR,attacker,axis,lost,2015-06-25,1787
-TEXAS_15,2015,2015-06-25,SP80,K4R,attacker,axis,win,HY1,defender,allies,lost,2015-06-25,1788
-TEXAS_15,2015,2015-06-25,J94,SKM,attacker,axis,win,VKD,defender,allies,lost,2015-06-25,1789
-TEXAS_15,2015,2015-06-25,SP80,BUM,attacker,axis,win,MSK,defender,allies,lost,2015-06-25,1790
-TEXAS_15,2015,2015-06-25,SP51,SKM,attacker,allies,win,HKE,defender,axis,lost,2015-06-25,1791
-TEXAS_15,2015,2015-06-25,FT142,SZR,attacker,allies,win,GGB,defender,axis,lost,2015-06-25,1792
-TEXAS_15,2015,2015-06-25,SP178,GGE,attacker,axis,win,VKA,defender,allies,lost,2015-06-25,1793
-TEXAS_15,2015,2015-06-25,AP40,1N1,attacker,axis,win,63A,defender,allies,lost,2015-06-25,1794
-TEXAS_15,2015,2015-06-25,WO3,GGB,defender,allies,win,VKD,attacker,axis,lost,2015-06-25,1795
-TEXAS_15,2015,2015-06-25,J160,HS1,attacker,axis,win,RLB,defender,allies,lost,2015-06-25,1796
-TEXAS_15,2015,2015-06-25,AP72,SGP,defender,allies,win,NNH,attacker,axis,lost,2015-06-25,1797
-TEXAS_15,2015,2015-06-25,BFP30,SZR,defender,allies,win,HY1,attacker,axis,lost,2015-06-25,1798
-TEXAS_15,2015,2015-06-25,T,BUM,attacker,axis,win,CRM,defender,allies,lost,2015-06-25,1799
-TEXAS_15,2015,2015-06-25,SP80,TI1,defender,allies,win,BN2,attacker,axis,lost,2015-06-25,1800
-TEXAS_15,2015,2015-06-25,RPT13,63A,defender,axis,win,CRR,attacker,allies,lost,2015-06-25,1801
-TEXAS_15,2015,2015-06-25,93,VKA,defender,allies,win,B4D,attacker,axis,lost,2015-06-25,1802
-TEXAS_15,2015,2015-06-25,A32,VKD,defender,allies,win,EAR,attacker,axis,lost,2015-06-25,1803
-TEXAS_15,2015,2015-06-25,SP6,HRJ,attacker,axis,win,J2P,defender,allies,lost,2015-06-25,1804
-TEXAS_15,2015,2015-06-25,J72,MSD,defender,axis,win,BLS,attacker,allies,lost,2015-06-25,1805
-TEXAS_15,2015,2015-06-25,BFP90,HY1,defender,axis,win,HRJ,attacker,allies,lost,2015-06-25,1806
-TEXAS_15,2015,2015-06-25,WCW2,WWW,defender,axis,win,J2J,attacker,allies,lost,2015-06-25,1807
-TEXAS_15,2015,2015-06-25,AP34,TAG,defender,axis,win,RLB,attacker,allies,lost,2015-06-25,1808
-TEXAS_15,2015,2015-06-25,J154,PAS,attacker,allies,win,HS1,defender,axis,lost,2015-06-25,1809
-TEXAS_15,2015,2015-06-25,AP32,K4R,defender,axis,win,VKD,attacker,allies,lost,2015-06-25,1810
-TEXAS_15,2015,2015-06-25,MM25,MSK,defender,axis,win,B4D,attacker,allies,lost,2015-06-25,1811
-TEXAS_15,2015,2015-06-25,OA28,KKC,attacker,allies,win,PN1,defender,axis,lost,2015-06-25,1812
-TEXAS_15,2015,2015-06-25,J123,CY1,attacker,allies,win,LTD,defender,axis,lost,2015-06-25,1813
-TEXAS_15,2015,2015-06-25,MM28,BUM,defender,axis,win,EAR,attacker,allies,lost,2015-06-25,1814
-TEXAS_15,2015,2015-06-25,J156,RE1,defender,axis,win,SLM,attacker,allies,lost,2015-06-25,1815
-TEXAS_15,2015,2015-06-25,RPT13,HKE,attacker,allies,win,EAR,defender,axis,lost,2015-06-25,1816
-TEXAS_15,2015,2015-06-25,CDN20,RS2,defender,allies,win,ONJ,attacker,axis,lost,2015-06-25,1817
+BASLO_20,3,2020-01-26,"J103 Lenin's Sons",LIT,attacker,axis,win,DlO2,defender,allies,lost,2020-01-26,31724
+BASLO_20,2,2020-01-25,"ASL141 Action at Balberkamp",JdL1,defender,allies,win,BSY,attacker,axis,lost,2020-01-25,31723
+BASLO_20,2,2020-01-25,"J19 Merzenhausen Zoo",LLT,defender,axis,win,DlO2,attacker,allies,lost,2020-01-25,31722
+BASLO_20,2,2020-01-25,"DTF-2 Blitzkrieg!",LIT,defender,allies,win,BEN,attacker,axis,lost,2020-01-25,31721
+BASLO_20,1,2020-01-24,"O7 Broken Wings",DlO2,attacker,allies,win,BSY,defender,axis,lost,2020-01-24,31720
+BASLO_20,1,2020-01-24,"FrF98 Amerikanskaya Suka",LIT,defender,axis,win,JdL1,attacker,allies,lost,2020-01-24,31719
+BASLO_20,1,2020-01-24,"DTF-4 Death to Fascism",BEN,attacker,allies,win,LLT,defender,axis,lost,2020-01-24,31718
+WCM_20,5,2020-03-01,233,DsD1,defender,allies,win,STS,attacker,axis,lost,2020-03-01,31717
+WCM_20,4,2020-03-01,"AP 52",PAD,defender,allies,lost,STS,attacker,axis,win,2020-03-01,31716
+WCM_20,3,2020-02-27,"SP 253",ELJ,defender,axis,lost,STS,attacker,allies,win,2020-02-27,31715
+WCM_20,2,2020-02-27,237,LRB,defender,axis,lost,STS,attacker,allies,win,2020-02-27,31714
+WCM_20,1,2020-02-27,"SP 271",SDP,defender,allies,lost,STS,attacker,axis,win,2020-02-27,31713
+CASC_20,4,8/29/20,"FrF 89",FrR1,atk,ax,l,ReJ1,def,al,w,0000-00-00,31712
+CASC_20,4,8/30/20,"ASL 77",PiM1,def,al,w,EsP1,atk,ax,l,0000-00-00,31711
+CASC_20,4,8/29/20,"FrF 89",JSI,atk,ax,w,NaB1,def,al,l,0000-00-00,31710
+CASC_20,4,8/30/20,G8,BLB,atk,al,w,W87,def,ax,l,0000-00-00,31709
+CASC_20,4,8/26/20,"FrF 89",GNI,def,al,w,RsG1,atk,ax,l,0000-00-00,31708
+CASC_20,4,8/27/20,"BFP 65",NlJ1,atk,al,w,SgM1,def,ax,l,0000-00-00,31707
+CASC_20,4,8/28/20,"BFP 65",GYT,def,ax,w,HHD,atk,al,l,0000-00-00,31706
+CASC_20,4,8/26/20,"FrF 89",KGR,atk,ax,w,9NR,def,al,l,0000-00-00,31705
+CASC_20,3,8/22/20,J34,ReJ1,atk,al,l,EsP1,def,ax,w,0000-00-00,31704
+CASC_20,3,8/23/20,"AP 12",FrR1,atk,ax,l,RsG1,def,al,w,0000-00-00,31703
+CASC_20,3,8/20/20,J34,G2D,def,ax,w,NaB1,atk,al,l,0000-00-00,31702
+CASC_20,3,8/23/20,"WO 18",W87,def,ax,w,PiM1,atk,al,l,0000-00-00,31701
+CASC_20,3,8/20/20,"WO 18",GNI,atk,al,l,SgM1,def,ax,w,0000-00-00,31700
+CASC_20,3,8/22/20,"AP 127",NlJ1,atk,al,w,BsC1,def,ax,l,0000-00-00,31699
+CASC_20,3,8/21/20,"AP 12",JSI,def,al,l,BLB,atk,ax,w,0000-00-00,31698
+CASC_20,3,8/22/20,"AP 127",9NR,def,ax,w,HHD,atk,al,l,0000-00-00,31697
+CASC_20,3,8/20/20,"AP 12",KGR,def,al,w,GYT,atk,ax,l,0000-00-00,31696
+CASC_20,2,8/12/20,"FT 242",EsP1,atk,ax,l,NaB1,def,al,w,0008-12-20,31695
+CASC_20,2,8/11/20,"FT 242",ReJ1,atk,ax,l,G2D,def,al,w,0008-11-20,31694
+CASC_20,2,8/11/20,"BFP 72",RsG1,atk,al,l,SgM1,def,ax,w,0008-11-20,31693
+CASC_20,2,8/15/20,"BFP 22",FrR1,atk,al,l,PiM1,def,ax,w,0000-00-00,31692
+CASC_20,2,8/11/20,"BFP 72",BsC1,def,ax,l,BLB,atk,al,w,0008-11-20,31691
+CASC_20,2,8/11/20,"BFP 22",GYT,def,ax,w,NlJ1,atk,al,l,0008-11-20,31690
+CASC_20,2,8/16/20,"BoF 12",W87,def,ax,l,HHD,atk,al,w,0000-00-00,31689
+CASC_20,2,8/13/20,"BoF 12",KGR,def,ax,w,GNI,atk,al,l,0000-00-00,31688
+CASC_20,2,8/16/20,"BFP 22",9NR,def,ax,w,JSI,atk,al,l,0000-00-00,31687
+CASC_20,1,8/7/20,"OST 2",GYT,atk,al,w,G2D,def,ax,l,0008-07-20,31686
+CASC_20,1,8/4/20,"LSSAH 41",GNI,def,al,w,ReJ1,atk,ax,l,0008-04-20,31685
+CASC_20,1,8/9/20,"LSSAH 41",BLB,def,al,l,NlJ1,atk,ax,w,0008-09-20,31684
+CASC_20,1,8/8/20,Q6,BsC1,atk,ax,w,NaB1,def,al,l,0008-08-20,31683
+CASC_20,1,8/9/20,Q6,HHD,atk,ax,w,RsG1,def,al,l,0008-09-20,31682
+CASC_20,1,8/4/20,Q6,KGR,atk,ax,w,SgM1,def,al,l,0008-04-20,31681
+CASC_20,1,8/9/20,Q6,W87,def,al,w,EsP1,atk,ax,l,0008-09-20,31680
+CASC_20,1,8/3/20,Q6,JSI,atk,ax,w,PiM1,def,al,l,0008-03-20,31679
+MARCH_18,5,2018-03-18,"AP 131",BUM,attacker,axis,lost,RHR,defender,allies,win,2018-03-18,31675
+MARCH_18,5,2018-03-18,FF14,BYG,attacker,axis,lost,B9K,defender,allies,win,2018-03-18,31674
+MARCH_18,5,2018-03-18,O3,M21,attacker,axis,lost,VNW,defender,allies,win,2018-03-18,31673
+MARCH_18,5,2018-03-18,"FT 219",PAD,attacker,allies,win,BSI,defender,axis,lost,2018-03-18,31672
+MARCH_18,5,2018-03-18,FrF87,GDD,defender,allies,win,CRE,attacker,axis,lost,2018-03-18,31671
+MARCH_18,4,2018-03-17,"FT 128",CRE,defender,allies,win,B23,attacker,axis,lost,2018-03-17,31670
+MARCH_18,4,2018-03-17,"AP 131",GDD,defender,allies,win,ILJ,attacker,axis,lost,2018-03-17,31669
+MARCH_18,4,2018-03-17,O12,BSI,defender,allies,win,VNW,attacker,axis,lost,2018-03-17,31668
+MARCH_18,4,2018-03-17,O12,PAD,defender,allies,win,M21,attacker,axis,lost,2018-03-17,31667
+MARCH_18,3,2018-03-17,"FT 213",BYG,defender,axis,lost,VNW,attacker,allies,win,2018-03-17,31666
+MARCH_18,3,2018-03-17,"FT 213",DDD,attacker,allies,win,F36,defender,axis,lost,2018-03-17,31665
+MARCH_18,3,2018-03-17,"FT 213",M21,attacker,allies,win,KKD,defender,axis,lost,2018-03-17,31664
+MARCH_18,3,2018-03-17,OS-4,ASK,attacker,axis,lost,ZTL,defender,allies,win,2018-03-17,31663
+MARCH_18,3,2018-03-17,OS-14,HL1,attacker,allies,win,ETR,defender,axis,lost,2018-03-17,31662
+MARCH_18,3,2018-03-17,FT102,68D,defender,allies,win,WnJ1,attacker,allies,lost,2018-03-17,31677
+MARCH_18,3,2018-03-17,O3,GDD,defender,allies,win,BUM,attacker,axis,lost,2018-03-17,31660
+MARCH_18,3,2018-03-17,"AP 129",BSI,defender,allies,win,M11,attacker,axis,lost,2018-03-17,31659
+MARCH_18,3,2018-03-17,"AP 129",PAD,defender,allies,win,ILJ,attacker,axis,lost,2018-03-17,31658
+MARCH_18,3,2018-03-17,"FT 134",B23,defender,allies,win,B9K,attacker,axis,lost,2018-03-17,31657
+MARCH_18,3,2018-03-17,"FT 129",CRE,defender,allies,win,WRH,attacker,axis,lost,2018-03-17,31656
+MARCH_18,3,2018-03-17,OS-16,ZTL,defender,axis,win,HL1,attacker,allies,lost,2018-03-17,31655
+MARCH_18,2,2018-03-16,FrF86,BSI,defender,allies,win,WRN,attacker,axis,lost,2018-03-16,31654
+MARCH_18,2,2018-03-16,WCR1,ZTL,defender,axis,win,68D,attacker,allies,lost,2018-03-16,31653
+MARCH_18,2,2018-03-16,FrF87,RHB,attacker,axis,lost,ILJ,defender,allies,win,2018-03-16,31652
+MARCH_18,2,2018-03-16,FrF86,KKD,defender,allies,win,GDD,attacker,axis,lost,2018-03-16,31651
+MARCH_18,2,2018-03-16,FrF86,HL1,defender,allies,lost,M11,attacker,axis,win,2018-03-16,31650
+MARCH_18,2,2018-03-16,FrF86,PAD,defender,allies,win,TUJ,attacker,axis,lost,2018-03-16,31649
+MARCH_18,2,2018-03-16,FrF86,SZR,defender,allies,lost,VNW,attacker,axis,win,2018-03-16,31648
+MARCH_18,2,2018-03-16,"PAD 1",RHR,defender,allies,win,SlM1,attacker,axis,lost,2018-03-16,31647
+MARCH_18,2,2018-03-16,"RP 139",M21,defender,allies,win,RhA1,attacker,axis,lost,2018-03-16,31646
+MARCH_18,2,2018-03-16,"RP 139",DDD,attacker,axis,lost,BYG,defender,allies,win,2018-03-16,31645
+MARCH_18,2,2018-03-16,"ASL 208",F36,attacker,axis,lost,DDD,defender,allies,win,2018-03-16,31644
+MARCH_18,1,2018-03-16,"ESG 12",WRN,defender,axis,win,BUM,attacker,allies,lost,2018-03-16,31643
+MARCH_18,1,2018-03-16,"ESG 12",VNW,attacker,allies,win,WRH,defender,axis,lost,2018-03-16,31642
+MARCH_18,1,2018-03-16,"ESG 12",BSI,attacker,allies,win,M21,defender,axis,lost,2018-03-16,31641
+CASC_20,1,8/3/20,Q6,9NR,def,al,w,FrR1,atk,ax,l,0008-03-20,31678
+MARCH_18,1,2018-03-16,"ESG 12",SlM1,defender,axis,lost,TUJ,attacker,allies,win,2018-03-16,31639
+MARCH_18,1,2018-03-16,"WO 27",PAD,defender,allies,win,ASK,attacker,axis,lost,2018-03-16,31638
+MARCH_18,1,2018-03-16,"WO 27",HL1,attacker,axis,win,B23,defender,allies,lost,2018-03-16,31637
+MARCH_18,1,2018-03-16,"WO 27",ZTL,attacker,axis,lost,DDD,defender,allies,win,2018-03-16,31636
+MARCH_18,1,2018-03-16,"WO 27",RHB,attacker,axis,win,WSP,defender,allies,lost,2018-03-16,31635
+MARCH_18,1,2018-03-16,"WO 27",GDD,attacker,axis,win,QLC,defender,allies,lost,2018-03-16,31634
+MARCH_18,1,2018-03-16,"ASL 205",B4D,attacker,axis,lost,BYG,defender,allies,win,2018-03-16,31633
+MARCH_18,1,2018-03-16,"ASL 208",KKD,defender,allies,win,RHR,attacker,axis,lost,2018-03-16,31632
+MARCH_18,1,2018-03-16,"ESG 12 Road Kill",WnJ1,defender,axis,lost,M11,attacker,allies,win,2018-03-16,31676
+MARCH_18,1,2018-03-16,"ASL 208",CRE,defender,allies,lost,ILJ,attacker,axis,win,2018-03-16,31631
+MARCH_18,1,2018-03-16,"ASL 126",B9K,defender,allies,lost,SZR,attacker,axis,win,2018-03-16,31629
 STLOU_15,1,2015-07-24,AP99,WSC,attacker,axis,win,1RP,defender,allies,lost,2015-07-24,1818
 STLOU_15,1,2015-07-24,173,VNW,attacker,allies,win,ZTL,defender,axis,lost,2015-07-24,1819
 STLOU_15,1,2015-07-24,DB120,M21,defender,axis,win,ZRR,attacker,allies,lost,2015-07-24,1820
@@ -5221,7 +5210,7 @@ ASLOK_11,2011,2011-10-06,RPT54,SFP,defender,axis,win,HNG,attacker,allies,lost,20
 ASLOK_11,2011,2011-10-06,FRF52,TNA,defender,allies,win,SN2,attacker,axis,lost,2011-10-06,5218
 ASLOK_11,2011,2011-10-06,DB035,BAR,attacker,allies,win,HDD,defender,axis,lost,2011-10-06,5219
 ASLOK_11,2011,2011-10-06,AP80,WAB,attacker,allies,win,FNN,defender,axis,lost,2011-10-06,5220
-ASLOK_11,2011,2011-10-06,SP180,TEG,,allies,win,ENJ,,axis,lost,2011-10-06,5221
+ASLOK_11,2011,2011-10-06,SP180,TEG,defender,allies,win,ENJ,attacker,axis,lost,2011-10-06,5221
 ASLOK_11,2011,2011-10-07,SP190,JNS,defender,allies,win,HNI,attacker,axis,lost,2011-10-07,5222
 ASLOK_11,2011,2011-10-07,SP194,BSB,defender,allies,win,CEJ,attacker,axis,lost,2011-10-07,5223
 ASLOK_11,2011,2011-10-07,RPT58,BSB,defender,allies,win,MNT,attacker,axis,lost,2011-10-07,5224
@@ -6513,7 +6502,7 @@ ASLOK_10,2010,2010-10-09,FRF45,DSR,defender,axis,win,WWW,attacker,allies,lost,20
 ASLOK_10,2010,2010-10-09,RPT50,ME3,attacker,allies,win,MVJ,defender,axis,lost,2010-10-09,6509
 ASLOK_10,2010,2010-10-09,OA26,LYA,defender,axis,win,PMD,attacker,allies,lost,2010-10-09,6510
 ASLOK_10,2010,2010-10-09,HS8,WWL,attacker,allies,win,CDP,defender,axis,lost,2010-10-09,6511
-ASLOK_10,2010,2010-10-09,"HG 7",TEG,defender,axis,win,VNW,attacker,allies,lost,2010-10-09,6512
+ASLOK_10,2010,2010-10-09,"HG-7 Bonny Nouvelle",TEG,defender,axis,win,VNW,attacker,allies,lost,2010-10-09,6512
 ASLOK_10,2010,2010-10-09,FRF49,VNW,defender,axis,win,COW,attacker,allies,lost,2010-10-09,6513
 ASLOK_10,2010,2010-10-09,FRF51,PAS,attacker,axis,win,MMJ,defender,allies,lost,2010-10-09,6514
 ASLOK_10,2010,2010-10-09,RPT50,PAS,attacker,allies,win,LHD,defender,axis,lost,2010-10-09,6515
@@ -6984,7 +6973,7 @@ OPEN_09,6,2009-04-05,BC3,W7P,attacker,allies,win,DGJ,defender,axis,lost,2009-04-
 OPEN_09,6,2009-04-05,ASLUG21,4TS,defender,axis,win,BNO,attacker,allies,lost,2009-04-05,6979
 OPEN_09,6,2009-04-05,A68,YRT,attacker,axis,win,W2J,defender,allies,lost,2009-04-05,6980
 OPEN_09,6,2009-04-05,ASLUG21,BKM,attacker,allies,win,ZTL,defender,axis,lost,2009-04-05,6981
-OPEN_09,6,2009-04-05,FF(1)12,BSB,defender,axis,win,TEG,attacker,allies,lost,2009-04-05,6982
+OPEN_09,6,2009-04-05,"FF12 - Hitlers Samurai",BSB,defender,axis,win,TEG,attacker,allies,lost,2009-04-05,6982
 OPEN_09,6,2009-04-05,FRF29,KKD,defender,axis,win,HDB,attacker,allies,lost,2009-04-05,6983
 OPEN_09,6,2009-04-05,MP11,SNI,defender,allies,win,HMB,attacker,axis,lost,2009-04-05,6984
 OPEN_09,6,2009-04-05,ASLUG21,RZD,attacker,allies,win,BK2,defender,axis,lost,2009-04-05,6985
@@ -16254,7 +16243,7 @@ GREN_15,2,2015-11-13,TX-6,4NL,,,win,J22,,,lost,2015-11-13,16234
 GREN_15,2,2015-11-13,TX-6,HZS,,,win,GIE,,,lost,2015-11-13,16235
 GREN_15,2,2015-11-13,172,WNR,,,win,MIC,,,lost,2015-11-13,16236
 GREN_15,2,2015-11-13,RPT26,BXP,,,win,HDP,,,lost,2015-11-13,16237
-GREN_15,2,2015-11-13,TX-6,TEG,defender,axis,win,BEH,attacker,allies,lost,2015-11-13,16238
+GREN_15,2,2015-11-13,"TX-6 Tough Enough",TEG,defender,axis,win,BEH,attacker,allies,lost,2015-11-13,16238
 GREN_15,2,2015-11-13,RPT26,BIA,,,win,H8M,,,lost,2015-11-13,16239
 GREN_15,2,2015-11-13,RPT26,MLF,,,win,R1M,,,lost,2015-11-13,16240
 GREN_15,2,2015-11-13,RPT26,SFP,,,win,L2B,,,lost,2015-11-13,16241
@@ -18251,7 +18240,7 @@ RING_11,3,2011-06-11,J129,FTL,attacker,axis,win,COP,defender,allies,lost,2011-06
 RING_11,3,2011-06-11,J129,TEG,attacker,axis,win,KTA,defender,allies,lost,2011-06-11,18232
 RING_11,4,2011-06-11,FT59,FTL,defender,allies,win,DTM,attacker,axis,lost,2011-06-11,18233
 RING_11,4,2011-06-11,SP175,KHM,,axis,win,4IJ,,allies,lost,2011-06-11,18234
-RING_11,4,2011-06-11,SP175,TEG,,allies,win,BIM,,axis,lost,2011-06-11,18235
+RING_11,4,2011-06-11,SP175,TEG,defender,allies,win,BIM,attacker,axis,lost,2011-06-11,18235
 RING_11,4,2011-06-11,SP175,BIE,,axis,win,BNF,,allies,lost,2011-06-11,18236
 RING_11,4,2011-06-11,SP175,HLS,,axis,win,GNR,,allies,lost,2011-06-11,18237
 RING_11,4,2011-06-11,OA18,BXP,,allies,win,REA,,axis,lost,2011-06-11,18238
@@ -20021,7 +20010,7 @@ SCO_08,5,2008-02-22,DB061,FKM,defender,allies,win,PGT,attacker,axis,lost,2008-02
 SCO_08,5,2008-02-22,,DNT,,,win,VNP,,,lost,2008-02-22,20001
 SCO_08,5,2008-02-22,,DHO,,,win,HNM,,,lost,2008-02-22,20002
 SCO_08,5,2008-02-22,,GNO,,,win,CNA,,,lost,2008-02-22,20003
-SCO_08,5,2008-02-22,DB61,TEG,defender,allies,win,MAR,attacker,axis,lost,2008-02-22,20004
+SCO_08,5,2008-02-22,"DB61 - Housing Crash",TEG,defender,allies,win,MAR,attacker,axis,lost,2008-02-22,20004
 SCO_08,5,2008-02-22,,TGL,,,win,MLB,,,lost,2008-02-22,20005
 SCO_08,5,2008-02-22,,BLM,,,win,KNM,,,lost,2008-02-22,20006
 SCO_08,5,2008-02-22,,MMK,,,win,SDM,,,lost,2008-02-22,20007
@@ -22393,7 +22382,7 @@ GREN_05,5,2005-11-06,,KHM,,,win,KTA,,,lost,2005-11-06,22372
 GREN_05,5,2005-11-06,,PUS,,,win,TTJ,,,lost,2005-11-06,22373
 SCO_04,1,2004-02-01,,PGT,,,win,SSB,,,lost,2004-02-01,22374
 SCO_04,1,2004-02-01,,RGC,,,win,FNC,,,lost,2004-02-01,22375
-SCO_04,1,2004-02-01,MP3,TEG,attacker,axis,win,BEH,defender,allies,lost,2004-02-01,22376
+SCO_04,1,2004-02-01,"MP3 - Holy Ground",TEG,attacker,axis,win,BEH,defender,allies,lost,2004-02-01,22376
 SCO_04,1,2004-02-01,MP3,FKM,defender,allies,win,ANJ,attacker,axis,lost,2004-02-01,22377
 SCO_04,1,2004-02-01,,HRA,,,win,MIC,,,lost,2004-02-01,22378
 SCO_04,1,2004-02-01,,LLC,,,win,NSO,,,lost,2004-02-01,22379
@@ -22442,7 +22431,7 @@ SCO_04,3,2004-02-01,,MISSING-6,,,win,ANJ,,,lost,2004-02-01,22421
 SCO_04,3,2004-02-01,,SDM,,,win,HRA,,,lost,2004-02-01,22422
 SCO_04,3,2004-02-01,,MIC,,,win,MAR,,,lost,2004-02-01,22423
 SCO_04,3,2004-02-01,HP8,FKM,defender,allies,win,RGC,attacker,axis,lost,2004-02-01,22424
-SCO_04,3,2004-02-01,HP8,TEG,defender,allies,win,SSB,attacker,axis,lost,2004-02-01,22425
+SCO_04,3,2004-02-01,"HP 8 - Ligneuville Halt",TEG,defender,allies,win,SSB,attacker,axis,lost,2004-02-01,22425
 SCO_04,3,2004-02-01,,HNW,,,win,BHS,,,lost,2004-02-01,22426
 SCO_04,3,2004-02-01,,MGP,,,win,HEO,,,lost,2004-02-01,22427
 SCO_04,3,2004-02-01,,PGT,,,win,TLJ,,,lost,2004-02-01,22428
@@ -22457,7 +22446,7 @@ SCO_04,3,2004-02-01,,NSO,,,win,ZMS,,,lost,2004-02-01,22436
 SCO_04,4,2004-02-01,,NNP,,,win,HRA,,,lost,2004-02-01,22437
 SCO_04,4,2004-02-01,,BEH,,,win,HRS,,,lost,2004-02-01,22438
 SCO_04,4,2004-02-01,,HHM,,,win,ANJ,,,lost,2004-02-01,22439
-SCO_04,4,2004-02-01,MP5,TEG,defender,axis,win,MGP,attacker,allies,lost,2004-02-01,22440
+SCO_04,4,2004-02-01,"MP5 - The Rats of Hamich",TEG,defender,axis,win,MGP,attacker,allies,lost,2004-02-01,22440
 SCO_04,4,2004-02-01,,KNJ,,,win,BHS,,,lost,2004-02-01,22441
 SCO_04,4,2004-02-01,,NSO,,,win,FNC,,,lost,2004-02-01,22442
 SCO_04,4,2004-02-01,HP12,FKM,defender,axis,win,KNL,attacker,allies,lost,2004-02-01,22443
@@ -22495,7 +22484,7 @@ SCO_04,5,2004-02-01,,HHM,,,win,KNJ,,,lost,2004-02-01,22474
 SCO_04,5,2004-02-01,,MAR,,,win,NNP,,,lost,2004-02-01,22475
 SCO_04,5,2004-02-01,,BEH,,,win,HNW,,,lost,2004-02-01,22476
 SCO_04,5,2004-02-01,,SDM,,,win,LLC,,,lost,2004-02-01,22477
-SCO_04,5,2004-02-01,MP4,PGT,defender,axis,win,TEG,attacker,allies,lost,2004-02-01,22478
+SCO_04,5,2004-02-01,"MP4 - Bleeding the First",PGT,defender,axis,win,TEG,attacker,allies,lost,2004-02-01,22478
 SCO_04,6,2004-02-01,,SDM,,,win,TLJ,,,lost,2004-02-01,22479
 SCO_04,6,2004-02-01,,HRA,,,draw,BHS,,,draw,2004-02-01,22480
 SCO_04,6,2004-02-01,,RGC,,,win,HEO,,,lost,2004-02-01,22481
@@ -22510,7 +22499,7 @@ SCO_04,6,2004-02-01,,MGP,,,win,NSO,,,lost,2004-02-01,22489
 SCO_04,6,2004-02-01,,KNJ,,,win,WDD,,,lost,2004-02-01,22490
 SCO_04,6,2004-02-01,,HNW,,,win,SSB,,,lost,2004-02-01,22491
 SCO_04,6,2004-02-01,,HRS,,,win,FNC,,,lost,2004-02-01,22492
-SCO_04,6,2004-02-01,SP108,TEG,defender,axis,win,SNJ,attacker,allies,lost,2004-02-01,22493
+SCO_04,6,2004-02-01,"SP108 - Searing Soltau",TEG,defender,axis,win,SNJ,attacker,allies,lost,2004-02-01,22493
 SCO_04,6,2004-02-01,SP108,PGT,defender,axis,win,FKM,attacker,allies,lost,2004-02-01,22494
 SCO_04,6,2004-02-01,,CNA,,,win,MAR,,,lost,2004-02-01,22495
 SCO_04,6,2004-02-01,,LLC,,,win,BEH,,,lost,2004-02-01,22496
@@ -26229,7 +26218,7 @@ FORUM_08,1,2007-10-31,FRF18,BNF,attacker,allies,win,GNB,defender,axis,lost,2007-
 FORUM_08,1,2007-10-31,FT91,PEJ,defender,axis,win,LRA,attacker,allies,lost,2007-10-31,26207
 FORUM_08,2,2007-11-30,TAC44,BCJ,,allies,win,24A,,axis,lost,2007-11-30,26208
 FORUM_08,2,2007-11-30,TAC44,GTP,,allies,win,1R1,,axis,lost,2007-11-30,26209
-FORUM_08,2,2007-11-30,DB33,TEG,defender,allies,win,BUA,attacker,axis,lost,2007-11-30,26210
+FORUM_08,2,2007-11-30,"DB33 - Paking a Punch",TEG,defender,allies,win,BUA,attacker,axis,lost,2007-11-30,26210
 FORUM_08,2,2007-11-30,TAC44,B3P,,allies,win,DTM,,axis,lost,2007-11-30,26211
 FORUM_08,2,2007-11-30,TAC44,JDL,,allies,win,GNB,,axis,lost,2007-11-30,26212
 FORUM_08,2,2007-11-30,TAC44,BNF,,allies,win,G2A,,axis,lost,2007-11-30,26213
@@ -28219,7 +28208,7 @@ Leag1_18,4,2018-01-01,,PA1,,axis,lost,HA6,,allies,win,2018-01-01,28242
 Leag1_18,4,2018-01-01,137,TES,,axis,lost,C8M,,allies,win,2018-01-01,28243
 Leag1_18,4,2018-01-01,AP62,KTI,,axis,win,COS,,allies,lost,2018-01-01,28244
 LEAG4_18,1,2018-06-01,,DyJ1,,axis,lost,VAM,,allies,win,2018-06-01,28245
-LEAG4_18,1,2018-06-01,J130,FEJ,,axis,lost,CoA1,,allies,win,2018-06-01,28246
+LEAG4_18,1,2018-06-01,J130,FEJ,,axis,lost,CoS1,,allies,win,2018-06-01,28246
 LEAG4_18,1,2018-06-01,110,GnA1,,axis,win,G2D,,allies,lost,2018-06-01,28247
 LEAG4_18,1,2018-06-01,J178,ORR,,axis,win,BK2,,allies,lost,2018-06-01,28248
 LEAG4_18,1,2018-06-01,168,KGS,,axis,lost,HAM,,allies,win,2018-06-01,28249
@@ -28239,7 +28228,7 @@ LEAG4_18,1,2018-06-01,,H11,,axis,lost,IAS,,allies,win,2018-06-01,28262
 LEAG4_18,1,2018-06-01,,L2B,,axis,win,EYR,,allies,lost,2018-06-01,28263
 LEAG4_18,1,2018-06-01,J51,SPD,,axis,lost,MO1,,allies,win,2018-06-01,28264
 LEAG4_18,1,2018-06-01,A32,K3J,,axis,lost,DrT1,,allies,win,2018-06-01,28265
-LEAG4_18,2,2018-06-01,J190,CoA1,,axis,lost,VAM,,allies,win,2018-06-01,28266
+LEAG4_18,2,2018-06-01,J190,CoS1,,axis,lost,VAM,,allies,win,2018-06-01,28266
 LEAG4_18,2,2018-06-01,AP117,ORR,,axis,win,GnA1,,allies,lost,2018-06-01,28267
 LEAG4_18,2,2018-06-01,SP255,HAM,,axis,win,KkA1,,allies,lost,2018-06-01,28268
 LEAG4_18,2,2018-06-01,AP59,MN1,,axis,lost,23J,,allies,win,2018-06-01,28269
@@ -28263,7 +28252,7 @@ LEAG4_18,3,2018-06-01,BFP35,23J,,axis,lost,HAM,,allies,win,2018-06-01,28286
 LEAG4_18,3,2018-06-01,FrF52,CSB,,axis,win,MIL,,allies,lost,2018-06-01,28287
 LEAG4_18,3,2018-06-01,HG(2)-2,AER,,axis,lost,DEC,,allies,win,2018-06-01,28288
 LEAG4_18,3,2018-06-01,J130,IAS,,axis,win,MO1,,allies,lost,2018-06-01,28289
-LEAG4_18,3,2018-06-01,"196 Patton",DrT1,,axis,lost,CoA1,,allies,win,2018-06-01,28290
+LEAG4_18,3,2018-06-01,"196 Patton",DrT1,,axis,lost,CoS1,,allies,win,2018-06-01,28290
 LEAG4_18,3,2018-06-01,OA22,FEJ,,axis,win,GnA1,,allies,lost,2018-06-01,28291
 LEAG4_18,3,2018-06-01,DB134,BK2,,axis,lost,KGS,,allies,win,2018-06-01,28292
 LEAG4_18,3,2018-06-01,J179,RLM,,axis,lost,KkA1,,allies,win,2018-06-01,28293
@@ -28277,7 +28266,7 @@ LEAG4_18,3,2018-06-01,,G2D,,axis,win,AOM,,allies,lost,2018-06-01,28300
 LEAG4_18,3,2018-06-01,,B2A,,axis,win,SrS1,,allies,lost,2018-06-01,28301
 LEAG4_18,4,2018-06-01,BFP107,VAM,,axis,win,HAM,,allies,lost,2018-06-01,28302
 LEAG4_18,4,2018-06-01,BoF8,DEC,,axis,win,CSB,,allies,lost,2018-06-01,28303
-LEAG4_18,4,2018-06-01,FT86,CoA1,,axis,lost,IAS,,allies,win,2018-06-01,28304
+LEAG4_18,4,2018-06-01,FT86,CoS1,,axis,lost,IAS,,allies,win,2018-06-01,28304
 LEAG4_18,4,6/1/2018,WO2,ORR,,axis,win,FEJ,,allies,lost,0000-00-00,28305
 LEAG4_18,4,2018-06-01,AP31,KGS,,axis,win,KkA1,,allies,lost,2018-06-01,28306
 LEAG4_18,4,2018-06-01,J191,23J,,axis,win,MIL,,allies,lost,2018-06-01,28307
@@ -28296,7 +28285,7 @@ LEAG4_18,5,2018-06-01,J157,23J,,axis,win,KGS,,allies,lost,2018-06-01,28319
 LEAG4_18,5,2018-06-01,J168,AAR,,axis,win,HAM,,allies,lost,2018-06-01,28320
 LEAG4_18,5,2018-06-01,AP115,CSB,,axis,lost,KkK1,,allies,win,2018-06-01,28321
 LEAG4_18,5,2018-06-01,FRF23,L2B,,axis,win,DrT1,,allies,lost,2018-06-01,28322
-LEAG4_18,5,2018-06-01,BFP102,GnA1,,axis,lost,CoA1,,allies,win,2018-06-01,28323
+LEAG4_18,5,2018-06-01,BFP102,GnA1,,axis,lost,CoS1,,allies,win,2018-06-01,28323
 LEAG4_18,5,2018-06-01,J182,FEJ,,axis,win,KkA1,,allies,lost,2018-06-01,28324
 LEAG4_18,5,2018-06-01,,MN1,,axis,lost,RLM,,allies,win,2018-06-01,28325
 LEAG4_18,5,2018-06-01,WAR1,MIL,,axis,win,B2A,,allies,lost,2018-06-01,28326
@@ -28377,7 +28366,7 @@ SIOUX_17,2,2017-09-02,J183,TRG,,,win,DDD,,,lost,2017-09-02,28400
 SIOUX_17,1,2017-09-02,ON2,ASK,,axis,lost,LH7,,allies,win,2017-09-02,28401
 SIOUX_17,2,2017-09-02,FT167,ASK,,allies,win,B5B,,"axis ",lost,2017-09-02,28402
 FRF_17,1,2017-08-09,FrF89,ONA,attacker,,lost,FKM,defender,,win,2017-08-09,28403
-FRF_17,1,2017-08-09,FrF89,FRS,attacker,,lost,TEG,defender,,win,2017-08-09,28404
+FRF_17,1,2017-08-09,FrF89,FRS,attacker,axis,lost,TEG,defender,allies,win,2017-08-09,28404
 FRF_17,1,2017-08-09,FrF85,DLM,attacker,,lost,ESF,defender,,win,2017-08-09,28405
 FRF_17,1,2017-08-09,FrF89,LgC1,attacker,,lost,DNT,defender,,win,2017-08-09,28406
 FRF_17,1,2017-08-09,FrF89,SDL,attacker,,lost,LRE,defender,,win,2017-08-09,28407
@@ -29093,7 +29082,7 @@ Hwave_19,3,2019-06-20,,KY4,,,win,SN3,,,lost,2019-06-20,29153
 Hwave_19,4,2019-06-20,190,COW,attacker,allies,win,SND,defender,axis,lost,2019-06-20,29154
 NWEST_19,1,2019-02-08,,W87,,,win,K2G,,,lost,2019-02-08,29155
 NWEST_19,1,2019-02-08,,9NJ,,,win,MS1,,,lost,2019-02-08,29156
-NWEST_19,1,2019-02-08,,WnJ1,,,win,3KJ,,,lost,2019-02-08,29157
+NWEST_19,1,2019-02-08,,WnJ2,,,win,3KJ,,,lost,2019-02-08,29157
 NWEST_19,1,2019-02-08,,1NA,,,win,NRS,,,lost,2019-02-08,29158
 NWEST_19,1,2019-02-08,,KSD,,,win,BsC1,,,lost,2019-02-08,29159
 NWEST_19,1,2019-02-08,,JSI,,,win,VIJ,,,lost,2019-02-08,29160
@@ -29109,7 +29098,7 @@ NWEST_19,2,2019-02-09,,1NA,,,win,EEM,,,lost,2019-02-09,29169
 NWEST_19,2,2019-02-09,,9NR,,,win,9NJ,,,lost,2019-02-09,29170
 NWEST_19,2,2019-02-09,,KSD,,,win,BSG,,,lost,2019-02-09,29171
 NWEST_19,2,2019-09-02,,BsJ2,,,win,PO4,,,lost,2019-09-02,29172
-NWEST_19,2,2019-02-09,,WnJ1,,,win,G1D,,,lost,2019-02-09,29173
+NWEST_19,2,2019-02-09,,WnJ2,,,win,G1D,,,lost,2019-02-09,29173
 NWEST_19,3,2019-02-09,,G1D,,,win,MS1,,,lost,2019-02-09,29174
 NWEST_19,3,2019-02-09,,3KJ,,,win,9NJ,,,lost,2019-02-09,29175
 NWEST_19,3,2019-02-09,,K2G,,,win,PO4,,,lost,2019-02-09,29176
@@ -29118,11 +29107,11 @@ NWEST_19,3,2019-02-09,,KSD,,,win,1NA,,,lost,2019-02-09,29178
 NWEST_19,3,2019-02-09,,BsC1,,,win,VIJ,,,lost,2019-02-09,29179
 NWEST_19,3,2019-02-09,,9NR,,,win,EEM,,,lost,2019-02-09,29180
 NWEST_19,3,2019-02-09,,BSG,,,win,BsJ2,,,lost,2019-02-09,29181
-NWEST_19,3,2019-02-09,,JSI,,,win,WnJ1,,,lost,2019-02-09,29182
+NWEST_19,3,2019-02-09,,JSI,,,win,WnJ2,,,lost,2019-02-09,29182
 NWEST_19,4,2019-02-10,,KSD,,,win,JSI,,,lost,2019-02-10,29183
 NWEST_19,4,2019-02-10,,BSG,,,win,3KJ,,,lost,2019-02-10,29184
 NWEST_19,4,2019-02-10,,K2G,,,win,NaB1,,,lost,2019-02-10,29185
-NWEST_19,4,2019-02-10,,WnJ1,,,win,NRS,,,lost,2019-02-10,29186
+NWEST_19,4,2019-02-10,,WnJ2,,,win,NRS,,,lost,2019-02-10,29186
 NWEST_19,4,2019-02-10,,9NR,,,win,G1D,,,lost,2019-02-10,29187
 NWEST_19,4,2019-02-10,,1NA,,,win,PO4,,,lost,2019-02-10,29188
 NWEST_19,4,2019-02-10,,EEM,,,win,VIJ,,,lost,2019-02-10,29189
@@ -29590,13 +29579,13 @@ Forum_20,1,2019-08-27,OA29,RYX,attacker,,lost,BEB,defender,,win,2019-08-27,29648
 Forum_20,1,2019-08-27,FT91,TcF1,attacker,,win,H4F,defender,,lost,2019-08-27,29649
 Forum_20,1,2019-08-27,FT266,C2L,attacker,allies,win,LRJ,defender,axis,lost,2019-08-27,29650
 Forum_20,1,2019-08-27,FT266,TEL,defender,axis,lost,BNF,attacker,allies,win,2019-08-27,29651
-Forum_20,1,2019-08-27,BFP111,RRP,attacker,,win,GrU1,defender,,lost,2019-08-27,29652
+Forum_20,1,2019-08-27,BFP111,RRP,attacker,axis,win,GrU1,defender,allies,lost,2019-08-27,29652
 Forum_20,1,2019-08-27,SP240,BUA,,,win,DAS,,,lost,2019-08-27,29653
 Forum_20,1,2019-08-27,J183,BuP1,defender,axis,win,JNE1,attacker,allies,lost,2019-08-27,29654
 Forum_20,2,2019-11-15,FrF20,DnP1,attacker,,lost,DeJ1,defender,,win,2019-11-15,29655
 Forum_20,2,2019-11-15,SP101,C2L,defender,allies,win,BNF,attacker,axis,lost,2019-11-15,29656
 Forum_20,2,2019-11-15,J103,DAS,,,win,BuP1,,,lost,2019-11-15,29657
-Forum_20,2,2019-11-15,AP93,JNE1,defender,,lost,GrU1,attacker,,win,2019-11-15,29658
+Forum_20,2,2019-11-15,AP93,JNE1,attacker,allies,lost,GrU1,defender,axis,win,2019-11-15,29658
 Forum_20,2,2019-11-15,LSSAH15,RRP,,,win,BUA,,,lost,2019-11-15,29659
 Forum_20,2,2019-11-15,129,RYX,defender,,lost,H4F,attacker,,win,2019-11-15,29660
 Forum_20,2,2019-11-15,VV18,BEB,defender,,lost,TcF1,attacker,,win,2019-11-15,29661
@@ -29605,10 +29594,10 @@ Forum_20,2,2019-11-15,126,MNG,,,win,JlB1,,,lost,2019-11-15,29663
 Forum_20,2,2019-11-15,J103,BSF,,,lost,ptj1,,,win,2019-11-15,29664
 Forum_20,3,2019-11-15,LSSAH12,LRJ,defender,,lost,TEL,attacker,,win,2019-11-15,29665
 Forum_20,3,2020-01-02,SP163,TcF1,attacker,,lost,MNG,defender,,win,2020-01-02,29666
-Forum_20,3,2020-01-02,OA20,JlB1,attacker,,win,GrU1,defender,,lost,2020-01-02,29667
+Forum_20,3,2020-01-02,OA20,JlB1,attacker,allies,win,GrU1,defender,axis,lost,2020-01-02,29667
 Forum_20,3,2020-01-02,BFP95,RRP,attacker,,lost,DnP1,defender,,win,2020-01-02,29668
 Forum_20,3,2020-01-02,FRF23,DAS,,axis,lost,DnP1,,allies,win,2020-01-02,29669
-Forum_20,3,2020-01-02,SP98,BNF,defender,,lost,GrU1,attacker,,win,2020-01-02,29670
+Forum_20,3,2020-01-02,SP98,BNF,defender,allies,lost,GrU1,attacker,axis,win,2020-01-02,29670
 Forum_20,3,2020-01-02,AP143,H4F,defender,,lost,BUA,attacker,,win,2020-01-02,29671
 Forum_20,3,2020-01-02,J118,BEB,defender,allies,lost,BuP1,attacker,axis,win,2020-01-02,29672
 Forum_20,3,2020-01-02,J118,JNE1,defender,allies,lost,LRJ,attacker,axis,win,2020-01-02,29673
@@ -29622,7 +29611,7 @@ Forum_20,4,2020-01-06,A109,GdU1,,,draw,BEB,,,draw,2020-01-06,29680
 Forum_20,4,2020-01-06,FT216,DnP1,attacker,allies,lost,BNF,defender,axis,win,2020-01-06,29681
 Forum_20,4,2020-01-06,AP143,DeJ1,defender,,win,BuP1,attacker,,lost,2020-01-06,29682
 Forum_20,4,2020-01-06,ASL199,JlB1,,,lost,BUA,,,win,2020-01-06,29683
-Forum_20,4,2020-01-06,VV38,GrU1,,,win,TcF1,,,lost,2020-01-06,29684
+Forum_20,4,2020-01-06,VV38,GrU1,defender,allies,win,TcF1,attacker,axis,lost,2020-01-06,29684
 Forum_20,4,2020-01-06,FT271,TEL,attacker,allies,lost,RRP,defender,axis,win,2020-01-06,29685
 Forum_20,4,2020-01-06,BoF11,RYX,attacker,,win,WzE1,defender,,lost,2020-01-06,29686
 Forum_20,4,2020-01-06,DB026,MSM,defender,,lost,ptj1,attacker,,win,2020-01-06,29687
@@ -29634,7 +29623,7 @@ HWAVE_20,1,2020-06-24,105,BSG,defender,axis,win,FeS1,attacker,allies,lost,2020-0
 HWAVE_20,1,2020-06-24,105,SfR1,attacker,allies,lost,HHD,defender,axis,win,2020-06-24,29693
 HWAVE_20,1,2020-06-24,105,GnA1,defender,axis,win,BsJ1,attacker,allies,lost,2020-06-24,29694
 HWAVE_20,1,2020-06-25,"TAC 43",DID,attacker,axis,win,GcD1,defender,allies,lost,2020-06-25,29695
-HWAVE_20,1,2020-06-24,105,SzJ1,defender,axis,lost,MnL1,attacker,allies,win,2020-06-24,29696
+HWAVE_20,1,2020-06-24,105,MIL,defender,axis,lost,SzJ1,attacker,allies,win,2020-06-24,29696
 HWAVE_20,1,2020-06-24,105,WnP1,defender,axis,win,G2D,attacker,allies,lost,2020-06-24,29697
 HWAVE_20,1,2020-06-24,105,RyV1,attacker,axis,win,EsP1,defender,allies,lost,2020-06-24,29698
 HWAVE_20,2,2020-06-25,"J 43",DHR,defender,axis,win,GnA1,attacker,allies,lost,2020-06-25,29699
@@ -30651,11 +30640,11 @@ ASLOK_18,0,2018-09-30,HF4,TEG,defender,allies,win,CNN,attacker,axis,lost,2018-09
 ASLOK_18,0,2018-09-30,HF8,TEG,defender,axis,lost,PAS,attacker,allies,win,2018-09-30,30834
 B-END_19,1,2019-04-12,FrF93,TEG,defender,allies,win,C7B,attacker,axis,lost,2019-04-12,30835
 B-END_19,3,2019-04-13,FrF97,TEG,attacker,allies,lost,SLW,defender,axis,win,2019-04-13,30836
-SCO_20,0,2020-02-28,J152,TEG,attacker,axis,win,SaM1,defender,allies,lost,2020-02-28,30837
-SCO_20,0,2020-02-28,AP138,TEG,attacker,allies,win,BEH,defender,axis,lost,2020-02-28,30838
-SCO_20,0,2020-02-28,FrF97,TEG,attacker,allies,win,SHR,defender,axis,lost,2020-02-28,30839
-SCO_20,0,2020-02-28,SP110,TEG,defender,axis,win,FRS,attacker,allies,lost,2020-02-28,30840
-SCO_20,0,2020-02-28,AP34,TEG,attacker,allies,lost,HHM,defender,axis,win,2020-02-28,30841
+SCO_20,1,2020-02-28,J152,TEG,attacker,axis,win,SoM1,defender,allies,lost,2020-02-28,30837
+SCO_20,2,2020-02-28,AP138,TEG,attacker,allies,win,BEH,defender,axis,lost,2020-02-28,30838
+SCO_20,3,2020-02-29,FrF97,TEG,attacker,allies,win,SHR,defender,axis,lost,2020-02-29,30839
+SCO_20,4,2020-02-29,SP110,TEG,defender,axis,win,FRS,attacker,allies,lost,2020-02-29,30840
+SCO_20,5,2020-03-01,AP34,TEG,attacker,allies,lost,HHM,defender,axis,win,2020-03-01,30841
 TUSS_11,1,2011-07-29,BFP35,TEG,defender,allies,win,FYC,attacker,axis,lost,2011-07-29,30842
 TUSS_11,2,2011-07-29,SP177,TEG,attacker,axis,win,LEA,defender,allies,lost,2011-07-29,30843
 TUSS_11,3,2011-07-30,MP16,TEG,defender,axis,win,SEC,attacker,allies,lost,2011-07-30,30844
@@ -30696,7 +30685,7 @@ LEAG3_19,4,2019-11-30,AP100,KLS,attacker,allies,lost,LNJ,defender,axis,win,2019-
 2ONE_20,0,2020-06-26,FrF30,BTT,,allies,lost,UtM1,,axis,win,2020-06-26,30879
 2ONE_20,0,2020-06-26,FrF30,H3T,,allies,win,ByP1,,axis,lost,2020-06-26,30880
 2ONE_20,0,2020-06-26,FrF30,AHI,,axis,win,PA1,,allies,lost,2020-06-26,30881
-2ONE_20,0,2020-06-26,RPT72,SoM1,,axis,win,WsW1,,allies,lost,2020-06-26,30882
+2ONE_20,0,2020-06-26,RPT72,SoM1,,axis,win,WWW,,allies,lost,2020-06-26,30882
 2ONE_20,0,2020-06-26,LFT231,DYC,,allies,win,CO1,,axis,lost,2020-06-26,30883
 2ONE_20,0,2020-06-26,LFT231,LGP,,allies,win,PSP,,axis,lost,2020-06-26,30884
 2ONE_20,0,2020-06-26,FrF30,RLM,,allies,lost,A2M,,axis,win,2020-06-26,30885
@@ -30708,7 +30697,7 @@ LEAG3_19,4,2019-11-30,AP100,KLS,attacker,allies,lost,LNJ,defender,axis,win,2019-
 2ONE_20,0,2020-06-27,HF6,ByP1,,allies,lost,UtM1,,axis,win,2020-06-27,30891
 2ONE_20,0,2020-06-27,HF6,BTT,,allies,win,H3T,,axis,lost,2020-06-27,30892
 2ONE_20,0,2020-06-27,HF6,PA1,,allies,lost,SoM1,,axis,win,2020-06-27,30893
-2ONE_20,0,2020-06-27,HF6,AHI,,allies,win,WsW1,,axis,lost,2020-06-27,30894
+2ONE_20,0,2020-06-27,HF6,AHI,,allies,win,WWW,,axis,lost,2020-06-27,30894
 2ONE_20,0,2020-06-27,HF6,LGP,,allies,lost,DYC,,axis,win,2020-06-27,30895
 2ONE_20,0,2020-06-27,HF6,PSP,,allies,lost,CO1,,axis,win,2020-06-27,30896
 2ONE_20,0,2020-06-27,HF6,KhK1,,allies,lost,RLM,,axis,win,2020-06-27,30897
@@ -30726,7 +30715,7 @@ LEAG3_19,4,2019-11-30,AP100,KLS,attacker,allies,lost,LNJ,defender,axis,win,2019-
 2ONE_20,0,2020-06-28,AP143,GNT,,allies,lost,CXD,,axis,win,2020-06-28,30909
 2ONE_20,0,2020-06-28,AP143,RYD,,axis,win,PRS,,allies,lost,2020-06-28,30910
 2ONE_20,0,2020-06-28,BFP-52,SAU,,axis,win,MHD,,allies,lost,2020-06-28,30911
-2ONE_20,0,2020-06-28,SP259,PA1,,axis,win,WsW1,,allies,lost,2020-06-28,30912
+2ONE_20,0,2020-06-28,SP259,PA1,,axis,win,WWW,,allies,lost,2020-06-28,30912
 2ONE_20,0,2020-06-28,SP259,BTT,,axis,win,ByP1,,allies,lost,2020-06-28,30913
 B-END_19,2,2019-04-12,,TEG,,,win,PE1,,,lost,2019-04-12,30914
 NYS_19,1,2019-12-06,DB140,COW,attacker,allies,win,JNB,defender,axis,lost,2019-12-06,30917
@@ -30793,7 +30782,7 @@ MARCH_19,4,2019-03-16,ASL112,M3T,defender,allies,win,SFN,attacker,axis,lost,2019
 MARCH_19,4,2019-03-16,G30,KKD,attacker,axis,win,SRP,defender,allies,lost,2019-03-16,30987
 MARCH_19,4,2019-03-16,DB143,BYG,attacker,allies,win,B9K,defender,axis,lost,2019-03-16,30988
 MARCH_19,4,2019-03-16,SF-12,WSP,attacker,axis,lost,PAD,defender,allies,win,2019-03-16,30989
-MARCH_19,4,2019-03-16,Q2,EtR1,attacker,axis,lost,M11,defender,allies,win,2019-03-16,30990
+MARCH_19,4,2019-03-16,Q2,ETR,attacker,axis,lost,M11,defender,allies,win,2019-03-16,30990
 MARCH_19,4,2019-03-16,HF1,CRE,attacker,allies,win,ASK,defender,axis,lost,2019-03-16,30991
 MARCH_19,4,2019-03-16,MM52,ASK,defender,allies,lost,SFN,attacker,axis,win,2019-03-16,30992
 MARCH_19,3,2019-03-16,FF226,SlM1,attacker,axis,lost,P2A,defender,allies,win,2019-03-16,30993
@@ -30813,7 +30802,7 @@ MARCH_19,2,2019-03-15,FrF72,KKD,defender,axis,win,RHB,attacker,allies,lost,2019-
 MARCH_19,2,2019-03-15,ASL153,ASK,attacker,axis,lost,B23,defender,allies,win,2019-03-15,31007
 MARCH_19,2,2019-03-15,#4,M3T,defender,allies,lost,68D,attacker,axis,win,2019-03-15,31008
 MARCH_19,2,2019-03-15,RPT153,BSI,attacker,axis,win,CRE,defender,allies,lost,2019-03-15,31009
-MARCH_19,2,2019-03-15,RPT153,EtR1,attacker,axis,lost,M11,defender,allies,win,2019-03-15,31010
+MARCH_19,2,2019-03-15,RPT153,ETR,attacker,axis,lost,M11,defender,allies,win,2019-03-15,31010
 MARCH_19,2,2019-03-15,AP55,M21,attacker,allies,win,ILJ,defender,axis,lost,2019-03-15,31011
 MARCH_19,2,2019-03-15,AP55,SRP,attacker,allies,win,RhA1,defender,axis,lost,2019-03-15,31012
 MARCH_19,2,2019-03-15,ASL153,68D,defender,allies,lost,BUM,attacker,axis,win,2019-03-15,31013
@@ -30829,7 +30818,7 @@ MARCH_19,1,2019-03-15,RO7,SZR,attacker,allies,win,SFN,defender,axis,lost,2019-03
 MARCH_19,1,2019-03-15,FrF93,VNW,defender,allies,win,BSI,attacker,axis,lost,2019-03-15,31023
 MARCH_19,1,2019-03-15,FrF93,SRP,attacker,axis,win,B5B,defender,allies,lost,2019-03-15,31024
 MARCH_19,1,2019-03-15,FrF93,ILJ,defender,allies,win,BUM,attacker,axis,lost,2019-03-15,31025
-MARCH_19,1,2019-03-15,FrF93,EtR1,attacker,axis,lost,KKD,defender,allies,win,2019-03-15,31026
+MARCH_19,1,2019-03-15,FrF93,ETR,attacker,axis,lost,KKD,defender,allies,win,2019-03-15,31026
 MARCH_19,1,2019-03-15,FrF93,B9K,attacker,axis,win,DDD,defender,allies,lost,2019-03-15,31027
 SCO_99,3,1999-02-27,NQNG5,TEG,attacker,axis,win,WNR,defender,allies,lost,1999-02-27,31028
 SCO_99,5,1999-02-27,PBP26,TEG,defender,axis,win,TRD,attacker,allies,lost,1999-02-27,31029
@@ -30853,7 +30842,7 @@ NYS_17,2,2017-12-01,,DRS,,,win,WGW,,,lost,2017-12-01,31048
 NYS_17,4,2017-12-02,,DRS,,,win,AGM,,,lost,2017-12-02,31049
 NYS_17,5,2017-12-02,,DRS,,,win,PYJ,,,lost,2017-12-02,31050
 NYS_17,1,2017-11-30,,MIG,,,win,KYT,,,lost,2017-11-30,31051
-NYS_17,2,2017-12-01,,MIG,,,win,TEG,,,lost,2017-12-01,31052
+NYS_17,2,2017-12-01,"J189 Buckley's Block",MIG,defender,axis,win,TEG,attacker,allies,lost,2017-12-01,31052
 NYS_17,3,2017-12-01,,MIG,,,win,DRS,,,lost,2017-12-01,31053
 NYS_17,4,2017-12-02,,MIG,,,win,WAB,,,lost,2017-12-02,31054
 NYS_17,1,2017-11-30,,RS2,,,win,HDB,,,lost,2017-11-30,31055
@@ -30869,7 +30858,7 @@ NYS_17,3,2017-12-01,,CNC,,,win,CDP,,,lost,2017-12-01,31064
 NYS_17,4,2017-12-02,,CNC,,,win,POM,,,lost,2017-12-02,31065
 NYS_17,6,2017-12-03,,CNC,,,win,SFP,,,lost,2017-12-03,31066
 NYS_17,1,2017-11-30,,WGW,,,win,CDP,,,lost,2017-11-30,31067
-NYS_17,3,2017-12-01,,WGW,,,win,TEG,,,lost,2017-12-01,31068
+NYS_17,3,2017-12-01,"J183 A Real Barn Burner",WGW,attacker,allies,win,TEG,defender,axis,lost,2017-12-01,31068
 NYS_17,4,2017-12-02,,WGW,,,win,HNL,,,lost,2017-12-02,31069
 NYS_17,5,2017-12-02,,WGW,,,win,CDP,,,lost,2017-12-02,31070
 NYS_17,3,2017-12-01,,HY2,,,win,RLM,,,lost,2017-12-01,31071
@@ -31429,3 +31418,355 @@ TEXAS_19,0,2019-06-01,"FrF30 Bidermann's Escape",J2,,axis,win,FnD2,,allies,lost,
 TEXAS_19,0,2019-06-01,"AP131 Crickets in Spring",DsD1,,allies,win,K4R,,axis,lost,2019-06-01,31626
 TEXAS_19,0,2019-06-01,"S67 Besieged",BSK,,allies,win,SsW1,,axis,lost,2019-06-01,31627
 TEXAS_19,0,2019-06-01,"MM47 The Brickworks",FLJ,,allies,win,RHR,,axis,lost,2019-06-01,31628
+BASLO_20,3,2020-01-26,"J43 3rd RTR in the Rain",LLT,defender,axis,win,BEN,attacker,allies,lost,2020-01-26,31725
+CYBER_XI,1,2019-07-08,"RB3 Bread Factory 2",C2L,defender,allies,win,KeA1,attacker,axis,lost,2019-07-08,31726
+CYBER_XI,1,2019-07-08,"FrF86 Belgian Tigers",FGW,attacker,axis,win,NVA,defender,allies,lost,2019-07-08,31727
+CYBER_XI,1,2019-07-08,"RB14 Anchoring The Line",BLB,attacker,allies,lost,MN1,defender,axis,win,2019-07-08,31728
+CYBER_XI,1,2019-07-08,"J51 Canicatti",MSM,defender,axis,win,GZA,attacker,allies,lost,2019-07-08,31729
+CYBER_XI,1,2019-07-08,"J187 A real barn burner",KRA,attacker,allies,win,EnJ1,defender,axis,lost,2019-07-08,31730
+CYBER_XI,1,2019-07-08,"BoF2 A Polish Requiem",GAP,defender,allies,win,CY1,attacker,axis,lost,2019-07-08,31731
+CYBER_XI,1,2019-07-08,"Shellshock1 Pinching Patton",PES,defender,allies,lost,RhJ1,attacker,axis,win,2019-07-08,31732
+CYBER_XI,1,2019-07-08,"FrF98 Amerikanskaya Suka",KLS,defender,axis,win,MYR,attacker,allies,lost,2019-07-08,31733
+CYBER_XI,1,2019-07-08,"FrF22 Wunderwaffe",WTJ,defender,axis,lost,BE3,attacker,allies,win,2019-07-08,31734
+CYBER_XI,1,2019-07-08,"85 No Way Out",BYJ,attacker,allies,lost,GaR1,defender,axis,win,2019-07-08,31735
+CYBER_XI,1,2019-07-08,"FT171 Getting your Bell Rung",KNS,attacker,allies,lost,CaL1,defender,axis,win,2019-07-08,31736
+CYBER_XI,1,2019-07-08,"FT256 Radio X-mas",C33,attacker,axis,lost,GiM1,defender,allies,win,2019-07-08,31737
+CYBER_XI,1,2019-07-08,"TAC47 Roses For Vandervoort",J2M,defender,axis,win,RRC,attacker,allies,lost,2019-07-08,31738
+CYBER_XI,1,2019-07-08,"AP62 Shouting into the Storm",GZE,attacker,axis,lost,TR2,defender,allies,win,2019-07-08,31739
+CYBER_XI,1,2019-07-08,"126 Commando Schenke",ADT,defender,allies,win,CrD2,attacker,axis,lost,2019-07-08,31740
+CYBER_XI,2,2019-08-07,"J193 Raff",C2L,,axis,win,KLS,,allies,lost,2019-08-07,31741
+CYBER_XI,2,2019-08-07,"VotG27 Drama, the Park, and Deadly Things",FGW,,allies,win,BE3,,axis,lost,2019-08-07,31742
+CYBER_XI,2,2019-08-07,"79 Bridge of the Seven Planets",G1D,defender,allies,win,GaR1,attacker,axis,lost,2019-08-07,31743
+CYBER_XI,2,2019-08-07,"J161 Riding to the Rescue",MSM,,allies,lost,GiM1,,axis,win,2019-08-07,31744
+CYBER_XI,2,2019-08-07,"SP89 Assaulting Tess",KRA,attacker,axis,lost,J2M,defender,allies,win,2019-08-07,31745
+CYBER_XI,2,2019-08-07,"DTF3 True Grit",GAP,attacker,axis,win,TR2,defender,allies,lost,2019-08-07,31746
+CYBER_XI,2,2019-08-07,"AP12 Cream of the crop",RhJ1,attacker,axis,win,ADT,defender,allies,lost,2019-08-07,31747
+CYBER_XI,3,2020-01-10,"FT246 Gladio pro regum",C2L,,axis,win,GiM1,,allies,lost,2020-01-10,31748
+CYBER_XI,3,2020-01-10,"FrF30 Bidermann",FGW,defender,allies,win,J2M,attacker,axis,lost,2020-01-10,31749
+CYBER_XI,3,2020-01-10,"DTF2 Blitzkrieg",G1D,,allies,win,GAP,,axis,lost,2020-01-10,31750
+CYBER_XI,3,2020-01-10,"FrF93 Wiener Walzer",CaL1,,axis,lost,RhJ1,,allies,win,2020-01-10,31751
+CYBER_XI,4,2020-04-27,"SP243 Konrad three",C2L,,,win,G1D,,,lost,2020-04-27,31752
+CYBER_XI,4,2020-04-27,"FT223 The Kings of Bollersdorf",FGW,,axis,win,RhJ1,,allies,lost,2020-04-27,31753
+CYBER_XI,5,2020-07-27,"DB148 Melee for Hill 700",C2L,,allies,win,FGW,,axis,lost,2020-07-27,31754
+WCR_20,1,2020-11-04,"OB14 Pursuing Kobayashi",KSD,defender,axis,win,B3S,attacker,allies,lost,2020-11-04,31755
+WCR_20,1,2020-11-04,"OB14 Pursuing Kobayashi",9NR,attacker,allies,win,HHD,defender,axis,lost,2020-11-04,31756
+WCR_20,1,2020-11-04,SP23,CDP,defender,axis,win,1NA,defender,allies,lost,2020-11-04,31757
+WCR_20,1,2020-11-04,"OB14 Pursuing Kobayashi",JSI,defender,axis,lost,STS,attacker,allies,win,2020-11-04,31758
+WCR_20,1,2020-11-04,"LSSAH 41",GCJ,attacker,axis,win,GYT,defender,allies,lost,2020-11-04,31759
+WCR_20,1,2020-11-04,SP23,NlJ1,defender,axis,win,G2D,attacker,allies,lost,2020-11-04,31760
+WCR_20,1,2020-11-04,AP135,141,attacker,allies,win,MdG1,defender,axis,lost,2020-11-04,31761
+WCR_20,1,2020-11-04,AP135,DYC,defender,axis,win,STW,attacker,allies,lost,2020-11-04,31762
+WCR_20,2,2020-11-05,BFP-55,KSD,attacker,axis,win,NlJ1,defender,allies,lost,2020-11-05,31763
+WCR_20,2,2020-11-05,77,9NR,attacker,axis,win,141,defender,allies,lost,2020-11-05,31764
+WCR_20,2,2020-11-05,77,CDP,attacker,axis,lost,DYC,defender,allies,win,2020-11-05,31765
+WCR_20,2,2020-11-05,BFP-55,GCJ,attacker,axis,win,STS,defender,allies,win,2020-11-05,31766
+WCR_20,2,2020-11-05,"GD4 The Road to Lyon",JSI,defender,allies,win,GYT,attacker,axis,lost,2020-11-05,31767
+WCR_20,2,2020-11-05,FT231,HHD,attacker,allies,lost,G2D,defender,axis,win,2020-11-05,31768
+WCR_20,2,2020-11-05,FT231,1NA,defender,axis,win,MdG1,attacker,allies,lost,2020-11-05,31769
+WCR_20,2,2020-11-05,"GD4 The Road to Lyon",B3S,attacker,axis,lost,STW,defender,allies,win,2020-11-05,31770
+WCR_20,3,2020-11-06,FT157,KSD,defender,allies,lost,DYC,attacker,axis,win,2020-11-06,31771
+WCR_20,3,2020-11-06,WO18,9NR,attacker,allies,lost,STS,defender,axis,win,2020-11-06,31772
+WCR_20,3,2020-11-06,FT157,CDP,defender,allies,win,141,attacker,axis,lost,2020-11-06,31773
+WCR_20,3,2020-11-06,FT249,GCJ,attacker,axis,win,1NA,defender,allies,lost,2020-11-06,31774
+WCR_20,3,2020-11-06,FT249,JSI,defender,allies,win,G2D,attacker,axis,lost,2020-11-06,31775
+WCR_20,3,2020-11-06,"180 The T-Patchers",NlJ1,attacker,allies,win,STW,defender,axis,lost,2020-11-06,31776
+WCR_20,3,2020-11-06,FT157,HHD,defender,allies,lost,GYT,attacker,axis,win,2020-11-06,31777
+WCR_20,3,2020-11-06,FT157,B3S,attacker,axis,win,MdG1,defender,allies,lost,2020-11-06,31778
+WCR_20,4,2020-11-07,Q8,DYC,defender,allies,draw,STS,attacker,axis,draw,2020-11-07,31779
+WCR_20,4,2020-11-07,"OB1 Riding the Coattails",KSD,defender,allies,lost,GCJ,defender,axis,win,2020-11-07,31780
+WCR_20,4,2020-11-07,Q8,9NR,defender,allies,lost,JSI,attacker,axis,win,2020-11-07,31781
+WCR_20,4,2020-11-07,"OB1 Riding the Coattails",CDP,attacker,axis,lost,NlJ1,defender,allies,win,2020-11-07,31782
+WCR_20,4,2020-11-07,WP15,141,attacker,axis,lost,GYT,defender,allies,win,2020-11-07,31783
+WCR_20,4,2020-11-07,WP15,1NA,attacker,axis,win,STW,defender,allies,lost,2020-11-07,31784
+WCR_20,4,2020-11-07,WP15,B3S,attacker,axis,lost,G2D,defender,allies,win,2020-11-07,31785
+WCR_20,4,2020-11-07,WP15,HHD,attacker,axis,win,MdG1,defender,allies,lost,2020-11-07,31786
+SCO_00,2,2000-02-25,"PP6 Under a Lead Sky",TEG,defender,allies,win,SuM1,attacker,axis,lost,2000-02-25,31787
+SCO_20,1,2020-02-28,,PGT,,,win,LII,,,lost,2020-02-28,31788
+SCO_20,1,2020-02-28,,DHR,,,win,HOT,,,lost,2020-02-28,31789
+NYS_20,1,2020-11-15,,TYJ,,,win,G2D,,,lost,2020-11-15,31889
+SCO_20,1,2020-02-28,,HgK2,,,win,121,,,lost,2020-02-28,31791
+SCO_20,1,2020-02-28,,DHO,,,win,BEN,,,lost,2020-02-28,31792
+SCO_20,1,2020-02-28,,BEH,,,win,RLM,,,lost,2020-02-28,31793
+SCO_20,1,2020-02-28,,SzJ1,,,win,JdL1,,,lost,2020-02-28,31794
+SCO_20,1,2020-02-28,,FRS,,,win,4NL,,,lost,2020-02-28,31795
+SCO_20,1,2020-02-28,,KRA,,,lost,L2B,,,win,2020-02-28,31796
+SCO_20,1,2020-02-28,,WDD,,,win,1DM,,,lost,2020-02-28,31797
+SCO_20,1,2020-02-28,,SHR,,,win,DlO2,,,lost,2020-02-28,31798
+SCO_20,1,2020-02-28,,KNJ,,,win,P21,,,lost,2020-02-28,31799
+SCO_20,1,2020-02-28,,TLJ,,,lost,K54,,,win,2020-02-28,31800
+SCO_20,1,2020-02-28,,HHM,,,win,DNT,,,lost,2020-02-28,31801
+SCO_20,1,2020-02-28,,RMM,,,lost,42K,,,win,2020-02-28,31802
+SCO_20,1,2020-02-28,,KNK,,,win,ONA,,,lost,2020-02-28,31803
+SCO_20,1,2020-02-28,,CNA,,,win,FNC,,,lost,2020-02-28,31804
+SCO_20,1,2020-02-28,,HNM,,,win,LNN,,,lost,2020-02-28,31805
+SCO_20,1,2020-02-28,,TrJ2,,,win,KNM,,,lost,2020-02-28,31806
+SCO_20,2,2020-02-28,,PGT,,,win,DHO,,,lost,2020-02-28,31807
+SCO_20,2,2020-02-28,,HHM,,,win,TrJ2,,,lost,2020-02-28,31808
+SCO_20,2,2020-02-28,,DHR,,,win,HNM,,,lost,2020-02-28,31809
+NYS_20,1,2020-11-15,,RIR,,,win,CNN,,,lost,2020-11-15,31891
+SCO_20,2,2020-02-28,,KNK,,,lost,SzJ1,,,win,2020-02-28,31811
+SCO_20,2,2020-02-28,,HgK2,,,lost,FRS,,,win,2020-02-28,31812
+SCO_20,2,2020-02-28,,CNA,,,lost,SHR,,,win,2020-02-28,31813
+SCO_20,2,2020-02-28,,K54,,,win,WDD,,,lost,2020-02-28,31814
+SCO_20,2,2020-02-28,,KNJ,,,win,TLJ,,,lost,2020-02-28,31815
+SCO_20,2,2020-02-28,,42K,,,win,LII,,,lost,2020-02-28,31816
+SCO_20,2,2020-02-28,,L2B,,,lost,RMM,,,lost,2020-02-28,31817
+SCO_20,2,2020-02-28,,KRA,,,lost,RLM,,,win,2020-02-28,31818
+SCO_20,2,2020-02-28,,FNC,,,win,JdL1,,,lost,2020-02-28,31819
+SCO_20,2,2020-02-28,,HOT,,,win,4NL,,,lost,2020-02-28,31820
+SCO_20,2,2020-02-28,,SoM1,,,win,1DM,,,lost,2020-02-28,31821
+SCO_20,2,2020-02-28,,BEN,,,lost,DNT,,,win,2020-02-28,31822
+SCO_20,2,2020-02-28,,LNN,,,win,DlO2,,,lost,2020-02-28,31823
+SCO_20,2,2020-02-28,,KNM,,,win,ONA,,,lost,2020-02-28,31824
+SCO_20,2,2020-02-28,,SnS1,,,lost,P21,,,win,2020-02-28,31825
+SCO_20,3,2020-02-29,,HHM,,,win,SzJ1,,,lost,2020-02-29,31826
+SCO_20,3,2020-02-29,,DHR,,,lost,FRS,,,win,2020-02-29,31827
+NYS_20,1,2020-11-15,,NAC,,,lost,HgK2,,,win,2020-11-15,31888
+SCO_20,3,2020-02-29,,KNJ,,,lost,L2B,,,win,2020-02-29,31829
+SCO_20,3,2020-02-29,,42K,,,lost,KNK,,,win,2020-02-29,31830
+SCO_20,3,2020-02-29,,HgK2,,,win,FNC,,,lost,2020-02-29,31831
+SCO_20,3,2020-02-29,,CNA,,,win,HOT,,,lost,2020-02-29,31832
+SCO_20,3,2020-02-29,,DHO,,,win,SoM1,,,lost,2020-02-29,31833
+SCO_20,3,2020-02-29,,TrJ2,,,lost,LNN,,,win,2020-02-29,31834
+SCO_20,3,2020-02-29,,WDD,,,lost,RLM,,,win,2020-02-29,31835
+SCO_20,3,2020-02-29,,P21,,,lost,KNM,,,win,2020-02-29,31836
+SCO_20,3,2020-02-29,,KRA,,,win,DlO2,,,lost,2020-02-29,31837
+SCO_20,3,2020-02-29,,BEN,,,win,ONA,,,lost,2020-02-29,31838
+SCO_20,3,2020-02-29,,SnS1,,,lost,LII,,,win,2020-02-29,31839
+SCO_20,3,2020-02-29,,DNT,,,win,JdL1,,,lost,2020-02-29,31840
+SCO_20,3,2020-02-29,,AnP1,,,lost,4NL,,,win,2020-02-29,31841
+SCO_20,3,2020-02-29,,1DM,,,lost,BED,,,win,2020-02-29,31842
+SCO_20,3,2020-02-29,,LdJ1,,,win,V4K,,,lost,2020-02-29,31843
+SCO_20,3,2020-02-29,,BHS,,,lost,TLJ,,,win,2020-02-29,31844
+SCO_20,3,2020-02-29,,BEH,,,win,M37,,,lost,2020-02-29,31845
+SCO_20,4,2020-02-29,,HHM,,,win,K54,,,lost,2020-02-29,31846
+NYS_20,1,2020-11-15,,WN3,,,win,AAR,,,lost,2020-11-15,31890
+SCO_20,4,2020-02-29,,L2B,,,lost,PGT,,,win,2020-02-29,31848
+SCO_20,4,2020-02-29,,DHR,,,win,SzJ1,,,lost,2020-02-29,31849
+SCO_20,4,2020-02-29,,HgK2,,,win,KNJ,,,lost,2020-02-29,31850
+SCO_20,4,2020-02-29,,CNA,,,lost,42K,,,win,2020-02-29,31851
+SCO_20,4,2020-02-29,,DHO,,,win,LNN,,,lost,2020-02-29,31852
+SCO_20,4,2020-02-29,,KNM,,,lost,LII,,,win,2020-02-29,31853
+SCO_20,4,2020-02-29,,HNM,,,win,SHR,,,lost,2020-02-29,31854
+SCO_20,4,2020-02-29,,WDD,,,win,TrJ2,,,lost,2020-02-29,31855
+SCO_20,4,2020-02-29,,KRA,,,win,HOT,,,lost,2020-02-29,31856
+SCO_20,4,2020-02-29,,FNC,,,win,RLM,,,lost,2020-02-29,31857
+SCO_20,4,2020-02-29,,SoM1,,,lost,SnS1,,,win,2020-02-29,31858
+SCO_20,4,2020-02-29,,BEN,,,win,P21,,,lost,2020-02-29,31859
+SCO_20,4,2020-02-29,,DlO2,,,win,ONA,,,lost,2020-02-29,31860
+SCO_20,4,2020-02-29,,BHS,,,lost,BEH,,,win,2020-02-29,31861
+SCO_20,4,2020-02-29,,TLJ,,,win,M37,,,lost,2020-02-29,31862
+SCO_20,4,2020-02-29,,LdJ1,,,win,1DM,,,lost,2020-02-29,31863
+SCO_20,4,2020-02-29,,BED,,,lost,V4K,,,win,2020-02-29,31864
+SCO_20,4,2020-02-29,,DNT,,,win,AnP1,,,lost,2020-02-29,31865
+SCO_20,4,2020-02-29,,JdL1,,,lost,4NL,,,win,2020-02-29,31866
+NYS_20,1,2020-11-15,,CNC,,,win,JNB,,,lost,2020-11-15,31887
+SCO_20,5,2020-03-01,,PGT,,,win,DHR,,,lost,2020-03-01,31868
+SCO_20,5,2020-03-01,,KNK,,,win,FRS,,,lost,2020-03-01,31869
+SCO_20,5,2020-03-01,,HgK2,,,win,42K,,,lost,2020-03-01,31870
+SCO_20,5,2020-03-01,,K54,,,win,RLM,,,lost,2020-03-01,31871
+SCO_20,5,2020-03-01,,DHO,,,win,L2B,,,lost,2020-03-01,31872
+SCO_20,5,2020-03-01,,HNM,,,lost,CNA,,,win,2020-03-01,31873
+SCO_20,5,2020-03-01,,TrJ2,,,win,SoM1,,,lost,2020-03-01,31874
+SCO_20,5,2020-03-01,,SzJ1,,,win,LII,,,lost,2020-03-01,31875
+SCO_20,5,2020-03-01,,KRA,,,win,LNN,,,lost,2020-03-01,31876
+SCO_20,5,2020-03-01,,WDD,,,win,BEN,,,lost,2020-03-01,31877
+SCO_20,5,2020-03-01,,SHR,,,win,KNM,,,lost,2020-03-01,31878
+SCO_20,5,2020-03-01,,FNC,,,lost,DlO2,,,win,2020-03-01,31879
+SCO_20,5,2020-03-01,,HOT,,,win,SnS1,,,lost,2020-03-01,31880
+SCO_20,5,2020-03-01,,ONA,,,win,P21,,,lost,2020-03-01,31881
+SCO_20,5,2020-03-01,,DNT,,,win,4NL,,,lost,2020-03-01,31882
+SCO_20,5,2020-03-01,,TLJ,,,win,BEH,,,lost,2020-03-01,31883
+SCO_20,5,2020-03-01,,BHS,,,win,M37,,,lost,2020-03-01,31884
+SCO_20,5,2020-03-01,,V4K,,,win,1DM,,,lost,2020-03-01,31885
+SCO_20,5,2020-03-01,,LdJ1,,,win,BED,,,lost,2020-03-01,31886
+NYS_20,1,2020-11-15,,WGW,,,win,ATC,,,lost,2020-11-15,31892
+NYS_20,1,2020-11-15,,WTH,,,win,WRC,,,lost,2020-11-15,31893
+NYS_20,1,2020-11-15,,WAB,,,win,ROV,,,lost,2020-11-15,31894
+NYS_20,1,2020-11-15,,CDP,,,win,GTS,,,lost,2020-11-15,31895
+NYS_20,1,2020-11-15,,AGM,,,lost,POM,,,win,2020-11-15,31896
+NYS_20,1,2020-11-15,,K54,,,lost,PYJ,,,win,2020-11-15,31897
+NYS_20,1,2020-11-15,,FNS,,,win,GNI,,,lost,2020-11-15,31898
+NYS_20,1,2020-11-15,,GCJ,,,win,EnN1,,,lost,2020-11-15,31899
+NYS_20,1,2020-11-15,,KN1,,,win,WnP1,,,lost,2020-11-15,31900
+NYS_20,1,2020-11-15,,BEH,,,win,BPJ,,,lost,2020-11-15,31901
+NYS_20,1,2020-11-15,,RLM,,,lost,MIJ,,,win,2020-11-15,31902
+NYS_20,1,2020-11-15,,HTS,,,win,HlL1,,,lost,2020-11-15,31903
+NYS_20,1,2020-11-15,,WTJ,,,lost,ANA,,,win,2020-11-15,31904
+NYS_20,1,2020-11-15,,DHR,,,win,LrR1,,,lost,2020-11-15,31905
+NYS_20,1,2020-11-15,,BLB,,,win,HD3,,,lost,2020-11-15,31906
+NYS_20,1,2020-11-15,,FYL,,,win,WtG1,,,lost,2020-11-15,31907
+NYS_20,1,2020-11-15,,SNA,,,win,RyD1,,,lost,2020-11-15,31908
+NYS_20,1,2020-11-15,,PAS,,,win,JSI,,,lost,2020-11-15,31909
+NYS_20,2,2020-11-22,,CNC,,,win,HTS,,,lost,2020-11-22,31910
+NYS_20,2,2020-11-22,,NAC,,,win,K54,,,lost,2020-11-22,31911
+NYS_20,2,2020-11-22,,TYJ,,,win,MIJ,,,lost,2020-11-22,31912
+NYS_20,2,2020-11-22,,WN3,,,win,GTS,,,lost,2020-11-22,31913
+NYS_20,2,2020-11-22,,RIR,,,lost,CDP,,,win,2020-11-22,31914
+NYS_20,2,2020-11-22,,WGW,,,win,HgK2,,,lost,2020-11-22,31915
+NYS_20,2,2020-11-22,,WTH,,,win,DHR,,,lost,2020-11-22,31916
+NYS_20,2,2020-11-22,,WAB,,,win,BEH,,,lost,2020-11-22,31917
+NYS_20,2,2020-11-22,,AGM,,,win,G2D,,,lost,2020-11-22,31918
+NYS_20,2,2020-11-22,,FNS,,,win,POM,,,lost,2020-11-22,31919
+NYS_20,2,2020-11-22,,PYJ,,,lost,GCJ,,,win,2020-11-22,31920
+NYS_20,2,2020-11-22,,CNN,,,win,JSI,,,lost,2020-11-22,31921
+NYS_20,2,2020-11-22,,KN1,,,win,ANA,,,lost,2020-11-22,31922
+NYS_20,2,2020-11-22,,RLM,,,win,EnN1,,,lost,2020-11-22,31923
+NYS_20,2,2020-11-22,,WTJ,,,lost,WRC,,,win,2020-11-22,31924
+NYS_20,2,2020-11-22,,BLB,,,win,FYL,,,lost,2020-11-22,31925
+NYS_20,2,2020-11-22,,ROV,,,win,AAR,,,lost,2020-11-22,31926
+NYS_20,2,2020-11-22,,ATC,,,win,GNI,,,lost,2020-11-22,31927
+NYS_20,2,2020-11-22,,HlL1,,,win,WnP1,,,lost,2020-11-22,31928
+NYS_20,2,2020-11-22,,LrR1,,,win,HD3,,,lost,2020-11-22,31929
+NYS_20,3,2020-12-03,,CNC,,,win,KN1,,,lost,2020-12-03,31930
+NYS_20,3,2020-12-03,,NAC,,,win,FNS,,,lost,2020-12-03,31931
+NYS_20,3,2020-12-03,,TYJ,,,win,BLB,,,lost,2020-12-03,31932
+NYS_20,3,2020-12-03,,WN3,,,win,CDP,,,lost,2020-12-03,31933
+NYS_20,3,2020-12-03,,RIR,,,win,MIJ,,,lost,2020-12-03,31934
+NYS_20,3,2020-12-03,,WGW,,,win,WTH,,,lost,2020-12-03,31935
+NYS_20,3,2020-12-03,,WAB,,,win,GCJ,,,lost,2020-12-03,31936
+NYS_20,3,2020-12-03,,AGM,,,win,LrR1,,,lost,2020-12-03,31937
+NYS_20,3,2020-12-03,,K54,,,win,JSI,,,lost,2020-12-03,31938
+NYS_20,3,2020-12-03,,PYJ,,,win,ATC,,,lost,2020-12-03,31939
+NYS_20,3,2020-12-03,,DHR,,,win,CNN,,,lost,2020-12-03,31940
+NYS_20,3,2020-12-03,,BEH,,,win,HlL1,,,lost,2020-12-03,31941
+NYS_20,3,2020-12-03,,RLM,,,win,FYL,,,lost,2020-12-03,31942
+NYS_20,3,2020-12-03,,HTS,,,win,EnN1,,,lost,2020-12-03,31943
+NYS_20,3,2020-12-03,,WTJ,,,win,RyD1,,,lost,2020-12-03,31944
+NYS_20,3,2020-12-03,,HgK2,,,win,PAS,,,lost,2020-12-03,31945
+NYS_20,3,2020-12-03,,WRC,,,lost,ANA,,,win,2020-12-03,31946
+NYS_20,3,2020-12-03,,WnP1,,,win,GNI,,,lost,2020-12-03,31947
+NYS_20,3,2020-12-03,,ROV,,,win,WnP1,,,lost,2020-12-03,31948
+NYS_20,3,2020-12-03,,JNB,,,win,G2D,,,lost,2020-12-03,31949
+NYS_20,3,2020-12-03,,HD3,,,win,SNA,,,lost,2020-12-03,31950
+NYS_20,4,2020-12-04,,CNC,,,lost,TYJ,,,win,2020-12-04,31951
+NYS_20,4,2020-12-04,,NAC,,,win,CDP,,,lost,2020-12-04,31952
+NYS_20,4,2020-12-04,,WN3,,,win,WAB,,,lost,2020-12-04,31953
+NYS_20,4,2020-12-04,,RIR,,,win,ROV,,,lost,2020-12-04,31954
+NYS_20,4,2020-12-04,,WGW,,,win,AGM,,,lost,2020-12-04,31955
+NYS_20,4,2020-12-04,,WTH,,,win,PYJ,,,lost,2020-12-04,31956
+NYS_20,4,2020-12-04,,K54,,,win,FYL,,,lost,2020-12-04,31957
+NYS_20,4,2020-12-04,,FNS,,,win,HlL1,,,lost,2020-12-04,31958
+NYS_20,4,2020-12-04,,GCJ,,,win,KN1,,,lost,2020-12-04,31959
+NYS_20,4,2020-12-04,,CNN,,,win,RLM,,,lost,2020-12-04,31960
+NYS_20,4,2020-12-04,,BEH,,,win,HgK2,,,lost,2020-12-04,31961
+NYS_20,4,2020-12-04,,HTS,,,win,BLB,,,lost,2020-12-04,31962
+NYS_20,4,2020-12-04,,WTJ,,,win,LrR1,,,lost,2020-12-04,31963
+NYS_20,4,2020-12-04,,WRC,,,win,ATC,,,lost,2020-12-04,31964
+NYS_20,4,2020-12-04,,MIJ,,,win,JSI,,,lost,2020-12-04,31965
+NYS_20,4,2020-12-04,,GNI,,,win,G2D,,,lost,2020-12-04,31966
+NYS_20,4,2020-12-04,,PAS,,,win,AAR,,,lost,2020-12-04,31967
+NYS_20,5,2020-12-05,,CNC,,,win,WN3,,,lost,2020-12-05,31968
+NYS_20,5,2020-12-05,,NAC,,,win,CNN,,,lost,2020-12-05,31969
+NYS_20,5,2020-12-05,,TYJ,,,win,WGW,,,lost,2020-12-05,31970
+NYS_20,5,2020-12-05,,RIR,,,win,GCJ,,,lost,2020-12-05,31971
+NYS_20,5,2020-12-05,,WTH,,,win,WAB,,,lost,2020-12-05,31972
+NYS_20,5,2020-12-05,,CDP,,,win,HTS,,,lost,2020-12-05,31973
+NYS_20,5,2020-12-05,,AGM,,,win,BLB,,,lost,2020-12-05,31974
+NYS_20,5,2020-12-05,,K54,,,win,ROV,,,lost,2020-12-05,31975
+NYS_20,5,2020-12-05,,FNS,,,win,HD3,,,lost,2020-12-05,31976
+NYS_20,5,2020-12-05,,PYJ,,,win,HgK2,,,lost,2020-12-05,31977
+NYS_20,5,2020-12-05,,KN1,,,win,AAR,,,lost,2020-12-05,31978
+NYS_20,5,2020-12-05,,RLM,,,win,ATC,,,lost,2020-12-05,31979
+NYS_20,5,2020-12-05,,WTJ,,,win,FYL,,,lost,2020-12-05,31980
+NYS_20,5,2020-12-05,,WnP1,,,win,ANA,,,lost,2020-12-05,31981
+NYS_20,5,2020-12-05,,G2D,,,win,HlL1,,,lost,2020-12-05,31982
+NYS_20,6,2020-12-06,,CNC,,,win,WGW,,,lost,2020-12-06,31983
+NYS_20,6,2020-12-06,,NAC,,,win,RyD1,,,lost,2020-12-06,31984
+NYS_20,6,2020-12-06,,WN3,,,win,WTH,,,lost,2020-12-06,31985
+NYS_20,6,2020-12-06,,RIR,,,win,BLB,,,lost,2020-12-06,31986
+NYS_20,6,2020-12-06,,WAB,,,win,KN1,,,lost,2020-12-06,31987
+NYS_20,6,2020-12-06,,CDP,,,win,WnP1,,,lost,2020-12-06,31988
+NYS_20,6,2020-12-06,,AGM,,,win,GCJ,,,lost,2020-12-06,31989
+NYS_20,6,2020-12-06,,K54,,,win,HTS,,,lost,2020-12-06,31990
+NYS_20,6,2020-12-06,,CNN,,,win,ROV,,,lost,2020-12-06,31991
+NYS_20,6,2020-12-06,,BPJ,,,win,RLM,,,lost,2020-12-06,31992
+NYS_20,6,2020-12-06,,POM,,,win,HlL1,,,lost,2020-12-06,31993
+NYS_20,6,2020-12-06,,PAS,,,win,MIJ,,,lost,2020-12-06,31994
+NYS_20,6,2020-12-06,,FYL,,,win,GNI,,,lost,2020-12-06,31995
+NYS_20,6,2020-12-06,,ATC,,,win,AAR,,,lost,2020-12-06,31996
+NYS_20,6,2020-12-06,,G2D,,,win,JSI,,,lost,2020-12-06,31997
+CYBER_XII,1,2020-04-16,"J113 Maczek Fire Brigade",G1D,attacker,axis,win,BE3,defender,allies,lost,2020-04-16,31998
+CYBER_XII,1,2020-04-16,"DB141 Gut Punch",BE3,defender,axis,lost,GAP,attacker,allies,win,2020-04-16,31999
+CYBER_XII,1,2020-04-16,"J43 RTR in the Rain",G1D,defender,axis,lost,GAP,attacker,allies,win,2020-04-16,32000
+CYBER_XII,1,2020-04-16,"17 Lost Opportunities",ADT,attacker,axis,win,HdD1,defender,allies,lost,2020-04-16,32001
+CYBER_XII,1,2020-04-16,"J23 Kampfgruppe at Karichev",ADT,,axis,win,YRT,,allies,lost,2020-04-16,32002
+CYBER_XII,1,2020-04-16,"J130 The Art of Dying",HdD1,defender,allies,lost,RhJ1,attacker,,win,2020-04-16,32003
+CYBER_XII,1,2020-04-16,"OA28 Where Iron Crosses Grow",HdD1,attacker,allies,win,YRT,defender,,lost,2020-04-16,32004
+CYBER_XII,1,2020-04-16,"SP186 Beaufort",ELJ,attacker,allies,win,J2M,defender,axis,lost,2020-04-16,32005
+CYBER_XII,1,2020-04-16,"54 Bridge to Nowhere",ELJ,,axis,win,GaR1,,allies,lost,2020-04-16,32006
+CYBER_XII,1,2020-04-16,"J72 Cahier Carriers",J2M,attacker,allies,lost,GaR1,defender,axis,win,2020-04-16,32007
+CYBER_XII,1,2020-04-16,"J50 The Cactus Farm",MSM,attacker,allies,win,GCJ,defender,axis,lost,2020-04-16,32008
+CYBER_XII,1,2020-04-16,"187 Morgan",ROV,attacker,axis,win,1,defender,allies,lost,2020-04-16,32009
+CYBER_XII,1,2020-04-16,"129 Slamming the Door",BLB,,axis,lost,ROV,,allies,win,2020-04-16,32010
+CYBER_XII,1,2020-04-16,"V24 Eagles vs Lions",BLB,,allies,lost,GiM1,,axis,win,2020-04-16,32011
+CYBER_XII,1,2020-04-16,"184 Death at Carentan",RRC,,axis,lost,ROV,,allies,win,2020-04-16,32012
+CYBER_XII,1,2020-04-16,"HF8 Fahrenheit 352",KRA,,,win,KLS,,,lost,2020-04-16,32013
+CYBER_XII,1,2020-04-16,"J1 Urban Guerillas",CrD2,defender,axis,lost,SRP,attacker,allies,win,2020-04-16,32014
+CYBER_XII,1,2020-04-16,"85 Retribution",KRA,,axis,win,CrD2,,allies,lost,2020-04-16,32015
+CYBER_XII,1,2020-04-16,"115 Huns of Steel",KLS,defender,allies,win,SRP,attacker,axis,lost,2020-04-16,32016
+CYBER_XII,1,2020-04-16,"DTF2 Blitzkrieg",KRA,defender,allies,lost,SRP,attacker,axis,win,2020-04-16,32017
+CYBER_XII,1,2020-04-16,"11 Defiance on Hill 30",KLS,,allies,lost,CrD2,,axis,win,2020-04-16,32018
+CYBER_XII,1,2020-04-16,"DB116 Takin",MYR,defender,axis,lost,ZRR,attacker,allies,win,2020-04-16,32019
+CYBER_XII,1,2020-04-16,"DB099 Gin Drinkers",WTJ,defender,allies,lost,ZRR,attacker,axis,win,2020-04-16,32020
+CYBER_XII,1,2020-04-16,"J165 Bedburg Bite",WTJ,,allies,win,MYR,,axis,lost,2020-04-16,32021
+CYBER_XII,1,2020-04-16,"J42 Grebbe End",LNJ,,axis,lost,GZA,,allies,win,2020-04-16,32022
+CYBER_XII,1,2020-04-16,"AP65 Baw Drop",BYJ,defender,allies,lost,LNJ,attacker,axis,win,2020-04-16,32023
+CYBER_XII,1,2020-04-16,"J63 Silesian Interlude",BYJ,attacker,,win,GZA,defender,,lost,2020-04-16,32024
+CYBER_XII,2,2020-07-15,"J9 ",GAP,,allies,lost,ROV,,axis,win,2020-07-15,32025
+CYBER_XII,2,2020-07-15,"BFP124 The Tanks of Warsaw",ADT,defender,allies,win,SRP,attacker,axis,lost,2020-07-15,32026
+CYBER_XII,2,2020-07-15,"J1 Urban Guerillas",ELJ,,allies,win,ZRR,,axis,lost,2020-07-15,32027
+CYBER_XII,2,2020-07-15,"J32 Panzer Graveyard",MSM,attacker,axis,win,BYJ,defender,allies,lost,2020-07-15,32028
+CYBER_XII,3,2020-10-13,"SP180 Ecircle This!",ROV,defender,allies,win,ELJ,attacker,axis,lost,2020-10-13,32029
+CYBER_XII,3,2020-10-13,"FT81 Dubrovka",ADT,,axis,lost,MSM,,allies,win,2020-10-13,32030
+CYBER_XII,4,2020-12-17,"MP12 A Worthy Adversary",ROV,defender,allies,win,MSM,attacker,axis,lost,2020-12-17,32031
+SIOUX_20,1,2020-11-07,"HF3 First Timers",DHR,,allied,win,RS2,,axis,lost,2020-11-07,32032
+SIOUX_20,1,2020-11-07,"HF3 First Timers",GNI,,allied,win,DDD,,axis,lost,2020-11-07,32033
+SIOUX_20,1,2020-11-07,"BFP107 Costly Baptism",LRP,,axis,win,HD3,,allied,lost,2020-11-07,32034
+SIOUX_20,1,2020-11-07,,WSP,,axis,win,LH7,,allied,lost,2020-11-07,32035
+SIOUX_20,1,2020-11-07,"MM47 The Brickworks",RsG1,,allied,lost,JSI,,axis,win,2020-11-07,32036
+SIOUX_20,1,2020-11-07,"AP18 Village of the Damned",68D,,allied,win,PYW,,axis,lost,2020-11-07,32037
+SIOUX_20,1,2020-11-07,"AP59 Talking Heads",CDP,,axis,lost,W2R,,allied,win,2020-11-07,32038
+SIOUX_20,1,2020-11-07,"BFP107 Costly Baptism",BLB,,allied,lost,STS,,axis,win,2020-11-07,32039
+SIOUX_20,1,2020-11-07,"AP18 Village of the Damned",RHB,,axis,lost,KAJ,,allied,win,2020-11-07,32040
+SIOUX_20,1,2020-11-07,"HF3 First Timers",RIT,,allied,win,FNS,,axis,lost,2020-11-07,32041
+SIOUX_20,1,2020-11-07,"AP18 Village of the Damned",OeJ1,,allied,lost,GCJ,,axis,win,2020-11-07,32042
+SIOUX_20,2,2020-11-14,"AP116 Mook Point",DHR,,axis,win,68D,,allied,lost,2020-11-14,32043
+SIOUX_20,2,2020-11-14,"WO33 One Eyed Jacques",GNI,,axis,win,WSP,,allied,lost,2020-11-14,32044
+SIOUX_20,2,2020-11-14,"WO33 One Eyed Jacques",LRP,,allied,lost,W2R,,axis,win,2020-11-14,32045
+SIOUX_20,2,2020-11-14,"AP116 Mook Point",RsG1,,allied,lost,BLB,,axis,win,2020-11-14,32046
+SIOUX_20,2,2020-11-14,"246 The Army At the Edge of the World",DDD,,allied,lost,HD3,,axis,win,2020-11-14,32047
+SIOUX_20,2,2020-11-14,"WO33 One Eyed Jacques",JSI,,axis,lost,KAJ,,allied,win,2020-11-14,32048
+SIOUX_20,2,2020-11-14,"246 The Army At the Edge of the World",CDP,,allied,win,GCJ,,axis,lost,2020-11-14,32049
+SIOUX_20,2,2020-11-14,,RHB,,,lost,FNS,,,win,2020-11-14,32050
+SIOUX_20,2,2020-11-14,"AP116 Mook Point",HL1,,allied,lost,RIT,,axis,win,2020-11-14,32051
+SIOUX_20,2,2020-11-14,"WO33 One Eyed Jacques",RS2,,,win,OeJ1,,,lost,2020-11-14,32052
+SIOUX_20,2,2020-11-14,,LH7,,,lost,PYW,,,win,2020-11-14,32053
+SIOUX_20,2,2020-11-14,"Q6 Per l'onore di Roma",PYW,,axis,lost,STS,,allied,win,2020-11-14,32054
+SIOUX_20,3,2020-11-21,"BFP101 Panzer Spirit",DHR,,allied,win,W2R,,axis,lost,2020-11-21,32055
+SIOUX_20,3,2020-11-21,"OA18 Parry & Strike",GNI,,axis,win,STS,,allied,lost,2020-11-21,32056
+SIOUX_20,3,2020-11-21,"J150 Sangshak Redemption",LRP,,axis,win,RS2,,allied,lost,2020-11-21,32057
+SIOUX_20,3,2020-11-21,"AP60 Nishne Nyet",WSP,,axis,win,BLB,,allied,lost,2020-11-21,32058
+SIOUX_20,3,2020-11-21,"OA18 Parry & Strike",RsG1,,axis,lost,PYW,,allied,win,2020-11-21,32059
+SIOUX_20,3,2020-11-21,"BFP101 Panzer Spirit",68D,,axis,lost,CDP,,allied,win,2020-11-21,32060
+SIOUX_20,3,2020-11-21,"BFP101 Panzer Spirit",DDD,,allied,lost,OeJ1,,axis,win,2020-11-21,32061
+SIOUX_20,3,2020-11-21,"BFP101 Panzer Spirit",JSI,,allied,win,HD3,,axis,lost,2020-11-21,32062
+SIOUX_20,3,2020-11-21,"AP60 Nishne Nyet",RIT,,allied,win,KAJ,,axis,lost,2020-11-21,32063
+SIOUX_20,3,2020-11-21,"OA18 Parry & Strike",FNS,,allied,lost,GCJ,,axis,win,2020-11-21,32064
+SIOUX_20,4,2020-11-28,"JPT28 Panzer Pioneers",DHR,,,win,GNI,,,lost,2020-11-28,32065
+SIOUX_20,4,2020-11-28,"SP231 Galacian Persuasion",LRP,,allied,win,GCJ,,axis,lost,2020-11-28,32066
+SIOUX_20,4,2020-11-28,"GD4 Road To Lyon",WSP,,axis,win,RIT,,allied,lost,2020-11-28,32067
+SIOUX_20,4,2020-11-28,"SP231 Galacian Persuasion",RsG1,,allied,lost,OeJ1,,axis,win,2020-11-28,32068
+SIOUX_20,4,2020-11-28,"J146 Ragnorak",68D,,allied,lost,FNS,,axis,win,2020-11-28,32069
+SIOUX_20,4,2020-11-28,"AP55 The Generalissimo's Own",DDD,,allied,lost,RS2,,axis,win,2020-11-28,32070
+SIOUX_20,4,2020-11-28,"AP55 The Generalissimo's Own",JSI,,axis,win,W2R,,allied,lost,2020-11-28,32071
+SIOUX_20,4,2020-11-28,"J146 Ragnorak",CDP,,axis,win,BLB,,allied,lost,2020-11-28,32072
+SIOUX_20,4,2020-11-28,"AP55 The Generalissimo's Own",HD3,,allied,lost,KAJ,,axis,win,2020-11-28,32073
+SIOUX_20,5,2020-12-05,"RP107 Meet Me At The Station",LRP,,allied,win,RIT,,axis,lost,2020-12-05,32074
+SIOUX_20,5,2020-12-05,"TX6 Tough Enough",WSP,,allied,win,JSI,,axis,lost,2020-12-05,32075
+SIOUX_20,5,2020-12-05,"SP249 Non Stop Gurkhas",RsG1,,axis,win,DDD,,allied,lost,2020-12-05,32076
+SIOUX_20,5,2020-12-05,"SP249 Non Stop Gurkhas",68D,,axis,lost,HD3,,allied,win,2020-12-05,32077
+SIOUX_20,5,2020-12-05,,CDP,,,draw,KAJ,,,draw,2020-12-05,32078
+SIOUX_20,5,2020-12-05,MM28,RS2,,allied,win,GCJ,,axis,lost,2020-12-05,32079
+SIOUX_20,5,2020-12-05,,FNS,,,draw,W2R,,,draw,2020-12-05,32080
+SIOUX_20,6,2020-12-12,"FT31 Yelna Bridge",68D,,allied,win,OeJ1,,axis,lost,2020-12-12,32081
