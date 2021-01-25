@@ -2,6 +2,7 @@
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include "web/pages/connection.php";
+include_once "web/pages/functions.php";
 $mysqli = new mysqli($host, $username, $password, $database);
 if (mysqli_connect_errno()) {
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -154,25 +155,25 @@ if ($uploadOK == 1) {
 	}
 }
 
-function getnamecode($playername) {
-	global $mysqli;
-	$playername = trim($playername);
-	if ($stmt5 = $mysqli->prepare("SELECT Fullname, Player_Namecode FROM players")) {
-		$stmt5->execute();
-		$stmt5->bind_result($playerfullname, $namecode);
-		while ($row = $stmt5->fetch()) {
-			if (strcasecmp(trim($playerfullname), trim($playername)) == 0) {
-				$pnc = $namecode;
-				$stmt5->close();
-				return $pnc;
-			}
-		}
-	} else {
-		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-	}
-	echo "No Player Name Match found for " . $playername . "<br>";
-	return null;
-}
+//function getnamecode($playername) {
+//	global $mysqli;
+//	$playername = trim($playername);
+//	if ($stmt5 = $mysqli->prepare("SELECT Fullname, Player_Namecode FROM players")) {
+//		$stmt5->execute();
+//		$stmt5->bind_result($playerfullname, $namecode);
+//		while ($row = $stmt5->fetch()) {
+//			if (strcasecmp(trim($playerfullname), trim($playername)) == 0) {
+//				$pnc = $namecode;
+//				$stmt5->close();
+//				return $pnc;
+//			}
+//		}
+//	} else {
+//		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+//	}
+//	echo "No Player Name Match found for " . $playername . "<br>";
+//	return null;
+//}
 function getnewnamecode($playername, $playernamecode) {
 
 	global $rebuildpnclist;

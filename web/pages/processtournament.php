@@ -2,6 +2,7 @@
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once "web/include/header.php";
+include_once "web/pages/functions.php";
 ?>
 <body>
 <?php include_once "web/include/navbar.htm";?>
@@ -29,15 +30,19 @@ $locationcountry = $_POST['LocationCountry'];
 $tourtype = $_POST['TourType'];
 $iterationname = $_POST['IterationName'];
 $winner = $_POST['Winner'];
+$winnernamecode = getnamecode($winner);
 $secondplace = $_POST['SecondPlace'];
+$secondnamecode = getnamecode($secondplace);
 $thirdplace = $_POST['ThirdPlace'];
+$thirdnamecode = getnamecode($thirdplace);
 $tourid = $_POST['TourID'];
+
 if (isset($_POST['submit'])) {
 	// update existing tournament
 	if ($stmt = $mysqli->prepare("Update tournaments SET Base_Name=?, Month_Held=?, Year_Held=?, Date_Held=?, Tournament_ID=?,
                         Location_CityOrRegion=?, Location_Country=?, Tour_Type=?, Iteration_Name=?, Winner1=?, Winner2=?, Winner3=? WHERE Tournament_ID=?")) {
 		$stmt->bind_param("ssissssssssss", $tourname, $monthheld, $yearheld, $dateheld, $tourid, $locationcorr, $locationcountry,
-			$tourtype, $iterationname, $winner, $secondplace, $thirdplace, $tourid);
+			$tourtype, $iterationname, $winnernamecode, $secondnamecode, $thirdnamecode, $tourid);
 		$stmt->execute();
 		echo "<br>";
 		echo $tourname . " " . "<li><strong>Tournament Update Added to Database</strong></li>";
@@ -55,7 +60,7 @@ if (isset($_POST['submit'])) {
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
 		/* bind the parameters*/
 		$stmt->bind_param("ssissssssssss", $tourname, $monthheld, $yearheld, $dateheld, $tourid, $locationcorr, $locationcountry,
-			$tourtype, $iterationname, $winner, $secondplace, $thirdplace, $dateadded);
+			$tourtype, $iterationname, $winnernamecode, $secondnamecode, $thirdnamecode, $dateadded);
 		/* execute */
 		$stmt->execute();
 		echo $tourname . " " . "<li><strong>Tournament Added to Database</strong></li>";

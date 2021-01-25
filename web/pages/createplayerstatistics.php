@@ -27,6 +27,16 @@ if ($getPlayer = $mysqli->prepare($sql)) {
 	$row = $getPlayer->fetch();
 }
 $getPlayer->close();
+$count = 0;
+$sql = "select t.Winner1 from tournaments t where t.Winner1=?";
+if ($stmt = $mysqli->prepare($sql)) {
+    $stmt->bind_param("s", $passplayercode);
+    $stmt->execute();
+    $stmt -> store_result();
+    $count = $stmt -> num_rows;
+    //$stmt->bind_result($count);
+}
+$stmt->close();
 
 $sql = " select Fullname, Country, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, WinsAsAttacker, GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak, HighestStreak from player_ratings where Player1_Namecode=?";
 if ($stmt = $mysqli->prepare($sql)) {
@@ -60,6 +70,7 @@ while ($row = $stmt->fetch()) {
 	} else {
 		$winpctasal = ($winsasal * 100) / $gamesasal;
 	}
+
 	?>
     <div class="container">
         <h3 class="mt-3">Statistical Summary for <?php echo prettyName($name) ?></h3>
@@ -124,6 +135,8 @@ while ($row = $stmt->fetch()) {
             <div class="col"><?php echo $higheststreak ?></div>
             <div class="col">Current Win Streak:</div>
             <div class="col"><?php echo $currentstreak ?></div>
+            <div class="col">Tournaments Won:</div>
+            <div class="col"><?php echo $count ?></div>
         </div>
         <div class="row mt-4">
           <div class="col-3">

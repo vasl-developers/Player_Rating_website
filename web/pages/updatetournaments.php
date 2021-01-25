@@ -1,6 +1,7 @@
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once "web/pages/connection.php";
+include_once "web/pages/functions.php";
 $mysqli = new mysqli($host, $username, $password, $database);
 if (mysqli_connect_errno()) {
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -59,11 +60,15 @@ if (isset($_POST['submit']) || isset($_POST['AddNew'])) {
 				$locationcountry = $lcountry;
 				$tourtype = $ttype;
 				$iterationname = $iname;
-				$winner1 = $win1;
-				$winner2 = $win2;
-				$winner3 = $win3;
+				$win1get = $win1;
+				$win2get = $win2;
 				$dateadded = $dadded;
+				$win3get = $win3;
+
 			}
+            $winner1 = prettyName(getPlayername($win1get));
+            $winner2 = prettyName(getPlayername($win2get));
+            $winner3 = prettyName(getPlayername($win3get));
 		}
 	}
 	?>
@@ -168,5 +173,24 @@ echo "<div class='form-row'>";
 	$mysqli->close();
 
 }
+function getPlayerName($playernamecode){
+    global $mysqli;
+    $fullname="";
+    $sql2 = "select Fullname from players where Player_Namecode=?";
+    if ($stmt2 = $mysqli->prepare($sql2)) {
+        $stmt2->bind_param("s", $playernamecode);
+        $stmt2->execute();
+        $stmt2->bind_result($fullname);
+        while ($row = $stmt2->fetch()) {
+            $pn = $fullname;
+            $stmt2->close();
+            return $pn;
+        }
+    } else {
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    }
+  //echo "No Player Name Match found for " . $playernamecode . "<br>";
+  return null;
 
+}
 ?>
