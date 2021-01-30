@@ -124,6 +124,7 @@ echo "<div class='form-row'>";
 	echo "          <option value='other'>other</option>";
 	echo "          <option value='US/Ca'>US/Ca</option>";
 	echo "          <option value='VASL'>VASL</option>";
+    echo "          <option value='PBEM'>PBEM</option>";
 	echo "        </select>";
 	echo "    </div>";
 	echo "</div>";
