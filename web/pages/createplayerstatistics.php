@@ -27,16 +27,10 @@ if ($getPlayer = $mysqli->prepare($sql)) {
 	$row = $getPlayer->fetch();
 }
 $getPlayer->close();
-$count = 0;
-$sql = "select t.Winner1 from tournaments t where t.Winner1=?";
-if ($stmt = $mysqli->prepare($sql)) {
-    $stmt->bind_param("s", $passplayercode);
-    $stmt->execute();
-    $stmt -> store_result();
-    $count = $stmt -> num_rows;
-    //$stmt->bind_result($count);
-}
-$stmt->close();
+$firstcount = 0; $secondcount=0; $thirdcount=0;
+$tournamentfinishscore = 0;
+$numofopponents=0;
+include_once "web/pages/tournamentfinishweighting.php";
 
 $sql = " select Fullname, Country, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, WinsAsAttacker, GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak, HighestStreak from player_ratings where Player1_Namecode=?";
 if ($stmt = $mysqli->prepare($sql)) {
@@ -135,9 +129,22 @@ while ($row = $stmt->fetch()) {
             <div class="col"><?php echo $higheststreak ?></div>
             <div class="col">Current Win Streak:</div>
             <div class="col"><?php echo $currentstreak ?></div>
-            <div class="col">Tournaments Won:</div>
-            <div class="col"><?php echo $count ?></div>
+            <div class="col">Number of Opponents:</div>
+            <div class="col"><?php echo $numofopponents ?></div>
         </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+            <div class="col">Tournaments Won:</div>
+            <div class="col"><?php echo $firstcount ?></div>
+            <div class="col">Tournaments 2nd:</div>
+            <div class="col"><?php echo $secondcount ?></div>
+            <div class="col">Tournaments 3rd:</div>
+            <div class="col"><?php echo $thirdcount ?></div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 bg-light text-black">
+            <div class="col">Tournament Finishes Score:</div>
+            <div class="col"><?php echo Round($tournamentfinishscore,1) ?></div>
+        </div>
+
         <div class="row mt-4">
           <div class="col-3">
             <h3 class="text-center">as Attacker</h3>
