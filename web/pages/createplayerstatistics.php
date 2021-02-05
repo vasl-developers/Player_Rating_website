@@ -129,8 +129,7 @@ while ($row = $stmt->fetch()) {
             <div class="col"><?php echo $higheststreak ?></div>
             <div class="col">Current Win Streak:</div>
             <div class="col"><?php echo $currentstreak ?></div>
-            <div class="col">Number of Opponents:</div>
-            <div class="col"><?php echo $numofopponents ?></div>
+
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
             <div class="col">Tournaments Won:</div>
