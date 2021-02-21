@@ -50,6 +50,9 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item border border-white rounded-sm py-1 px-2"><a href="mailto:dougerimmer@gmail.com" target="_blank" class="link-light">Contact Us: dougerimmer@gmail.com</a></li>
       </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">Community Built using IntelliJ by JetBrains</a></li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -114,6 +117,7 @@
         <ul class="list-group">
           <li class="list-group-item">Jean Devaux</li>
           <li class="list-group-item">Tom Gillis</li>
+          <li class="list-group-item">William Hansson</li>
           <li class="list-group-item">Christian Koppmeyer</li>
           <li class="list-group-item">Jim McLeod</li>
           <li class="list-group-item">Derrek Spurlock</li>
@@ -130,27 +134,20 @@
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="theoryLabel">ELO Rating Theory (Bruno Nitrosso)</h3>
+        <h3 class="modal-title" id="theoryLabel">Rating Methodologies</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body quotes">
-        <p>Last update : 09 February 2011 (<a href='http://www.asl-area.org/theory.html' target="_blank">asl-area.org</a>)</p>
+        <h3>1. ASL Player Ratings: ELO Rating Theory</h3>
+        <p>ASL Player Ratings use the ELO rating methodology as implemented by Bruno Nitrosso on his Area site (see: <a href='http://www.asl-area.org/theory.html' target="_blank">asl-area.org</a>). The following is an edited and updated version of Bruno's description of the ELO rating system. </p>
 
-        <p>The Elo rating system, developed by Arpad Elo in the early 1960's, is the first rating system based on a probabilistic approach.</p>
-
-        <p>A player does not get a subjective amount of points for his/her achievements. In such a system, a guy would score say 120 points for being the Grofaz and another 85 for finishing second at ASLOK whereas a third player would have 80 for winning a local tournament.</p>
-
-        <p>A well-known example of this approach is the ATP rating used in Tennis.</p>
-
-        <p>Here, the approach is very different. The idea is that a more skilled player will have a higher probability of beating a less skilled one and ratings reflect that probability. Player X's rating would then be representative of how likely it is he or she would beat another player Y who has another given rating. This specific probability of winning is calculated using the formula below:</p>
+        <p>Developed by Arpad Elo in the early 1960's, ELO is based on a probabilistic approach. The idea is that a more skilled player will have a higher probability of beating a less skilled one and ratings reflect that probability. Player X's rating would then be representative of how likely it is he or she would beat another player Y who has another given rating. This specific probability of winning is calculated using the formula below:</p>
 
         <p><img src="/web/images/RATING1.gif" class="m-2 w-25" /></p>
 
-        <p>We is the specific win-expectancy (probability), R1 is the players current rating, and R2 the opponents current rating.</p>
-
-        <p>In our previous X against Y example, a value of 0.62 for We would mean X should beat Y 62 times out of a hundred.</p>
+        <p>We is the specific win-expectancy (probability), R1 is the players current rating, and R2 the opponents current rating. In our previous X against Y example, a value of 0.62 for We would mean X should beat Y 62 times out of a hundred.</p>
 
         <p>If we have players X and Y play each other a hundred times and see that X beats Y 58 times, that could be indicative that their rating difference is a bit too high and we'd rather adjust them. How much? This is question 2.</p>
 
@@ -158,45 +155,29 @@
 
         <p>One could even have them play just once and, having X win 1 (instead of 0.62 !), decide to update the ratings.</p>
 
-        <p>So this is question 1 : how often do we adjust ratings?</p>
-
-        <p>And assuming you do decide to upgrade ratings after a series of wins : how much would you upgrade them? If the former rating difference corresponded to a 0.62 while the recent series implies a 0.7 : would you ignore the former history and only stick to the recent one?</p>
+        <p>So this is question 1 : how often do we adjust ratings? And assuming you do decide to upgrade ratings after a series of wins : how much would you upgrade them? If the former rating difference corresponded to a 0.62 while the recent series implies a 0.7 : would you ignore the former history and only stick to the recent one?</p>
 
         <p>So question 2 is : how much weight are we to give to former games and new games?</p>
 
         <h3>Question 1 : How often to update ratings</h3>
 
-        <p>In ASL, updating after everygame has been a common practice : AH AREA, Tactiques European AREA, ASO ratings and probably WEASL and aslratings.</p>
-
-        <p>Some internet sources on the ELO system for chess suggest every 3 to 5 games. On can understand the rationale because just winning or losing a single game doesn't mean enough. After playing the better of 5, 2 player's relative strength becomes clearer.</p>
-
-        <p>Crusader, the British ladder, updates ratings and the end of a tournament. It's a clever idea for a typical tournament has 3 to 5 games played on 2 to 3 days. It is also useful when you just don't know the exact order of playings which happens with tournament with loose format (typically Oktoberfest). So, all in all Derek's approach seems a clever one.</p>
-
-        <p>Yet, I found that inappropriate for my site because I have to deal with too many atypical situations. For instance, tournaments over internet span for a whole year or so.</p>
-
-        <p>So, I decided to update ratings... once a day ! A typical tournament day will see people playing 2 or 3 games, but sometimes it maybe only 1 and sometimes 5 (around October, if you see what I mean).</p>
+        <p>In AREA, and now ASL Player Ratings, ratings are updated once a day. A typical tournament day will see people playing 2 or 3 games, but sometimes it maybe only 1 and sometimes 5.</p>
 
         <h3>Question 2 : How much to update ratings</h3>
 
-        <p>If rating difference between X and Y used to give a We of 62%, based on a series of 40+ games each, and after playing 2 games one see a 100% win of X... does this mean the "correct" rating difference is the one that leads to 100% victories? Or 67%? Or what figure between the historical 62 and the marginal 100?</p>
+        <p>If a rating difference between X and Y gives a We of 62%, based on a series of 40+ games each, and after playing 2 games X wins both games... does this mean the "correct" rating difference is the one that leads to 100% victories? Or 67%? Or what figure between the historical 62 and the marginal 100?</p>
 
-        <p>The way ELO works, there is a parameter, the K factor, that gives the inertia or resilience of ratings.</p>
+        <p>The way ELO works, there is a parameter, the K factor, that gives the inertia or resilience to ratings. Here is the formula:</p>
 
-        <p>Here is the formula:</p>
+        <p><img src="/web/images/RATING2.gif" class="m-2 w-25" /></p>
 
         <p>Rn is the players new rating, Rp is the players previous rating, W is the expectancy based on the new games, We is the previous win-expectancy based on the current ratings difference.</p>
 
-        <p>As for K, it is the factor that weights more or less the impact on ratings of the new games results.</p>
+        <p>As for K, it is the factor that weights more or less the impact on ratings of the new games results. A high value would give a lot of importance to newest games, a low one would pretty much leave unchanged the ratings.</p>
 
-        <p>A high value would give a lot of importance to newest games, a low one would pretty much leave unchanged the ratings.</p>
+        <p>ASL Player Ratings uses different values for K depending on circumstances. Players with an evolving skill level have their rating move faster than players in a more mature stage by giving higher a K-factor to new players: the first 10 games count double, so to speak.</p>
 
-        <p>The idea is to use different values for K depending on circumstances.</p>
-
-        <p>Ideally, one would like evolving people with evolving skill level to have their rating move faster than players in a more mature stage. But how could one know?</p>
-
-        <p>An easy one is to give higher K-factor to new players, which I do : first 10 games count double, so to speak.</p>
-
-        <p>Another one, is to believe that players with a high rating achieve it after a large experience and are therefore, probably, at more mature stage. This is done usually for ELO. (see Table).</p>
+        <p>Another one, is to believe that players with a high rating achieve it after a large experience and are therefore, probably, at more mature stage. This is done by lowering the K-factor for players with higher ratings (see Table below). </p>
 
         <table class="table table-sm table-striped table-hover w-25">
           <thead>
@@ -212,6 +193,13 @@
             <tr><td>2200+</td><td>10</td></tr>
           </tbody>
         </table>
+      </div>
+      <div class="modal-body quotes">
+        <h3>2. Top Ten Information</h3>
+
+        <p>The Player Leaders section gathers additional dimensions to rank players. Most of these, such as ‘Games Played’, ‘Wins’, and ‘Tournament Wins’ are standard, absolute-value rankings.</p>
+
+        <p>One additional ranking, ‘Tournament Wins Score’ is based on a calculated rating for each player. It shows players with the strongest tournament performance rating, based on a weighted factor of tournament placings. Among competitive full ASL events involving games played in real time, players receive points for first, second and third place (in decreasing order). The number of points received also depends on the standing of each event based on the number of players participating. For example, a player winning a tournament where more than 64 players compete will receive 100 points, while a player finishing third at an event gathering 8 players will receive 4 points. Events with less than eight players receive a weight factor of zero.</p>
       </div>
     </div>
   </div>
