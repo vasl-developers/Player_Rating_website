@@ -169,6 +169,74 @@ if ($stmt = $mysqli->prepare($sql)) {
 $stmt->close();
 ?>
           </div>
+          <div class="col-md-3">
+              <?php
+
+$firstcount=0; $secondcount=0; $thirdcount=0;
+
+              $sql3 = "SELECT Fullname, Player1_Namecode FROM player_ratings";
+              if ($stmt3 = $mysqli->prepare($sql3)) {
+                  $stmt3->execute();
+                  $stmt3->bind_result($fullname, $pnc);
+                  while ($row = $stmt3->fetch()) {
+                      $tournamentfinishscore = 0;
+                      $passplayercode = $pnc;
+                      include "web/pages/tournamentfinishweighting.php";
+                      $playername[$pnc] = trim($fullname);
+                      $playerscore[$pnc] = round($tournamentfinishscore,1);
+                  }
+              }
+              //$stmt3->close();
+//$sql1 = "SELECT player_ratings.Fullname, player_ratings.Player1_Namecode FROM player_ratings";
+//if ($stmt1 = $mysqli->prepare($sql1)) {
+//	$stmt1->execute();
+//	$stmt1->bind_result($ffullname, $ppnc);
+//    while ($row1 = $stmt1->fetch()){
+//        $passplayercode = $ppnc;
+//        include "web/pages/tournamentfinishweighting.php";
+//        $playername[$ppnc] = trim($ffullname);
+//        $playerscore[$ppnc] = $tournamentfinishscore;
+//    }
+    arsort($playerscore);
+    $topten =0;
+	?>
+                  <div class="tableFixHead autoHeight">
+                      <table class="table table-sm table-striped table-hover">
+                          <thead>
+                          <tr>
+                              <th>Player</th>
+                              <th>Tournament Wins Score</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <?php
+                          foreach ($playerscore as $topscore) {
+                                $key = array_search (strval($topscore), $playerscore);
+                                if ($key == false) {
+                                    $name = "Missing";
+                                } else {
+                                    $name = trim($playername[$key]);
+                                }
+		                        $topten +=1;
+		                    ?>
+                                <tr>
+                                  <td><a class="content" href="../pages/tablePlayerGameResults.php?playercode=<?php echo $pnc ?>"><?php echo prettyname($name) ?></a></td>
+                                  <td><?php echo round($topscore,0) ?></td>
+                                </tr>
+                                <?php
+                                if($topten ==10){break;}
+                          }
+	?>
+                          </tbody>
+                      </table>
+                  </div>
+                  <?php
+
+$stmt3->close();
+?>
+          </div>
+
+
       </div>
   </div>
   <?php
