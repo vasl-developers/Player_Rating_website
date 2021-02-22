@@ -224,9 +224,6 @@ $stmt3->close();
           </div>
           <div class="col-md-3">
               <?php
-
-              //$sql = "select m.Player1_Namecode AS p FROM match_results m , m.Player2_Namecode from match_results m WHERE m.Player1_Namecode=? OR m.Player2_Namecode=?";
-
               $sql3 = "SELECT Fullname, Player1_Namecode FROM player_ratings";
               if ($stmt3 = $mysqli->prepare($sql3)) {
                   $stmt3->execute();
@@ -234,31 +231,24 @@ $stmt3->close();
                   while ($row = $stmt3->fetch()) {
                       $NumberOpponents = 0;
                       $passplayercode = $pnc;
-                      //$playername[$pnc] = trim($fullname);
                       $playerOpps[$pnc][0] = $pnc;
                       $playerOpps[$pnc][1] = trim($fullname);
                   }
               }
               $stmt3->close();
               foreach ($playerOpps as $topopps){
-                  //$key = array_search (strval($topopps), $playerOpps);
-                  //if ($key == false) {
+                  $passplayercode=$topopps[0];
+                  $sql2 = "SELECT p, COUNT(*) AS c FROM (SELECT m.Player2_Namecode AS p FROM match_results m WHERE m.Player1_Namecode=? UNION ALL
+                    SELECT m.Player1_Namecode AS p FROM match_results m WHERE m.Player2_Namecode=?) AS tp GROUP BY p";
+                  if ($stmt3 = $mysqli->prepare($sql2)) {
+                      $stmt3->bind_param("ss", $passplayercode, $passplayercode);
+                      $stmt3->execute();
+                      $stmt3->store_result();
+                      $playerOpps[$passplayercode][2] = $stmt3->num_rows;
+                  } else {
 
-                  //} else {
-                      $passplayercode=$topopps[0];
-                      $sql2 = "SELECT p, COUNT(*) AS c FROM (SELECT m.Player2_Namecode AS p FROM match_results m WHERE m.Player1_Namecode=? UNION ALL
-                      SELECT m.Player1_Namecode AS p FROM match_results m WHERE m.Player2_Namecode=?) AS tp GROUP BY p";
-                      if ($stmt3 = $mysqli->prepare($sql2)) {
-                          $stmt3->bind_param("ss", $passplayercode, $passplayercode);
-                          $stmt3->execute();
-                          $stmt3->store_result();
-                          $playerOpps[$passplayercode][2] = $stmt3->num_rows;
-                      } else {
-                          $reg=0;
-                      }
-                  //}
+                  }
               }
-              //arsort($playerOpps);
               uasort($playerOpps, function($a, $b) {
                   return $a[2] < $b[2];
               });
@@ -277,12 +267,7 @@ $stmt3->close();
                           <?php
                           foreach ($playerOpps as $topopps) {
                               $name = trim($topopps[1]);
-                              $key = $topopps[0]; //array_search (strval($topopps), $playerOpps);
-                              //if ($key == false) {
-                              //    $name = "Missing";
-                              //} else {
-                              //    $name = trim($playername[$key]);
-                              //}
+                              $key = $topopps[0];
                               $topten +=1;
                           ?>
                               <tr>
