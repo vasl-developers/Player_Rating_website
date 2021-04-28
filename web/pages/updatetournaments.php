@@ -8,22 +8,22 @@ if (mysqli_connect_errno()) {
 	exit();
 }
 if (isset($_POST['submit']) || isset($_POST['AddNew'])) {
-    include_once "web/pages/processtournament.php";
-} else if (isset($_POST['Delete']))  {
-    $deletetour = $_POST['TourID'];
-    $tourname = $_POST['tour_name'];
-    $sql = "DELETE from tournaments Where Tournament_id=?";
-    if (!($stmt = $mysqli->prepare($sql ))) {
-        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-        exit();
-    }
-    $stmt->bind_param("s", $deletetour);
-    $stmt->execute();
-    $stmt->close();
-    echo "<br>";
-    echo "<li><strong>" . $tourname . " Deleted from Database</strong></li>";
-    $txt = date("Y-m-d") . " " . $tourname . " deleted from players" . "\n";
-    include("web/pages/storetransactionstofile.php");
+	include_once "web/pages/processtournament.php";
+} else if (isset($_POST['Delete'])) {
+	$deletetour = $_POST['TourID'];
+	$tourname = $_POST['tour_name'];
+	$sql = "DELETE from tournaments Where Tournament_id=?";
+	if (!($stmt = $mysqli->prepare($sql))) {
+		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+		exit();
+	}
+	$stmt->bind_param("s", $deletetour);
+	$stmt->execute();
+	$stmt->close();
+	echo "<br>";
+	echo "<li><strong>" . $tourname . " Deleted from Database</strong></li>";
+	$txt = date("Y-m-d") . " " . $tourname . " deleted from players" . "\n";
+	include "web/pages/storetransactionstofile.php";
 } else {
 	$mysqli->set_charset("utf8");
 	if ($tournamenttoshow == "AddNew") {
@@ -66,13 +66,13 @@ if (isset($_POST['submit']) || isset($_POST['AddNew'])) {
 				$win3get = $win3;
 
 			}
-            $winner1 = prettyName(getPlayername($win1get));
-            $winner2 = prettyName(getPlayername($win2get));
-            $winner3 = prettyName(getPlayername($win3get));
+			$winner1 = prettyName(getPlayername($win1get));
+			$winner2 = prettyName(getPlayername($win2get));
+			$winner3 = prettyName(getPlayername($win3get));
 		}
 	}
 	?>
-          <h2>Update A Tournament</h2>
+          <h2>Update a Tournament</h2>
           <br>
           <h2>Selected Tournament: <?php echo $tournamenttoshow; ?></h2>
           <br>
@@ -124,7 +124,7 @@ echo "<div class='form-row'>";
 	echo "          <option value='other'>other</option>";
 	echo "          <option value='US/Ca'>US/Ca</option>";
 	echo "          <option value='VASL'>VASL</option>";
-    echo "          <option value='PBEM'>PBEM</option>";
+	echo "          <option value='PBEM'>PBEM</option>";
 	echo "        </select>";
 	echo "    </div>";
 	echo "</div>";
@@ -165,33 +165,33 @@ echo "<div class='form-row'>";
 		$savetype = "submit";
 	}
 	echo "<button type='submit' class='btn btn-primary' name='$savetype' >Save</button>";
-    echo "</div>";
-    echo "<br>";
-    echo "<div class='form-row col-md-3'>";
-    echo "<button type='submit' class='btn btn-primary' name='Delete' >Delete</button>";
-    echo "</div>";
+	echo "</div>";
+	echo "<br>";
+	echo "<div class='form-row col-md-3'>";
+	echo "<button type='submit' class='btn btn-primary' name='Delete' >Delete</button>";
+	echo "</div>";
 	echo "</form>";
 	$mysqli->close();
 
 }
-function getPlayerName($playernamecode){
-    global $mysqli;
-    $fullname="";
-    $sql2 = "select Fullname from players where Player_Namecode=?";
-    if ($stmt2 = $mysqli->prepare($sql2)) {
-        $stmt2->bind_param("s", $playernamecode);
-        $stmt2->execute();
-        $stmt2->bind_result($fullname);
-        while ($row = $stmt2->fetch()) {
-            $pn = $fullname;
-            $stmt2->close();
-            return $pn;
-        }
-    } else {
-        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-    }
-  //echo "No Player Name Match found for " . $playernamecode . "<br>";
-  return null;
+function getPlayerName($playernamecode) {
+	global $mysqli;
+	$fullname = "";
+	$sql2 = "select Fullname from players where Player_Namecode=?";
+	if ($stmt2 = $mysqli->prepare($sql2)) {
+		$stmt2->bind_param("s", $playernamecode);
+		$stmt2->execute();
+		$stmt2->bind_result($fullname);
+		while ($row = $stmt2->fetch()) {
+			$pn = $fullname;
+			$stmt2->close();
+			return $pn;
+		}
+	} else {
+		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+	}
+	//echo "No Player Name Match found for " . $playernamecode . "<br>";
+	return null;
 
 }
 ?>

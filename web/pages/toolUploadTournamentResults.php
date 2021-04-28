@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
                 <br>
                 <p>For information on required file format and structure, see Get Help!</p>
                 <br>
-                <p>If you wish to add to an existing tournament or modify existing games, go to Submit A Correction</p>
+                <p>If you wish to add to an existing tournament or modify existing games, go to <a href="toolSubmitGameCorrection.php">Submit a Correction</a></p>
                 <br>
                 <br>
                 <h3>Select file to upload (.csv format only at present):</h3>
