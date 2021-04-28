@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="content">
-      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="http://asl-ratings.org/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#theoryModal">Rating&nbsp;Methodology</a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#whyModal">Why&nbsp;AREA?</a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#memorialModal">Memorial&nbsp;List</a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#copyrightModal">Copyright</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#theoryModal">Rating&nbsp;Methodology</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#whyModal">Why&nbsp;AREA?</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#memorialModal">Memorial&nbsp;List</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#copyrightModal">Copyright</a></li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Links
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -25,7 +25,7 @@
         </li>
 
          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Tools & Support
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -47,10 +47,10 @@
       </ul>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item border border-white rounded-sm py-1 px-2"><a href="mailto:dougerimmer@gmail.com" target="_blank" class="link-light">Contact Us: dougerimmer@gmail.com</a></li>
       </ul>
-      <ul class="navbar-nav ml-2">
+      <ul class="navbar-nav ms-2">
         <li class="nav-item nav-link p-0"><small>Community Built using<br>IntelliJ by JetBrains</small></li>
       </ul>
     </div>
@@ -65,7 +65,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="whyLabel">Why a player rating system?</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -86,7 +86,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="copyrightLabel">Copyright Information</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -104,7 +104,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="memorialLabel">Memorial List</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -113,17 +113,39 @@
         <p>The tournament games and overall records of these individuals are included in the database and the various results displays on this site as a mark of respect and to ensure that their participation in our hobby is never forgotten.</p>
         <p>To each of them: <i>You are safely home, rest in peace and roll low.</i></p>
 
-        <ul class="list-group">
-          <li class="list-group-item">Jean Devaux</li>
-          <li class="list-group-item">Tom Gillis</li>
-          <li class="list-group-item">William Hansson</li>
-          <li class="list-group-item">Christian Koppmeyer</li>
-          <li class="list-group-item">Jim McLeod</li>
-          <li class="list-group-item">Derrek Spurlock</li>
-          <li class="list-group-item">John Van Marter</li>
-          <li class="list-group-item">Rick White</li>
-          <li class="list-group-item">Darell Wright</li>
-        </ul>
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <ul class="list-group">
+                <li class="list-group-item">Bill "Fish" Conner</li>
+                <li class="list-group-item">Brian Laethem</li>
+                <li class="list-group-item">Christian Koppmeyer</li>
+                <li class="list-group-item">Clayton Queen</li>
+                <li class="list-group-item">Cloyde Angell</li>
+                <li class="list-group-item">Coleman Quill</li>
+                <li class="list-group-item">Darell Wright</li>
+                <li class="list-group-item">Derrek Spurlock</li>
+                <li class="list-group-item">Doug Maston</li>
+                <li class="list-group-item">Fred Ingram</li>
+                <li class="list-group-item">Gord Reid</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-group">
+                <li class="list-group-item">Ian Daglish</li>
+                <li class="list-group-item">James Quinn</li>
+                <li class="list-group-item">Jean Devaux</li>
+                <li class="list-group-item">Jim McLeod</li>
+                <li class="list-group-item">John Van Marter</li>
+                <li class="list-group-item">Kent Smoak</li>
+                <li class="list-group-item">Rick White</li>
+                <li class="list-group-item">Tom Gillis</li>
+                <li class="list-group-item">Uwe Besch</li>
+                <li class="list-group-item">William Hansson</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -134,7 +156,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="theoryLabel">Rating Methodologies</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
