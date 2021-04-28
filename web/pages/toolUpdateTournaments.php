@@ -53,7 +53,7 @@ foreach ($tournamentlist as $tournament) {
 }
 	?>
                         </select>
-                        <button class="btn btn-primary pl-5" name="submit" type="submit" value="Select">Select</button>
+                        <button class="btn btn-primary pe-5" name="submit" type="submit" value="Select">Select</button>
                     </div>
                 </form>
                 <?php

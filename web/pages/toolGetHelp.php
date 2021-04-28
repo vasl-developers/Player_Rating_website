@@ -1,10 +1,10 @@
 <html lang="en">
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT']);
-include_once("web/include/header.php");
+include_once "web/include/header.php";
 ?>
 <body>
-<?php include_once("web/include/navbar.htm"); ?>
+<?php include_once "web/include/navbar.htm";?>
 <div class="home container-fluid">
     <div class="row">
         <div class="main-content col-md-10 offset-md-1">
@@ -45,12 +45,12 @@ include_once("web/include/header.php");
             <h3>1. Data Management</h3>
             <p>Adding or amending Tournament Game results:</p>
                     <p>(a) To add an entire tournament's results, use Upload Tournament Data, ensuring that the file you upload is properly formatted as per the instructions</p>
-                    <p>(b) To add partial results (a game or two) or to correct an existing Game Result, use Submit A Correction and then select either a specific game or Add Missing Game from the dropdown</p>
-            <p>Amending information for an Existing Tournament</p>
-                    <p>(a) To enter new or correct information about a Tournament that already exists in ASL Playing Ratings, select Update A Tournament</p>
-            <p>Adding a New Player or Amending an Existing One</p>
-                    <p>(a) To add a new player to the database, select Add or Update Players then Add A New Player</p>
-                    <p>(b) To update and existing player in the database, select Add or Update Players then select the player from the dropdown list</p>
+                    <p>(b) To add partial results (a game or two) or to correct an existing Game Result, use <a href="toolSubmitGameCorrection.php">Submit a Correction</a> and then select either a specific game or Add Missing Game from the dropdown</p>
+                    <p>Amending information for an Existing Tournament</p>
+                    <p>(a) To enter new or correct information about a Tournament that already exists in ASL Playing Ratings, select Update a Tournament</p>
+                    <p>Adding a New Player or Amending an Existing One</p>
+                    <p>(a) To add a new player to the database, select <a href="toolUpdatePlayers.php">Add or Update Players</a> then click Add a New Player</p>
+                    <p>(b) To update and existing player in the database, select <a href="toolUpdatePlayers.php">Add or Update Players</a> then select the player from the dropdown list.</p>
             <br>
             <h3>2. Obtain Documents or Data</h3>
             <p>Various links (Download Data Entry Form, Download Player File and Get the Data!) allow retrieval of data and forms for use with the system and are a key part of meeting the site's goal of transparency and community access to the underlying data and tools</p>
@@ -62,6 +62,6 @@ include_once("web/include/header.php");
         </div>
     </div>
 </div>
-<?php include_once("web/include/footer.php"); ?>
+<?php include_once "web/include/footer.php";?>
 </body>
 </html>

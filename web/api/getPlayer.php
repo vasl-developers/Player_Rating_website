@@ -1,10 +1,9 @@
-<html lang="en">
 <?php
+header("Content-type: application/json; charset=utf-8");
 set_include_path($_SERVER['DOCUMENT_ROOT']);
-?>
-<body>
-<?php
+
 include_once "web/pages/connection.php";
+
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno()) {
@@ -23,25 +22,22 @@ if (isset($_GET["code"])) {
 
 	$result = mysqli_query($mysqli, $sql);
 
-	$arr = [];
 	if (mysqli_num_rows($result)) {
 		$row = mysqli_fetch_assoc($result);
 		$name = ucwords(strtolower(trim($row["fname"]) . " " . trim($row["lname"])), " .-\t\r\n\f\v");
 		$elo = $row["elo"];
 		$hwm = $row["hwm"];
 
-		$arr["name"] = $name;
-		$arr["elo"] = $elo;
-		$arr["hwm"] = $hwm;
+		$obj->name = $name;
+		$obj->elo = number_format($elo, 2);
+		$obj->hwm = number_format($hwm, 2);
 	} else {
-		$arr["name"] = "Not Found";
-		$arr["elo"] = 0;
-		$arr["hwm"] = 0;
+		$obj->name = "Not Found";
+		$obj->elo = 0;
+		$obj->hwm = 0;
 	}
 
-	echo json_encode($arr);
+	echo json_encode($obj, JSON_NUMERIC_CHECK);
 }
 $mysqli->close();
 ?>
-</body>
-</html>
