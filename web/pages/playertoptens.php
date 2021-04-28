@@ -210,8 +210,10 @@ foreach ($playerscore as $topscore) {
 	$topten += 1;
 	?>
                           <tr>
-                              <td><a class="content" href="../pages/tablePlayerGameResults.php?playercode=<?php echo $pnc ?>"><?php echo prettyname($name) ?></a></td>
-                              <td><?php echo round($topscore, 0) ?></td>
+
+                              <td><a class="content" href="../pages/tablePlayerGameResults.php?playercode=<?php echo $key ?>"><?php echo prettyname($name) ?></a></td>
+                              <td><?php echo round($topscore,0) ?></td>
+
                           </tr>
                           <?php
 if ($topten == 10) {break;}
