@@ -70,17 +70,19 @@ if ($stmt = $mysqli->prepare($sql)) {
 }
 
 // parse and assign starting values to above arrays $elo and $hwm from init_elo.csv
-if (($handle = fopen("../Data/init_elo.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-        $pnc = $data[0];
-        $rating = $data[1];
-        $elo[$pnc] = $rating;
-        $hwm[$pnc] = $rating;
-    }
-    fclose($handle);
-}
+
+// July 2021, removed this loop so that everyone starts at 1500
+//if (($handle = fopen("../Data/init_elo.csv", "r")) !== FALSE) {
+//    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+//        $pnc = $data[0];
+//        $rating = $data[1];
+//        $elo[$pnc] = $rating;
+//        $hwm[$pnc] = $rating;
+//    }
+//    fclose($handle);
+//}
 #pour zoomer sur un gars donne - test code
-//$gars="HA6";
+//$gars="LLT";
 //$paselo=$elo[$gars];
 
 /*-----------------------------------------------------
@@ -226,9 +228,6 @@ foreach ($gamedays as $gamedate) {
                 }
                 $streak[$f_pnc] = 0;
             } elseif ($f_res == "draw") {
-                //if($gars==$f_pnc or $gars==$s_pnc) {
-                //    $reg="test";  //exists to set a breakpoint
-                //}
                 $fw = 0.5;
                 $sw = 0.5;
                 $streak[$s_pnc]++;
@@ -307,6 +306,9 @@ foreach ($gamedays as $gamedate) {
 }
 // at the end of the final day, update elo/hwm in database
 foreach (array_keys($last) as $t) {
+    //if($gars==$t) {
+    //    $reg="test";  //exists to set a breakpoint
+    //}
     $finalelo=intval($elo[$t]*10)/10;
     $finalhwm=intval($hwm[$t]*10)/10;
     $date = date('Y-M-d h:i:s');
