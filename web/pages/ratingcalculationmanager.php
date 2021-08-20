@@ -16,7 +16,7 @@ $date1 = new DateTime('0001-1-1');
 $date2 = new DateTime($date);
 
 // 1.1 store decay data and tournament type data
-/*$sql = "select player_ratings.maxdecay, player_ratings.decaytodate, player_ratings.Player1_Namecode from player_ratings";
+$sql = "select player_ratings.maxdecay, player_ratings.decaytodate, player_ratings.Player1_Namecode from player_ratings";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
     $stmt->bind_result($getmaxdecay, $getdecaytodate, $playernamecode);
@@ -30,9 +30,9 @@ if ($stmt = $mysqli->prepare($sql)) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     exit();
 }
-*/
 
-/*
+
+
 $sql = "select tournaments.Tournament_ID, tournaments.Tour_type from tournaments where tournaments.Tour_type='PBEM'";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
@@ -46,7 +46,7 @@ if ($stmt = $mysqli->prepare($sql)) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     exit();
 }
-*/
+
 // 1.2 remove previous data
 if (!($stmt = $mysqli->prepare("DELETE from player_ratings" ))) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
