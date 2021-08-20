@@ -16,7 +16,7 @@ $date1 = new DateTime('0001-1-1');
 $date2 = new DateTime($date);
 
 // 1.1 store decay data and tournament type data
-$sql = "select player_ratings.maxdecay, player_ratings.decaytodate, player_ratings.Player1_Namecode from player_ratings";
+/*$sql = "select player_ratings.maxdecay, player_ratings.decaytodate, player_ratings.Player1_Namecode from player_ratings";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
     $stmt->bind_result($getmaxdecay, $getdecaytodate, $playernamecode);
@@ -30,6 +30,9 @@ if ($stmt = $mysqli->prepare($sql)) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     exit();
 }
+*/
+
+/*
 $sql = "select tournaments.Tournament_ID, tournaments.Tour_type from tournaments where tournaments.Tour_type='PBEM'";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
@@ -43,6 +46,7 @@ if ($stmt = $mysqli->prepare($sql)) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     exit();
 }
+*/
 // 1.2 remove previous data
 if (!($stmt = $mysqli->prepare("DELETE from player_ratings" ))) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
@@ -142,7 +146,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
 
             while ($row = $stmt->fetch()) {
                 //put results data into an array for each player
-                if(!array_key_exists($t_id, $tourtype)) {  // if tourtype is PBEM, don't use
+                //if(!array_key_exists($t_id, $tourtype)) {  // if tourtype is PBEM, don't use
                     $fplayer = array("fpnc" => $f_pnc, "spnc" => $s_pnc, "fres" => $f_res,
                         "fside" => $f_side, "frole" => $f_role, "tid" => $t_id, "roundno" => $roundno,
                         "date" => $date, "scenid" => $scen_id, "upf" => 0);
@@ -316,7 +320,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                     } else {
                         $delta[$s_pnc] += $ups;
                     }
-                }
+                //}
             }
             /*?>
             </html><p><?PHP echo "on a fini le jour ($date) : ",$nbjour++,"\n"?></p></html>
@@ -327,14 +331,17 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 if ($hwm[$t] < $elo[$t]) {
                     $hwm[$t] = $elo[$t];
                 }
-
+                // copied here to ensure save routine has data while debugging
+                $maxdecay[$t]=0;
+                $decaytodate[$t]=0;
+                //
                 unset($delta[$t]);
             }
         }
     } // end of game date loop
 
     // decay calc after ratingcalc (if any) for this day
-    foreach (array_keys($last) as $t) {
+    /*foreach (array_keys($last) as $t) {
         if (!empty($last[$t])) {
             $date1 = $last[$t];
             $date2 = date_create($gamedate);
@@ -358,7 +365,8 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 $decaytodate[$t]=0;
             }
         }
-    }
+    }*/
+
 } // end of date loop
 // at the end of the final day, update elo/hwm in database
 foreach (array_keys($last) as $t) {
