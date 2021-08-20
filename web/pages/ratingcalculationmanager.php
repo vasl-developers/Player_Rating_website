@@ -366,6 +366,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
             }
         }
     }*/
+
 } // end of date loop
 // at the end of the final day, update elo/hwm in database
 foreach (array_keys($last) as $t) {
