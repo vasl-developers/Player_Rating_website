@@ -332,8 +332,8 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                     $hwm[$t] = $elo[$t];
                 }
                 // copied here to ensure save routine has data while debugging
-                $maxdecay[$t]=0;
-                $decaytodate[$t]=0;
+                //$maxdecay[$t]=0;
+                //$decaytodate[$t]=0;
                 //
                 unset($delta[$t]);
             }
@@ -341,7 +341,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
     } // end of game date loop
 
     // decay calc after ratingcalc (if any) for this day
-    /*foreach (array_keys($last) as $t) {
+   foreach (array_keys($last) as $t) {
         if (!empty($last[$t])) {
             $date1 = $last[$t];
             $date2 = date_create($gamedate);
@@ -365,7 +365,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 $decaytodate[$t]=0;
             }
         }
-    }*/
+    }
 
 } // end of date loop
 // at the end of the final day, update elo/hwm in database
