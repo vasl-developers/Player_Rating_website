@@ -146,7 +146,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
 
             while ($row = $stmt->fetch()) {
                 //put results data into an array for each player
-                //if(!array_key_exists($t_id, $tourtype)) {  // if tourtype is PBEM, don't use
+                if(!array_key_exists($t_id, $tourtype)) {  // if tourtype is PBEM, don't use
                     $fplayer = array("fpnc" => $f_pnc, "spnc" => $s_pnc, "fres" => $f_res,
                         "fside" => $f_side, "frole" => $f_role, "tid" => $t_id, "roundno" => $roundno,
                         "date" => $date, "scenid" => $scen_id, "upf" => 0);
@@ -320,7 +320,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                     } else {
                         $delta[$s_pnc] += $ups;
                     }
-                //}
+                }
             }
             /*?>
             </html><p><?PHP echo "on a fini le jour ($date) : ",$nbjour++,"\n"?></p></html>
