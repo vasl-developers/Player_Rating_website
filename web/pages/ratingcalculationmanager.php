@@ -341,33 +341,35 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
     } // end of game date loop
 
     // decay calc after ratingcalc (if any) for this day
-   foreach (array_keys($last) as $t) {
+    echo "\n$f_pnc";
+    foreach (array_keys($last) as $t) {
         if (!empty($last[$t])) {
             $date1 = $last[$t];
-            $date2 = date_create($gamedate);
-            $date3 = date_create($date1);
-            $depuis = date_diff($date2, $date3);
-            $sincelastgame = $depuis->format('%a');
-            if ($sincelastgame > 1100) {
-                $sincelastgame -= 1100;
-                if($sincelastgame==1){  // set maximum rating decay
-                    if($maxdecay[$t]==0){$maxdecay[$t]= $elo[$t] * 0.15;}
-                }
-                if(fmod($sincelastgame, 30)== 0) {
-                    $todaysdecay=3;
-                    if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
-                    if ($todaysdecay < 0){$todaysdecay = 0;}
-                    $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
-                    $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
-                }
-            } else {  // reset maxdecay and decaytodate to zero as player has resumed play
-                $maxdecay[$t]=0;
-                $decaytodate[$t]=0;
-            }
+            echo " $date1";
+    //         $date2 = date_create($gamedate);
+    //         $date3 = date_create($date1);
+    //         $depuis = date_diff($date2, $date3);
+    //         $sincelastgame = $depuis->format('%a');
+    //         if ($sincelastgame > 1100) {
+    //             $sincelastgame -= 1100;
+    //             if($sincelastgame==1){  // set maximum rating decay
+    //                 if($maxdecay[$t]==0){$maxdecay[$t]= $elo[$t] * 0.15;}
+    //             }
+    //             if(fmod($sincelastgame, 30)== 0) {
+    //                 $todaysdecay=3;
+    //                 if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
+    //                 if ($todaysdecay < 0){$todaysdecay = 0;}
+    //                 $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
+    //                 $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
+    //             }
+    //         } else {  // reset maxdecay and decaytodate to zero as player has resumed play
+    //             $maxdecay[$t]=0;
+    //             $decaytodate[$t]=0;
+    //         }
         }
     }
-
 } // end of date loop
+
 // at the end of the final day, update elo/hwm in database
 foreach (array_keys($last) as $t) {
     //if($gars==$t) {
