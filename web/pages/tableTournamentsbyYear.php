@@ -20,7 +20,7 @@ if (mysqli_connect_errno()) {
 ?>
   <h2>List of Tournaments included in ASL Player Ratings</h2>
   <br>
-  <p>This list includes Tournaments submitted to ASL Player Ratings . . . . It includes results added as of July 2020</p>
+  <p>This list includes Tournaments submitted to ASL Player Ratings.</p>
   <p>To view Game-by-Game results for a particular Tournament, click on the link.</p>
   <div class="tableFixHead">
   <?php
