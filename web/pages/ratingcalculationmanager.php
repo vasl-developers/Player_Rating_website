@@ -1,5 +1,5 @@
 <?php
-ini_set('max_execution_time', 0);
+ini_set('max_execution_time', 500);
 header('Content-type: text/plain; charset=utf-8');
 // database connection
 include("connection.php");
@@ -338,11 +338,11 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
     } // end of game date loop
 
     // decay calc after ratingcalc (if any) for this day
+    $date2 = date_create($gamedate);
     foreach (array_keys($last) as $t) {
         if (!empty($last[$t])) {
-            $date1 = $last[$t];
-            $date2 = date_create($gamedate);
-            $date3 = date_create($date1);
+            //$date1 = $last[$t];
+            $date3 = date_create($last[$t]);
             $depuis = date_diff($date2, $date3);
             $sincelastgame = $depuis->format('%a');
             if ($sincelastgame > 1100) {

@@ -2,7 +2,6 @@
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 include_once("web/include/header.php");
-header('Content-type: text/plain; charset=utf-8');
 // database connection
 include_once("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
@@ -107,24 +106,20 @@ $ratingsfilename = "../Data/ASL Player Rating data files/area_schema_player_rati
 // delete existing data file
 $test = unlink($ratingsfilename);
 // get ratings data
-$sql = "SELECT Player1_Namecode, Fullname, Country, Active, Provisional, FirstDate, LastDate, HighWaterMark, ELO, Games, Wins, GamesAsAttacker,
-       WinsAsAttacker, GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak, HighestStreak FROM player_ratings";
+$sql = "SELECT Player1_Namecode, Fullname, Country, Active, Provisional, FirstDate, LastDate, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, WinsAsAttacker, GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak, HighestStreak, maxdecay, decaytodate FROM player_ratings";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
-    $stmt->bind_result($playernc, $fullname, $country, $active, $provisional, $firstdate, $lastdate, $highwatermark, $elo, $games, $wins, $gamesasattacker,
-    $winsasattacker, $gamesasdefender, $winsasdefender, $gamesasaxis, $winsasaxis, $gamesasallies, $winsasallies, $currentstreak, $higheststreak);
+    $stmt->bind_result($playernc, $fullname, $country, $active, $provisional, $firstdate, $lastdate, $highwatermark, $elo, $games, $wins, $gamesasattacker, $winsasattacker, $gamesasdefender, $winsasdefender, $gamesasaxis, $winsasaxis, $gamesasallies, $winsasallies, $currentstreak, $higheststreak, $maxdecay, $decaytodate);
     $ratingarray = array();
-    $csv = array("Player1_Namecode"=>"Player Code", "Fullname"=>"Name", "Country"=>"Country", "Active"=>"Active", "Provisional"=>"Provisional",
-        "FirstDate"=>"First Game", "LastDate"=>"Last Game", "HighWaterMark"=>"Highest", "ELO"=>"Rating", "Games"=>"GP", "Wins"=>"Won", "GamesAsAttacker"=>"GP Att",
-        "WinsAsAttacker"=>"Attack Wins", "GamesAsDefender"=>"GP Def", "WinsAsDefender"=>"Def Wins", "GamesAsAxis"=>"GP Axis", "WinsAsAxis"=>"Axis Wins",
-        "GamesAsAllies"=>"GP Allies", "WinsAsAllies"=>"Allies Wins", "CurrentStreak"=>"Cur Streak", "HighestStreak"=>"Longest Strk"); //column headers
+    $csv = array("Player1_Namecode"=>"Player Code", "Fullname"=>"Name", "Country"=>"Country", "Active"=>"Active", "Provisional"=>"Provisional", "FirstDate"=>"First Game", "LastDate"=>"Last Game", "HighWaterMark"=>"Highest", "ELO"=>"Rating", "Games"=>"GP", "Wins"=>"Won", "GamesAsAttacker"=>"GP Att", "WinsAsAttacker"=>"Attack Wins", "GamesAsDefender"=>"GP Def", "WinsAsDefender"=>"Def Wins", "GamesAsAxis"=>"GP Axis", "WinsAsAxis"=>"Axis Wins", "GamesAsAllies"=>"GP Allies", "WinsAsAllies"=>"Allies Wins", "CurrentStreak"=>"Cur Streak", "HighestStreak"=>"Longest Strk", "maxdecay"=>"Max. Decay", "decaytodate"=>"Decay to date"); 
+    // column headers
     array_push($ratingarray, $csv);
     while ($row = $stmt->fetch()) {
         // put data into array
         $arrayitem = array("Player1_Namecode"=>$playernc, "Fullname"=>$fullname, "Country"=>$country, "Active"=>$active, "Provisional"=>$provisional,
             "FirstDate"=>$firstdate, "LastDate"=>$lastdate, "HighWaterMark"=>$highwatermark, "ELO"=>$elo, "Games"=>$games, "Wins"=>$wins, "GamesAsAttacker"=>$gamesasattacker,
             "WinsAsAttacker"=>$winsasattacker, "GamesAsDefender"=>$gamesasdefender, "WinsAsDefender"=>$winsasdefender, "GamesAsAxis"=>$gamesasaxis, "WinsAsAxis"=>$winsasaxis,
-            "GamesAsAllies"=>$gamesasallies, "WinsAsAllies"=>$winsasallies, "CurrentStreak"=>$currentstreak, "HighestStreak"=>$higheststreak);
+            "GamesAsAllies"=>$gamesasallies, "WinsAsAllies"=>$winsasallies, "CurrentStreak"=>$currentstreak, "HighestStreak"=>$higheststreak, "maxdecay"=>$maxdecay, "decaytodate"=>$decaytodate);
         array_push($ratingarray, $arrayitem);
     }
 } else {
