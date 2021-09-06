@@ -1,4 +1,5 @@
 <?php
+ini_set('max_execution_time', 0);
 header('Content-type: text/plain; charset=utf-8');
 // database connection
 include("connection.php");
@@ -8,7 +9,6 @@ if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
 
 // 1. set date variables used in calculations
 $date = date('Y-m-d');
@@ -31,8 +31,6 @@ if ($stmt = $mysqli->prepare($sql)) {
     exit();
 }
 
-
-
 $sql = "select tournaments.Tournament_ID, tournaments.Tour_type from tournaments where tournaments.Tour_type='PBEM'";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
@@ -54,7 +52,6 @@ if (!($stmt = $mysqli->prepare("DELETE from player_ratings" ))) {
 }
 $stmt->execute();
 $stmt->close();
-
 
 /*-----------------------------------------------------
 # 2. Initialization of players
@@ -341,31 +338,29 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
     } // end of game date loop
 
     // decay calc after ratingcalc (if any) for this day
-    echo "\n$f_pnc";
     foreach (array_keys($last) as $t) {
         if (!empty($last[$t])) {
             $date1 = $last[$t];
-            echo " $date1";
-    //         $date2 = date_create($gamedate);
-    //         $date3 = date_create($date1);
-    //         $depuis = date_diff($date2, $date3);
-    //         $sincelastgame = $depuis->format('%a');
-    //         if ($sincelastgame > 1100) {
-    //             $sincelastgame -= 1100;
-    //             if($sincelastgame==1){  // set maximum rating decay
-    //                 if($maxdecay[$t]==0){$maxdecay[$t]= $elo[$t] * 0.15;}
-    //             }
-    //             if(fmod($sincelastgame, 30)== 0) {
-    //                 $todaysdecay=3;
-    //                 if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
-    //                 if ($todaysdecay < 0){$todaysdecay = 0;}
-    //                 $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
-    //                 $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
-    //             }
-    //         } else {  // reset maxdecay and decaytodate to zero as player has resumed play
-    //             $maxdecay[$t]=0;
-    //             $decaytodate[$t]=0;
-    //         }
+            $date2 = date_create($gamedate);
+            $date3 = date_create($date1);
+            $depuis = date_diff($date2, $date3);
+            $sincelastgame = $depuis->format('%a');
+            if ($sincelastgame > 1100) {
+                $sincelastgame -= 1100;
+                if($sincelastgame==1){  // set maximum rating decay
+                    if($maxdecay[$t]==0){$maxdecay[$t]= $elo[$t] * 0.15;}
+                }
+                if(fmod($sincelastgame, 30)== 0) {
+                    $todaysdecay=3;
+                    if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
+                    if ($todaysdecay < 0){$todaysdecay = 0;}
+                    $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
+                    $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
+                }
+            } else {  // reset maxdecay and decaytodate to zero as player has resumed play
+                $maxdecay[$t]=0;
+                $decaytodate[$t]=0;
+            }
         }
     }
 } // end of date loop
