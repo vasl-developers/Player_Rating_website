@@ -328,10 +328,7 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 if ($hwm[$t] < $elo[$t]) {
                     $hwm[$t] = $elo[$t];
                 }
-                // copied here to ensure save routine has data while debugging
-                //$maxdecay[$t]=0;
-                //$decaytodate[$t]=0;
-                //
+
                 unset($delta[$t]);
             }
         }
@@ -357,9 +354,9 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                     $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
                     $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
                 }
-            } else {  // reset maxdecay and decaytodate to zero as player has resumed play
+            } else {  // reset maxdecay to zero as player has resumed play
                 $maxdecay[$t]=0;
-                $decaytodate[$t]=0;
+                //$decaytodate[$t]=0;
             }
         }
     }
