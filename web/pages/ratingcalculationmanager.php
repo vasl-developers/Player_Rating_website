@@ -1,5 +1,5 @@
 <?php
-ini_set('max_execution_time', 0);
+ini_set('max_execution_time', 500);
 header('Content-type: text/plain; charset=utf-8');
 // database connection
 include("connection.php");
@@ -328,21 +328,18 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 if ($hwm[$t] < $elo[$t]) {
                     $hwm[$t] = $elo[$t];
                 }
-                // copied here to ensure save routine has data while debugging
-                //$maxdecay[$t]=0;
-                //$decaytodate[$t]=0;
-                //
+
                 unset($delta[$t]);
             }
         }
     } // end of game date loop
 
     // decay calc after ratingcalc (if any) for this day
+    $date2 = date_create($gamedate);
     foreach (array_keys($last) as $t) {
         if (!empty($last[$t])) {
-            $date1 = $last[$t];
-            $date2 = date_create($gamedate);
-            $date3 = date_create($date1);
+            //$date1 = $last[$t];
+            $date3 = date_create($last[$t]);
             $depuis = date_diff($date2, $date3);
             $sincelastgame = $depuis->format('%a');
             if ($sincelastgame > 1100) {
@@ -357,9 +354,9 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                     $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
                     $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
                 }
-            } else {  // reset maxdecay and decaytodate to zero as player has resumed play
+            } else {  // reset maxdecay to zero as player has resumed play
                 $maxdecay[$t]=0;
-                $decaytodate[$t]=0;
+                //$decaytodate[$t]=0;
             }
         }
     }
