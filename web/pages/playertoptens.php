@@ -195,7 +195,7 @@ $topten = 0;
                       <thead>
                       <tr>
                           <th>Player</th>
-                          <th>Tournament Wins Score</th>
+                          <th>Tournament Finishes Score</th>
                       </tr>
                       </thead>
                       <tbody>
