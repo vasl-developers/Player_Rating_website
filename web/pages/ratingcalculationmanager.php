@@ -20,14 +20,11 @@ $gamesplayedforprogress = array();
 $decaytodate = array();
 $maxdecay = array();
 $playerprogress = [];
-$sql = "select player_ratings.maxdecay, player_ratings.decaytodate, player_ratings.Games, player_ratings.Player1_Namecode from player_ratings";
+$sql = "select player_ratings.Games, player_ratings.Player1_Namecode from player_ratings";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
-    $stmt->bind_result($getmaxdecay, $getdecaytodate, $getgames, $playernamecode);
+    $stmt->bind_result( $getgames, $playernamecode);
     while ($row = $stmt->fetch()) {
-        //create decay arrays
-        $maxdecay[$playernamecode] = $getmaxdecay;
-        $decaytodate[$playernamecode] = $getdecaytodate;
         $gamesplayedforprogress[$playernamecode] = $getgames;
     }
     $stmt->close();
@@ -91,6 +88,8 @@ if ($stmt = $mysqli->prepare($sql)) {
         $winsAllies[$playernamecode] = 0;
         $streak[$playernamecode] = 0;
         $highestStreak[$playernamecode] = 0;
+        $maxdecay[$playernamecode] = 0;
+        $decaytodate[$playernamecode] = 0;
         if ($gamesplayedforprogress == null){
             $calcprogressperiod=0;
         } elseif (!array_key_exists($playernamecode, $gamesplayedforprogress)){
@@ -122,7 +121,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 //}
 
 #pour zoomer sur un gars donne - test code
-//$gars="LLT";
+//$gars="FRH";
 //$paselo=$elo[$gars];
 
 /*-----------------------------------------------------
@@ -368,9 +367,9 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                     $playerprogress[$t][$nextprogressperiod[$t]] = intval($elo[$t]*10)/10;
                     $nextprogressperiod[$t]+=1;
                     // test code
-                    if ($nextprogressperiod[$t]>10) {
-                        $periodpause = true;
-                    }
+                //    if ($nextprogressperiod[$t]>10) {
+                //        $periodpause = true;
+                //    }
                 }
 
                 unset($delta[$t]);
@@ -393,6 +392,9 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 }
                 if(fmod($sincelastgame, 30)== 0) {
                     $todaysdecay=3;
+                    if(!array_key_exists($t, $decaytodate)){
+                        $decaytodate[$t]=0;
+                    }
                     if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
                     if ($todaysdecay < 0){$todaysdecay = 0;}
                     $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
@@ -408,9 +410,6 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
 
 // at the end of the final day, update elo/hwm in database
 foreach (array_keys($last) as $t) {
-    //if($gars==$t) {
-    //    $reg="test";  //exists to set a breakpoint
-    //}
     $finalelo=intval($elo[$t]*10)/10;
     $finalhwm=intval($hwm[$t]*10)/10;
     $date = date('Y-M-d h:i:s');
