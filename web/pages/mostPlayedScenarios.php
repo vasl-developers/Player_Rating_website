@@ -38,11 +38,13 @@ if ($stmt = $mysqli->prepare($sql)) {
                   </tr>
                 </thead>
                 <tbody>
-    <?php while ($row = $stmt->fetch()) {
-		$name = trim($name);
+    <?php
+      $i = 1;
+      while ($row = $stmt->fetch()) {
+		    $name = trim($name);
 		?>
                       <tr>
-                        <td><?php echo $name ?></td>
+                        <td><?php echo $i++ . '. ' . $name ?></td>
                         <td><a class="content" href="tableScenarioresults.php?scenarioid=<?php echo $scenarioId ?>"><?php echo $scenarioId ?></a></td>
                         <td><?php echo $count ?></td>
                       </tr>
