@@ -16,14 +16,16 @@ $date1 = new DateTime('0001-1-1');
 $date2 = new DateTime($date);
 
 // 1.1 store decay data and tournament type data
-$sql = "select player_ratings.maxdecay, player_ratings.decaytodate, player_ratings.Player1_Namecode from player_ratings";
+$gamesplayedforprogress = array();
+$decaytodate = array();
+$maxdecay = array();
+$playerprogress = [];
+$sql = "select player_ratings.Games, player_ratings.Player1_Namecode from player_ratings";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
-    $stmt->bind_result($getmaxdecay, $getdecaytodate, $playernamecode);
+    $stmt->bind_result( $getgames, $playernamecode);
     while ($row = $stmt->fetch()) {
-        //create decay arrays
-        $maxdecay[$playernamecode] = $getmaxdecay;
-        $decaytodate[$playernamecode] = $getdecaytodate;
+        $gamesplayedforprogress[$playernamecode] = $getgames;
     }
     $stmt->close();
 } else {
@@ -52,7 +54,12 @@ if (!($stmt = $mysqli->prepare("DELETE from player_ratings" ))) {
 }
 $stmt->execute();
 $stmt->close();
-
+if (!($stmt1 = $mysqli->prepare("DELETE from player_progress" ))) {
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    exit();
+}
+$stmt1->execute();
+$stmt1->close();
 /*-----------------------------------------------------
 # 2. Initialization of players
 -----------------------------------------------------*/
@@ -81,6 +88,19 @@ if ($stmt = $mysqli->prepare($sql)) {
         $winsAllies[$playernamecode] = 0;
         $streak[$playernamecode] = 0;
         $highestStreak[$playernamecode] = 0;
+        $maxdecay[$playernamecode] = 0;
+        $decaytodate[$playernamecode] = 0;
+        if ($gamesplayedforprogress == null){
+            $calcprogressperiod=0;
+        } elseif (!array_key_exists($playernamecode, $gamesplayedforprogress)){
+            $calcprogressperiod =0;
+        } else {
+            $calcprogressperiod = floor($gamesplayedforprogress[$playernamecode] / 10);
+        }
+        $gamesplayedperiod[$playernamecode]= $calcprogressperiod;
+        $nextprogressperiodreached[$playernamecode] = false;
+        $nextprogressperiod[$playernamecode] = 1;
+
     }
     $stmt->close();
 } else {
@@ -101,7 +121,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 //}
 
 #pour zoomer sur un gars donne - test code
-//$gars="LLT";
+//$gars="FRH";
 //$paselo=$elo[$gars];
 
 /*-----------------------------------------------------
@@ -318,6 +338,18 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                         $delta[$s_pnc] += $ups;
                     }
                 }
+
+                //test for progress period
+                $period = $gamesplayedperiod[$f_pnc] * $nextprogressperiod[$f_pnc];
+                $testforperiodmatach = fmod($games[$f_pnc], $period);
+                if ($testforperiodmatach ==0) {
+                    $nextprogressperiodreached[$f_pnc] = true;
+                }
+                $period = $gamesplayedperiod[$s_pnc] * $nextprogressperiod[$s_pnc];
+                $testforperiodmatach = fmod($games[$s_pnc], $period);
+                if ($testforperiodmatach ==0) {
+                    $nextprogressperiodreached[$s_pnc] = true;
+                }
             }
             /*?>
             </html><p><?PHP echo "on a fini le jour ($date) : ",$nbjour++,"\n"?></p></html>
@@ -327,6 +359,17 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 $elo[$t] += $delta[$t];
                 if ($hwm[$t] < $elo[$t]) {
                     $hwm[$t] = $elo[$t];
+                }
+
+                // now save player progress info if required
+                if ($nextprogressperiodreached[$t]== true){
+                    $nextprogressperiodreached[$t]=false;
+                    $playerprogress[$t][$nextprogressperiod[$t]] = intval($elo[$t]*10)/10;
+                    $nextprogressperiod[$t]+=1;
+                    // test code
+                //    if ($nextprogressperiod[$t]>10) {
+                //        $periodpause = true;
+                //    }
                 }
 
                 unset($delta[$t]);
@@ -349,6 +392,9 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 }
                 if(fmod($sincelastgame, 30)== 0) {
                     $todaysdecay=3;
+                    if(!array_key_exists($t, $decaytodate)){
+                        $decaytodate[$t]=0;
+                    }
                     if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
                     if ($todaysdecay < 0){$todaysdecay = 0;}
                     $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
@@ -364,9 +410,6 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
 
 // at the end of the final day, update elo/hwm in database
 foreach (array_keys($last) as $t) {
-    //if($gars==$t) {
-    //    $reg="test";  //exists to set a breakpoint
-    //}
     $finalelo=intval($elo[$t]*10)/10;
     $finalhwm=intval($hwm[$t]*10)/10;
     $date = date('Y-M-d h:i:s');
@@ -394,9 +437,32 @@ foreach (array_keys($last) as $t) {
         /* set parameters and execute */
     $stmt->execute();
     $stmt->close();
+    // store ratings progress data
+    $firstperiod = $secondperiod=$thirdperiod=$fourthperiod=$fifthperiod=$sixthperiod=$seventhperiod=$eighthperiod=$ninthperiod =$tenthperiod =0;
+    if (1< $nextprogressperiod[$t] ) {$firstperiod = $playerprogress[$t][1];}
+    if (2< $nextprogressperiod[$t] ) {$secondperiod = $playerprogress[$t][2];}
+    if (3< $nextprogressperiod[$t] ) {$thirdperiod = $playerprogress[$t][3];}
+    if (4< $nextprogressperiod[$t] ) {$fourthperiod = $playerprogress[$t][4];}
+    if (5< $nextprogressperiod[$t] ) {$fifthperiod = $playerprogress[$t][5];}
+    if (6< $nextprogressperiod[$t] ) {$sixthperiod = $playerprogress[$t][6];}
+    if (7< $nextprogressperiod[$t] ) {$seventhperiod = $playerprogress[$t][7];}
+    if (8< $nextprogressperiod[$t] ) {$eighthperiod = $playerprogress[$t][8];}
+    if (9< $nextprogressperiod[$t] ) {$ninthperiod = $playerprogress[$t][9];}
+    if (10< $nextprogressperiod[$t] ) {$tenthperiod = $playerprogress[$t][10];}
+    if (!($stmt1 = $mysqli->prepare("INSERT INTO player_progress (PlayerName, PlayerNameCode, 1period, 2period, 3period,
+        4period, 5period, 6period, 7period, 8period, 9period, 10period) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"))) {
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    }
+    /* bind the parameters*/
+    $stmt1->bind_param("ssdddddddddd",  $playername[$t], $t, $firstperiod, $secondperiod, $thirdperiod,
+    $fourthperiod, $fifthperiod, $sixthperiod, $seventhperiod, $eighthperiod, $ninthperiod, $tenthperiod);
+    /* set parameters and execute */
+    $stmt1->execute();
+    $stmt1->close();
+
 }
 $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
-include("web/pages/storetransactionstofile.php");
+include("storetransactionstofile.php");
 /*#==========function===============================
 elo : r+=k*(w-we)
 16 to 32

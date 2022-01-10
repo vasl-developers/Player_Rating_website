@@ -67,7 +67,7 @@ while ($row = $stmt->fetch()) {
 
 	?>
     <div class="container">
-        <h3 class="mt-3">Statistical Summary for <?php echo prettyName($name) ?></h3>
+        <h3 class="mt-3">Statistical Summary for <?php echo prettyName($name) ?> <a class="content" href="<?php echo $ROOT; ?>web/pages/playerratingprogress.php?playercode=<?php echo $passplayercode ?>" style="float:right;">See Player's Rating Progress</a></h3>
         <p>Updated on the 1st of every month. Games added during a month will appear in the Summary next month.</p>
         <br>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 bg-light text-black">

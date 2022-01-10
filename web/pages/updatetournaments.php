@@ -66,7 +66,8 @@ if (isset($_POST['submit']) || isset($_POST['AddNew'])) {
 				$win3get = $win3;
 
 			}
-			$winner1 = prettyName(getPlayername($win1get));
+			$winner1 = getPlayername($win1get);
+            $winner1 = str_replace("'", "", $winner1);
 			$winner2 = prettyName(getPlayername($win2get));
 			$winner3 = prettyName(getPlayername($win3get));
 		}
@@ -176,16 +177,20 @@ echo "<div class='form-row'>";
 }
 function getPlayerName($playernamecode) {
 	global $mysqli;
-	$fullname = "";
-	$sql2 = "select Fullname from players where Player_Namecode=?";
+	// $fullname = "";
+    $firstname =""; $surname = "";
+	//$sql2 = "select Fullname from players where Player_Namecode=?";
+    $sql2 = "select players.Surname, players.First_Name from players where Player_Namecode=?";
 	if ($stmt2 = $mysqli->prepare($sql2)) {
 		$stmt2->bind_param("s", $playernamecode);
 		$stmt2->execute();
-		$stmt2->bind_result($fullname);
-		while ($row = $stmt2->fetch()) {
-			$pn = $fullname;
+		$stmt2->bind_result($surname, $firstname);
+	while ($row = $stmt2->fetch()) {
+	    $name = ucwords(strtolower(trim($firstname) . " " . trim($surname)), " .-\t\r\n\f\v");
+
+            //$pn = $fullname;
 			$stmt2->close();
-			return $pn;
+			return $name;
 		}
 	} else {
 		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
