@@ -121,7 +121,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 //}
 
 #pour zoomer sur un gars donne - test code
-//$gars="FRH";
+//$gars="CE3";
 //$paselo=$elo[$gars];
 
 /*-----------------------------------------------------
@@ -337,18 +337,20 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                     } else {
                         $delta[$s_pnc] += $ups;
                     }
-                }
 
-                //test for progress period
-                $period = $gamesplayedperiod[$f_pnc] * $nextprogressperiod[$f_pnc];
-                $testforperiodmatach = fmod($games[$f_pnc], $period);
-                if ($testforperiodmatach ==0) {
-                    $nextprogressperiodreached[$f_pnc] = true;
-                }
-                $period = $gamesplayedperiod[$s_pnc] * $nextprogressperiod[$s_pnc];
-                $testforperiodmatach = fmod($games[$s_pnc], $period);
-                if ($testforperiodmatach ==0) {
-                    $nextprogressperiodreached[$s_pnc] = true;
+                    //test for progress period
+                    $period = $gamesplayedperiod[$f_pnc] * $nextprogressperiod[$f_pnc];
+                    $testforperiodmatach = fmod($games[$f_pnc], $period);
+                    if ($testforperiodmatach ==0) {
+                        $playerprogress[$f_pnc][$nextprogressperiod[$f_pnc]] = intval(($elo[$f_pnc]+ $delta[$f_pnc])*10)/10;
+                        $nextprogressperiod[$f_pnc]+=1;
+                    }
+                    $period = $gamesplayedperiod[$s_pnc] * $nextprogressperiod[$s_pnc];
+                    $testforperiodmatach = fmod($games[$s_pnc], $period);
+                    if ($testforperiodmatach ==0) {
+                        $playerprogress[$s_pnc][$nextprogressperiod[$s_pnc]] = intval(($elo[$s_pnc]+ $delta[$s_pnc])*10)/10;
+                        $nextprogressperiod[$s_pnc]+=1;
+                    }
                 }
             }
             /*?>
@@ -359,17 +361,6 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 $elo[$t] += $delta[$t];
                 if ($hwm[$t] < $elo[$t]) {
                     $hwm[$t] = $elo[$t];
-                }
-
-                // now save player progress info if required
-                if ($nextprogressperiodreached[$t]== true){
-                    $nextprogressperiodreached[$t]=false;
-                    $playerprogress[$t][$nextprogressperiod[$t]] = intval($elo[$t]*10)/10;
-                    $nextprogressperiod[$t]+=1;
-                    // test code
-                //    if ($nextprogressperiod[$t]>10) {
-                //        $periodpause = true;
-                //    }
                 }
 
                 unset($delta[$t]);
@@ -402,7 +393,6 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                 }
             } else {  // reset maxdecay to zero as player has resumed play
                 $maxdecay[$t]=0;
-                //$decaytodate[$t]=0;
             }
         }
     }
