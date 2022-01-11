@@ -61,25 +61,24 @@ if (mysqli_connect_errno()) {
     </script>
 </head>
 <body>
-
 <div class="container">
-    <h3 class="mt-3">Progress of Player Rating for <?php echo prettyName($name) ?></h3>
-    <p>This chart shows how a player's rating has changed over time. Each data point represents 10% of the player's games played. Displays ratings when hovering over line.</p>
-    <p>Players with less than 10 games will show as 0 rating.</p>
-    <p>For players who stop playing for a long period of time, their decay is not displayed unless they resume playing. </p>
-    <p>Updated on the 1st of every month. Games added during a month will be included next month.</p>
-    <br>
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <h3>Progress of Player Rating for <?php echo prettyName($name) ?></h3>
+      <p>This chart shows how a player's rating has changed over time. Each data point represents 10% of the player's games played. Displays ratings when hovering over line.</p>
+      <p>Players with less than 10 games will show as 0 rating.</p>
+      <p>For players who stop playing for a long period of time, their decay is not displayed unless they resume playing. </p>
+      <p>Updated on the 1st of every month. Games added during a month will be included next month.</p>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <div id="curve_chart" style="min-height: 500px;"></div>
+    </div>
+  </div>
 </div>
-<div class="home container-fluid">
 
-    <body>
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
-    </body>
-
-</div>
-<?php
-
-include_once "web/include/footer.php";
-?>
+<?php include_once "web/include/footer.php"; ?>
 </body>
 </html>
