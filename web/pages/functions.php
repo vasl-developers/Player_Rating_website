@@ -18,7 +18,9 @@ function getnamecode($playername) {
   } else {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
   }
-  echo "No Player Name Match found for " . $playername . "<br>";
+  if ($playername !="") {
+    echo "No Player Name Match found for " . $playername . "<br>";
+  }
   return null;
 }
 ?>

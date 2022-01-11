@@ -67,8 +67,8 @@ if (isset($_POST['submit']) || isset($_POST['AddNew'])) {
 
 			}
 			$winner1 = getPlayername($win1get);
-            $winner1 = str_replace("'", "", $winner1);
-			$winner2 = prettyName(getPlayername($win2get));
+            $winner1 = prettyName($winner1);
+            $winner2 = prettyName(getPlayername($win2get));
 			$winner3 = prettyName(getPlayername($win3get));
 		}
 	}
@@ -79,100 +79,103 @@ if (isset($_POST['submit']) || isset($_POST['AddNew'])) {
           <br>
           <h3>2. Enter revised or new information</h3>
           <form method="post" action="updatetournaments.php" id="content" role="form">
-            <?php
-echo "<div class='form-row'>";
-	echo "   <div class='form-group col-md-5'>";
-	echo "        <label for='tour_name'>Tournament Name:</label>";
-	echo "        <input type='text' class='form-control' name='tour_name' value='$basename' required>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='MonthHeld'>Month Held (one month only):</label>";
-	echo "        <input type='text' class='form-control' name='MonthHeld' value='$monthheld' required>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-2'>";
-	echo "        <label for='YearHeld'>Year (YYYY):</label>";
-	echo "        <input type='text' class='form-control' name='YearHeld' value='$yearheld' required>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-2'>";
-	echo "        <label for='DateHeld'>Date Held (1st day y-m-d):</label>";
-	echo "        <input type='text' class='form-control' name='DateHeld' value='$dateheld' required>";
-	echo "   </div>";
-	echo "</div>";
 
-	echo "<div class='form-row'>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='TourID'>Tournament ID:</label>";
-	echo "        <input type='text' class='form-control' name='TourID' value='$tourId' required>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='LocationCorR'>Location, City or Region:</label>";
-	echo "        <input type='text' class='form-control' name='LocationCorR' value='$locationCorR'>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='LocationCountry'>Location, Country:</label>";
-	echo "        <input type='text' class='form-control' name='LocationCountry' value='$locationcountry'>";
-	echo "   </div>";
-	echo "    <div class='form-group col-md-3'>";
-	echo "        <label for='TourType'>Tour. Type:</label>";
-	echo "        <select class='form-control' name='TourType'>";
+<div class='form-row'>
+	   <div class='form-group col-md-5'>
+	        <label for='tour_name'>Tournament Name:</label>
+	        <input type='text' class='form-control' name='tour_name' value="<?php echo $basename ?>" required>
+	   </div>
+	   <div class='form-group col-md-3'>
+	       <label for='MonthHeld'>Month Held (one month only):</label>
+	       <input type='text' class='form-control' name='MonthHeld' value="<?php echo $monthheld ?>" required>
+	   </div>
+	   <div class='form-group col-md-2'>
+	        <label for='YearHeld'>Year (YYYY):</label>
+	        <input type='text' class='form-control' name='YearHeld' value="<?php echo $yearheld ?>" required>
+	   </div>
+	   <div class='form-group col-md-2'>
+	        <label for='DateHeld'>Date Held (1st day y-m-d):</label>
+	        <input type='text' class='form-control' name='DateHeld' value="<?php echo $dateheld ?>" required>
+	   </div>
+	</div>
+
+	<div class='form-row'>
+	   <div class='form-group col-md-3'>
+	        <label for='TourID'>Tournament ID:</label>
+	        <input type='text' class='form-control' name='TourID' value="<?php echo $tourId ?>" required>
+	   </div>
+	   <div class='form-group col-md-3'>
+	        <label for='LocationCorR'>Location, City or Region:</label>
+	        <input type='text' class='form-control' name='LocationCorR' value="<?php echo $locationCorR ?>">
+	   </div>
+	   <div class='form-group col-md-3'>
+	        <label for='LocationCountry'>Location, Country:</label>
+	        <input type='text' class='form-control' name='LocationCountry' value="<?php echo $locationcountry ?>">
+	   </div>
+	    <div class='form-group col-md-3'>
+	        <label for='TourType'>Tour. Type:</label>
+	        <select class='form-control' name='TourType'>
+                <?php
 	if ($tourtype == null) {
 		echo "<option value=''>Choose...</option>";
 	} else {
 		echo "<option selected>$tourtype</option>";
 	}
-	echo "          <option value='EU'>EU</option>";
-	echo "          <option value='hidden'>hidden</option>";
-	echo "          <option value='other'>other</option>";
-	echo "          <option value='US/Ca'>US/Ca</option>";
-	echo "          <option value='VASL'>VASL</option>";
-	echo "          <option value='PBEM'>PBEM</option>";
-	echo "        </select>";
-	echo "    </div>";
-	echo "</div>";
+    ?>
+	          <option value='EU'>EU</option>
+	          <option value='hidden'>hidden</option>
+	          <option value='other'>other</option>
+	          <option value='US/Ca'>US/Ca</option>
+	          <option value='VASL'>VASL</option>
+	          <option value='PBEM'>PBEM</option>
+	        </select>
+	    </div>
+	</div>
 
-	echo "<div class='form-row'>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='IterationName'>Iteration Name (eg. 20th Edition):</label>";
-	echo "        <input type='text' class='form-control' name='IterationName' value='$iterationname'>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='Winner'>Winner:</label>";
-	echo "        <input type='text' class='form-control' name='Winner' value='$winner1'>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='SecondPlace'>Second Place:</label>";
-	echo "        <input type='text' class='form-control' name='SecondPlace' value='$winner2'>";
-	echo "   </div>";
-	echo "   <div class='form-group col-md-3'>";
-	echo "        <label for='ThirdPlace'>Third Place:</label>";
-	echo "        <input type='text' class='form-control' name='ThirdPlace' value='$winner3'>";
-	echo "   </div>";
-	echo "</div>";
+	<div class='form-row'>
+	   <div class='form-group col-md-3'>
+	        <label for='IterationName'>Iteration Name (eg. 20th Edition):</label>
+	        <input type='text' class='form-control' name='IterationName' value="<?php echo $iterationname ?>">
+	   </div>
+	   <div class='form-group col-md-3'>
+	        <label for='Winner'>Winner:</label>
+	        <input type='text' class='form-control' name='Winner' value="<?php echo $winner1 ?>">
+	   </div>
+	  <div class='form-group col-md-3'>
+	        <label for='SecondPlace'>Second Place:</label>
+	        <input type='text' class='form-control' name='SecondPlace' value="<?php echo $winner2 ?>">
+	   </div>
+	   <div class='form-group col-md-3'>
+	        <label for='ThirdPlace'>Third Place:</label>
+	        <input type='text' class='form-control' name='ThirdPlace' value="<?php echo $winner3 ?>">
+	   </div>
+	</div>
 
-	echo "<div class='form-row'>";
-	echo "   <div class='form-group col-md-12'>";
-	echo "        <label for='DateAdded'>Date Added to ASL Player Ratings:</label>";
-	echo "        <input type='text' class='form-control' name='DateAdded' value='$dateadded' disabled>";
-	echo "   </div>";
-	echo "</div>";
-	echo "<br>";
-	echo "<br>";
-	echo "<h3>3. Save Changes</h3>";
-	echo "<br>";
-	echo "<div class='form-row col-md-3'>";
-	if ($tournamenttoshow == "AddNew") {
+	<div class='form-row'>
+	   <div class='form-group col-md-12'>
+	        <label for='DateAdded'>Date Added to ASL Player Ratings:</label>
+	        <input type='text' class='form-control' name='DateAdded' value="<?php echo $dateadded ?>" disabled>
+	   </div>
+	</div>
+	<br>
+	<br>
+	<h3>3. Save Changes</h3>
+	<br>
+	<div class='form-row col-md-3'>
+	<?php if ($tournamenttoshow == "AddNew") {
 		$savetype = "AddNew";
 	} else {
 		$savetype = "submit";
 	}
-	echo "<button type='submit' class='btn btn-primary' name='$savetype' >Save</button>";
-	echo "</div>";
-	echo "<br>";
-	echo "<div class='form-row col-md-3'>";
-	echo "<button type='submit' class='btn btn-primary' name='Delete' >Delete</button>";
-	echo "</div>";
-	echo "</form>";
-	$mysqli->close();
+    ?>
+	<button type='submit' class='btn btn-primary' name='<?php echo $savetype ?>' >Save</button>
+	</div>
+	<br>
+	<div class='form-row col-md-3'>
+	<button type='submit' class='btn btn-primary' name='Delete' >Delete</button>
+	</div>
+	</form>
+	<?php $mysqli->close();
 
 }
 function getPlayerName($playernamecode) {
