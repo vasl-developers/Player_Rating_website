@@ -69,7 +69,7 @@ while ($row = $stmt->fetch()) {
 	$id = $scenarioid;
 	$scenarioid = $scenarioid . ' ';
 
-	if (!in_array($scenarioid, $scenario)) {
+	if (!in_array($id, $scenario)) {
 		$scenario[$scenarioid] = $id;
 		$s_name[$scenarioid] = $name;
 		$gp[$scenarioid] = 0;
