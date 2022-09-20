@@ -1,5 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 header("Content-type: application/json; charset=utf-8");
+
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 
 include_once "web/pages/connection.php";
