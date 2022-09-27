@@ -37,7 +37,7 @@ if (mysqli_connect_errno()) {
         </thead>
         <tbody>
         <?php
-$sql = "select players.Surname, players.First_Name, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY players.Surname, players.First_Name";
+$sql = "select players.Surname, players.First_Name, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark from players LEFT OUTER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY players.Surname, players.First_Name";
 $result = mysqli_query($mysqli, $sql);
 while ($row = mysqli_fetch_assoc($result)) {
 	if ($row["Hidden"] == 0) {
