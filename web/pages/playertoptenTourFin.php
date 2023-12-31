@@ -9,7 +9,6 @@ include_once "web/include/navbar.htm";
 include_once "web/pages/connection.php";
 include_once "web/pages/functions.php";
 $mysqli = new mysqli($host, $username, $password, $database);
-$mysqli2 = new mysqli($host, $username, $password, $database);
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     exit();
@@ -26,23 +25,17 @@ $mysqli->set_charset("utf8");
     <div class="row">
         <div class="col-md-3 offset-md-1">
             <?php
-            $firstcount = 0;
-            $secondcount = 0;
-            $thirdcount = 0;
-            $sql3 = "SELECT Fullname, Player1_Namecode FROM player_ratings";
+            $sql3 = "SELECT TournamentFinishScore, PlayerNameCode FROM tournamentfinishesscore ORDER BY TournamentFinishScore desc";
             if ($stmt3 = $mysqli->prepare($sql3)) {
                 $stmt3->execute();
-                $stmt3->bind_result($fullname, $pnc);
+                $stmt3->bind_result($tourfinishscore, $pnc);
                 while ($row = $stmt3->fetch()) {
-                    $tournamentfinishscore = 0;
-                    $passplayercode = $pnc;
-                    include "web/pages/tournamentfinishweighting.php";
-                    $playername[$pnc] = trim($fullname);
-                    $playerscore[$pnc] = round($tournamentfinishscore, 1);
+                    $playerScore[$pnc][0] = $pnc;
+                    $playerScore[$pnc][1] = $tourfinishscore;
                 }
             }
-            arsort($playerscore);
-            $topten = 0;
+            $stmt3->close();
+            $topten=0;
             ?>
             <div class="tableFixHead autoHeight">
                 <table class="table table-sm table-striped table-hover">
@@ -54,31 +47,32 @@ $mysqli->set_charset("utf8");
                     </thead>
                     <tbody>
                     <?php
-                    foreach ($playerscore as $topscore) {
-                        $key = array_search(strval($topscore), $playerscore);
-                        if ($key == false) {
-                            $name = "Missing";
-                        } else {
-                            $name = trim($playername[$key]);
-                        }
+                    foreach ($playerScore as $topscore) {
+                        $pnc = $topscore[0];
                         $topten += 1;
+                        $sql4 = "Select Fullname FROM players where Player_Namecode =?";
+                        if ($stmt4 = $mysqli->prepare($sql4)) {
+                            $stmt4->bind_param("s", $pnc);
+                            $stmt4->execute();
+                            $stmt4->store_result();
+                            $stmt4->bind_result($Fname);
+                            while ($row = $stmt4->fetch()) {
+                                $name = $Fname;
+                            }
+                        }
+                        $stmt4->close();
                         ?>
                         <tr>
-
-                            <td><a class="content" href="../pages/tablePlayerGameResults.php?playercode=<?php echo $key ?>"><?php echo prettyname($name) ?></a></td>
-                            <td><?php echo round($topscore,0) ?></td>
-
+                            <td><a class="content" href="../pages/tablePlayerGameResults.php?playercode=<?php echo $pnc ?>"><?php echo prettyname($name) ?></a></td>
+                            <td><?php echo round($topscore[1],0) ?></td>
                         </tr>
                         <?php
-                        if ($topten == 10) {break;}
+                        if ($topten == 15) {break;}
                     }
                     ?>
                     </tbody>
                 </table>
             </div>
-            <?php
-            $stmt3->close();
-            ?>
         </div>
     </div>
 </div>

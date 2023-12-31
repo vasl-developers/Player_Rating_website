@@ -23,7 +23,7 @@ include_once("web/include/header.php");
             if ($gametoedit ==0){   //$gametoedit is set in gamecorrection.php which includes editgame.php
                 $inittourId=$tournamenttouse; // adding new game so all variables are blank except tournament_ID
             }else {
-                $sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, Round_No, Round_Date, Scenario_ID, Tournament_ID, player1.Fullname, player1.Player_Namecode, player2.Fullname, player2.Player_Namecode from match_results INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode WHERE match_results.id=? ";
+                $sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, Round_No, Round_Date, Scenario_ID, Tournament_ID, player1.Fullname, player1.Player_Namecode, player2.Fullname, player2.Player_Namecode from match_results INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode WHERE Match_ID=? ";
                 if ($stmt = $mysqli->prepare($sql)) {
                     $stmt->bind_param("i", $gametoedit);
                     $stmt->execute();

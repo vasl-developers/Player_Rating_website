@@ -14,7 +14,7 @@ if (isset($_POST['tournamentgame'])) {
 } else {
     $mysqli->set_charset("utf8");
     // get game results for tournament
-    $sql = "select Scenario_ID, Tournament_ID, match_results.id, player1.Fullname, player2.Fullname from match_results INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode WHERE Tournament_ID=? ORDER BY player1.Fullname";
+    $sql = "select Scenario_ID, Tournament_ID, Match_ID, player1.Fullname, player2.Fullname from match_results INNER JOIN players player1 ON player1.Player_Namecode=match_results.Player1_Namecode INNER JOIN players player2 ON player2.Player_Namecode=match_results.Player2_Namecode WHERE Tournament_ID=? ORDER BY player1.Fullname";
     if (!($stmt = $mysqli->prepare($sql))) {
       echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     } else {

@@ -26,7 +26,7 @@ $mysqli->set_charset("utf8");
     <div class="row">
         <div class="col-md-3 offset-md-1">
             <?php
-            $sql = "SELECT Fullname, HighestStreak, Player1_Namecode FROM player_ratings ORDER BY HighestStreak DESC LIMIT 10";
+            $sql = "SELECT Fullname, HighestStreak, Player1_Namecode FROM player_ratings ORDER BY HighestStreak DESC LIMIT 15";
             if ($stmt = $mysqli->prepare($sql)) {
                 $stmt->execute();
                 $stmt->bind_result($fullname, $streak, $pnc);

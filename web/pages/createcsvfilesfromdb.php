@@ -75,7 +75,7 @@ $gamesfilename = "../Data/ASL Player Rating data files/area_schema_match_results
 // delete existing data file
 $test = unlink($gamesfilename);
 // get games data
-$sql = "SELECT Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, RoundDate, match_results.id FROM match_results";
+$sql = "SELECT Tournament_ID, Round_No, Round_Date, Scenario_ID, Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, RoundDate, Match_ID FROM match_results";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
     $stmt->bind_result($tournamentid, $roundno, $round_date, $scenarioid, $player1nc, $player1ad, $player1aa, $player1res, $player2nc, $player2ad, $player2aa, $player2res, $rounddate, $gameid);

@@ -43,7 +43,7 @@ while ($row = $stmt->fetch()) {
     <tr>
       <td colspan=9 class="headline">Round
         <?php echo $roundNo ?>
-        </th>
+        </td>
     </tr>
     <?php
 }

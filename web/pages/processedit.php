@@ -67,7 +67,7 @@ include_once("web/include/header.php");
                         }
                     } else {   // update existing game
                         if ($stmt = $mysqli->prepare("Update match_results SET Tournament_ID=?, Round_No=?, Round_Date=?, Scenario_ID=?, Player1_Namecode=?,
-                            Player1_AttDef=?, Player1_AlliesAxis=?, Player1_Result=?, Player2_Namecode=?, Player2_AttDef=?, Player2_AlliesAxis=?, Player2_Result=?, RoundDate=? WHERE match_results.id=?")) {
+                            Player1_AttDef=?, Player1_AlliesAxis=?, Player1_Result=?, Player2_Namecode=?, Player2_AttDef=?, Player2_AlliesAxis=?, Player2_Result=?, RoundDate=? WHERE Match_ID=?")) {
                                 $stmt->bind_param("sisssssssssssi", $tourname, $roundno, $rounddate, $scenid, $player1namecode, $player1attdef,
                                     $player1AlliesAxis, $player1result, $player2namecode, $player2attdef, $player2AlliesAxis, $player2result, $roundrealdate, $gameid);
                                 $stmt->execute();
@@ -83,7 +83,7 @@ include_once("web/include/header.php");
                     }
                 } elseif (isset($_POST['delete'])) {
                     $gameid = $_POST['gameid'];
-                    $sql = "DELETE from match_results Where match_results.id=?";
+                    $sql = "DELETE from match_results Where Match_ID=?";
                     if (!($stmt = $mysqli->prepare($sql ))) {
                         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
                         exit();

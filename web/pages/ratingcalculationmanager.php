@@ -1,8 +1,9 @@
 <?php
-ini_set('max_execution_time', 500);
+ini_set('max_execution_time', 800);
 header('Content-type: text/plain; charset=utf-8');
 // database connection
-include("connection.php");
+//include_once "web/pages/connection.php";
+include("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
@@ -54,12 +55,12 @@ if (!($stmt = $mysqli->prepare("DELETE from player_ratings" ))) {
 }
 $stmt->execute();
 $stmt->close();
-if (!($stmt1 = $mysqli->prepare("DELETE from player_progress" ))) {
+/*if (!($stmt1 = $mysqli->prepare("DELETE from player_progress" ))) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     exit();
 }
 $stmt1->execute();
-$stmt1->close();
+$stmt1->close();*/
 /*-----------------------------------------------------
 # 2. Initialization of players
 -----------------------------------------------------*/
@@ -108,22 +109,6 @@ if ($stmt = $mysqli->prepare($sql)) {
     exit();
 }
 
-// July 2021, removed this loop so that everyone starts at 1500
-// parse and assign starting values to above arrays $elo and $hwm from init_elo.csv
-//if (($handle = fopen("../Data/init_elo.csv", "r")) !== FALSE) {
-//    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-//        $pnc = $data[0];
-//        $rating = $data[1];
-//        $elo[$pnc] = $rating;
-//        $hwm[$pnc] = $rating;
-//    }
-//    fclose($handle);
-//}
-
-#pour zoomer sur un gars donne - test code
-//$gars="CE3";
-//$paselo=$elo[$gars];
-
 /*-----------------------------------------------------
  a. Ordered list of dates when a game was played
 -----------------------------------------------------*/
@@ -143,23 +128,22 @@ if ($stmt = $mysqli->prepare($sql)) {
 
 // create loop for each day since 1998-04-03
 $begin = new DateTime( "1998-04-03" );
-$end   =new DateTime($date);
+$end =new DateTime($date);
 
 for($i = $begin; $i <= $end;$i->modify('+1 day')) {
-
     /*-----------------------------------------------------
-     b. For each date on which a game was played ....
+    b. For each date on which a game was played ....
     -----------------------------------------------------*/
-
     $gamedate = $i->format('Y-m-d');
 
     if (in_array($gamedate, $gamedays, false) != false) {
-        $sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, Tournament_ID, Round_No, Scenario_ID, RoundDate from match_results WHERE Rounddate=? ORDER BY Round_No";
+        $sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, Tournament_ID, Round_No, Scenario_ID, RoundDate, Match_ID from match_results WHERE Rounddate=? ORDER BY Round_No";
         if ($stmt = $mysqli->prepare($sql)) {
-            /* bind the parameters and execute*/
+            // bind the parameters and execute
             $stmt->bind_param("s", $gamedate);
             $stmt->execute();
-            $stmt->bind_result($f_pnc, $f_role, $f_side, $f_res, $s_pnc, $s_role, $s_side, $s_res, $t_id, $roundno, $scen_id, $date);
+            $stmt->store_result();
+            $stmt->bind_result($f_pnc, $f_role, $f_side, $f_res, $s_pnc, $s_role, $s_side, $s_res, $t_id, $roundno, $scen_id, $date, $matchid);
 
             while ($row = $stmt->fetch()) {
                 //put results data into an array for each player
@@ -296,37 +280,17 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
 
                     $FactorK = factor_k($elo[$f_pnc], $games[$f_pnc]);
                     $upf = $FactorK * ($fw - $fwe);
+                    $upf = round($upf,1);
 
                     $FactorK = factor_k($elo[$s_pnc], $games[$s_pnc]);
                     $ups = $FactorK * ($sw - $swe);
+                    $ups= round($ups,1);
 
                     // stick updated information back in array
                     $fplayer["upf"] = intval($upf * 10) / 10;
                     $splayer["ups"] = intval($ups * 10) / 10;
-                    // What do these lines do?
-                    $boutabout_f = "\"" . join("\",\"", $fplayer) . "\"";
-                    $boutabout_s = "\"" . join("\",\"", $splayer) . "\"";
-                    /*  test code which echoes to screen the rating change per game for $gars
-                    if ($f_pnc == $gars) {
-                        $paselo+=$fplayer["upf"];echo "game vs ",$fplayer["spnc"]," points lost/won : ", $fplayer["upf"]," (total : $paselo)\n";
-                    }
-                    if ($s_pnc == $gars) {
-                        $paselo+=$splayer["ups"];echo "game vs ",$splayer["fpnc"]," points lost/won : ", $splayer["ups"]," (total : $paselo)\n";
-                    }
-                    */
-                    // this is used to test the calculation process - to use, first create empty db table with this name and structure
-                    /*if (!($stmt = $mysqli->prepare("INSERT INTO progress (Player1_Namecode, Player2_Namecode,
-                        Result,Side,Role,Tournament_ID,Round_No,RoundDate,Scenario_ID, Elo_Change) VALUES (?,?,
-                        ?,?,?,?,?,?,?,?)"))) {
-                        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-                    }
-                     bind the parameters
-                    $stmt->bind_param("ssssssissd", $s_pnc, $f_pnc, $s_res, $s_side, $s_role,
-                        $t_id, $roundno, $date, $scen_id, $splayer{"ups"});
-                    set parameters and execute
-                    $stmt->execute();
-                    $stmt->close();
-                    */
+
+                    //$delta[] tracks cumulative rate changes across multiple games on the same day
                     if (empty($delta[$f_pnc])) {
                         $delta[$f_pnc] = $upf;
                     } else {
@@ -338,41 +302,77 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                         $delta[$s_pnc] += $ups;
                     }
 
+                    // Add rating change and new rating to each match result table for both players
+                    $paselof = $elo[$f_pnc] +  $delta[$f_pnc];
+                    $paselos = $elo[$s_pnc] + $delta[$s_pnc];
+                    $paselof =intval($paselof*10)/10;
+                    $paselos =intval($paselos*10)/10;
+                    // Prepared statement, stage 1: prepare
+                    if (!($stmt1 = $mysqli->prepare("UPDATE match_results SET Player1_RateChange=?, Player1_RatingAfter=?, Player2_RateChange=?, Player2_RatingAfter=? WHERE Match_ID=?"))) {
+                        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+                    }
+                    // bind the parameters
+                    $stmt1->bind_param("ddddi", $fplayer["upf"], $paselof, $splayer["ups"], $paselos, $matchid);
+                    // set parameters and execute //
+                    $stmt1->execute();
+                    $stmt1->close();
+
+
+                    //  test code which echoes to screen the rating change per game for $gars
+                    /*if ($f_pnc == $gars) {
+                        echo "game vs ",$fplayer["spnc"]," points lost/won : ", $fplayer["upf"]," (total : $paselof)\n";
+                    }
+                    if ($s_pnc == $gars) {
+                        echo "game vs ",$splayer["fpnc"]," points lost/won : ", $splayer["ups"]," (total : $paselos)\n";
+                    }*/
+
                     //test for progress period
                     $period = $gamesplayedperiod[$f_pnc] * $nextprogressperiod[$f_pnc];
                     $testforperiodmatach = fmod($games[$f_pnc], $period);
                     if ($testforperiodmatach ==0) {
                         $playerprogress[$f_pnc][$nextprogressperiod[$f_pnc]] = intval(($elo[$f_pnc]+ $delta[$f_pnc])*10)/10;
                         $nextprogressperiod[$f_pnc]+=1;
+                        $nextprogressperiodreached[$f_pnc] = true;
                     }
                     $period = $gamesplayedperiod[$s_pnc] * $nextprogressperiod[$s_pnc];
                     $testforperiodmatach = fmod($games[$s_pnc], $period);
                     if ($testforperiodmatach ==0) {
                         $playerprogress[$s_pnc][$nextprogressperiod[$s_pnc]] = intval(($elo[$s_pnc]+ $delta[$s_pnc])*10)/10;
                         $nextprogressperiod[$s_pnc]+=1;
+                        $nextprogressperiodreached[$s_pnc] = true;
                     }
                 }
             }
-            /*?>
-            </html><p><?PHP echo "on a fini le jour ($date) : ",$nbjour++,"\n"?></p></html>
-            <?PhP */
-            // at the end of each day, update the ratings
+
+            // at the end of each day, update the ratings; change players' elo at this point
             foreach (array_keys($delta) as $t) {
                 $elo[$t] += $delta[$t];
                 if ($hwm[$t] < $elo[$t]) {
                     $hwm[$t] = $elo[$t];
                 }
 
+                // now save player progress info if required
+                if ($nextprogressperiodreached[$t]== true){
+                    $nextprogressperiodreached[$t]=false;
+                    $playerprogress[$t][$nextprogressperiod[$t]] = intval($elo[$t]*10)/10;
+                    $nextprogressperiod[$t]+=1;
+                    // test code
+                    //    if ($nextprogressperiod[$t]>10) {
+                    //        $periodpause = true;
+                    //    }
+                }
+
                 unset($delta[$t]);
             }
+            //$stmt->close();
         }
+        $stmt->close();
     } // end of game date loop
 
     // decay calc after ratingcalc (if any) for this day
     $date2 = date_create($gamedate);
     foreach (array_keys($last) as $t) {
         if (!empty($last[$t])) {
-            //$date1 = $last[$t];
             $date3 = date_create($last[$t]);
             $depuis = date_diff($date2, $date3);
             $sincelastgame = $depuis->format('%a');
@@ -408,27 +408,27 @@ foreach (array_keys($last) as $t) {
     $date3=date_create($date1);
     $depuis  = date_diff($date2,$date3);
     $sincelastgame = $depuis->format('%a');
-	if ($sincelastgame < 800) {
+    if ($sincelastgame < 800) {
         $active=1; // 1=yes
     } else {
         $active=0; // 0=no
     }
-    if (!($stmt = $mysqli->prepare("INSERT INTO player_ratings (Player1_Namecode, Fullname, Country,
+    if (!($stmt3 = $mysqli->prepare("INSERT INTO player_ratings (Player1_Namecode, Fullname, Country,
             Active, Provisional, FirstDate, LastDate, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, WinsAsAttacker,
             GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak,
             HighestStreak, maxdecay, decaytodate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))) {
-            echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     }
-    /* bind the parameters*/
-    $stmt->bind_param("sssiissddiiiiiiiiiiiiii", $t, $playername[$t], $country[$t], $active, $provisional[$t],
-            $first[$t], $last[$t], $finalhwm, $finalelo, $games[$t], $wins[$t], $gamesAtt[$t], $winsAtt[$t], $gamesDef[$t],
-            $winsDef[$t], $gamesAxis[$t], $winsAxis[$t], $gamesAllies[$t], $winsAllies[$t], $streak[$t],
-            $highestStreak[$t], $maxdecay[$t], $decaytodate[$t]);
-        /* set parameters and execute */
-    $stmt->execute();
-    $stmt->close();
+    // bind the parameters
+    $stmt3->bind_param("sssiissddiiiiiiiiiiiiii", $t, $playername[$t], $country[$t], $active, $provisional[$t],
+        $first[$t], $last[$t], $finalhwm, $finalelo, $games[$t], $wins[$t], $gamesAtt[$t], $winsAtt[$t], $gamesDef[$t],
+        $winsDef[$t], $gamesAxis[$t], $winsAxis[$t], $gamesAllies[$t], $winsAllies[$t], $streak[$t],
+        $highestStreak[$t], $maxdecay[$t], $decaytodate[$t]);
+    // set parameters and execute
+    $stmt3->execute();
+    $stmt3->close();
     // store ratings progress data
-    $firstperiod = $secondperiod=$thirdperiod=$fourthperiod=$fifthperiod=$sixthperiod=$seventhperiod=$eighthperiod=$ninthperiod =$tenthperiod =0;
+    $firstperiod=$secondperiod=$thirdperiod=$fourthperiod=$fifthperiod=$sixthperiod=$seventhperiod=$eighthperiod=$ninthperiod =$tenthperiod =0;
     if (1< $nextprogressperiod[$t] ) {$firstperiod = $playerprogress[$t][1];}
     if (2< $nextprogressperiod[$t] ) {$secondperiod = $playerprogress[$t][2];}
     if (3< $nextprogressperiod[$t] ) {$thirdperiod = $playerprogress[$t][3];}
@@ -443,16 +443,21 @@ foreach (array_keys($last) as $t) {
         4period, 5period, 6period, 7period, 8period, 9period, 10period) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"))) {
         echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     }
-    /* bind the parameters*/
+    // bind the parameters
     $stmt1->bind_param("ssdddddddddd",  $playername[$t], $t, $firstperiod, $secondperiod, $thirdperiod,
-    $fourthperiod, $fifthperiod, $sixthperiod, $seventhperiod, $eighthperiod, $ninthperiod, $tenthperiod);
-    /* set parameters and execute */
+        $fourthperiod, $fifthperiod, $sixthperiod, $seventhperiod, $eighthperiod, $ninthperiod, $tenthperiod);
+    // set parameters and execute
     $stmt1->execute();
     $stmt1->close();
 
 }
 $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
 include("storetransactionstofile.php");
+
+//now run two TopTen calculations and store in tables
+include("calcDiffOpponents.php");
+include("calcTournamentFinishesScore.php");
+
 /*#==========function===============================
 elo : r+=k*(w-we)
 16 to 32

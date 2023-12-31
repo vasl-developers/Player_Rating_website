@@ -6,7 +6,6 @@ if (mysqli_connect_errno()) {
     exit();
 }
 $tourtype = "PBEM";
-//$totaltourscore=0;
 $sql = "select t.Winner1, t.Winner2, t.Winner3, t.Tournament_id from tournaments t where (t.Winner1=? OR t.Winner2=? OR t.Winner3=?) and t.Tour_type<>?";
 if ($stmt = $mysqli2->prepare($sql)) {
     $stmt->bind_param("ssss", $passplayercode, $passplayercode, $passplayercode, $tourtype);
@@ -23,7 +22,6 @@ while ($row = $stmt->fetch()) {
         $stmt2->bind_param("ss", $newtourcode, $newtourcode);
         $stmt2->execute();
         $stmt2->store_result();
-        //$stmt2->bind_result($tourplayer, $count);
         $recount = $stmt2->num_rows;
     }
     $singletourscore=0;

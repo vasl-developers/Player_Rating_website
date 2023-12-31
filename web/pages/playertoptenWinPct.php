@@ -26,7 +26,7 @@ $mysqli->set_charset("utf8");
     <div class="row">
         <div class="col-md-3 offset-md-1">
             <?php
-            $sql = "SELECT Fullname, Games, Wins, (Wins * 100/Games), Player1_Namecode FROM player_ratings WHERE Games >=50 ORDER BY (Wins * 100/Games) DESC LIMIT 10 ";
+            $sql = "SELECT Fullname, Games, Wins, (Wins * 100/Games), Player1_Namecode FROM player_ratings WHERE Games >=50 ORDER BY (Wins * 100/Games) DESC LIMIT 15 ";
             if ($stmt = $mysqli->prepare($sql)) {
                 $stmt->execute();
                 $stmt->bind_result($fullname, $games, $gameswon, $winpct, $pnc);

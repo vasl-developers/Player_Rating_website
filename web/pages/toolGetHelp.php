@@ -54,10 +54,9 @@ include_once "web/include/header.php";
             <br>
             <h3>2. Obtain Documents or Data</h3>
             <p>Various links (Download Data Entry Form, Download Player File and Get the Data!) allow retrieval of data and forms for use with the system and are a key part of meeting the site's goal of transparency and community access to the underlying data and tools</p>
-            <p>The Download Scenario List link is currently disabled</p>
             <p>Hide Your Data offers tournament participants the opportunity to hide or remove their data from the system</p>
             <p>In the case of hiding, the data remains in the system and is used to calculate ratings; the user's name is replaced by Hidden in all displays</p>
-            <p>In the case of remivng, the data will be deleted from the ASL Player Rating system and no longer used in ratings calculations</p>
+            <p>In the case of removing, the data will be deleted from the ASL Player Rating system and no longer used in ratings calculations</p>
             <p>It is important to remember that removal will effect the ratings of all opponents of the player whose data is removed</p>
         </div>
     </div>
