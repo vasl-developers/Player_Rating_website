@@ -6,7 +6,7 @@
 
 <p>Statistical reports by player, tournament and scenario. Check player vs player match-ups.</p>
 
-<div class="row mt-3">
+<div class="row mt-4">
   <div class="col-md-6">
     <h3>ASL Player Rating Information</h3>
     <h5>Rankings and Alphabetical Display</h5>
@@ -39,31 +39,19 @@
   <div class="col-md-6">
     <h3>ASL Top Fifteen Information</h3>
     <div class="col-md-12 mt-3">
-          <p>Which players have won the most tournament games, who has the best winning percentage? Find out this and more in these links which are based on recorded tournament games. Find the rankings behind the ratings!</p>
+      <p>Which players have won the most tournament games, who has the best winning percentage? Find out this and more in these links which are based on recorded tournament games. Find the rankings behind the ratings!</p>
     </div>
   </div>
   <div class="col-md-6">
     <h3>ASL Scenario Information</h3>
     <br>
     <div class="list-group">
-          <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/mostPlayedScenarios.php">Most Played Scenarios at Tournaments</a>
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/mostPlayedScenarios.php">Most Played Scenarios at Tournaments</a>
     </div>
   </div>
-
 </div>
+
 <div class="row mt-3">
-    <div class="col-md-3">
-      <div class="list-group">
-        <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptenMostGames.php">Most Games Played</a>
-      </div>
-      <div class="list-group">
-            <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptenWins.php">Most Games Won</a>
-      </div>
-      <div class="list-group">
-            <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptenWinPct.php">Winning Percentage</a>
-      </div>
-      <br>
-    </div>
   <div class="col-md-3">
         <div class="list-group">
             <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptenWinStreak.php">Win Streak</a>
@@ -76,19 +64,27 @@
         </div>
   </div>
 
-</div>
-<div class="row mt-3">
-  <div class="col-md-6">
-        <h3>ASL Player Matchups</h3>
-        <div class="col-md-12 mt-3">
-            <p>How do you fare head-to-head against other players? Check out other players' one-on-one results. All results are based on recorded tournament games.</p>
-        </div>
+  <div class="col-md-3">
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptenWinStreak.php">Win Streak</a>
+    </div>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptenDiffOpp.php">Different Opponents (slow to load) </a>
+    </div>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/playertoptenTourFin.php">Tournament Finishes Score (slow to load)</a>
+    </div>
   </div>
 </div>
-<div class="row mt-3>"
+
+<div class="row mt-4">
   <div class="col-md-6">
-        <div class="list-group">
-            <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/toolPlayervPlayer.php">Player Matchups</a>
-        </div>
+    <h3>ASL Player Matchups</h3>
+    <div class="col-md-12 mt-3">
+      <p>How do you fare head-to-head against other players? Check out other players' one-on-one results. All results are based on recorded tournament games.</p>
+    </div>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action list-group-item-primary flex-fill" href="web/pages/toolPlayervPlayer.php">Player Matchups</a>
+    </div>
   </div>
 </div>
