@@ -7,90 +7,133 @@
 
 create schema area_schema collate utf8mb4_general_ci;
 
-create table match_results
-(
-    Tournament_ID text null,
-	Round_No int null,
-	Round_Date text null,
-	Scenario_ID text null,
-	Player1_Namecode text null,
-	Player1_AttDef text null,
-	Player1_AlliesAxis text null,
-	Player1_Result text null,
-	Player2_Namecode text null,
-	Player2_AttDef text null,
-	Player2_AlliesAxis text null,
-	Player2_Result text null,
-	RoundDate date null
-);
+CREATE TABLE `differentopponents` (
+ `PlayerNameCode` text,
+ `NumberOfOpponents` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
-create table player_ratings
-(
-    Player1_Namecode text null,
-	Fullname text null,
-	Country text null,
-	Active tinyint(1) default 1 null,
-	Provisional tinyint(1) default 0 null,
-	FirstDate date null,
-	LastDate date null,
-	HighWaterMark double null,
-	ELO double null,
-	Games int null,
-	Wins int null,
-	GamesAsAttacker int null,
-	WinsAsAttacker int null,
-	GamesAsDefender int null,
-	WinsAsDefender int null,
-	GamesAsAxis int null,
-	WinsAsAxis int null,
-	GamesAsAllies int null,
-	WinsAsAllies int null,
-	CurrentStreak int null,
-	HighestStreak int null
-);
+CREATE TABLE `match_results` (
+ `Match_ID` int(11) NOT NULL AUTO_INCREMENT,
+ `Tournament_ID` text,
+ `Round_No` int(11) DEFAULT NULL,
+ `Round_Date` text,
+ `Scenario_ID` text,
+ `Player1_Namecode` text,
+ `Player1_AttDef` text,
+ `Player1_AlliesAxis` text,
+ `Player1_Result` text,
+ `Player2_Namecode` text,
+ `Player2_AttDef` text,
+ `Player2_AlliesAxis` text,
+ `Player2_Result` text,
+ `RoundDate` date DEFAULT NULL,
+ `Player1_RateChange` double DEFAULT NULL,
+ `Player1_RatingAfter` double DEFAULT NULL,
+ `Player2_RateChange` double DEFAULT NULL,
+ `Player2_RatingAfter` double DEFAULT NULL,
+ PRIMARY KEY (`Match_ID`),
+ KEY `tourney_rounds` (`Tournament_ID`(40),`Round_No`),
+ KEY `player1` (`Player1_Namecode`(6)),
+ KEY `player2` (`Player2_Namecode`(6)),
+ KEY `tournamentId` (`Tournament_ID`(40)),
+ KEY `scenId` (`Scenario_ID`(100))
+) ENGINE=MyISAM AUTO_INCREMENT=38768 DEFAULT CHARSET=utf8
 
-create table players
-(
-    Surname text null,
-	First_Name text null,
-	Fullname text null,
-	Country text null,
-	Player_Namecode text null,
-	url text null,
-	Hidden tinyint(1) default 0 null
-)
-comment 'List of ASL Players';
+CREATE TABLE `players` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `Surname` text,
+ `First_Name` text,
+ `Fullname` text,
+ `Country` text,
+ `Player_Namecode` text,
+ `url` text,
+ `Hidden` tinyint(1) DEFAULT '0',
+ PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2659 DEFAULT CHARSET=utf8 COMMENT='List of ASL Players'
 
-create table scenarios
-(
-    scenario_id text null,
-	name text null,
-	publication text null,
-	firstplayer_sidename text null,
-	firstplayer_sideresult text null,
-	secondplayer_sidename text null,
-	secondplayer_sideresult text null,
-	url text null
-)
-comment 'list of ASL scenarios';
+CREATE TABLE `player_progress` (
+ `PlayerName` text,
+ `PlayerNameCode` mediumtext,
+ `1period` double NOT NULL DEFAULT '0',
+ `2period` double NOT NULL DEFAULT '0',
+ `3period` double NOT NULL DEFAULT '0',
+ `4period` double NOT NULL DEFAULT '0',
+ `5period` double NOT NULL DEFAULT '0',
+ `6period` double NOT NULL DEFAULT '0',
+ `7period` double NOT NULL DEFAULT '0',
+ `8period` double NOT NULL DEFAULT '0',
+ `9period` double NOT NULL DEFAULT '0',
+ `10period` double NOT NULL DEFAULT '0',
+ UNIQUE KEY `player_progress_PlayerNameCode_uindex` (`PlayerNameCode`(20)) USING HASH
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
-create table tournaments
-(
-    Base_Name text null,
-	Month_Held text null,
-	Year_Held smallint null,
-	Date_Held date null comment 'Use first day of tournament',
-	Tournament_id varchar(20) not null,
-	Location_CityOrRegion text null,
-	Location_Country text null,
-	Tour_type text null,
-	Iteration_Name text null,
-	Winner1 text null,
-	Winner2 text null,
-	Winner3 text null,
-	Date_Added date not null,
-	url text null,
-	constraint tournaments_Tournament_id_uindex
-		unique (Tournament_id)
-)
-comment 'ASL Tournaments';
+CREATE TABLE `player_ratings` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `Player1_Namecode` text,
+ `Fullname` text,
+ `Country` text,
+ `Active` tinyint(1) DEFAULT '1',
+ `Provisional` tinyint(1) DEFAULT '0',
+ `FirstDate` date DEFAULT NULL,
+ `LastDate` date DEFAULT NULL,
+ `HighWaterMark` double DEFAULT NULL,
+ `ELO` double DEFAULT NULL,
+ `Games` int(11) DEFAULT NULL,
+ `Wins` int(11) DEFAULT NULL,
+ `GamesAsAttacker` int(11) DEFAULT NULL,
+ `WinsAsAttacker` int(11) DEFAULT NULL,
+ `GamesAsDefender` int(11) DEFAULT NULL,
+ `WinsAsDefender` int(11) DEFAULT NULL,
+ `GamesAsAxis` int(11) DEFAULT NULL,
+ `WinsAsAxis` int(11) DEFAULT NULL,
+ `GamesAsAllies` int(11) DEFAULT NULL,
+ `WinsAsAllies` int(11) DEFAULT NULL,
+ `CurrentStreak` int(11) DEFAULT NULL,
+ `HighestStreak` int(11) DEFAULT NULL,
+ `maxdecay` double NOT NULL DEFAULT '0',
+ `decaytodate` double NOT NULL DEFAULT '0',
+ PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=91023 DEFAULT CHARSET=utf8
+
+CREATE TABLE `scenarios` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `scenario_id` text,
+ `name` text,
+ `publication` text,
+ `firstplayer_sidename` text,
+ `firstplayer_sideresult` text,
+ `secondplayer_sidename` text,
+ `secondplayer_sideresult` text,
+ `url` text,
+ PRIMARY KEY (`id`),
+ KEY `id_index` (`scenario_id`(100))
+) ENGINE=MyISAM AUTO_INCREMENT=6182 DEFAULT CHARSET=utf8 COMMENT='list of ASL scenarios'
+
+CREATE TABLE `tournamentfinishesscore` (
+ `PlayerNameCode` text,
+ `TournamentFinishScore` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+CREATE TABLE `tournaments` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `Base_Name` text,
+ `Month_Held` text,
+ `Year_Held` smallint(6) DEFAULT NULL,
+ `Date_Held` date DEFAULT NULL COMMENT 'Use first day of tournament',
+ `Tournament_id` varchar(20) NOT NULL,
+ `Location_CityOrRegion` text,
+ `Location_Country` text,
+ `Tour_type` text,
+ `Iteration_Name` text,
+ `Winner1` text,
+ `Winner2` text,
+ `Winner3` text,
+ `Date_Added` date NOT NULL,
+ `url` text,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `tournaments_Tournament_id_uindex` (`Tournament_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=732 DEFAULT CHARSET=utf8 COMMENT='ASL Tournaments'Views
+
+Create view gameResults CREATE ALGORITHM=UNDEFINED DEFINER=`samt88`@`localhost` SQL SECURITY DEFINER VIEW `samt88_area_schema`.`gameResults` AS select `m`.`Tournament_ID` AS `Tournament_ID`,`m`.`Player1_Namecode` AS `Player1_Namecode`,`m`.`Player1_AttDef` AS `Player1_AttDef`,`m`.`Player1_AlliesAxis` AS `Player1_AlliesAxis`,`m`.`Player1_Result` AS `Player1_Result`,`m`.`Player2_Namecode` AS `Player2_Namecode`,`m`.`Player2_AttDef` AS `Player2_AttDef`,`m`.`Player2_AlliesAxis` AS `Player2_AlliesAxis`,`m`.`Round_No` AS `Round_No`,`m`.`Scenario_ID` AS `Scenario_ID`,`p1`.`Fullname` AS `p1Name`,`p1`.`Hidden` AS `p1Hidden`,`p2`.`Fullname` AS `p2Name`,`p2`.`Hidden` AS `p2Hidden`,`s`.`name` AS `scenName` from (((`samt88_area_schema`.`match_results` `m` join `samt88_area_schema`.`players` `p1` on((`p1`.`Player_Namecode` = `m`.`Player1_Namecode`))) join `samt88_area_schema`.`players` `p2` on((`p2`.`Player_Namecode` = `m`.`Player2_Namecode`))) left join `samt88_area_schema`.`scenarios` `s` on((`m`.`Scenario_ID` = `s`.`scenario_id`)))
+;
+
