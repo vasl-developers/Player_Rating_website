@@ -101,7 +101,6 @@ if ($stmt = $mysqli->prepare($sql)) {
         $gamesplayedperiod[$playernamecode]= $calcprogressperiod;
         $nextprogressperiodreached[$playernamecode] = false;
         $nextprogressperiod[$playernamecode] = 1;
-
     }
     $stmt->close();
 } else {
@@ -112,7 +111,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 /*-----------------------------------------------------
  a. Ordered list of dates when a game was played
 -----------------------------------------------------*/
-$sql = "SELECT RoundDate,count(*) FROM match_results GROUP BY RoundDate ORDER BY RoundDate";
+$sql = "SELECT RoundDate,count(*) FROM match_results GROUP BY RoundDate ORDER BY RoundDate limit 52";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->execute();
     $stmt->bind_result($rounddate, $getcount);

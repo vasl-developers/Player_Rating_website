@@ -19,7 +19,7 @@ $mysqli->set_charset("utf8");
 <div class="home container-fluid">
     <div class="row">
         <div class="col-md-10 offset-md-1">
-            <h2>Top Ten Win Streaks by Player</h2>
+            <h2>Top Fifteen Win Streaks by Player</h2>
             <p>To view Game-by-Game results for a particular player, click on the link.</p>
         </div>
     </div>

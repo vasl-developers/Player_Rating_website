@@ -21,7 +21,9 @@ include_once("web/include/header.php");
             <h2>Player versus Player Matchups</h2>
             <br>
             <?php
-            $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode ORDER BY players.Surname, players.First_Name";
+            $sql = "select players.Fullname, players.Country, players.Player_Namecode, players.Hidden, player_ratings.ELO, player_ratings.HighWaterMark from players INNER JOIN player_ratings ON players.Player_Namecode=player_ratings.Player1_Namecode
+              where players.Fullname NOT LIKE 'Missing%'
+              ORDER BY players.First_Name";
             $result1 = mysqli_query($mysqli, $sql);
             $result2 = mysqli_query($mysqli, $sql);
             ?>
