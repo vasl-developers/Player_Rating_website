@@ -2,7 +2,10 @@
 ini_set('max_execution_time', 2500);
 header('Content-type: text/plain; charset=utf-8');
 // database connection
+//local
 include("web/pages/connection.php");
+//remote
+//include("connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())

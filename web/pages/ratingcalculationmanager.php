@@ -1,9 +1,11 @@
 <?php
+// THIS METHOD HAS BEEN REPLACED BY CALC.PHP IN 2024
+
 ini_set('max_execution_time', 800);
-header('Content-type: text/plain; charset=utf-8');
+//header('Content-type: text/plain; charset=utf-8');
 // database connection
 //include_once "web/pages/connection.php";
-include("web/pages/connection.php");
+include("connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
@@ -55,12 +57,14 @@ if (!($stmt = $mysqli->prepare("DELETE from player_ratings" ))) {
 }
 $stmt->execute();
 $stmt->close();
-/*if (!($stmt1 = $mysqli->prepare("DELETE from player_progress" ))) {
+
+if (!($stmt1 = $mysqli->prepare("DELETE from player_progress" ))) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     exit();
 }
 $stmt1->execute();
-$stmt1->close();*/
+$stmt1->close();
+
 /*-----------------------------------------------------
 # 2. Initialization of players
 -----------------------------------------------------*/
@@ -450,6 +454,8 @@ foreach (array_keys($last) as $t) {
     $stmt1->close();
 
 }
+$mysqli->close();
+
 $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
 include("storetransactionstofile.php");
 

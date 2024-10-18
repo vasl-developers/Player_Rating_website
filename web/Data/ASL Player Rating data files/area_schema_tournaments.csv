@@ -1,559 +1,701 @@
-"Base Name","Month Held","Year Held","Date Held","Tournament ID",City/Region,Country,Type,Iteration,First,Second,Third,"Date Added"
-"Double One",May,2006,2006-05-20,2ONE_06,Chelmsford,UK,EU,"1th edition",BET,WTA,DEP,2017-08-30
-"Double One",May,2007,2007-05-12,2ONE_07,Chelmsford,UK,EU,"2th edition",MHD,PRS,JSR,2017-08-30
-"Double One",June,2008,2008-06-21,2ONE_08,London,UK,EU,"3th edition",MHD,JKN,PDI,2017-08-30
-"Double One",June,2010,2010-06-26,2ONE_10,Chelmsford,UK,EU,"4th edition",,,,2017-08-30
-"Double One",June,2011,2011-06-24,2ONE_11,Chelmsford,UK,EU,"5th edition",,,,2017-08-30
-"Double One",June,2012,2012-06-23,2ONE_12,Chelmsford,UK,EU,"6th edition",,,,2017-08-30
-"Double One",June,2013,2013-06-28,2ONE_13,Chelmsford,UK,EU,"7th edition",PRS,RYD,JPG,2017-08-30
-"Double One",June,2014,2014-06-27,2ONE_14,Chelmsford,UK,EU,"8th edition",,,,2017-08-30
-"Double One",June,2015,2015-06-25,2ONE_15,Chelmsford,UK,EU,"9th edition",,,,2017-08-30
-"Double One",June,2016,2016-06-23,2ONE_16,Chelmsford,UK,EU,"10th edition",,,,2017-08-30
-"Alpen Festung",April,2011,2011-04-09,ALPEN_11,Amden,Switzerland,EU,"0th edition",SAH,,,2017-08-30
-"Alpen Festung",April-August,2012,2012-04-25,ALPEN_12,Amden,Switzerland,EU,"0th edition",,,,2017-08-30
-"Alpen Festung",April-August,2013,2013-04-20,ALPEN_13,Amden,Switzerland,EU,"0th edition",,,,2017-08-30
-"Alpen Festung",April-August,2014,2014-04-01,ALPEN_14,Amden,Switzerland,EU,"0th edition",,,,2017-08-30
-"Alpen Festung",August,2015,2015-08-14,ALPEN_15,Amden,Switzerland,EU,"0th edition",,,,2017-08-30
-"Alpen Festung",July,2016,2016-07-08,ALPEN_16,Amden,Switzerland,EU,"0th edition",HLE,,,2017-08-30
-"A bridge too far",October,2003,2003-09-12,ARNH_03,Arnhem,Netherlands,EU,"2th edition",VYX,,,2017-08-30
-"A bridge too far",October,2004,2004-09-17,ARNH_04,Arnhem,Netherlands,EU,"3th edition",FKM,DRA,RGC,2017-08-30
-"A bridge too far",September,2005,2005-09-15,ARNH_05,Arnhem,Netherlands,EU,"4th edition",BNF,RMM,TLJ,2017-08-30
-"A bridge too far",September,2006,2006-09-21,ARNH_06,Arnhem,Netherlands,EU,"5th edition",FKM,RMM,RSJ,2017-08-30
-"A bridge too far",September,2007,2007-09-22,ARNH_07,Arnhem,Netherlands,EU,"6th edition",PGT,SSB,MMK,2017-08-30
-"A bridge too far",September,2008,2008-09-18,ARNH_08,Arnhem,Netherlands,EU,"7th edition",MMK,SSB,MAR,2017-08-30
-"A bridge too far",September,2009,2009-09-24,ARNH_09,Arnhem,Netherlands,EU,"8th edition",PGT,HHM,SUP,2017-08-30
-"A bridge too far",September,2010,2010-09-26,ARNH_10,Arnhem,Netherlands,EU,"9th edition",,,,2017-08-30
-"A bridge too far",September,2011,2011-09-24,ARNH_11,Arnhem,Netherlands,EU,"10th edition",SFP,SSB,MIC,2017-08-30
-"A bridge too far",September,2012,2012-09-23,ARNH_12,Arnhem,Netherlands,EU,"11th edition",SSB,SFP,DRA,2017-08-30
-"Pacifi ASL",July,2016,2016-07-29,ASIA_16,Manila,Philippines,other,"0th edition",,,,2017-08-30
-"Pacifi ASL",July,2017,2017-07-28,ASIA_17,Angkhor,Cambodia,other,"0th edition",,,,2017-08-30
-"ASL Oktoberfest",October,2001,2001-10-01,ASLOK_01,"Cleveland,OHIO",USA,US/Ca,"16th edition",PAS,TRA,DES,2017-08-30
-"ASL Oktoberfest",October,2002,2002-10-06,ASLOK_02,"Cleveland,OHIO",USA,US/Ca,"17th edition",CSC,PAS,BSB,2017-08-30
-"ASL Oktoberfest",October,2003,2003-10-04,ASLOK_03,"Cleveland,OHIO",USA,US/Ca,"18th edition",CNN,TGL,PAS,2017-08-30
-"ASL Oktoberfest",October,2004,2004-10-02,ASLOK_04,"Cleveland,OHIO",USA,US/Ca,"19th edition",PAS,VNW,SLC,2017-08-30
-"ASL Oktoberfest",October,2005,2005-09-30,ASLOK_05,"Cleveland,OHIO",USA,US/Ca,"20th edition",TYJ,HHM,LYD,2017-08-30
-"ASL Oktoberfest",October,2006,2006-09-30,ASLOK_06,"Cleveland,OHIO",USA,US/Ca,"21th edition",BSB,PAS,VNW,2017-08-30
-"ASL Oktoberfest",October,2007,2007-09-27,ASLOK_07,"Cleveland,OHIO",USA,US/Ca,"22th edition",PAS,MDO,TYJ,2017-08-30
-"ASL Oktoberfest",October,2008,2008-10-04,ASLOK_08,"Cleveland,OHIO",USA,US/Ca,"23th edition",PAS,COW,SN3,2017-08-30
-"ASL Oktoberfest",October,2009,2009-10-02,ASLOK_09,"Cleveland,OHIO",USA,US/Ca,"24th edition",PAS,,,2017-08-30
-"ASL Oktoberfest",October,2010,2010-10-01,ASLOK_10,"Cleveland,OHIO",USA,US/Ca,"25th edition",BSB,PAS,,2017-08-30
-"ASL Oktoberfest",October,2011,2011-10-01,ASLOK_11,"Cleveland,OHIO",USA,US/Ca,"26th edition",FYG,,,2017-08-30
-"ASL Oktoberfest",October,2015,2015-10-07,ASLOK_15,"Cleveland,OHIO",USA,US/Ca,"30th edition",PAS,,,2017-08-30
-"Scandinavian Open",February,2015,2015-02-20,ASO_15,Copenhagen,Denmark,EU,"18th edition",PGT,SUP,FKM,2017-08-30
-"Scandinavian Open",February,2016,2016-02-26,ASO_16,Copenhagen,Denmark,EU,"19th edition",FKM,TEG,RMM,2017-08-30
-"Scandinavian Open",February,2017,2017-02-24,ASO_17,Copenhagen,Denmark,EU,"20th edition",,,,2017-08-30
-"Spreading Blaze",August,2016,2016-08-07,ATLAN_16,"Duluth, GA",USA,hidden,"0th edition",,,,2017-08-30
-"Bitter End",April,2012,2012-04-12,B-END_12,Raleigh-Durham,USA,US/Ca,"0th edition",FYG,SN3,SND,2017-08-30
-"Bitter End",April,2013,2013-04-04,B-END_13,Raleigh-Durham,USA,US/Ca,"0th edition",TEG,SLW,SN3,2017-08-30
-"Bitter End",May-June,2014,2014-05-30,B-END_14,Raleigh-Durham,USA,US/Ca,"0th edition",SUP,FYG,HAM,2017-08-30
-"Bitter End",May,2015,2015-05-01,B-END_15,Raleigh-Durham,USA,US/Ca,"0th edition",,,,2017-08-30
-"Bitter End",April-May,2016,2016-04-29,B-END_16,Raleigh-Durham,USA,US/Ca,"0th edition",,,,2017-08-30
-"Bitter End",April,2017,2017-04-28,B-END_17,Raleigh-Durham,USA,US/Ca,"0th edition",,,,2017-08-30
-"ASL Fanatic",October,2003,2003-10-16,BARC_03,Barcelona,Spain,EU,"5th edition",BNF,BIM,RSD,2017-08-30
-"ASL Fanatic",November-December,2004,2004-11-13,BARC_04,Barcelona,Spain,EU,"6th edition",,,,2017-08-30
-"ASL Fanatic",November,2006,2006-11-25,BARC_06,Barcelona,Spain,EU,"8th edition",,,,2017-08-30
-"ASL Fanatic",November,2007,2007-11-24,BARC_07,Barcelona,Spain,EU,"9th edition",SZL,MOI,GNA,2017-08-30
-"ASL Fanatic",November,2008,2008-11-15,BARC_08,Barcelona,Spain,EU,"10th edition",,,,2017-08-30
-"ASL Fanatic",November,2009,2009-11-24,BARC_09,Barcelona,Spain,EU,"11th edition",,,,2017-08-30
-"ASL Fanatic",November,2010,2010-11-13,BARC_10,Barcelona,Spain,EU,"12th edition",,,,2017-08-30
-"ASL Fanatic",November,2011,2011-11-05,BARC_11,"Cocheras de Sants (B",Spain,EU,"13th edition",LZ3,,,2017-08-30
-"ASL Fanatic",November,2012,2012-11-24,BARC_12,"Cocheras de Sants(Ba",Spain,EU,"14th edition",C8M,,,2017-08-30
-"ASL Fanatic",November,2013,2013-11-23,BARC_13,"Cocheras de Sants(Ba",Spain,EU,"15th edition",C8M,FNJ,LZS,2017-08-30
-"ASL Fanatic",October,2014,2014-10-04,BARC_14,"Cocheras de Sants(Ba",Spain,EU,"16th edition",,,,2017-08-30
-"ASL Fanatic",October,2015,2015-10-24,BARC_15,"Cocheras de Sants(Ba",Spain,EU,"17th edition",ROF,,FNJ,2017-08-30
-"ASL Fanatic",October,2016,2016-10-22,BARC_16,"Cocheras de Sants(Ba",Spain,EU,"18th edition",,,,2017-08-30
-"Canberra Con",January-February,2015,2015-01-30,CANCO_15,Canberra,Australia,other,"0th edition",,,,2017-08-30
-"Canberra Con",January,2016,2016-01-23,CANCO_16,Canberra,Australia,other,"0th edition",,,,2017-08-30
-"Canberra Con",January,2017,2017-01-27,CANCO_17,Canberra,Australia,other,"0th edition",,,,2017-08-30
-"Canadian ASL Open",September,2007,2007-09-28,CASLO_07,"Winnipeg, Manitoba",Canada,US/Ca,"11th edition",BDW,KSD,RS2,2017-08-30
-"Canadian ASL Open",September,2008,2008-09-19,CASLO_08,"Winnipeg, Manitoba",Canada,US/Ca,"12th edition",WNR,MDO,EEA,2017-08-30
-"Canadian ASL Open",September,2009,2009-09-18,CASLO_09,"Winnipeg, Manitoba",Canada,US/Ca,"13th edition",,RS2,BDW,2017-08-30
-"Canadian ASL Open",September,2010,2010-09-17,CASLO_10,"Ottawa, Ontario",Canada,US/Ca,"14th edition",TAG,YGK,EEA,2017-08-30
-"Canadian ASL Open",September,2011,2011-09-16,CASLO_11,"Ottawa, Ontario",Canada,US/Ca,"15th edition",EEA,YGK,ES2,2017-08-30
-"Canadian ASL Open",May,2012,2012-05-18,CASLO_12,"Winnipeg, Manitoba",Canada,US/Ca,"16th edition",KSD,141,LTR,2017-08-30
-"Canadian ASL Open",May,2013,2013-05-17,CASLO_13,"Winnipeg, Manitoba",Canada,US/Ca,"17th edition",WN3,WAB,CDP,2017-08-30
-"Canadian ASL Open",May,2014,2014-05-16,CASLO_14,"Calgary, Alberta",Canada,US/Ca,"17th edition",RS2,WER,CDP,2017-08-30
-"Canadian ASL Open",May,2015,2015-05-15,CASLO_15,"Winnipeg, Manitoba",Canada,US/Ca,"19th edition",EEA,MSM,KSD,2017-08-30
-"Canadian ASL Open",May,2016,2016-05-20,CASLO_16,"Montréal, Québec",Canada,US/Ca,"20th edition",WAB,SUP,BXP,2017-08-30
-"Canadian ASL Open",May,2017,2017-05-19,CASLO_17,"Montréal, Québec",Canada,US/Ca,"21th edition",,,,2017-08-30
-"Torneo Espanol VASL",May-December,2011,2011-05-06,CONSC_11,Internet,Web,VASL,"1th edition",PES,,,2017-08-30
-"Torneo Espanol VASL",July-December,2012,2012-07-01,CONSC_12,Internet,Web,VASL,"2th edition",NOB,,,2017-08-30
-"Torneo Espanol VASL",February-December,2013,2013-04-30,CONSC_13,Internet,Web,VASL,"3th edition",NOB,LZS,PA1,2017-08-30
-"Torneo Espanol VASL",April-December,2014,2014-04-15,CONSC_14,Internet,Web,VASL,"4th edition",GAC,,,2017-08-30
-"Cyber VASL S2",April-December,2014,2014-06-02,CYBER_14,Internet,Web,VASL,"1th edition",C2L,,,2017-08-30
-"Cyber VASL",January-December,2015,2015-01-01,CYBER_15,Internet,Web,VASL,"2th edition",C2L,TEL,,2017-08-30
-"Cyber VASL",June/2015:August/2016,2016,0000-00-00,CYBER_II,Internet,Web,VASL,"3th edition",C2L,WAB,,2017-08-30
-"Cyber VASL",June/2015:August/2016,2016,2015-06-20,CYBER_III,Internet,Web,VASL,"3th edition",C2L,WAB,,2017-08-30
-"Cyber VASL",January/2016:March/2017,2017,2016-01-01,CYBER_IV,Internet,Web,VASL,"4th edition",WAB,C2L,,2017-08-30
-"Cyber VASL",July/2016:April/2017,2017,2016-07-01,CYBER_V,Internet,Web,VASL,"5th edition",PAP,G1D,,2017-08-30
-"Death Wish",January-November,2015,2015-01-25,DWISH_15,Internet,Web,VASL,"1th edition",CNN,,,2017-08-30
-"Death Wish",November,2016,2016-11-30,DWISH_16,Internet,Web,VASL,"2th edition",,,,2017-08-30
-"EDA Tournament",June,2002,2002-06-01,EDA_02,Uppsala,Sweden,EU,"0th edition",,,,2017-08-30
-Enfilade!,May,2010,2010-05-28,ENFIL_10,"Seattle, WA",USA,US/Ca,"0th edition",,,,2017-08-30
-Enfilade!,May,2011,2011-05-27,ENFIL_11,"Seattle, WA",USA,US/Ca,"0th edition",JSI,B3S,,2017-08-30
-Enfilade!,May,2012,2012-05-25,ENFIL_12,"Seattle, WA",USA,US/Ca,"0th edition",SRL,,,2017-08-30
-"Friendly Fire",August,2014,2014-08-29,FFIRE_14,Linköping,Sweden,EU,"11th edition",FKM,,,2017-08-30
-"Tournoi de forum français",September/2006:July/2007,2007,2006-09-30,FORUM_06,Internet,Web,VASL,"1th edition",VYX,,,2017-08-30
-"Tournoi de forum français",October/2007:April/2008,2008,2007-10-31,FORUM_08,Internet,Web,VASL,"2th edition",BCJ,BNF,SS8,2017-08-30
-"Tournoi de forum français",October/2008:June/2009,2009,2008-10-31,FORUM_09,Internet,Web,VASL,"3th edition",SS8,BCJ,,2017-08-30
-"Tournoi de forum français",October/2009:June/2010,2010,2009-10-31,FORUM_10,Internet,Web,VASL,"4th edition",FEG,B3P,LNL,2017-08-30
-"Tournoi de forum français",February-December,2011,2011-02-28,FORUM_11,Internet,Web,VASL,"5th edition",C2L,,,2017-08-30
-"Tournoi de forum français",February-December,2012,2012-02-29,FORUM_12,Internet,Web,VASL,"5th edition",VYX,,,2017-08-30
-"Tournoi du forum francais",November/2012:November/2013,2013,2012-11-30,FORUM_13,Internet,Web,VASL,"6th edition",RRP,NOB,C2L,2017-08-30
-"Tournoi du forum francais",November/2013:September/2014,2014,2013-12-01,FORUM_14,Internet,Web,VASL,"7th edition",LNL,C2L,PTA,2017-08-30
-"Gatteo Mare",April,2008,2008-04-25,GATT_08,"Gatteo Mare",Italy,EU,"1th edition",IAS,PIC,MAG,2017-08-30
-"Gatteo Mare",May,2009,2009-05-01,GATT_09,"Gatteo Mare",Italy,EU,"2th edition",BYA,IAS,PIN,2017-08-30
-"Ginger Drinkers' Revenge",September,2014,2014-09-14,GINGR_14,Hong-Kong,China,hidden,"1th edition",,,,2017-08-30
-Grenadier,November,2001,2001-11-02,GREN_01,Hergarten,Germany,EU,"3th edition",HLS,,,2017-08-30
-Grenadier,November,2002,2002-11-08,GREN_02,Hergarten,Germany,EU,"4th edition",PGT,,,2017-08-30
-Grenadier,November,2003,2003-11-07,GREN_03,Hergarten,Germany,EU,"5th edition",,,,2017-08-30
-Grenadier,November,2004,2004-11-05,GREN_04,Oberbettingen,Germany,EU,"6th edition",MISSING-8,,,2017-08-30
-Grenadier,November,2005,2005-11-04,GREN_05,Oberbettingen,Germany,EU,"7th edition",MIC,,,2017-08-30
-Grenadier,November,2006,2006-11-03,GREN_06,Oberbettingen,Germany,EU,"8th edition",RRP,,,2017-08-30
-Grenadier,November,2007,2007-11-02,GREN_07,Oberbettingen,Germany,EU,"9th edition",BXP,,,2017-08-30
-Grenadier,November,2008,2008-11-07,GREN_08,Hergarten,Germany,EU,"10th edition",SFP,BNF,GNR,2017-08-30
-Grenadier,November,2009,2009-11-06,GREN_09,Hergarten,Germany,EU,"11th edition",TEG,WNR,HEC,2017-08-30
-Grenadier,November,2010,2010-11-05,GREN_10,Hergarten,Germany,EU,"12th edition",NOB,MNG,SFP,2017-08-30
-Grenadier,November,2011,2011-11-11,GREN_11,Hergarten,Germany,EU,"13th edition",PEC,BXP,KIT,2017-08-30
-Grenadier,November,2012,2012-11-02,GREN_12,Hergarten,Germany,EU,"14th edition",HLS,KTA,MISSING-8,2017-08-30
-Grenadier,November,2013,2013-11-08,GREN_13,Hergarten,Germany,EU,"15th edition",TEG,DHR,BNF,2017-08-30
-Grenadier,November,2014,2014-11-14,GREN_14,Hergarten,Germany,EU,"16th edition",TID,HLS,,2017-08-30
-Grenadier,November,2015,2015-11-13,GREN_15,Hergarten,Germany,EU,"17th edition",TEG,,,2017-08-30
-Grenadier,November,2016,2016-11-04,GREN_16,Hergarten,Germany,EU,"18th edition",,,,2017-08-30
-"Hero Tournament",March,2005,2005-03-25,HERO_05,Blackpool,UK,EU,"2th edition",PGT,,,2017-08-30
-"Hero Tournament",March,2006,2006-03-09,HERO_06,Blackpool,UK,EU,"3th edition",PGT,,,2017-08-30
-"Hero Tournament",April,2007,2007-03-23,HERO_07,Blackpool,UK,EU,"4th edition",TRD,,,2017-08-30
-"Hero Tournament",March,2008,2008-03-07,HERO_08,Blackpool,UK,EU,"5th edition",BET,,,2017-08-30
-"Hero Tournament",March,2009,2009-03-12,HERO_09,Blackpool,UK,EU,"6th edition",MHD,,,2017-08-30
-"Hero Tournament",March,2010,2010-03-12,HERO_10,Blackpool,UK,EU,"7th edition",DRP,,,2017-08-30
-"Hero Tournament",March,2011,2011-03-11,HERO_11,Blackpool,UK,EU,"8th edition",TEG,,,2017-08-30
-"Hero Tournament",March,2012,2012-03-09,HERO_12,Blackpool,UK,EU,"9th edition",BNC,BER,,2017-08-30
-"Hero Tournament",March,2013,2013-03-06,HERO_13,Blackpool,UK,EU,"10th edition",,,,2017-08-30
-"Hero Tournament",March,2014,2014-03-05,HERO_14,Blackpool,UK,EU,"11th edition",,,,2017-08-30
-"Hero Tournament",March,2015,2015-03-04,HERO_15,Blackpool,UK,EU,"12th edition",,,,2017-08-30
-"Hero Tournament",March,2016,2016-03-09,HERO_16,Blackpool,UK,EU,"13th edition",,,,2017-08-30
-"Hero Tournament",March,2017,2017-03-01,HEROE_17,Blackpool,UK,EU,"14th edition",,,,2017-08-30
-"Intensive Fire",October,2007,2007-10-27,IF_07,Bournemouth,UK,EU,"12th edition",DRP,,,2017-08-30
-"Intensive Fire",October,2008,2008-10-25,IF_08,Bournemouth,UK,EU,"13th edition",MHD,,,2017-08-30
-"Intensive Fire",October,2009,2009-10-22,IF_09,Bournemouth,UK,EU,"15th edition",BER,,,2017-08-30
-"Intensive Fire",October,2010,2010-10-30,IF_10,Bournemouth,UK,EU,"16th edition",SDD,,,2017-08-30
-"Intensive Fire",October,2011,2011-10-26,IF_11,Bournemouth,UK,EU,"17th edition",MST,,,2017-08-30
-"Intensive Fire",October,2012,2012-10-28,IF_12,Bournemouth,UK,EU,"18th edition",BNC,BNG,GGE,2017-08-30
-"Intensive Fire",November,2014,2014-11-09,IF_14,Bournemouth,UK,EU,"20th edition",,,,2017-08-30
-"Intensive Fire",November,2015,2015-11-04,IF_15,Bournemouth,UK,EU,"21th edition",,,,2017-08-30
-"Intensive Fire",November,2016,2016-11-02,IF_16,Bournemouth,UK,EU,"22th edition",,,,2017-08-30
-"ASL ITALIA",September,2006,2006-09-08,ITAL_06,Verona,Italia,EU,"1th edition",TEG,PIA,MIC,2017-08-30
-"ASL ITALIA",September,2007,2007-09-07,ITAL_07,Verona,Italia,EU,"2th edition",SEA,DAU,IAS,2017-08-30
-"ASL ITALIA",September,2008,2008-09-05,ITAL_08,Verona,Italia,EU,"3th edition",DAU,DHR,ASM,2017-08-30
-"ASL ITALIA",September,2009,2009-09-11,ITAL_09,Verona,Italia,EU,"4th edition",DAU,PIA,GOM,2017-08-30
-"ASL ITALIA",September,2010,2010-09-10,ITAL_10,Verona,Italia,EU,"5th edition",GOM,DHR,SS8,2017-08-30
-"ASL ITALIA",June,2011,2011-06-03,ITAL_11,Carimate,Italia,EU,"6th edition",DAU,OIA,COE,2017-08-30
-"ASL ITALIA",June,2012,2012-06-15,ITAL_12,Carimate,Italia,EU,"7th edition",TEG,SS8,GOM,2017-08-30
-"ASL ITALIA",June,2013,2013-06-14,ITAL_13,Carimate,Italia,EU,"8th edition",COE,WAB,DAU,2017-08-30
-"ASL ITALIA",June,2014,2014-06-06,ITAL_14,Carimate,Italia,EU,"9th edition",GOM,BXP,7SA,2017-08-30
-"ASL ITALIA",May,2015,2015-05-08,ITAL_15,"San Marino",Italia,EU,"10th edition",COA,,,2017-08-30
-"Juno Bear",June,2010,2010-10-12,JUNO_10,Sydney,Australia,other,"0th edition",MTM,SEP,WED,2017-08-30
-"Juno Bear",June,2014,2014-06-07,JUNO_14,Sydney,Australia,other,"0th edition",,,,2017-08-30
-"Juno Bear",June,2015,2015-06-14,JUNO_15,Sydney,Australia,other,"0th edition",,,,2017-08-30
-"Juno Bear",June,2016,2016-06-11,JUNO_16,Sydney,Australia,other,"0th edition",,,,2017-08-30
-"Cyber VASL","June/17: February/18",2018,2018-06-30,CYBER_VII,Internet,Web,VASL,,,,,2020-07-07
-"VASL Top League",January-November,2013,2013-02-28,LEAG0_13,Internet,Web,VASL,"7th edition",,,,2017-08-30
-"VASL Top League",January-November,2014,2014-02-28,LEAG0_14,Internet,Web,VASL,"8th edition",,,,2017-08-30
-"VASL Top League",January-December,2015,2015-03-01,LEAG0_15,Internet,Web,VASL,"9th edition",NAC,FYG,LRP,2017-08-30
-"VASL Top League",January-December,2016,2016-03-01,LEAG0_16,Internet,Web,VASL,"10th edition",FYG,,,2017-08-30
-"VASL European and Oceanian League",January-November,2013,2013-02-28,LEAG1_13,Internet,Web,VASL,"0th edition",,,,2017-08-30
-"VASL European and Oceanian League",January-November,2014,2014-02-28,LEAG1_14,Internet,Web,VASL,"0th edition",,,,2017-08-30
-"VASL European and Oceanian League",January-December,2015,2015-03-01,LEAG1_15,Internet,Web,VASL,"9th edition",LNL,FGW,TEL,2017-08-30
-"VASL European and Oceanian League",January-December,2016,2016-03-01,LEAG1_16,Internet,Web,VASL,"10th edition",MIC,,,2017-08-30
-"VASL Eastern US and Canada League",January-November,2013,2013-02-28,LEAG2_13,Internet,Web,VASL,"0th edition",,,,2017-08-30
-"VASL Eastern US and Canada League",January-November,2014,2014-02-28,LEAG2_14,Internet,Web,VASL,"0th edition",,,,2017-08-30
-"VASL Eastern US and Canada League",January-December,2015,2015-02-27,LEAG2_15,Internet,Web,VASL,"9th edition",YGK,HTS,WAB,2017-08-30
-"VASL Eastern US and Canada League",January-December,2016,2016-03-01,LEAG2_16,Internet,Web,VASL,"10th edition",,,,2017-08-30
-"VASL Western US League",January-December,2013,2013-02-28,LEAG3_13,Internet,Web,VASL,"0th edition",,,,2017-08-30
-"VASL Western US League",January-December,2014,2014-02-28,LEAG3_14,Internet,Web,VASL,"0th edition",,,,2017-08-30
-"VASL Western US League",January-December,2015,2015-03-01,LEAG3_15,Internet,Web,VASL,"9th edition",RLB,VC1,BE3,2017-08-30
-"VASL Western US League",January-December,2016,2016-03-01,LEAG3_16,Internet,Web,VASL,"10th edition",,,,2017-08-30
-"VASL Second Line League",January-December,2016,2016-03-01,LEAG4_16,Internet,Web,VASL,"10th edition",,,,2017-08-30
-"Friendly Fire",September,2003,2003-09-07,LINK_03,Linköping,Sweden,EU,"1th edition",,,,2017-08-30
-"Friendly Fire",September,2004,2004-09-04,LINK_04,Linköping,Sweden,EU,"2th edition",,,,2017-08-30
-"Friendly Fire",August,2005,2005-08-26,LINK_05,Linköping,Sweden,EU,"3th edition",,,,2017-08-30
-"Friendly Fire",August,2006,2006-08-25,LINK_06,Linköping,Sweden,EU,"4th edition",,,,2017-08-30
-"Friendly Fire",September,2007,2007-09-07,LINK_07,Linköping,Sweden,EU,"5th edition",,,,2017-08-30
-"Friendly Fire",August,2008,2008-08-29,LINK_08,Linköping,Sweden,EU,"6th edition",,,,2017-08-30
-"Friendly Fire",August,2009,2009-08-28,LINK_09,Linköping,Sweden,EU,"7th edition",SDM,FKM,BIE,2017-08-30
-"Friendly Fire",September,2010,2010-09-03,LINK_10,Linköping,Sweden,EU,"8th edition",MMK,SSB,SDM,2017-08-30
-"Friendly Fire",September,2011,2011-09-02,LINK_11,Linköping,Sweden,EU,"9th edition",SSB,CNA,SDM,2017-08-30
-"Friendly Fire",August,2013,2013-08-23,LINK_13,Linköping,Sweden,EU,"10th edition",SSB,FKM,HHM,2017-08-30
-"Friendly Fire",September,2015,2015-09-04,LINK_15,Linköping,Sweden,hidden,"12th edition",FKM,LND,HNE,2017-08-30
-Villeurbanne,April,2011,2011-04-23,LYON_11,Villeurbanne,France,EU,"1th edition",HUJ,TEG,,2017-08-30
-Villeurbanne,March-April,2012,2012-03-30,LYON_12,Villeurbanne,France,EU,"2th edition",BNF,GDC,BIM,2017-08-30
-Villeurbanne,March,2013,2013-03-22,LYON_13,Villeurbanne,France,EU,"3th edition",BNF,BXP,NOB,2017-08-30
-Villeurbanne,March,2014,2014-03-28,LYON_14,Villeurbanne,France,EU,"4th edition",BXP,BNF,,2017-08-30
-Villeurbanne,March,2015,2015-03-27,LYON_15,Villeurbanne,France,EU,"5th edition",BNF,,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2004,2004-09-04,MAGEF_04,"Sioux City, IA",USA,US/Ca,"0th edition",LRP,,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2005,2005-10-01,MAGEF_05,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2006,2006-10-01,MAGEF_06,"Sioux City, IA",USA,US/Ca,"0th edition",,,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2007,2007-09-01,MAGEF_07,"Sioux City, IA",USA,US/Ca,"0th edition",RTB,NN1,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",August,2008,2008-08-30,MAGEF_08,"Sioux City, IA",USA,US/Ca,"0th edition",WSP,NN1,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2009,2009-09-05,MAGEF_09,"Sioux City, IA",USA,US/Ca,"0th edition",KAJ,ETS,W2R,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2010,2010-09-04,MAGEF_10,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,B5B,,2017-08-30
-"Fall Sioux City ASL Tournament",September,2011,2011-09-03,MAGEF_11,"Sioux City, IA",USA,US/Ca,"0th edition",LRP,NN1,LH7,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2012,2012-09-01,MAGEF_12,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",August-September,2013,2013-08-31,MAGEF_13,"Sioux City, IA",USA,US/Ca,"0th edition",BUM,WRN,,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",August,2014,2014-08-30,MAGEF_14,"Sioux City, IA",USA,US/Ca,"0th edition",LZB,KAJ,LRP,2017-08-30
-"Street Fighting in Sioux City (MAGE Spring Con)",April,2006,2006-04-01,MAGES_06,"Sioux City, IA",USA,US/Ca,"0th edition",ZTL,,,2017-08-30
-"Street Fighting in Sioux City (MAGE Spring Con)",April-September,2008,2008-04-25,MAGES_08,"Sioux City, IA",USA,US/Ca,"0th edition",B4D,M3T,B5B,2017-08-30
-"Street Fighting in Sioux City (MAGE Spring Con)",April,2009,2009-04-25,MAGES_09,"Sioux City, IA",USA,US/Ca,"0th edition",KAJ,ZTL,NN1,2017-08-30
-"Street Fighting in Sioux City (MAGE Spring Con)",April,2010,2010-04-24,MAGES_10,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,B5B,,2017-08-30
-"Street Fighting in Sioux City (MAGE Spring Con)",April,2012,2012-04-21,MAGES_12,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,KAJ,,2017-08-30
-"Street Fighting in Sioux City (MAGE Spring Con)",April,2013,2013-04-27,MAGES_13,"Sioux City, IA",USA,US/Ca,"0th edition",KAJ,WRN,ZTL,2017-08-30
-"VASL Major League",January-December,2007,2007-02-01,MAJOR_07,Internet,Web,hidden,"0th edition",PIA,COE,HEO,2017-08-30
-"VASL Major League",January-December,2008,2008-02-01,MAJOR_08,Internet,Web,hidden,"0th edition",TRA,COE,CE3,2017-08-30
-"VASL Major League",January-December,2009,2009-02-28,MAJOR_09,Internet,Web,hidden,"0th edition",TRA,TAG,RIT,2017-08-30
-"VASL Major League",January-December,2010,2010-02-28,MAJOR_10,Internet,Web,hidden,"0th edition",FYG,PIA,WAB,2017-08-30
-"Manitoba ASL Open",September,2012,2012-09-08,MANIT_12,"Winnipeg, Manitoba",Canada,US/Ca,"1th edition",KLS,LTR,HL7,2017-08-30
-"March Madness",March,2006,2006-03-10,MARCH_06,"Kansas City",USA,US/Ca,"1th edition",RHB,MRR,BYG,2017-08-30
-"March Madness",March,2007,2007-03-09,MARCH_07,"Kansas City",USA,US/Ca,"2th edition",BSI,DRS,SSW,2017-08-30
-"March Madness",March,2008,2008-03-14,MARCH_08,"Kansas City",USA,US/Ca,"3th edition",VNW,NN1,KKD,2017-08-30
-"March Madness",March,2009,2009-03-13,MARCH_09,"Kansas City",USA,US/Ca,"4th edition",BSI,SZR,TAG,2017-08-30
-"March Madness",March,2010,2010-03-12,MARCH_10,"Kansas City",USA,US/Ca,"5th edition",BSI,DGJ,DNM,2017-08-30
-"March Madness",March,2011,2011-03-18,MARCH_11,"Kansas City",USA,US/Ca,"6th edition",KKD,VNW,WRN,2017-08-30
-"March Madness",March,2012,2012-03-16,MARCH_12,"Kansas City",USA,US/Ca,"7th edition",ZCM,NN1,RHR,2017-08-30
-"March Madness",March,2013,2013-03-22,MARCH_13,"Kansas City",USA,US/Ca,"8th edition",PAD,RHB,KKD,2017-08-30
-"March Madness",March,2014,2014-03-16,MARCH_14,"Kansas City",USA,US/Ca,"9th edition",BSI,M21,KKD,2017-08-30
-"March Madness",March,2015,2015-03-15,MARCH_15,"Kansas City",USA,US/Ca,"10th edition",KKD,,,2017-08-30
-"March Madness",March,2016,2016-03-19,MARCH_16,"Kansas City",USA,US/Ca,"11th edition",M21,ASK,BSI,2017-08-30
-"March Madness",March,2017,2017-03-17,MARCH_17,"Kansas City",USA,US/Ca,"12th edition",M21,,,2017-08-30
-"VASL Central US Warman League",January-December,2007,2007-02-01,MINC_07,Internet,Web,VASL,"0th edition",GRE,LRP,NAC,2017-08-30
-"VASL Central US Warman League",January-December,2008,2008-02-01,MINC_08,Internet,Web,VASL,"0th edition",YGK,WSS,HY2,2017-08-30
-"VASL Central US Warman League",January-December,2009,2009-02-28,MINC_09,Internet,Web,VASL,"0th edition",EEM,MISSING-4,HGG,2017-08-30
-"VASL Central US and Canada League",January-December,2010,2010-02-28,MINC_10,Internet,Web,VASL,"0th edition",HNI,FNR,MSD,2017-08-30
-"VASL Central/West US and Canada League",January-December,2011,2011-03-01,MINC_11,Internet,Web,VASL,"0th edition",BN2,HYT,WRH,2017-08-30
-"VASL West/Central US and Canada League","January-November ",2012,2012-02-29,MINC_12,Internet,Web,VASL,"0th edition",SFN,RGL,JND,2017-08-30
-"VASL European Minor League",January-December,2007,2007-02-01,MINEU_07,Internet,Web,VASL,"0th edition",MIF,GRC,MISSING-6,2017-08-30
-"VASL European Minor League",January-December,2008,2008-02-01,MINEU_08,Internet,Web,VASL,"0th edition",JDL,IAS,SEA,2017-08-30
-"VASL European Minor League",January-December,2009,2009-02-28,MINEU_09,Internet,Web,VASL,"0th edition",BLJ,SYA,MIC,2017-08-30
-"VASL European and Oceanian League",January-December,2010,2010-02-28,MINEU_10,Internet,Web,VASL,"0th edition",BNF,HEO,VAM,2017-08-30
-"VASL European and Oceanian League",January-December,2011,2011-02-01,MINEU_11,Internet,Web,VASL,"0th edition",OIA,CIL,CNN,2017-08-30
-"VASL European and Oceanian League",January-November,2012,2012-02-29,MINEU_12,Internet,Web,VASL,"0th edition",NOB,PES,H1M,2017-08-30
-"VASL Eastern US League",January-December,2008,2008-02-01,MINE_08,Internet,Web,VASL,"0th edition",KYM,MIK,RAE,2017-08-30
-"VASL Eastern US League",January-December,2009,2009-02-28,MINE_09,Internet,Web,VASL,"0th edition",BPJ,FYG,WS1,2017-08-30
-"VASL Eastern US and Canada League",January-December,2010,2010-02-28,MINE_10,Internet,Web,VASL,"0th edition",DHR,CDP,GRE,2017-08-30
-"VASL Eastern US and Canada League",January-December,2011,2011-03-01,MINE_11,Internet,Web,VASL,"0th edition",CEJ,AGS,CMD,2017-08-30
-"VASL Eastern US and Canada League",January-November,2012,2012-02-29,MINE_12,Internet,Web,VASL,"0th edition",CSB,WN3,CMD,2017-08-30
-"VASL US III League",January-December,2007,2007-02-01,MINUS_07,Internet,Web,VASL,"0th edition",TRA,TAG,KGS,2017-08-30
-"VASL Western US League",January-December,2008,2008-02-01,MINW_08,Internet,Web,VASL,"0th edition",KGS,TN2,CLR,2017-08-30
-"Malaya Madness",February,2014,2014-02-21,MLAYA_14,Singapore,Malaya,other,"1th edition",,,,2017-08-30
-"Rencontres ASL",January-February,2003,2003-01-30,NAMU_03,Namur,Belgium,EU,"1th edition",,,,2017-08-30
-"Rencontres ASL",February,2005,2005-01-30,NAMU_05,Namur,Belgium,EU,"2th edition",,,,2017-08-30
-NOR-EASTER,March-April,2000,2000-03-31,NOR-E_00,"Marlborough, MA",USA,US/Ca,"0th edition",PAS,NAC,FOC,2017-08-30
-NOR-EASTER,March,2001,2001-03-23,NOR-E_01,"Marlborough, MA",USA,US/Ca,"0th edition",PAS,AGM,LEE,2017-08-30
-NOR-EASTER,March,2002,2002-03-22,NOR-E_02,"Marlborough, MA",USA,US/Ca,"0th edition",DE2,NNL,MNT,2017-08-30
-NOR-EASTER,March,2003,2003-03-28,NOR-E_03,"Marlborough, MA",USA,US/Ca,"0th edition",,,,2017-08-30
-NOR-EASTER,March,2004,2004-03-19,NOR-E_04,"Marlborough, MA",USA,US/Ca,"0th edition",MNT,JSS,CED,2017-08-30
-NOR-EASTER,March,2005,2005-03-11,NOR-E_05,"Marlborough, MA",USA,US/Ca,"0th edition",PAS,NAC,TNI,2017-08-30
-NOR-EASTER,March,2006,2006-03-17,NOR-E_06,"Marlborough, MA",USA,US/Ca,"0th edition",SUP,NAC,MNT,2017-08-30
-NOR-EASTER,March,2007,2007-03-23,NOR-E_07,"Marlborough, MA",USA,US/Ca,"0th edition",DE2,WAB,MIG,2017-08-30
-NOR-EASTER,March,2008,2008-03-14,NOR-E_08,"Marlborough, MA",USA,US/Ca,"0th edition",NAC,SLC,TAG,2017-08-30
-NOR-EASTER,March,2009,2009-03-20,NOR-E_09,"Marlborough, MA",USA,US/Ca,"0th edition",SUP,LEA,DE2,2017-08-30
-NOR-EASTER,March,2010,2010-03-19,NOR-E_10,"Boxborough, MA",USA,US/Ca,"14th edition",LEA,,,2017-08-30
-NOR-EASTER,March,2011,2011-03-18,NOR-E_11,"Boxborough, MA",USA,US/Ca,"15th edition",TAG,LEA,ANT,2017-08-30
-NOR-EASTER,March,2012,2012-03-23,NOR-E_12,"Boxborough, MA",USA,US/Ca,"16th edition",MIG,SUP,JSS,2017-08-30
-NOR-EASTER,March,2013,2013-03-22,NOR-E_13,"Boxborough, MA",USA,US/Ca,"17th edition",SUP,MIG,TAG,2017-08-30
-NOR-EASTER,March,2014,2014-03-21,NOR-E_14,"Boxborough, MA",USA,US/Ca,"18th edition",NAC,DE2,DRS,2017-08-30
-NOR-EASTER,March,2015,2015-03-20,NOR-E_15,"Boxborough, MA",USA,US/Ca,"19th edition",DE2,AGM,NAC,2017-08-30
-NOR-EASTER,March-April,2016,2016-04-02,NOR-E_16,"Boxborough, MA",USA,US/Ca,"20th edition",,,,2017-08-30
-NOR-EASTER,March-April,2017,2017-03-31,NOR-E_17,"Boxborough, MA",USA,US/Ca,"21th edition",,,,2017-08-30
-NOR-EASTER,April,1999,1999-04-23,NOR-E_99,"Groton, CT",USA,US/Ca,"3th edition",OAM,LEA,MDR,2017-08-30
-"Tournoi Interne Nord",June,2001,2001-06-01,NORD_01,Lille,France,EU,"1th edition",,,,2017-08-30
-"Northwest ASL Championship",February,2012,2012-02-17,NWEST_12,"Issaquah (WA)",USA,US/Ca,"0th edition",WYI,JSI,DYS,2017-08-30
-"Northwest ASL Championship",February,2013,2013-02-09,NWEST_13,"Issaquah (WA)",USA,US/Ca,"0th edition",WY1,K2G,,2017-08-30
-"Northwest ASL Championship",February,2014,2014-02-07,NWEST_14,"Issaquah (WA)",USA,US/Ca,"0th edition",FRL,,,2017-08-30
-"Northwest ASL Championship",February,2015,2015-02-06,NWEST_15,"Issaquah (WA)",USA,US/Ca,"0th edition",FRL,,,2017-08-30
-"Northwest ASL Championship",February,2016,2016-02-05,NWEST_16,"Issaquah (WA)",USA,hidden,"0th edition",,,,2017-08-30
-"Northwest ASL Championship",February,2017,2017-02-10,NWEST_17,"Issaquah (WA)",USA,hidden,"0th edition",,,,2017-08-30
-"NYS ASL Championship",December,2005,2005-12-03,NYS_05,"Albany NY",USA,US/Ca,"2th edition",PAS,VNW,LEE,2017-08-30
-"NYS ASL Championship",December,2006,2006-12-01,NYS_06,"Albany NY",USA,US/Ca,"3th edition",,,,2017-08-30
-"NYS ASL Championship",November-December,2007,2007-11-30,NYS_07,"Albany NY",USA,US/Ca,"4th edition",SUP,PAS,BSB,2017-08-30
-"NYS ASL Championship",December,2008,2008-12-05,NYS_08,"Albany NY",USA,US/Ca,"5th edition",PAS,SUP,NAC,2017-08-30
-"NYS ASL Championship",December,2009,2009-12-04,NYS_09,"Albany NY",USA,US/Ca,"6th edition",TYJ,RIR,SUP,2017-08-30
-"NYS ASL Championship",December,2010,2010-12-03,NYS_10,"Albany NY",USA,US/Ca,"7th edition",BSB,MIG,SUP,2017-08-30
-"NYS ASL Championship",December,2011,2011-12-02,NYS_11,"Albany NY",USA,US/Ca,"8th edition",RNA,TYJ,BSB,2017-08-30
-"NYS ASL Championship",November-December,2012,2012-11-30,NYS_12,"Albany NY",USA,US/Ca,"9th edition",PAS,FYG,HNB,2017-08-30
-"NYS ASL Championship",December,2013,2013-12-06,NYS_13,"Albany NY",USA,US/Ca,"10th edition",MIG,SUP,NAC,2017-08-30
-"NYS ASL Championship",December,2014,2014-12-05,NYS_14,"Albany NY",USA,US/Ca,"11th edition",SUP,HNB,CDP,2017-08-30
-"NYS ASL Championship",December,2015,2015-12-04,NYS_15,"Albany NY",USA,US/Ca,"12th edition",TYJ,SFP,CDP,2017-08-30
-"NYS ASL Championship",December,2016,2016-12-01,NYS_16,"Albany NY",USA,US/Ca,"13th edition",SUP,HHM,CNC,2017-08-30
-"ASL OPEN",April,2002,2002-04-26,OPEN_02,"Chicago,IL",USA,US/Ca,"0th edition",HNB,PSO,KKD,2017-08-30
-"ASL OPEN",April-May,2005,2005-04-29,OPEN_05,"Chicago,IL",USA,US/Ca,"0th edition",,,,2017-08-30
-"ASL OPEN",March-April,2006,2006-03-31,OPEN_06,"Chicago,IL",USA,US/Ca,"0th edition",,,,2017-08-30
-"ASL OPEN",April,2007,2007-04-13,OPEN_07,"Chicago,IL",USA,US/Ca,"0th edition",BSB,SGP,DSN,2017-08-30
-"ASL OPEN",April,2008,2008-04-04,OPEN_08,"Chicago,IL",USA,US/Ca,"0th edition",,,,2017-08-30
-"ASL OPEN",April,2009,2009-04-03,OPEN_09,"Chicago,IL",USA,US/Ca,"0th edition",,,,2017-08-30
-"ASL OPEN",April,2010,2010-04-09,OPEN_10,"Chicago,IL",USA,US/Ca,"0th edition",RIR,SYI,JNS,2017-08-30
-"ASL OPEN",April,2011,2011-04-01,OPEN_11,"Chicago,IL",USA,US/Ca,"0th edition",HNB,BCR,KKD,2017-08-30
-"ASL OPEN",April,2012,2012-04-20,OPEN_12,"Chicago,IL",USA,US/Ca,"0th edition",HMB,DHR,HDB,2017-08-30
-"ASL OPEN",April,2013,2013-04-12,OPEN_13,"Chicago,IL",USA,US/Ca,"0th edition",ZZM,HDB,KKD,2017-08-30
-"ASL OPEN",April,2014,2014-04-11,OPEN_14,"Chicago,IL",USA,US/Ca,"0th edition",SYI,JNS,DSS,2017-08-30
-"ASL OPEN",April,2015,2015-04-24,OPEN_15,"Chicago,IL",USA,US/Ca,"0th edition",YRT,VNW,JNS,2017-08-30
-"ASL OPEN",April,2016,2016-04-15,OPEN_16,"Chicago,IL",USA,US/Ca,"0th edition",HNB,DHR,VNW,2017-08-30
-"ASL OPEN",March-April,2017,2017-03-30,OPEN_17,"Chicago,IL",USA,US/Ca,"0th edition",HNB,VNW,BSC,2017-08-30
-"ASL Ring",June,2001,2001-06-02,RING_01,"Villeneuve d'Ascq",France,EU,"11th edition",TSY,BXP,BNF,2017-08-30
-"ASL Ring",May,2002,2002-05-18,RING_02,"Villeneuve d'Ascq",France,EU,"12th edition",TEG,MIC,BNF,2017-08-30
-"ASL Ring",June,2003,2003-06-07,RING_03,"Villeneuve d'Ascq",France,EU,"13th edition",SFP,GDC,DTP,2017-08-30
-"ASL Ring",June-July,2004,2004-06-29,RING_04,"Villeneuve d'Ascq",France,EU,"14th edition",GDC,BXP,BNF,2017-08-30
-"ASL Ring",May,2005,2005-05-14,RING_05,"Villeneuve d'Ascq",France,EU,"15th edition",NOB,MIC,PTJ,2017-08-30
-"ASL Ring",June,2006,2006-06-03,RING_06,"Villeneuve d'Ascq",France,EU,"16th edition",SFP,COP,RRP,2017-08-30
-"ASL Ring",May,2007,2007-05-26,RING_07,"Villeneuve d'Ascq",France,EU,"17th edition",TEG,NOB,LRJ,2017-08-30
-"ASL Ring",May,2008,2008-05-11,RING_08,"Villeneuve d'Ascq",France,EU,"18th edition",TEG,REA,BNF,2017-08-30
-"ASL Ring",May,2009,2009-05-29,RING_09,"Villeneuve d'Ascq",France,EU,"19th edition",FTL,BXP,GDC,2017-08-30
-"ASL Ring",May,2010,2010-05-21,RING_10,"Villeneuve d'Ascq",France,EU,"20th edition",TEG,BNF,GDC,2017-08-30
-"ASL Ring",June,2011,2011-06-10,RING_11,"Villeneuve d'Ascq",France,EU,"21th edition",TEG,HLS,KTA,2017-08-30
-"ASL Ring",May,2012,2012-05-25,RING_12,"Villeneuve d'Ascq",France,EU,"22th edition",TEG,BNF,C2L,2017-08-30
-"ASL Ring",May,2013,2013-05-17,RING_13,"Villeneuve d'Ascq",France,EU,"23th edition",TEG,RRP,FTL,2017-08-30
-"ASL Ring",June,2014,2014-06-06,RING_14,"Villeneuve d'Ascq",France,EU,"24th edition",FTL,KTA,HLS,2017-08-30
-"ASL Ring",June,2015,2015-06-05,RING_15,"Villeneuve d'Ascq",France,EU,"25th edition",MNG,BXP,,2017-08-30
-"ASL Ring",May,2016,2016-05-13,RING_16,"Villeneuve d'Ascq",France,EU,"26th edition",BIM,DHO,NOB,2017-08-30
-"ASL Ring",June,2017,2017-06-01,RING_17,"Villeneuve d'Ascq",France,EU,"27th edition",HZS,NOB,BXP,2020-06-24
-"Stockholm ASL",May-June,2003,2003-05-30,SAT_03,Stockholm,Sweden,EU,"1th edition",FKM,RGC,LZJ,2017-08-30
-"Stockholm ASL",May,2004,2004-05-21,SAT_04,Stockholm,Sweden,EU,"2th edition",MGP,FKM,SNJ,2017-08-30
-"Stockholm ASL",May,2005,2005-05-06,SAT_05,Stockholm,Sweden,EU,"3th edition",FKM,GNO,SDM,2017-08-30
-"Stockholm ASL",May,2006,2006-05-26,SAT_06,Stockholm,Sweden,EU,"4th edition",GNO,SDM,RGC,2017-08-30
-"Stockholm ASL",May,2007,2007-05-18,SAT_07,Stockholm,Sweden,EU,"5th edition",MGP,MMK,SDM,2017-08-30
-"Stockholm ASL",May,2008,2008-05-02,SAT_08,Stockholm,Sweden,EU,"6th edition",HNP,FKM,SDM,2017-08-30
-"Stockholm ASL",May,2009,2009-05-22,SAT_09,Stockholm,Sweden,EU,"7th edition",SDM,GNO,,2017-08-30
-"Stockholm ASL",May,2010,2010-05-14,SAT_10,Stockholm,Sweden,EU,"8th edition",GNO,RMM,SDM,2017-08-30
-"Stockholm ASL",June,2011,2011-06-03,SAT_11,Stockholm,Sweden,EU,"9th edition",FKM,,,2017-08-30
-"Stockholm ASL",May,2012,2012-05-18,SAT_12,Stockholm,Sweden,EU,"10th edition",HNP,,,2017-08-30
-"Stockholm ASL",May,2013,2013-05-10,SAT_13,Stockholm,Sweden,EU,"11th edition",FKM,C2E,KIT,2017-08-30
-"Stockholm ASL",May-June,2014,2014-05-30,SAT_14,Stockholm,Sweden,EU,"12th edition",,,,2017-08-30
-"Stockholm ASL",May-June,2015,2015-05-15,SAT_15,Stockholm,Sweden,EU,"13th edition",CNA,,,2017-08-30
-"Stockholm ASL",May-June,2016,2016-05-06,SAT_16,Stockholm,Sweden,EU,"14th edition",,CNA,,2017-08-30
-"Scandinavian Open",February,2000,2000-02-25,SCO_00,Copenhagen,Denmark,EU,"3th edition",TEG,,FKM,2017-08-30
-"Scandinavian Open",February,2001,2001-02-01,SCO_01,Copenhagen,Denmark,EU,"4th edition",TEG,FKM,CNN,2017-08-30
-"Scandinavian Open",February,2002,2002-02-01,SCO_02,Copenhagen,Denmark,EU,"5th edition",TLJ,PGT,TEG,2017-08-30
-"Scandinavian Open",February,2003,2003-02-01,SCO_03,Copenhagen,Denmark,EU,"6th edition",PGT,FKM,RGC,2017-08-30
-"Scandinavian Open",February,2004,2004-02-01,SCO_04,Copenhagen,Denmark,EU,"7th edition",MLB,PGT,MGP,2017-08-30
-"Scandinavian Open",February,2005,2005-02-02,SCO_05,Copenhagen,Denmark,EU,"8th edition",PGT,FKM,LNN,2017-08-30
-"Scandinavian Open",February,2006,2006-02-22,SCO_06,Copenhagen,Denmark,EU,"9th edition",SFP,PGT,RMM,2017-08-30
-"Scandinavian Open",February,2007,2007-02-23,SCO_07,Copenhagen,Denmark,EU,"10th edition",SFP,SSB,PGT,2017-08-30
-"Scandinavian Open",February,2008,2008-02-22,SCO_08,Copenhagen,Denmark,EU,"11th edition",FKM,PGT,MMK,2017-08-30
-"Scandinavian Open",February,2009,2009-02-20,SCO_09,Copenhagen,Denmark,EU,"12th edition",FKM,,,2017-08-30
-"Scandinavian Open",February,2010,2010-02-26,SCO_10,Copenhagen,Denmark,EU,"13th edition",PGT,FKM,BLM,2017-08-30
-"Scandinavian Open",February,2011,2011-02-25,SCO_11,Copenhagen,Denmark,EU,"14th edition",SDM,FKM,MMK,2017-08-30
-"Scandinavian Open",February,2012,2012-02-24,SCO_12,Copenhagen,Denmark,EU,"15th edition",FKM,TEG,,2017-08-30
-"Scandinavian Open",February,2013,2013-02-22,SCO_13,Copenhagen,Denmark,EU,"16th edition",PGT,SEA,,2017-08-30
-"Scandinavian Open",February,2014,2014-02-21,SCO_14,Copenhagen,Denmark,EU,"17th edition",FKM,WDD,TEG,2017-08-30
-"Scandinavian Open",February,1998,1998-04-03,SCO_98,Copenhagen,Denmark,EU,"1th edition",FKM,,HHM,2017-08-30
-"Scandinavian Open",February,1999,1999-02-26,SCO_99,Copenhagen,Denmark,EU,"2th edition",TEG,TRD,FKM,2017-08-30
-"Street Fighting in Sioux City (MAGE Fall Con)",September,2015,2015-09-05,SIOUX_15,"Sioux City, IA",USA,US/Ca,"0th edition",WSP,,,2017-08-30
-Sissukoni,August,2003,2003-08-01,SISSU_03,,Finland,EU,"0th edition",,,,2017-08-30
-Sissukoni,August,2013,2013-08-23,SISSU_13,Helsinki,Finland,EU,"15th edition",KAT,WDA,,2017-08-30
-Sissukoni,August,2014,2014-08-22,SISSU_14,Helsinki,Finland,EU,"16th edition",VI0,LI4,KA4,2017-08-30
-Sissukoni,August,2015,2015-08-21,SISSU_15,Helsinki,Finland,EU,"17th edition",KA4,LI4,RNJ,2017-08-30
-Sissukoni,August,2016,2016-08-19,SISSU_16,Helsinki,Finland,EU,"18th edition",,,,2017-08-30
-"SL Association of Brisbane",January-May,2014,2014-01-16,SLAB_14,Brisbane,Australia,other,"1th edition",WRN,WRP,,2017-08-30
-"San Marino Con",May,2006,2006-05-13,SMAR_06,"San Marino",Italy,EU,"1th edition",PIA,DAU,,2017-08-30
-"San Marino Con",May,2007,2007-05-11,SMAR_07,"San Marino",Italy,EU,"2th edition",PIA,COA,TIM,2017-08-30
-"San Marino Con",May,2008,2008-05-16,SMAR_08,"San Marino",Italy,EU,"3th edition",DAU,COS,DOR,2017-08-30
-"San Marino Con",May,2009,2009-05-15,SMAR_09,"San Marino",Italy,EU,"4th edition",DAU,7SA,TIM,2017-08-30
-"San Marino Con",May,2013,2013-05-18,SMAR_13,"San Marino",Italy,EU,"5th edition",COA,COS,GAE,2017-08-30
-"San Marino Con",May,2014,2014-05-25,SMAR_14,"San Marino",Italy,EU,"6th edition",COA,COS,MAG,2017-08-30
-"Special Carl s : Night",April,2015,2015-04-30,SPEC1_15,Internet,Web,VASL,"1th edition",RIR,,,2017-08-30
-"Special Carl s : Desert",July,2015,2015-07-31,SPEC2_15,Internet,Web,VASL,"1th edition",,,,2017-08-30
-"Special Carl s : altogether",July,2016,2016-07-31,SPEC_16,Internet,Web,VASL,"2th edition",,,,2017-08-30
-"Saint Louis ASL Tournament",July,2000,2000-07-28,STLOU_00,"St-Louis (MO)",USA,US/Ca,"3th edition",BRS,KKD,VNW,2017-08-30
-"Saint Louis ASL Tournament",July,2001,2001-07-27,STLOU_01,"St-Louis (MO)",USA,US/Ca,"4th edition",SUP,VNW,KKD,2017-08-30
-"Saint Louis ASL Tournament",July,2002,2002-07-26,STLOU_02,"St-Louis (MO)",USA,US/Ca,"5th edition",VNW,RIR,C26,2017-08-30
-"Saint Louis ASL Tournament",July,2003,2003-07-25,STLOU_03,"St-Louis (MO)",USA,US/Ca,"6th edition",WSP,SZR,TAG,2017-08-30
-"Saint Louis ASL Tournament",July,2004,2004-07-23,STLOU_04,"St-Louis (MO)",USA,US/Ca,"7th edition",HMB,KKD,RIR,2017-08-30
-"Saint Louis ASL Tournament",July,2005,2005-07-29,STLOU_05,"St-Louis (MO)",USA,US/Ca,"8th edition",HMB,VNW,AID,2017-08-30
-"Saint Louis ASL Tournament",July,2006,2006-07-28,STLOU_06,"St-Louis (MO)",USA,US/Ca,"9th edition",TAG,KKD,ENS,2017-08-30
-"Saint Louis ASL Tournament",July,2007,2007-07-25,STLOU_07,"St-Louis (MO)",USA,US/Ca,"10th edition",BSB,BTD,GNI,2017-08-30
-"Saint Louis ASL Tournament",July,2008,2008-07-25,STLOU_08,"St-Louis (MO)",USA,US/Ca,"11th edition",VNW,GNI,HMB,2017-08-30
-"Saint Louis ASL Tournament",July,2009,2009-07-24,STLOU_09,"St-Louis (MO)",USA,US/Ca,"12th edition",VNW,ILJ,B4D,2017-08-30
-"Saint Louis ASL Tournament",July,2010,2010-07-23,STLOU_10,"St-Louis (MO)",USA,US/Ca,"13th edition",VNW,KKD,DHR,2017-08-30
-"Saint Louis ASL Tournament",July,2011,2011-07-27,STLOU_11,"St-Louis (MO)",USA,US/Ca,"14th edition",VNW,12J,WSP,2017-08-30
-"Saint Louis ASL Tournament",July,2012,2012-07-27,STLOU_12,"St-Louis (MO)",USA,US/Ca,"15th edition",WSP,HMB,DHR,2017-08-30
-"Saint Louis ASL Tournament",July,2013,2013-07-26,STLOU_13,"St-Louis (MO)",USA,US/Ca,"16th edition",WSC,VNW,KKD,2017-08-30
-"Saint Louis ASL Tournament",July,2014,2014-07-24,STLOU_14,"St-Louis (MO)",USA,US/Ca,"17th edition",TEG,VNW,DHR,2017-08-30
-"Saint Louis ASL Tournament",July,2015,2015-07-24,STLOU_15,"St-Louis (MO)",USA,US/Ca,"18th edition",WSP,DHR,ILJ,2017-08-30
-"Saint Louis ASL Tournament",July,2016,2016-07-29,STLOU_16,"St-Louis (MO)",USA,US/Ca,"19th edition",,,,2017-08-30
-"Saint Louis ASL Tournament",July,2017,2017-07-28,STLOU_17,"St-Louis (MO)",USA,US/Ca,"20th edition",DHR,PGT,,2017-08-30
-"Supporting Fire",September,2012,2012-09-07,SUPPF_12,Boras,Sweden,EU,"1th edition",HHM,,,2017-08-30
-"Supporting Fire",November,2013,2013-11-15,SUPPF_13,Boras,Sweden,EU,"2th edition",,,,2017-08-30
-"Supporting Fire",November,2014,2014-10-17,SUPPF_14,Boras,Sweden,EU,"3th edition",FKM,,,2017-08-30
-"Supporting Fire",November,2015,2015-11-20,SUPPF_15,Boras,Sweden,EU,"4th edition",KNM,,,2017-08-30
-"Supporting Fire",November,2016,2016-11-18,SUPPF_16,Boras,Sweden,EU,"5th edition",,,,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2008,2008-06-19,TEXAS_08,"Austin, TX",USA,US/Ca,"16th edition",FLJ,SZR,SKM,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2009,2009-06-26,TEXAS_09,"Austin, TX",USA,US/Ca,"17th edition",SNK,FLJ,,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2010,2010-06-24,TEXAS_10,"Austin, TX",USA,US/Ca,"18th edition",FLJ,FYG,,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2011,2011-06-26,TEXAS_11,"Austin, TX",USA,US/Ca,"19th edition",FYG,CDP,,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2012,2012-06-21,TEXAS_12,"Austin, TX",USA,US/Ca,"20th edition",FYG,SKM,,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2013,2013-06-21,TEXAS_13,"Austin, TX",USA,US/Ca,"21th edition",TAG,SKM,,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2014,2014-06-19,TEXAS_14,"Austin, TX",USA,US/Ca,"22th edition",HS1,SKM,,2017-08-30
-"March Madness",March,2018,2018-03-16,MARCH_18,"Kansas City",USA,US/Ca,,,,,2020-10-13
-"TEXAS TEAM TOURNAMENT",June,2016,2016-06-24,TEXAS_16,"Austin, TX",USA,US/Ca,"24th edition",,,,2017-08-30
-"TEXAS TEAM TOURNAMENT",June,2017,2017-06-25,TEXAS_17,"Austin, TX",USA,US/Ca,"25th edition",,,,2017-08-30
-"VASL Top League",January-December,2007,2007-01-01,TOP_07,Internet,Web,VASL,"1th edition",PIA,COE,HEO,2017-08-30
-"VASL Top League",January-December,2008,2008-01-01,TOP_08,Internet,Web,VASL,"2th edition",TRA,COE,CE3,2017-08-30
-"VASL Top League",January-December,2009,2009-01-01,TOP_09,Internet,Web,VASL,"3th edition",TRA,TAG,RIT,2017-08-30
-"VASL Top League",January-December,2010,0000-00-00,TOP_10,Internet,Web,VASL,"4th edition",FYG,PIA,WAB,2017-08-30
-"VASL Top League",January-December,2011,2011-03-01,TOP_11,Internet,Web,VASL,"5th edition",FYG,COE,MEJ,2017-08-30
-"VASL Top League",January-November,2012,2012-02-29,TOP_12,Internet,Web,VASL,"6th edition",MEJ,FYG,DHR,2017-08-30
-TRENCH,July,2004,2004-07-01,TREN_04,Diksmuide,Belgique,EU,"0th edition",,,,2017-08-30
-"Tournoi Sud Mediterrannee",April,2001,2001-04-14,TSM_01,Nimes,France,EU,"1th edition",CNL,MISSING-22,BXP,2017-08-30
-"Tournoi Sud Mediterrannee",March-April,2002,2002-03-30,TSM_02,Nimes,France,EU,"2th edition",BXP,CNL,MOI,2017-08-30
-"Tournoi Sud Mediterrannee",April,2003,2003-04-12,TSM_03,Nimes,France,EU,"3th edition",SZL,MOI,GDC,2017-08-30
-"Tournoi Sud Mediterrannee",April,2004,2004-04-10,TSM_04,Nimes,France,EU,"4th edition",BXP,GDC,BNF,2017-08-30
-"Tournoi Sud Mediterrannee",March,2005,2005-03-26,TSM_05,Nimes,France,EU,"5th edition",BNF,GDC,BXP,2017-08-30
-"Tournoi Sud Mediterrannee",April,2006,2006-04-15,TSM_06,Nimes,France,EU,"6th edition",GDC,TEG,MOI,2017-08-30
-"Tournoi Sud Mediterrannee",April,2007,2007-04-16,TSM_07,Nimes,France,EU,"7th edition",SFP,GDC,BXP,2017-08-30
-"Tussle in the Tundra",July,2012,2012-07-20,TUSSL_12,"Manchester (NH)",USA,US/Ca,"0th edition",CDP,,,2017-08-30
-"Tussle in the Tundra",July,2013,2013-07-26,TUSSL_13,"Manchester (NH)",USA,US/Ca,"0th edition",CDP,,,2017-08-30
-"Tussle in the Tundra",July,2014,2014-07-25,TUSSL_14,"Manchester (NH)",USA,US/Ca,"0th edition",WAB,L33,,2017-08-30
-"Tussle in the Tundra",July,2015,2015-07-24,TUSSL_15,"Manchester (NH)",USA,US/Ca,"0th edition",AAR,,,2017-08-30
-"Tussle in the Tundra",July,2016,2016-07-22,TUSS_16,"Manchester (NH)",USA,US/Ca,"0th edition",AAR,,,2017-08-30
-"West Coast Melee",February,2000,2000-08-19,WCM_00,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2001,2001-02-04,WCM_01,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2002,2002-02-01,WCM_02,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2003,2003-01-31,WCM_03,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2004,2004-02-06,WCM_04,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2005,2005-02-06,WCM_05,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2006,2006-02-26,WCM_06,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2007,2007-02-23,WCM_07,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Melee",February,2008,2008-02-22,WCM_08,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30
-"West Coast Rumble",November,2008,2008-11-09,WCR_08,Vancouver,Canada,US/Ca,"2th edition",KSD,K2G,EEM,2017-08-30
-"West Coast Rumble",November,2009,2009-11-08,WCR_09,Vancouver,Canada,US/Ca,"3th edition",KSD,HHD,WER,2017-08-30
-"West Coast Rumble",November,2010,2010-11-14,WCR_10,Vancouver,Canada,US/Ca,"4th edition",KSD,JSI,K2G,2017-08-30
-"West Coast Rumble",November,2011,2011-11-06,WCR_11,Vancouver,Canada,US/Ca,"5th edition",KSD,FOR,WER,2017-08-30
-"West Coast Rumble",November,2012,2012-11-04,WCR_12,Vancouver,Canada,US/Ca,"6th edition",KSD,HHD,141,2017-08-30
-"West Coast Rumble",November,2013,2013-11-10,WCR_13,Vancouver,Canada,US/Ca,"7th edition",WER,KSD,GYT,2017-08-30
-"West Coast Rumble",November,2014,2014-11-07,WCR_14,Vancouver,Canada,US/Ca,"8th edition",WER,JSI,KSD,2017-08-30
-"West Coast Rumble",November,2015,2015-11-06,WCR_15,Vancouver,Canada,US/Ca,"9th edition",KSD,WER,RS2,2017-08-30
-"West Coast Rumble",November,2016,2016-11-04,WCR_16,Vancouver,Canada,US/Ca,"10th edition",,,,2017-08-30
-WeASL,August-November,2008,2008-08-28,WEASL_08,Internet,Web,VASL,"0th edition",HNI,MISSING-6,,2017-08-30
-"West Wall",May,2001,2001-05-01,WEST_01,Saarbrücken,Germany,EU,"0th edition",BXP,VYX,MISSING-8,2017-08-30
-"Winter Offensive (only some games)",January,2005,2005-01-01,WOFF_05,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter Offensive (only some games)",January,2006,2006-01-01,WOFF_06,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter Offensive (only some games)",January,2008,2008-01-01,WOFF_08,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter Offensive (only some games)",January,2010,2010-01-01,WOFF_10,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter Offensive (only some games)",January,2011,2011-01-01,WOFF_11,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter Offensive (only some games)",January,2012,2012-01-01,WOFF_12,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter Offensive (only some games)",January,2013,2013-01-01,WOFF_13,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter Offensive (only some games)",January,2014,2014-01-18,WOFF_14,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30
-"Winter War",January,2013,2013-01-25,WWAR_13,"Champaign, IL",USA,US/Ca,"0th edition",TRA,WSC,CHT,2017-08-30
-"Winter War",January,2014,2014-01-25,WWAR_14,"Champaign, IL",USA,US/Ca,"0th edition",RSS,GNI,TRA,2017-08-30
-"Winter War",February,2015,2015-02-07,WWAR_15,"Champaign, IL",USA,US/Ca,"0th edition",KKD,VNW,DGJ,2017-08-30
-"Canadian ASL Open",May,2018,2018-05-18,CASLO_18,Winnipeg,Canada,US/Ca,"22nd Edition","Darren Kovacs","Michael Rodgers","Paul Suderman",2020-06-11
-"Tournoi du forum français ",October/2018:June/2019,2019,2018-10-01,Forum_19,Internet,Web,VASL,,"Philippe Rohmer","Lionel Colin","Bruno Bonhomme",2020-06-18
-"Intensive Fire 2017",November,2017,2017-11-15,IF_17,Bournemouth,UK,EU,,,,,2020-06-18
-"Double One",June,2017,2017-06-22,2ONE_17,Chelmsford,UK,EU,,,,,2020-06-19
-Grenadier,November,2017,2017-11-01,GREN_17,Hergarten,Germany,EU,,"Bruno Nitrosso","Björn Lorenzen","Alex Koestler",2020-06-24
-"Stockholm ASL",May,2017,2017-05-26,SAT_17,Stockholm,Sweden,EU,,"Patrik Manlig",,,2020-06-26
-"Spreading Blaze",August,2017,2017-08-01,ATLAN_17,"Duluth, GA",USA,US/Ca,,,,,2020-06-26
-"Supporting Fire",November,2017,2017-11-01,SUPPF_17,Borås,Sweden,EU,,,,,2020-06-27
-"Double One",June,2018,2018-06-01,2ONE_18,Chelmsford,UK,EU,,,,,2020-06-27
-Heroes,March,2018,2018-03-01,HERO_18,Blackpool,UK,EU,,,,,2020-06-28
-"Bounding First Fire",November,2018,2018-11-21,BFF_18,Blackpool,UK,EU,,,,,2020-06-28
-"Death Wish","June - August",2017,2017-06-01,DWISH_17,Internet,Web,VASL,,,,,2020-06-29
-Grenadier,November,2018,2018-11-01,GREN_18,Hergarten,Germany,EU,,"Jean Lasnier","François Boudrenghien","Hennie van der Salm",2020-06-29
-"Death Wish","June - August",2018,2018-06-01,DWISH_18,Internet,Web,VASL,,,,,2020-06-29
-"VASL Top League","January - December",2018,2018-01-01,LEAG0_18,Internet,Web,VASL,,,,,2020-06-30
-"VASL Eastern US and Canada League","June - September",2018,2018-06-01,LEAG2_18,Internet,Web,VASL,,,,,2020-06-30
-"Tournoi du forum français ",September/17:June/18,2018,2017-09-27,Forum_18,Internet,Web,VASL,,"Philippe Rohmer","Philippe Duchon","Laurent Tinture",2020-07-01
-"Northwest ASL Championship",February,2018,2018-02-09,NWEST_18,"Issaquah (WA)",USA,US/Ca,,,,,2020-07-02
-"VASL Western US League","January - December",2018,2018-01-01,LEAG3_18,Internet,Web,VASL,,,,,2020-07-02
-"VASL European and Oceanian League",March-December,2018,2018-03-01,Leag1_18,Internet,Web,VASL,,,,,2020-07-04
-"VASL Second Line League",June,2018,2018-06-01,LEAG4_18,Internet,Web,VASL,,,,,2020-07-04
-"West Coast Rumble",November,2017,2017-11-03,WCR_17,Vancouver,Canada,US/Ca,,,,,2020-07-04
-"West Coast Rumble",November,2018,2018-11-02,WCR_18,Vancouver,Canada,US/Ca,,,,,2020-07-04
-"Street Fighting in Sioux City",September,2017,2017-09-02,SIOUX_17,"Sioux City, IA",USA,US/Ca,,,,,2020-07-04
-"Friendly Fire","August - October",2017,2017-08-09,FRF_17,Linköping,Sweden,EU,,,,,2020-07-06
-"Friendly Fire",September,2018,2018-09-21,FRF_18,Linköping,Sweden,EU,,,,,2020-07-06
-"Cyber VASL","January - September",2017,2017-01-03,CYBER_VI,Internet,Web,VASL,,,,,2020-07-06
-"Cyber VASL","June/17: March/19",2018,2017-12-28,CYBER_VIII,Internet,Web,VASL,,,,,2020-07-07
-"Cyber VASL","July/18: April/19",2019,2018-07-04,CYBER_IX,Internet,Web,VASL,,,,,2020-07-07
-"Cyber VASL","December/18: December/19",2019,2018-12-20,CYBER_X,Internet,Web,VASL,,,,,2020-07-07
-"Juno Bear",June,2017,2017-06-10,JUNO_17,Sydney,Australia,other,,,,,2020-07-07
-"Friendly Fire",September,2019,2019-09-27,FRF_19,Linköping,Sweden,EU,,,,,2020-07-07
-"Supporting Fire",November,2018,2018-11-01,SUPPF_18,Borås,Sweden,EU,,,,,2020-07-07
-"Scandinavian Open",February,2018,2018-02-28,SCO_18,Copenhagen,Denmark,EU,,"Kenneth Knudsen","George Tournemire","Paul Chamberland",2020-07-08
-"Stockholm ASL",May,2018,2018-05-01,SAT_18,Stockholm,Sweden,EU,,,,,2020-07-09
-"VASL Special Deluxe","March/17: January/18",2018,2017-03-01,SPECDLX_18,Internet,Web,VASL,,,,,2020-07-09
-"VASL Special Desert","March/17: February/18",2018,2017-03-01,SPECDES_18,Internet,Web,VASL,,,,,2020-07-09
-"VASL Special Night","March/17: May/18",2018,2017-03-01,SPECNIT_18,Internet,Web,VASL,,,,,2020-07-10
-"VASL Special Para-Glid","March/17: February/18",2018,2017-03-01,SPECPara_18,Internet,Web,VASL,,,,,2020-07-10
-"Double One",June,2019,2019-06-21,2ONE_19,Chelmsford,UK,EU,"13th Edition",,,,2020-07-11
-Heroes,March,2019,2019-03-01,HERO_19,Blackpool,UK,EU,,,,,2020-07-11
-"Bounding First Fire",November,2019,2019-11-20,BFF_19,Blackpool,UK,EU,,,,,2020-07-11
-Grenadier,November,2019,2019-11-07,GREN_19,Hergarten,Germany,EU,,,,,2020-07-11
-"Human Wave",June,2019,2019-06-20,Hwave_19,Washington,USA,US/Ca,,"Bill Cirillo",,,2020-07-11
-"Northwest ASL Championship",February,2019,2019-02-08,NWEST_19,"Issaquah (WA)",USA,US/Ca,,,,,2020-07-11
-"Scandinavian Open",February,2019,2019-02-28,SCO_19,Copenhagen,Denmark,EU,,"Rich Domovic","Arnauld Sanchis","Kenneth Knudsen",2020-07-11
-"Supporting Fire",November,2019,2019-11-01,SUPPF_19,Borås,Sweden,EU,,,,,2020-07-12
-"West Coast Rumble",November,2019,2019-11-08,WCR_19,Vancouver,Canada,US/Ca,,,,,2020-07-12
-"Wild West Fest",October,2019,2019-10-18,WWF_19,,,US/Ca,,,,,2020-07-12
-Heroes,March,2020,2020-03-04,HERO_20,Blackpool,UK,EU,,,,,2020-07-12
-"Canadian ASL Open",May,2020,2020-05-15,CASLO_20,Internet,Web,US/Ca,,,,,2020-07-12
-"Canadian ASL Open",May,2019,2019-05-17,CASLO_19,Ottawa,Canada,US/Ca,"23rd Edition",,,,2020-07-12
-"Tournoi du forum français ","August/19: January/20",2020,2019-08-27,Forum_20,Internet,Web,VASL,,"Lionel Colin","Alban Bureau","Guillaume Mailhan",2020-07-13
-"Human Wave",June,2020,2020-06-24,HWAVE_20,Washington,USA,US/Ca,,,,,2020-07-13
-"Northwest ASL Championship",February,2020,2020-02-07,NWEST_20,"Issaquah (WA)",USA,US/Ca,,,,,2020-07-13
-"VASL Special Deluxe","January/19: February/20",2020,2019-01-08,SPECDLX_20,Internet,Web,VASL,,,,,2020-07-14
-"VASL Special Desert","January/19: February/20",2020,2019-01-16,SPECDES_20,Internet,Web,VASL,,,,,2020-07-14
-"VASL Special Night","January/19: February/20",2020,2019-01-16,SPECNIT_19,Internet,Web,VASL,,,,,2020-07-14
-"VASL Special PTO","January/19: February/20",2020,2019-01-04,SPECPTO_20,Internet,Web,VASL,,,,,2020-07-14
-Sissukoni,August,2017,2017-08-26,Sissu_17,Helsinki,Finland,EU,"19th Edition",,,,2020-07-15
-Sissukoni,August,2018,2018-08-25,Sissu_18,Helsinki,Finland,EU,"20th Edition",,,,2020-07-15
-Sissukoni,August,2019,2019-08-23,Sissu_19,Helsinki,Fin,EU,"21st Edition",,,,2020-07-15
-"Ghan Zou",April,2019,2019-04-20,GhanZ_19,Chengdu,China,other,,,,,2020-07-16
-"ASL Open",April,2019,2019-04-01,OPEN_19,Chicago,USA,US/Ca,,,,,2020-07-16
-"ASL Open","June - July",2020,2020-06-15,Open_20,Internet,Web,VASL,,,,,2020-07-23
-"ASL Open",April,2018,2018-04-05,OPEN_18,Chicago,USA,US/Ca,,,,,2020-07-26
-"ASL Ring",May,2018,2018-05-01,Ring_18,"Villeneuve d'Ascq",France,EU,,"Olivier Dietsch","Sam Henze","Pierre-Jean Cilluffo",2020-07-26
-"ASL Ring",June,2019,2019-06-01,Ring_19,"Villeneuve d'Ascq",France,EU,,,,,2020-07-26
-"Tournoi du forum français ","September/15: June/16",2016,2015-09-01,Forum_16,Internet,Web,VASL,,"Laurent Tinture","Laurent Le Billan","Laurent Weimar",2020-08-05
-"Texas Team Tournament",June,2018,2018-06-28,TEXAS_18,Austin,USA,US/Ca,,,,,2020-09-28
-"ASL Ring",June,2020,2020-06-02,Ring_20,"Villeneuve d'Ascq",France,EU,,,,,2020-08-05
-"Tussle In The Tundra",August,2019,2019-08-09,TUSS_19,"Manchester (NH)",USA,US/Ca,,,,,2020-08-20
-"Tussle In The Tundra",August,2020,2020-08-07,TUSS_20,"Manchester (NH)",USA,US/Ca,,,,,2020-08-20
-"Saint Louis ASL Tournament",July,2018,2018-07-01,STLOU_18,"St Louis",USA,US/Ca,,,,,2020-08-20
-"Saint Louis ASL Tournament",July,2019,2019-07-01,STLOU_19,"St Louis",USA,US/Ca,,,,,2020-08-20
-"Saint Louis ASL Tournament",July,2020,2020-07-01,STLOU_20,"St Louis",USA,US/Ca,,,,,2020-08-20
-"Tournoi du forum français ","September/16: April/17",2017,2016-09-01,Forum_17,Internet,Web,VASL,,,,,2020-08-20
-"Alpen Festung",June,2018,2018-06-01,ALPEN_18,Amden,Switzerland,EU,XII,"Daniel Takai",,,2020-08-23
-"Alpen Festung",Junbe,2019,2019-06-14,ALPEN_19,Amden,Switzerland,,XIII,"Marc Blume","Daniel Takai",,2020-08-23
-"Street Fighting in Sioux City",September,2018,2018-09-01,SIOUX_18,"Sioux City, IA",USA,US/Ca,,,,,2020-08-23
-"Street Fighting in Sioux City",August,2019,2019-08-31,SIOUX_19,"Sioux City, IA",USA,US/Ca,,,,,2020-08-23
-"Intensive Fire",October,2013,2013-10-23,IF_13,Bournemouth,UK,EU,,,,,2020-08-24
-"Alpen Festung",June,2017,2017-06-09,ALPEN_17,Amden,Switzerland,EU,,,,,2020-08-25
-Sissukoni,August,2020,2020-08-21,Sissu_20,Helsinki,Finland,EU,,,,,2020-08-25
-"ASL Oktoberfest",October,2017,2017-09-30,ASLOK_17,Cleveland,USA,US/Ca,,"Bill Cirillo",,,2020-09-11
-"ASL Oktoberfest",October,2018,2018-09-30,ASLOK_18,Cleveland,USA,US/Ca,,,,,2020-09-11
-"Bitter End",April,2019,2019-04-12,B-END_19,Raleigh-Durham,USA,US/Ca,,,,,2020-09-11
-"Scandinavian Open",February,2020,2020-02-28,SCO_20,Copenhagen,Denmark,,,,,,2020-09-11
-"VASL European and Oceanian League","July - November",2019,2019-07-20,LEAG1_19,Internet,Web,VASL,,,,,2020-09-12
-"VASL Top League","March - October",2019,2019-03-22,LEAG0_19,Internet,Web,VASL,,,,,2020-09-12
-"VASL Eastern US and Canada League","March - December",2019,2019-03-29,LEAG2_19,Internet,Web,VASL,,,,,2020-09-12
-"VASL Western US League","April - November",2019,2019-04-14,LEAG3_19,Internet,Web,VASL,,,,,2020-09-12
-"Tussle In The Tundra",July,2011,2011-07-29,TUSS_11,"Manchester (NH)",USA,US/Ca,,,,,2020-09-13
-"Double One",June,2020,2020-06-26,2ONE_20,Chelmsford,UK,EU,,,,,2020-09-14
-"NYS ASL Championship",December,2019,2019-12-06,NYS_19,Albany,USA,US/Ca,,,"Bill Cirillo",,2020-09-19
-"ASL Oktoberfest (partial)",October,2019,2019-10-08,ASLOK_19,Cleveland,USA,US/Ca,,,"Bill Cirillo",,2020-09-20
-"Winter Offensive (only some games)",January,2019,2019-01-17,WOFF_19,"Bowie, Maryland",USA,US/Ca,,,,,2020-09-20
-"NYS ASL Championship",December,2018,2018-11-30,NYS_18,Albany,USA,US/Ca,,,,,2020-09-20
-"Bitter End (partial)",April,2018,2018-04-20,B-END_18,Raleigh-Durham,USA,US/Ca,,,,,2020-09-20
-"Winter Offensive (only some games)",January,2018,2018-01-11,WOFF_18,Cleveland,USA,US/Ca,,"Bill Cirillo",,,2020-09-20
-"NYS ASL Championship",December,2017,2017-11-30,NYS_17,Albany,USA,US/Ca,,"Bill Cirillo",,,2020-09-20
-"ASL Oktoberfest (partial)",October,2016,2016-10-06,ASLOK_16,Cleveland,USA,US/Ca,,,,"Bill Cirillo",2020-09-20
-"March Madness",March,2019,2019-03-15,MARCH_19,"Kansas City",USA,US/Ca,,,,,2020-09-20
-"Texas Team Tournament",June,2019,2019-06-01,TEXAS_19,Austin,USA,US/Ca,,,,,2020-09-28
-"Cyber VASL","July/19: July/20",2020,2019-07-08,CYBER_XI,Internet,Web,VASL,,,,,2020-11-10
-"West Coast Rumble",November,2020,2020-11-04,WCR_20,Internet,Web,VASL,,,,,2020-11-10
-"West Coast Melee 2020   WCM XXIII",February,2020,2020-02-27,WCM_20,Ontario,USA,US/Ca,XXIII,"Brandon Liesesmeier",,,2020-11-08
-"Bodø ASL Open",January,2020,2020-01-24,BASLO_20,Bodø,Norway,,,"Tuomo Lukkari","Tron Ljodal",,2020-11-09
-"NYS ASL Championship",December,2020,2020-11-15,NYS_20,Internet,Web,VASL,,,,,2020-12-20
-"Cyber VASL","April/20: December/20",2020,2020-04-16,CYBER_XII,Internet,Web,VASL,,,,,2020-12-21
-"Street Fighting","November - December",2020,2020-11-07,SIOUX_20,Internet,Web,VASL,,,,,2021-01-18
-"Cascadia Summer Offensive",August,2020,,CASC_20,Internet,Web,"VASL, Four round (16 player cap) Swiss style tournament",,"Richard King",,,2021-01-21
+id,"Base Name","Month Held","Year Held","Date Held","Tournament ID",City/Region,Country,Type,Iteration,First,Second,Third,"Date Added",url
+732,"Double One",May,2006,2006-05-20,2ONE_06,Chelmsford,UK,EU,"1th edition",BET,WTA,DEP,2017-08-30,
+733,"Double One",May,2007,2007-05-12,2ONE_07,Chelmsford,UK,EU,"2th edition",MHD,PRS,JSR,2017-08-30,
+734,"Double One",June,2008,2008-06-21,2ONE_08,London,UK,EU,"3th edition",MHD,JKN,PDI,2017-08-30,
+735,"Double One",June,2010,2010-06-26,2ONE_10,Chelmsford,UK,EU,"4th edition",,,,2017-08-30,
+736,"Double One",June,2011,2011-06-24,2ONE_11,Chelmsford,UK,EU,"5th edition",,,,2017-08-30,
+737,"Double One",June,2012,2012-06-23,2ONE_12,Chelmsford,UK,EU,"6th edition",,,,2017-08-30,
+738,"Double One",June,2013,2013-06-28,2ONE_13,Chelmsford,UK,EU,"7th edition",PRS,RYD,JPG,2017-08-30,
+739,"Double One",June,2014,2014-06-27,2ONE_14,Chelmsford,UK,EU,"8th edition",,,,2017-08-30,
+740,"Double One",June,2015,2015-06-25,2ONE_15,Chelmsford,UK,EU,"9th edition",,,,2017-08-30,
+741,"Double One",June,2016,2016-06-23,2ONE_16,Chelmsford,UK,EU,"10th edition",,,,2017-08-30,
+742,"Alpen Festung",April,2011,2011-04-09,ALPEN_11,Amden,Switzerland,EU,"0th edition",SAH,,,2017-08-30,
+743,"Alpen Festung",April-August,2012,2012-04-25,ALPEN_12,Amden,Switzerland,EU,"0th edition",,,,2017-08-30,
+744,"Alpen Festung",April-August,2013,2013-04-20,ALPEN_13,Amden,Switzerland,EU,"0th edition",,,,2017-08-30,
+745,"Alpen Festung",April-August,2014,2014-04-01,ALPEN_14,Amden,Switzerland,EU,"0th edition",,,,2017-08-30,
+746,"Alpen Festung",August,2015,2015-08-14,ALPEN_15,Amden,Switzerland,EU,"0th edition",,,,2017-08-30,
+747,"Alpen Festung",July,2016,2016-07-08,ALPEN_16,Amden,Switzerland,EU,"0th edition",HLE,,,2017-08-30,
+748,"A bridge too far",October,2003,2003-09-12,ARNH_03,Arnhem,Netherlands,EU,"2th edition",VYX,,,2017-08-30,
+749,"A bridge too far",October,2004,2004-09-17,ARNH_04,Arnhem,Netherlands,EU,"3th edition",FKM,DRA,RGC,2017-08-30,
+750,"A bridge too far",September,2005,2005-09-15,ARNH_05,Arnhem,Netherlands,EU,"4th edition",BNF,RMM,TLJ,2017-08-30,
+751,"A bridge too far",September,2006,2006-09-21,ARNH_06,Arnhem,Netherlands,EU,"5th edition",FKM,RMM,RSJ,2017-08-30,
+752,"A bridge too far",September,2007,2007-09-22,ARNH_07,Arnhem,Netherlands,EU,"6th edition",PGT,SSB,MMK,2017-08-30,
+753,"A bridge too far",September,2008,2008-09-18,ARNH_08,Arnhem,Netherlands,EU,"7th edition",MMK,SSB,MAR,2017-08-30,
+754,"A bridge too far",September,2009,2009-09-24,ARNH_09,Arnhem,Netherlands,EU,"8th edition",PGT,HHM,SUP,2017-08-30,
+755,"A bridge too far",September,2010,2010-09-26,ARNH_10,Arnhem,Netherlands,EU,"9th edition",,,,2017-08-30,
+756,"A bridge too far",September,2011,2011-09-24,ARNH_11,Arnhem,Netherlands,EU,"10th edition",SFP,SSB,MIC,2017-08-30,
+757,"A bridge too far",September,2012,2012-09-23,ARNH_12,Arnhem,Netherlands,EU,"11th edition",SSB,SFP,DRA,2017-08-30,
+758,"Pacifi ASL",July,2016,2016-07-29,ASIA_16,Manila,Philippines,other,"0th edition",KSJ,98J,FGW,2017-08-30,
+759,"Pacifi ASL",July,2017,2017-07-28,ASIA_17,Angkhor,Cambodia,other,"0th edition",FGW,CNN,SEA,2017-08-30,
+760,"ASL Oktoberfest",October,2001,2001-10-01,ASLOK_01,"Cleveland,OHIO",USA,US/Ca,"16th edition",PAS,TRA,DES,2017-08-30,
+761,"ASL Oktoberfest",October,2002,2002-10-06,ASLOK_02,"Cleveland,OHIO",USA,US/Ca,"17th edition",CSC,PAS,BSB,2017-08-30,
+762,"ASL Oktoberfest",October,2003,2003-10-04,ASLOK_03,"Cleveland,OHIO",USA,US/Ca,"18th edition",CNN,TGL,PAS,2017-08-30,
+763,"ASL Oktoberfest",October,2004,2004-10-02,ASLOK_04,"Cleveland,OHIO",USA,US/Ca,"19th edition",PAS,VNW,SLC,2017-08-30,
+764,"ASL Oktoberfest",October,2005,2005-09-30,ASLOK_05,"Cleveland,OHIO",USA,US/Ca,"20th edition",TYJ,HHM,LYD,2017-08-30,
+765,"ASL Oktoberfest",October,2006,2006-09-30,ASLOK_06,"Cleveland,OHIO",USA,US/Ca,"21th edition",BSB,PAS,VNW,2017-08-30,
+766,"ASL Oktoberfest",October,2007,2007-09-27,ASLOK_07,"Cleveland,OHIO",USA,US/Ca,"22th edition",PAS,MDO,TYJ,2017-08-30,
+767,"ASL Oktoberfest",October,2008,2008-10-04,ASLOK_08,"Cleveland,OHIO",USA,US/Ca,"23th edition",PAS,COW,SN3,2017-08-30,
+768,"ASL Oktoberfest",October,2009,2009-10-02,ASLOK_09,"Cleveland,OHIO",USA,US/Ca,"24th edition",PAS,FYG,TYJ,2017-08-30,
+769,"ASL Oktoberfest",October,2010,2010-10-01,ASLOK_10,"Cleveland,OHIO",USA,US/Ca,"25th edition",BSB,TrJ1,PAS,2017-08-30,
+770,"ASL Oktoberfest",October,2011,2011-10-01,ASLOK_11,"Cleveland,OHIO",USA,US/Ca,"26th edition",FYG,BSB,ENJ,2017-08-30,
+771,"ASL Oktoberfest",October,2015,2015-10-07,ASLOK_15,"Cleveland,OHIO",USA,US/Ca,"30th edition",PAS,RMM,PIA,2017-08-30,
+772,"Scandinavian Open",February,2015,2015-02-20,ASO_15,Copenhagen,Denmark,EU,"18th edition",PGT,SUP,FKM,2017-08-30,
+773,"Scandinavian Open",February,2016,2016-02-26,ASO_16,Copenhagen,Denmark,EU,"19th edition",FKM,TEG,RMM,2017-08-30,
+774,"Scandinavian Open",February,2017,2017-02-24,ASO_17,Copenhagen,Denmark,EU,"20th edition",FKM,LII,KNK,2017-08-30,
+775,"Spreading Blaze",August,2016,2016-08-07,ATLAN_16,"Duluth, GA",USA,hidden,"0th edition",SDO,RAD,,2017-08-30,
+776,"Bitter End",April,2012,2012-04-12,B-END_12,Raleigh-Durham,USA,US/Ca,"0th edition",FYG,SN3,SND,2017-08-30,
+777,"Bitter End",April,2013,2013-04-04,B-END_13,Raleigh-Durham,USA,US/Ca,"0th edition",TEG,SLW,SN3,2017-08-30,
+778,"Bitter End",May-June,2014,2014-05-30,B-END_14,Raleigh-Durham,USA,US/Ca,"0th edition",SUP,FYG,HAM,2017-08-30,
+779,"Bitter End",May,2015,2015-05-01,B-END_15,Raleigh-Durham,USA,US/Ca,"0th edition",SUP,COW,TEG,2017-08-30,
+780,"Bitter End",April-May,2016,2016-04-29,B-END_16,Raleigh-Durham,USA,US/Ca,"0th edition",PRP,WNR,,2017-08-30,
+781,"Bitter End",April,2017,2017-04-28,B-END_17,Raleigh-Durham,USA,US/Ca,"0th edition",PRP,MIK,SLW,2017-08-30,
+782,"ASL Fanatic",October,2003,2003-10-16,BARC_03,Barcelona,Spain,EU,"5th edition",BNF,BIM,RSD,2017-08-30,
+783,"ASL Fanatic",November-December,2004,2004-11-13,BARC_04,Barcelona,Spain,EU,"6th edition",,,,2017-08-30,
+784,"ASL Fanatic",November,2006,2006-11-25,BARC_06,Barcelona,Spain,EU,"8th edition",,,,2017-08-30,
+785,"ASL Fanatic",November,2007,2007-11-24,BARC_07,Barcelona,Spain,EU,"9th edition",SZL,MOI,GNA,2017-08-30,
+786,"ASL Fanatic",November,2008,2008-11-15,BARC_08,Barcelona,Spain,EU,"10th edition",GZE,,,2017-08-30,
+787,"ASL Fanatic",November,2009,2009-11-24,BARC_09,Barcelona,Spain,EU,"11th edition",LZS,GZE,LZ3,2017-08-30,
+788,"ASL Fanatic",November,2010,2010-11-13,BARC_10,Barcelona,Spain,EU,"12th edition",FNJ,LZS,B3J,2017-08-30,
+789,"ASL Fanatic",November,2011,2011-11-05,BARC_11,"Cocheras de Sants (B",Spain,EU,"13th edition",LZ3,FNJ,C8M,2017-08-30,
+790,"ASL Fanatic",November,2012,2012-11-24,BARC_12,"Cocheras de Sants(Ba",Spain,EU,"14th edition",C8M,FZG,FSP,2017-08-30,
+791,"ASL Fanatic",November,2013,2013-11-23,BARC_13,"Cocheras de Sants(Ba",Spain,EU,"15th edition",C8M,FNJ,LZS,2017-08-30,
+792,"ASL Fanatic",October,2014,2014-10-04,BARC_14,"Cocheras de Sants(Ba",Spain,EU,"16th edition",B3J,LZS,GZE,2017-08-30,
+793,"ASL Fanatic",October,2015,2015-10-24,BARC_15,"Cocheras de Sants(Ba",Spain,EU,"17th edition",ROF,FSP,FNJ,2017-08-30,
+794,"ASL Fanatic",October,2016,2016-10-22,BARC_16,"Cocheras de Sants(Ba",Spain,EU,"18th edition",GZA,GAC,C8M,2017-08-30,
+795,"Canberra Con",January-February,2015,2015-01-30,CANCO_15,Canberra,Australia,other,"0th edition",,,,2017-08-30,
+796,"Canberra Con",January,2016,2016-01-23,CANCO_16,Canberra,Australia,other,"0th edition",,,,2017-08-30,
+797,"Canberra Con",January,2017,2017-01-27,CANCO_17,Canberra,Australia,other,"0th edition",,,,2017-08-30,
+798,"Canadian ASL Open",September,2007,2007-09-28,CASLO_07,"Winnipeg, Manitoba",Canada,US/Ca,"11th edition",BDW,KSD,RS2,2017-08-30,
+799,"Canadian ASL Open",September,2008,2008-09-19,CASLO_08,"Winnipeg, Manitoba",Canada,US/Ca,"12th edition",WNR,MDO,EEA,2017-08-30,
+800,"Canadian ASL Open",September,2009,2009-09-18,CASLO_09,"Winnipeg, Manitoba",Canada,US/Ca,"13th edition",KSD,RS2,BDW,2017-08-30,
+801,"Canadian ASL Open",September,2010,2010-09-17,CASLO_10,"Ottawa, Ontario",Canada,US/Ca,"14th edition",TAG,YGK,EEA,2017-08-30,
+802,"Canadian ASL Open",September,2011,2011-09-16,CASLO_11,"Ottawa, Ontario",Canada,US/Ca,"15th edition",EEA,YGK,ES2,2017-08-30,
+803,"Canadian ASL Open",May,2012,2012-05-18,CASLO_12,"Winnipeg, Manitoba",Canada,US/Ca,"16th edition",KSD,141,LTR,2017-08-30,
+804,"Canadian ASL Open",May,2013,2013-05-17,CASLO_13,"Winnipeg, Manitoba",Canada,US/Ca,"17th edition",WN3,WAB,CDP,2017-08-30,
+805,"Canadian ASL Open",May,2014,2014-05-16,CASLO_14,"Calgary, Alberta",Canada,US/Ca,"17th edition",RS2,WER,CDP,2017-08-30,
+806,"Canadian ASL Open",May,2015,2015-05-15,CASLO_15,"Winnipeg, Manitoba",Canada,US/Ca,"19th edition",EEA,MSM,KSD,2017-08-30,
+807,"Canadian ASL Open",May,2016,2016-05-20,CASLO_16,"Montréal, Québec",Canada,US/Ca,"20th edition",WAB,SUP,BXP,2017-08-30,
+808,"Canadian ASL Open",May,2017,2017-05-19,CASLO_17,"Montréal, Québec",Canada,US/Ca,"21th edition",KSD,JSI,BLB,2017-08-30,
+809,"Torneo Espanol VASL",May-December,2011,2011-05-06,CONSC_11,Internet,Web,VASL,"1th edition",PES,,,2017-08-30,
+810,"Torneo Espanol VASL",July-December,2012,2012-07-01,CONSC_12,Internet,Web,VASL,"2th edition",NOB,,,2017-08-30,
+811,"Torneo Espanol VASL",February-December,2013,2013-04-30,CONSC_13,Internet,Web,VASL,"3th edition",NOB,LZS,PA1,2017-08-30,
+812,"Torneo Espanol VASL",April-December,2014,2014-04-15,CONSC_14,Internet,Web,VASL,"4th edition",GAC,,,2017-08-30,
+813,"Cyber VASL S2",April-December,2014,2014-06-02,CYBER_14,Internet,Web,PBEM,"1th edition",C2L,,,2017-08-30,
+814,"Cyber VASL",January-December,2015,2015-01-01,CYBER_15,Internet,Web,PBEM,"2th edition",C2L,TEL,,2017-08-30,
+815,"Cyber VASL",June/2015:August/2016,2016,2015-06-20,CYBER_II,Internet,Web,PBEM,"3th edition",C2L,WAB,,2017-08-30,
+816,"Cyber VASL",June/2015:August/2016,2016,2015-06-20,CYBER_III,Internet,Web,PBEM,"3th edition",C2L,WAB,,2017-08-30,
+817,"Cyber VASL",January/2016:March/2017,2017,2016-01-01,CYBER_IV,Internet,Web,PBEM,"4th edition",WAB,C2L,,2017-08-30,
+818,"Cyber VASL",July/2016:April/2017,2017,2016-07-01,CYBER_V,Internet,Web,PBEM,"5th edition",PAP,G1D,,2017-08-30,
+819,"Death Wish",January-November,2015,2015-01-25,DWISH_15,Internet,Web,VASL,"1th edition",CNN,,,2017-08-30,
+820,"Death Wish",November,2016,2016-11-30,DWISH_16,Internet,Web,VASL,"2th edition",CNN,PUZ,LIZ,2017-08-30,
+821,"EDA Tournament",June,2002,2002-06-01,EDA_02,Uppsala,Sweden,EU,"0th edition",,,,2017-08-30,
+822,Enfilade!,May,2010,2010-05-28,ENFIL_10,"Seattle, WA",USA,US/Ca,"0th edition",,,,2017-08-30,
+823,Enfilade!,May,2011,2011-05-27,ENFIL_11,"Seattle, WA",USA,US/Ca,"0th edition",JSI,B3S,,2017-08-30,
+824,Enfilade!,May,2012,2012-05-25,ENFIL_12,"Seattle, WA",USA,US/Ca,"0th edition",SRL,,,2017-08-30,
+825,"Friendly Fire",August,2014,2014-08-29,FFIRE_14,Linköping,Sweden,EU,"11th edition",FKM,HHM,HRA,2017-08-30,
+826,"Tournoi de forum français",September/2006:July/2007,2007,2006-09-30,FORUM_06,Internet,Web,VASL,"1th edition",VYX,,,2017-08-30,
+827,"Tournoi de forum français",October/2007:April/2008,2008,2007-10-31,FORUM_08,Internet,Web,VASL,"2th edition",BCJ,BNF,SS8,2017-08-30,
+828,"Tournoi de forum français",October/2008:June/2009,2009,2008-10-31,FORUM_09,Internet,Web,VASL,"3th edition",SS8,BCJ,,2017-08-30,
+829,"Tournoi de forum français",October/2009:June/2010,2010,2009-10-31,FORUM_10,Internet,Web,VASL,"4th edition",FEG,B3P,LNL,2017-08-30,
+830,"Tournoi de forum français",February-December,2011,2011-02-28,FORUM_11,Internet,Web,VASL,"5th edition",C2L,B7C,,2017-08-30,
+831,"Tournoi de forum français",February-December,2012,2012-02-29,FORUM_12,Internet,Web,VASL,"5th edition",VYX,C2L,,2017-08-30,
+832,"Tournoi du forum francais",November/2012:November/2013,2013,2012-11-30,FORUM_13,Internet,Web,VASL,"6th edition",RRP,NOB,C2L,2017-08-30,
+833,"Tournoi du forum francais",November/2013:September/2014,2014,2013-12-01,FORUM_14,Internet,Web,VASL,"7th edition",LNL,C2L,PTA,2017-08-30,
+834,"Gatteo Mare",April,2008,2008-04-25,GATT_08,"Gatteo Mare",Italy,EU,"1th edition",IAS,PIC,MAG,2017-08-30,
+835,"Gatteo Mare",May,2009,2009-05-01,GATT_09,"Gatteo Mare",Italy,EU,"2th edition",BYA,IAS,PIN,2017-08-30,
+836,"Ginger Drinkers",September,2014,2014-09-14,GINGR_14,Hong-Kong,China,hidden,"1th edition",LUE,,,2017-08-30,
+837,Grenadier,November,2001,2001-11-02,GREN_01,Hergarten,Germany,EU,"3th edition",HLS,,,2017-08-30,
+838,Grenadier,November,2002,2002-11-08,GREN_02,Hergarten,Germany,EU,"4th edition",PGT,,,2017-08-30,
+839,Grenadier,November,2003,2003-11-07,GREN_03,Hergarten,Germany,EU,"5th edition",SFP,,,2017-08-30,
+840,Grenadier,November,2004,2004-11-05,GREN_04,Oberbettingen,Germany,EU,"6th edition",KRC,,,2017-08-30,
+841,Grenadier,November,2005,2005-11-04,GREN_05,Oberbettingen,Germany,EU,"7th edition",MIC,OSM,VND,2017-08-30,
+842,Grenadier,November,2006,2006-11-03,GREN_06,Oberbettingen,Germany,EU,"8th edition",RRP,HLS,BXP,2017-08-30,
+843,Grenadier,November,2007,2007-11-02,GREN_07,Oberbettingen,Germany,EU,"9th edition",BXP,HEC,KRC,2017-08-30,
+844,Grenadier,November,2008,2008-11-07,GREN_08,Hergarten,Germany,EU,"10th edition",SFP,BNF,GNR,2017-08-30,
+845,Grenadier,November,2009,2009-11-06,GREN_09,Hergarten,Germany,EU,"11th edition",TEG,WNR,HEC,2017-08-30,
+846,Grenadier,November,2010,2010-11-05,GREN_10,Hergarten,Germany,EU,"12th edition",NOB,MNG,SFP,2017-08-30,
+847,Grenadier,November,2011,2011-11-11,GREN_11,Hergarten,Germany,EU,"13th edition",PEC,BXP,KIT,2017-08-30,
+848,Grenadier,November,2012,2012-11-02,GREN_12,Hergarten,Germany,EU,"14th edition",HLS,KTA,KRC,2017-08-30,
+849,Grenadier,November,2013,2013-11-08,GREN_13,Hergarten,Germany,EU,"15th edition",TEG,DHR,BNF,2017-08-30,
+850,Grenadier,November,2014,2014-11-14,GREN_14,Hergarten,Germany,EU,"16th edition",TID,HLS,HZS,2017-08-30,
+851,Grenadier,November,2015,2015-11-13,GREN_15,Hergarten,Germany,EU,"17th edition",TEG,BEH,MIC,2017-08-30,
+852,Grenadier,November,2016,2016-11-04,GREN_16,Hergarten,Germany,EU,"18th edition",MIC,VND,HEC,2017-08-30,
+853,"Hero Tournament",March,2005,2005-03-25,HERO_05,Blackpool,UK,EU,"2th edition",PGT,TRD,MHD,2017-08-30,
+854,"Hero Tournament",March,2006,2006-03-09,HERO_06,Blackpool,UK,EU,"3th edition",PGT,MHD,EST,2017-08-30,
+855,"Hero Tournament",April,2007,2007-03-23,HERO_07,Blackpool,UK,EU,"4th edition",TRD,BET,DRP,2017-08-30,
+856,"Hero Tournament",March,2008,2008-03-07,HERO_08,Blackpool,UK,EU,"5th edition",BET,VAM,BNG,2017-08-30,
+857,"Hero Tournament",March,2009,2009-03-12,HERO_09,Blackpool,UK,EU,"6th edition",MHD,BER,,2017-08-30,
+858,"Hero Tournament",March,2010,2010-03-12,HERO_10,Blackpool,UK,EU,"7th edition",DRP,PRS,BER,2017-08-30,
+859,"Hero Tournament",March,2011,2011-03-11,HERO_11,Blackpool,UK,EU,"8th edition",TEG,EST,J1P,2017-08-30,
+860,"Hero Tournament",March,2012,2012-03-09,HERO_12,Blackpool,UK,EU,"9th edition",BNC,BER,PRS,2017-08-30,
+861,"Hero Tournament",March,2013,2013-03-06,HERO_13,Blackpool,UK,EU,"10th edition",BNC,BER,SRB,2017-08-30,
+862,"Hero Tournament",March,2014,2014-03-05,HERO_14,Blackpool,UK,EU,"11th edition",BNC,VAM,BER,2017-08-30,
+863,"Hero Tournament",March,2015,2015-03-04,HERO_15,Blackpool,UK,EU,"12th edition",BNC,VAM,BER,2017-08-30,
+864,"Hero Tournament",March,2016,2016-03-09,HERO_16,Blackpool,UK,EU,"13th edition",SHS,BSW,DSM,2017-08-30,
+865,"Hero Tournament",March,2017,2017-03-01,HEROE_17,Blackpool,UK,EU,"14th edition",MSI,SHS,BER,2017-08-30,
+866,"Intensive Fire",October,2007,2007-10-27,IF_07,Bournemouth,UK,EU,"12th edition",DRP,,,2017-08-30,
+867,"Intensive Fire",October,2008,2008-10-25,IF_08,Bournemouth,UK,EU,"13th edition",MHD,,,2017-08-30,
+868,"Intensive Fire",October,2009,2009-10-22,IF_09,Bournemouth,UK,EU,"15th edition",BER,,,2017-08-30,
+869,"Intensive Fire",October,2010,2010-10-30,IF_10,Bournemouth,UK,EU,"16th edition",SDD,,,2017-08-30,
+870,"Intensive Fire",October,2011,2011-10-26,IF_11,Bournemouth,UK,EU,"17th edition",MST,,,2017-08-30,
+871,"Intensive Fire",October,2012,2012-10-28,IF_12,Bournemouth,UK,EU,"18th edition",BNC,BNG,GGE,2017-08-30,
+872,"Intensive Fire",November,2014,2014-11-09,IF_14,Bournemouth,UK,EU,"20th edition",,,,2017-08-30,
+873,"Intensive Fire",November,2015,2015-11-04,IF_15,Bournemouth,UK,EU,"21th edition",,,,2017-08-30,
+874,"Intensive Fire",November,2016,2016-11-02,IF_16,Bournemouth,UK,EU,"22th edition",,,,2017-08-30,
+875,"ASL ITALIA",September,2006,2006-09-08,ITAL_06,Verona,Italia,EU,"1th edition",TEG,PIA,MIC,2017-08-30,
+876,"ASL ITALIA",September,2007,2007-09-07,ITAL_07,Verona,Italia,EU,"2th edition",SEA,DAU,IAS,2017-08-30,
+877,"ASL ITALIA",September,2008,2008-09-05,ITAL_08,Verona,Italia,EU,"3th edition",DAU,DHR,ASM,2017-08-30,
+878,"ASL ITALIA",September,2009,2009-09-11,ITAL_09,Verona,Italia,EU,"4th edition",DAU,PIA,GOM,2017-08-30,
+879,"ASL ITALIA",September,2010,2010-09-10,ITAL_10,Verona,Italia,EU,"5th edition",GOM,DHR,SS8,2017-08-30,
+880,"ASL ITALIA",June,2011,2011-06-03,ITAL_11,Carimate,Italia,EU,"6th edition",DAU,OIA,COE,2017-08-30,
+881,"ASL ITALIA",June,2012,2012-06-15,ITAL_12,Carimate,Italia,EU,"7th edition",TEG,SS8,GOM,2017-08-30,
+882,"ASL ITALIA",June,2013,2013-06-14,ITAL_13,Carimate,Italia,EU,"8th edition",COE,WAB,DAU,2017-08-30,
+883,"ASL ITALIA",June,2014,2014-06-06,ITAL_14,Carimate,Italia,EU,"9th edition",GOM,BXP,7SA,2017-08-30,
+884,"ASL ITALIA",May,2015,2015-05-08,ITAL_15,"San Marino",Italia,EU,"10th edition",COA,,,2017-08-30,
+885,"Juno Bear",June,2010,2010-10-12,JUNO_10,Sydney,Australia,other,"0th edition",MTM,SEP,WED,2017-08-30,
+886,"Juno Bear",June,2014,2014-06-07,JUNO_14,Sydney,Australia,other,"0th edition",,,,2017-08-30,
+887,"Juno Bear",June,2015,2015-06-14,JUNO_15,Sydney,Australia,other,"0th edition",,,,2017-08-30,
+888,"Juno Bear",June,2016,2016-06-11,JUNO_16,Sydney,Australia,other,"0th edition",,,,2017-08-30,
+889,"Cyber VASL","June/17: February/18",2018,2018-06-30,CYBER_VII,Internet,Web,PBEM,,,,,2020-07-07,
+890,"VASL Top League",January-November,2013,2013-02-28,LEAG0_13,Internet,Web,VASL,"7th edition",CNN,,,2017-08-30,
+891,"VASL Top League",January-November,2014,2014-02-28,LEAG0_14,Internet,Web,VASL,"8th edition",BNF,,,2017-08-30,
+892,"VASL Top League",January-December,2015,2015-03-01,LEAG0_15,Internet,Web,VASL,"9th edition",NAC,FYG,LRP,2017-08-30,
+893,"VASL Top League",January-December,2016,2016-03-01,LEAG0_16,Internet,Web,VASL,"10th edition",FYG,YGK,COA,2017-08-30,
+894,"VASL European and Oceanian League",January-November,2013,2013-02-28,LEAG1_13,Internet,Web,VASL,"0th edition",COA,,,2017-08-30,
+895,"VASL European and Oceanian League",January-November,2014,2014-02-28,LEAG1_14,Internet,Web,VASL,"0th edition",C2E,,,2017-08-30,
+896,"VASL European and Oceanian League",January-December,2015,2015-03-01,LEAG1_15,Internet,Web,VASL,"9th edition",LNL,FGW,TEL,2017-08-30,
+897,"VASL European and Oceanian League",January-December,2016,2016-03-01,LEAG1_16,Internet,Web,VASL,"10th edition",MIC,TEL,C8M,2017-08-30,
+898,"VASL Eastern US and Canada League",January-November,2013,2013-02-28,LEAG2_13,Internet,Web,VASL,"0th edition",ROV,,,2017-08-30,
+899,"VASL Eastern US and Canada League",January-November,2014,2014-02-28,LEAG2_14,Internet,Web,VASL,"0th edition",LrR1,,,2017-08-30,
+900,"VASL Eastern US and Canada League",January-December,2015,2015-02-27,LEAG2_15,Internet,Web,VASL,"9th edition",YGK,HTS,WAB,2017-08-30,
+901,"VASL Eastern US and Canada League",January-December,2016,2016-03-01,LEAG2_16,Internet,Web,VASL,"10th edition",PMD,,,2017-08-30,
+902,"VASL Western US League",January-December,2013,2013-02-28,LEAG3_13,Internet,Web,VASL,"0th edition",,,,2017-08-30,
+903,"VASL Western US League",January-December,2014,2014-02-28,LEAG3_14,Internet,Web,VASL,"0th edition",,,,2017-08-30,
+904,"VASL Western US League",January-December,2015,2015-03-01,LEAG3_15,Internet,Web,VASL,"9th edition",RLB,VC1,BE3,2017-08-30,
+905,"VASL Western US League",January-December,2016,2016-03-01,LEAG3_16,Internet,Web,VASL,"10th edition",PMD,RGL,LYD,2017-08-30,
+906,"VASL Second Line League",January-December,2016,2016-03-01,LEAG4_16,Internet,Web,VASL,"10th edition",BLJ,,,2017-08-30,
+907,"Friendly Fire",September,2003,2003-09-07,LINK_03,Linköping,Sweden,EU,"1th edition",SDM,MEJ,MAR,2017-08-30,
+908,"Friendly Fire",September,2004,2004-09-04,LINK_04,Linköping,Sweden,EU,"2th edition",SDM,MMK,CNA,2017-08-30,
+909,"Friendly Fire",August,2005,2005-08-26,LINK_05,Linköping,Sweden,EU,"3th edition",FKM,MMK,SDM,2017-08-30,
+910,"Friendly Fire",August,2006,2006-08-25,LINK_06,Linköping,Sweden,EU,"4th edition",RMM,SNJ,QTD,2017-08-30,
+911,"Friendly Fire",September,2007,2007-09-07,LINK_07,Linköping,Sweden,EU,"5th edition",FKM,RMM,PNT,2017-08-30,
+912,"Friendly Fire",August,2008,2008-08-29,LINK_08,Linköping,Sweden,EU,"6th edition",FKM,LRE,SDM,2017-08-30,
+913,"Friendly Fire",August,2009,2009-08-28,LINK_09,Linköping,Sweden,EU,"7th edition",SDM,FKM,BIE,2017-08-30,
+914,"Friendly Fire",September,2010,2010-09-03,LINK_10,Linköping,Sweden,EU,"8th edition",MMK,SSB,SDM,2017-08-30,
+915,"Friendly Fire",September,2011,2011-09-02,LINK_11,Linköping,Sweden,EU,"9th edition",SSB,CNA,SDM,2017-08-30,
+916,"Friendly Fire",August,2013,2013-08-23,LINK_13,Linköping,Sweden,EU,"10th edition",SSB,FKM,HHM,2017-08-30,
+917,"Friendly Fire",September,2015,2015-09-04,LINK_15,Linköping,Sweden,hidden,"12th edition",FKM,LND,HNE,2017-08-30,
+918,Villeurbanne,April,2011,2011-04-23,LYON_11,Villeurbanne,France,EU,"1th edition",HUJ,TEG,,2017-08-30,
+919,Villeurbanne,March-April,2012,2012-03-30,LYON_12,Villeurbanne,France,EU,"2th edition",BNF,GDC,BIM,2017-08-30,
+920,Villeurbanne,March,2013,2013-03-22,LYON_13,Villeurbanne,France,EU,"3th edition",BNF,BXP,NOB,2017-08-30,
+921,Villeurbanne,March,2014,2014-03-28,LYON_14,Villeurbanne,France,EU,"4th edition",BXP,BNF,,2017-08-30,
+922,Villeurbanne,March,2015,2015-03-27,LYON_15,Villeurbanne,France,EU,"5th edition",BNF,,,2017-08-30,
+923,"Street Fighting in Sioux City (MAGE Fall Con)",September,2004,2004-09-04,MAGEF_04,"Sioux City, IA",USA,US/Ca,"0th edition",LRP,,,2017-08-30,
+924,"Street Fighting in Sioux City (MAGE Fall Con)",September,2005,2005-10-01,MAGEF_05,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,,,2017-08-30,
+925,"Street Fighting in Sioux City (MAGE Fall Con)",September,2006,2006-10-01,MAGEF_06,"Sioux City, IA",USA,US/Ca,"0th edition",,,,2017-08-30,
+926,"Street Fighting in Sioux City (MAGE Fall Con)",September,2007,2007-09-01,MAGEF_07,"Sioux City, IA",USA,US/Ca,"0th edition",RTB,NN1,,2017-08-30,
+927,"Street Fighting in Sioux City (MAGE Fall Con)",August,2008,2008-08-30,MAGEF_08,"Sioux City, IA",USA,US/Ca,"0th edition",WSP,NN1,,2017-08-30,
+928,"Street Fighting in Sioux City (MAGE Fall Con)",September,2009,2009-09-05,MAGEF_09,"Sioux City, IA",USA,US/Ca,"0th edition",KAJ,ETS,W2R,2017-08-30,
+929,"Street Fighting in Sioux City (MAGE Fall Con)",September,2010,2010-09-04,MAGEF_10,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,B5B,,2017-08-30,
+930,"Fall Sioux City ASL Tournament",September,2011,2011-09-03,MAGEF_11,"Sioux City, IA",USA,US/Ca,"0th edition",LRP,NN1,LH7,2017-08-30,
+931,"Street Fighting in Sioux City (MAGE Fall Con)",September,2012,2012-09-01,MAGEF_12,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,,,2017-08-30,
+932,"Street Fighting in Sioux City (MAGE Fall Con)",August-September,2013,2013-08-31,MAGEF_13,"Sioux City, IA",USA,US/Ca,"0th edition",BUM,WRN,,2017-08-30,
+933,"Street Fighting in Sioux City (MAGE Fall Con)",August,2014,2014-08-30,MAGEF_14,"Sioux City, IA",USA,US/Ca,"0th edition",LZB,KAJ,LRP,2017-08-30,
+934,"Street Fighting in Sioux City (MAGE Spring Con)",April,2006,2006-04-01,MAGES_06,"Sioux City, IA",USA,US/Ca,"0th edition",ZTL,,,2017-08-30,
+935,"Street Fighting in Sioux City (MAGE Spring Con)",April-September,2008,2008-04-25,MAGES_08,"Sioux City, IA",USA,US/Ca,"0th edition",B4D,M3T,B5B,2017-08-30,
+936,"Street Fighting in Sioux City (MAGE Spring Con)",April,2009,2009-04-25,MAGES_09,"Sioux City, IA",USA,US/Ca,"0th edition",KAJ,ZTL,NN1,2017-08-30,
+937,"Street Fighting in Sioux City (MAGE Spring Con)",April,2010,2010-04-24,MAGES_10,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,B5B,,2017-08-30,
+938,"Street Fighting in Sioux City (MAGE Spring Con)",April,2012,2012-04-21,MAGES_12,"Sioux City, IA",USA,US/Ca,"0th edition",NN1,KAJ,,2017-08-30,
+939,"Street Fighting in Sioux City (MAGE Spring Con)",April,2013,2013-04-27,MAGES_13,"Sioux City, IA",USA,US/Ca,"0th edition",KAJ,WRN,ZTL,2017-08-30,
+940,"VASL Major League",January-December,2007,2007-02-01,MAJOR_07,Internet,Web,PBEM,"0th edition",PIA,COE,HEO,2017-08-30,
+941,"VASL Major League",January-December,2008,2008-02-01,MAJOR_08,Internet,Web,PBEM,"0th edition",TRA,COE,CE3,2017-08-30,
+942,"VASL Major League",January-December,2009,2009-02-28,MAJOR_09,Internet,Web,PBEM,"0th edition",TRA,TAG,RIT,2017-08-30,
+943,"VASL Major League",January-December,2010,2010-02-28,MAJOR_10,Internet,Web,PBEM,"0th edition",FYG,PIA,WAB,2017-08-30,
+944,"Manitoba ASL Open",September,2012,2012-09-08,MANIT_12,"Winnipeg, Manitoba",Canada,US/Ca,"1th edition",KLS,LTR,HL7,2017-08-30,
+945,"March Madness",March,2006,2006-03-10,MARCH_06,"Kansas City",USA,US/Ca,"1th edition",RHB,MRR,BYG,2017-08-30,
+946,"March Madness",March,2007,2007-03-09,MARCH_07,"Kansas City",USA,US/Ca,"2th edition",BSI,DRS,SSW,2017-08-30,
+947,"March Madness",March,2008,2008-03-14,MARCH_08,"Kansas City",USA,US/Ca,"3th edition",VNW,NN1,KKD,2017-08-30,
+948,"March Madness",March,2009,2009-03-13,MARCH_09,"Kansas City",USA,US/Ca,"4th edition",BSI,SZR,TAG,2017-08-30,
+949,"March Madness",March,2010,2010-03-12,MARCH_10,"Kansas City",USA,US/Ca,"5th edition",BSI,DGJ,DNM,2017-08-30,
+950,"March Madness",March,2011,2011-03-18,MARCH_11,"Kansas City",USA,US/Ca,"6th edition",KKD,VNW,WRN,2017-08-30,
+951,"March Madness",March,2012,2012-03-16,MARCH_12,"Kansas City",USA,US/Ca,"7th edition",ZCM,NN1,RHR,2017-08-30,
+952,"March Madness",March,2013,2013-03-22,MARCH_13,"Kansas City",USA,US/Ca,"8th edition",PAD,RHB,KKD,2017-08-30,
+953,"March Madness",March,2014,2014-03-16,MARCH_14,"Kansas City",USA,US/Ca,"9th edition",BSI,M21,KKD,2017-08-30,
+954,"March Madness",March,2015,2015-03-15,MARCH_15,"Kansas City",USA,US/Ca,"10th edition",KKD,KKD,SYK,2017-08-30,
+955,"March Madness",March,2016,2016-03-19,MARCH_16,"Kansas City",USA,US/Ca,"11th edition",M21,ASK,BSI,2017-08-30,
+956,"March Madness",March,2017,2017-03-17,MARCH_17,"Kansas City",USA,US/Ca,"12th edition",M21,ASK,BSI,2017-08-30,
+957,"VASL Central US Warman League",January-December,2007,2007-02-01,MINC_07,Internet,Web,VASL,"0th edition",GRE,LRP,NAC,2017-08-30,
+958,"VASL Central US Warman League",January-December,2008,2008-02-01,MINC_08,Internet,Web,VASL,"0th edition",YGK,WSS,HY2,2017-08-30,
+959,"VASL Central US Warman League",January-December,2009,2009-02-28,MINC_09,Internet,Web,VASL,"0th edition",EEM,MISSING-4,HGG,2017-08-30,
+960,"VASL Central US and Canada League",January-December,2010,2010-02-28,MINC_10,Internet,Web,VASL,"0th edition",HNI,FNR,MSD,2017-08-30,
+961,"VASL Central/West US and Canada League",January-December,2011,2011-03-01,MINC_11,Internet,Web,VASL,"0th edition",BN2,HYT,WRH,2017-08-30,
+962,"VASL West/Central US and Canada League","January-November ",2012,2012-02-29,MINC_12,Internet,Web,VASL,"0th edition",SFN,RGL,JND,2017-08-30,
+963,"VASL European Minor League",January-December,2007,2007-02-01,MINEU_07,Internet,Web,VASL,"0th edition",MIF,GRC,MISSING-6,2017-08-30,
+964,"VASL European Minor League",January-December,2008,2008-02-01,MINEU_08,Internet,Web,VASL,"0th edition",JDL,IAS,SEA,2017-08-30,
+965,"VASL European Minor League",January-December,2009,2009-02-28,MINEU_09,Internet,Web,VASL,"0th edition",BLJ,SYA,MIC,2017-08-30,
+966,"VASL European and Oceanian League",January-December,2010,2010-02-28,MINEU_10,Internet,Web,VASL,"0th edition",BNF,HEO,VAM,2017-08-30,
+967,"VASL European and Oceanian League",January-December,2011,2011-02-01,MINEU_11,Internet,Web,VASL,"0th edition",OIA,CIL,CNN,2017-08-30,
+968,"VASL European and Oceanian League",January-November,2012,2012-02-29,MINEU_12,Internet,Web,VASL,"0th edition",NOB,PES,H1M,2017-08-30,
+969,"VASL Eastern US League",January-December,2008,2008-02-01,MINE_08,Internet,Web,VASL,"0th edition",KYM,MIK,RAE,2017-08-30,
+970,"VASL Eastern US League",January-December,2009,2009-02-28,MINE_09,Internet,Web,VASL,"0th edition",BPJ,FYG,WS1,2017-08-30,
+971,"VASL Eastern US and Canada League",January-December,2010,2010-02-28,MINE_10,Internet,Web,VASL,"0th edition",DHR,CDP,GRE,2017-08-30,
+972,"VASL Eastern US and Canada League",January-December,2011,2011-03-01,MINE_11,Internet,Web,VASL,"0th edition",CEJ,AGS,CMD,2017-08-30,
+973,"VASL Eastern US and Canada League",January-November,2012,2012-02-29,MINE_12,Internet,Web,VASL,"0th edition",CSB,WN3,CMD,2017-08-30,
+974,"VASL US III League",January-December,2007,2007-02-01,MINUS_07,Internet,Web,VASL,"0th edition",TRA,TAG,KGS,2017-08-30,
+975,"VASL Western US League",January-December,2008,2008-02-01,MINW_08,Internet,Web,VASL,"0th edition",KGS,TN2,CLR,2017-08-30,
+976,"Malaya Madness",February,2014,2014-02-21,MLAYA_14,Singapore,Malaya,other,"1th edition",B1G,,,2017-08-30,
+977,"Rencontres ASL",January-February,2003,2003-01-30,NAMU_03,Namur,Belgium,EU,"1th edition",,,,2017-08-30,
+978,"Rencontres ASL",February,2005,2005-01-30,NAMU_05,Namur,Belgium,EU,"2th edition",,,,2017-08-30,
+979,NOR-EASTER,March-April,2000,2000-03-31,NOR-E_00,"Marlborough, MA",USA,US/Ca,"0th edition",PAS,NAC,FOC,2017-08-30,
+980,NOR-EASTER,March,2001,2001-03-23,NOR-E_01,"Marlborough, MA",USA,US/Ca,"0th edition",PAS,AGM,LEE,2017-08-30,
+981,NOR-EASTER,March,2002,2002-03-22,NOR-E_02,"Marlborough, MA",USA,US/Ca,"0th edition",DE2,NNL,MNT,2017-08-30,
+982,NOR-EASTER,March,2003,2003-03-28,NOR-E_03,"Marlborough, MA",USA,US/Ca,"0th edition",PAS,,,2017-08-30,
+983,NOR-EASTER,March,2004,2004-03-19,NOR-E_04,"Marlborough, MA",USA,US/Ca,"0th edition",MNT,JSS,CED,2017-08-30,
+984,NOR-EASTER,March,2005,2005-03-11,NOR-E_05,"Marlborough, MA",USA,US/Ca,"0th edition",PAS,NAC,TNI,2017-08-30,
+985,NOR-EASTER,March,2006,2006-03-17,NOR-E_06,"Marlborough, MA",USA,US/Ca,"0th edition",SUP,NAC,MNT,2017-08-30,
+986,NOR-EASTER,March,2007,2007-03-23,NOR-E_07,"Marlborough, MA",USA,US/Ca,"0th edition",DE2,WAB,MIG,2017-08-30,
+987,NOR-EASTER,March,2008,2008-03-14,NOR-E_08,"Marlborough, MA",USA,US/Ca,"0th edition",NAC,SLC,TAG,2017-08-30,
+988,NOR-EASTER,March,2009,2009-03-20,NOR-E_09,"Marlborough, MA",USA,US/Ca,"0th edition",SUP,LEA,DE2,2017-08-30,
+989,NOR-EASTER,March,2010,2010-03-19,NOR-E_10,"Boxborough, MA",USA,US/Ca,"14th edition",LEA,CDP,AGM,2017-08-30,
+990,NOR-EASTER,March,2011,2011-03-18,NOR-E_11,"Boxborough, MA",USA,US/Ca,"15th edition",TAG,LEA,ANT,2017-08-30,
+991,NOR-EASTER,March,2012,2012-03-23,NOR-E_12,"Boxborough, MA",USA,US/Ca,"16th edition",MIG,SUP,JSS,2017-08-30,
+992,NOR-EASTER,March,2013,2013-03-22,NOR-E_13,"Boxborough, MA",USA,US/Ca,"17th edition",SUP,MIG,TAG,2017-08-30,
+993,NOR-EASTER,March,2014,2014-03-21,NOR-E_14,"Boxborough, MA",USA,US/Ca,"18th edition",NAC,DE2,DRS,2017-08-30,
+994,NOR-EASTER,March,2015,2015-03-20,NOR-E_15,"Boxborough, MA",USA,US/Ca,"19th edition",DE2,AGM,NAC,2017-08-30,
+995,NOR-EASTER,March-April,2016,2016-04-02,NOR-E_16,"Boxborough, MA",USA,US/Ca,"20th edition",SUP,DE2,MIG,2017-08-30,
+996,NOR-EASTER,March-April,2017,2017-03-31,NOR-E_17,"Boxborough, MA",USA,US/Ca,"21th edition",WAB,DE2,MIG,2017-08-30,
+997,NOR-EASTER,April,1999,1999-04-23,NOR-E_99,"Groton, CT",USA,US/Ca,"3th edition",OAM,RIS,LEA,2017-08-30,
+998,"Tournoi Interne Nord",June,2001,2001-06-01,NORD_01,Lille,France,EU,"1th edition",,,,2017-08-30,
+999,"Northwest ASL Championship",February,2012,2012-02-17,NWEST_12,"Issaquah (WA)",USA,US/Ca,"0th edition",WYI,JSI,DYS,2017-08-30,
+1000,"Northwest ASL Championship",February,2013,2013-02-09,NWEST_13,"Issaquah (WA)",USA,US/Ca,"0th edition",WY1,K2G,,2017-08-30,
+1001,"Northwest ASL Championship",February,2014,2014-02-07,NWEST_14,"Issaquah (WA)",USA,US/Ca,"0th edition",FRL,,,2017-08-30,
+1002,"Northwest ASL Championship",February,2015,2015-02-06,NWEST_15,"Issaquah (WA)",USA,US/Ca,"0th edition",FRL,,,2017-08-30,
+1003,"Northwest ASL Championship",February,2016,2016-02-05,NWEST_16,"Issaquah (WA)",USA,hidden,"0th edition",,,,2017-08-30,
+1004,"Northwest ASL Championship",February,2017,2017-02-10,NWEST_17,"Issaquah (WA)",USA,hidden,"0th edition",,,,2017-08-30,
+1005,"NYS ASL Championship",December,2005,2005-12-03,NYS_05,"Albany NY",USA,US/Ca,"2th edition",PAS,VNW,LEE,2017-08-30,
+1006,"NYS ASL Championship",December,2006,2006-12-01,NYS_06,"Albany NY",USA,US/Ca,"3th edition",RNA,,,2017-08-30,
+1007,"NYS ASL Championship",November-December,2007,2007-11-30,NYS_07,"Albany NY",USA,US/Ca,"4th edition",SUP,PAS,BSB,2017-08-30,
+1008,"NYS ASL Championship",December,2008,2008-12-05,NYS_08,"Albany NY",USA,US/Ca,"5th edition",PAS,SUP,NAC,2017-08-30,
+1009,"NYS ASL Championship",December,2009,2009-12-04,NYS_09,"Albany NY",USA,US/Ca,"6th edition",TYJ,RIR,SUP,2017-08-30,
+1010,"NYS ASL Championship",December,2010,2010-12-03,NYS_10,"Albany NY",USA,US/Ca,"7th edition",BSB,MIG,SUP,2017-08-30,
+1011,"NYS ASL Championship",December,2011,2011-12-02,NYS_11,"Albany NY",USA,US/Ca,"8th edition",RNA,TYJ,BSB,2017-08-30,
+1012,"NYS ASL Championship",November-December,2012,2012-11-30,NYS_12,"Albany NY",USA,US/Ca,"9th edition",PAS,FYG,HNB,2017-08-30,
+1013,"NYS ASL Championship",December,2013,2013-12-06,NYS_13,"Albany NY",USA,US/Ca,"10th edition",MIG,SUP,NAC,2017-08-30,
+1014,"NYS ASL Championship",December,2014,2014-12-05,NYS_14,"Albany NY",USA,US/Ca,"11th edition",SUP,HNB,CDP,2017-08-30,
+1015,"NYS ASL Championship",December,2015,2015-12-04,NYS_15,"Albany NY",USA,US/Ca,"12th edition",TYJ,SFP,CDP,2017-08-30,
+1016,"NYS ASL Championship",December,2016,2016-12-01,NYS_16,"Albany NY",USA,US/Ca,"13th edition",SUP,HHM,CNC,2017-08-30,
+1017,"ASL OPEN",April,2002,2002-04-26,OPEN_02,"Chicago,IL",USA,US/Ca,"0th edition",HNB,PSO,KKD,2017-08-30,
+1018,"ASL OPEN",April-May,2005,2005-04-29,OPEN_05,"Chicago,IL",USA,US/Ca,"0th edition",MRO,,,2017-08-30,
+1019,"ASL OPEN",March-April,2006,2006-03-31,OPEN_06,"Chicago,IL",USA,US/Ca,"0th edition",RIR,,,2017-08-30,
+1020,"ASL OPEN",April,2007,2007-04-13,OPEN_07,"Chicago,IL",USA,US/Ca,"0th edition",BSB,SGP,DSN,2017-08-30,
+1021,"ASL OPEN",April,2008,2008-04-04,OPEN_08,"Chicago,IL",USA,US/Ca,"0th edition",HNB,,,2017-08-30,
+1022,"ASL OPEN",April,2009,2009-04-03,OPEN_09,"Chicago,IL",USA,US/Ca,"0th edition",BSB,,,2017-08-30,
+1023,"ASL OPEN",April,2010,2010-04-09,OPEN_10,"Chicago,IL",USA,US/Ca,"0th edition",RIR,SYI,JNS,2017-08-30,
+1024,"ASL OPEN",April,2011,2011-04-01,OPEN_11,"Chicago,IL",USA,US/Ca,"0th edition",HNB,BCR,KKD,2017-08-30,
+1025,"ASL OPEN",April,2012,2012-04-20,OPEN_12,"Chicago,IL",USA,US/Ca,"0th edition",HMB,DHR,HDB,2017-08-30,
+1026,"ASL OPEN",April,2013,2013-04-12,OPEN_13,"Chicago,IL",USA,US/Ca,"0th edition",ZZM,HDB,KKD,2017-08-30,
+1027,"ASL OPEN",April,2014,2014-04-11,OPEN_14,"Chicago,IL",USA,US/Ca,"0th edition",SYI,JNS,DSS,2017-08-30,
+1028,"ASL OPEN",April,2015,2015-04-24,OPEN_15,"Chicago,IL",USA,US/Ca,"0th edition",YRT,VNW,JNS,2017-08-30,
+1029,"ASL OPEN",April,2016,2016-04-15,OPEN_16,"Chicago,IL",USA,US/Ca,"0th edition",HNB,DHR,VNW,2017-08-30,
+1030,"ASL OPEN",March-April,2017,2017-03-30,OPEN_17,"Chicago,IL",USA,US/Ca,"0th edition",HNB,VNW,BSC,2017-08-30,
+1031,"ASL Ring",June,2001,2001-06-02,RING_01,"Villeneuve d'Ascq",France,EU,"11th edition",TSY,BXP,BNF,2017-08-30,
+1032,"ASL Ring",May,2002,2002-05-18,RING_02,"Villeneuve d'Ascq",France,EU,"12th edition",TEG,MIC,BNF,2017-08-30,
+1033,"ASL Ring",June,2003,2003-06-07,RING_03,"Villeneuve d'Ascq",France,EU,"13th edition",SFP,GDC,DTP,2017-08-30,
+1034,"ASL Ring",June-July,2004,2004-06-29,RING_04,"Villeneuve d'Ascq",France,EU,"14th edition",GDC,BXP,BNF,2017-08-30,
+1035,"ASL Ring",May,2005,2005-05-14,RING_05,"Villeneuve d'Ascq",France,EU,"15th edition",NOB,MIC,PTJ,2017-08-30,
+1036,"ASL Ring",June,2006,2006-06-03,RING_06,"Villeneuve d'Ascq",France,EU,"16th edition",SFP,COP,RRP,2017-08-30,
+1037,"ASL Ring",May,2007,2007-05-26,RING_07,"Villeneuve d'Ascq",France,EU,"17th edition",TEG,NOB,LRJ,2017-08-30,
+1038,"ASL Ring",May,2008,2008-05-11,RING_08,"Villeneuve d'Ascq",France,EU,"18th edition",TEG,REA,BNF,2017-08-30,
+1039,"ASL Ring",May,2009,2009-05-29,RING_09,"Villeneuve d'Ascq",France,EU,"19th edition",FTL,BXP,GDC,2017-08-30,
+1040,"ASL Ring",May,2010,2010-05-21,RING_10,"Villeneuve d'Ascq",France,EU,"20th edition",TEG,BNF,GDC,2017-08-30,
+1041,"ASL Ring",June,2011,2011-06-10,RING_11,"Villeneuve d'Ascq",France,EU,"21th edition",TEG,HLS,KTA,2017-08-30,
+1042,"ASL Ring",May,2012,2012-05-25,RING_12,"Villeneuve d'Ascq",France,EU,"22th edition",TEG,BNF,C2L,2017-08-30,
+1043,"ASL Ring",May,2013,2013-05-17,RING_13,"Villeneuve d'Ascq",France,EU,"23th edition",TEG,RRP,FTL,2017-08-30,
+1044,"ASL Ring",June,2014,2014-06-06,RING_14,"Villeneuve d'Ascq",France,EU,"24th edition",FTL,KTA,HLS,2017-08-30,
+1045,"ASL Ring",June,2015,2015-06-05,RING_15,"Villeneuve d'Ascq",France,EU,"25th edition",MNG,BXP,BSF,2017-08-30,
+1046,"ASL Ring",May,2016,2016-05-13,RING_16,"Villeneuve d'Ascq",France,EU,"26th edition",BIM,DHO,NOB,2017-08-30,
+1047,"ASL Ring",June,2017,2017-06-01,RING_17,"Villeneuve d'Ascq",France,EU,"27th edition",HZS,NOB,BXP,2020-06-24,
+1048,"Stockholm ASL",May-June,2003,2003-05-30,SAT_03,Stockholm,Sweden,EU,"1th edition",FKM,RGC,LZJ,2017-08-30,
+1049,"Stockholm ASL",May,2004,2004-05-21,SAT_04,Stockholm,Sweden,EU,"2th edition",MGP,FKM,SNJ,2017-08-30,
+1050,"Stockholm ASL",May,2005,2005-05-06,SAT_05,Stockholm,Sweden,EU,"3th edition",FKM,GNO,SDM,2017-08-30,
+1051,"Stockholm ASL",May,2006,2006-05-26,SAT_06,Stockholm,Sweden,EU,"4th edition",GNO,SDM,RGC,2017-08-30,
+1052,"Stockholm ASL",May,2007,2007-05-18,SAT_07,Stockholm,Sweden,EU,"5th edition",MGP,MMK,SDM,2017-08-30,
+1053,"Stockholm ASL",May,2008,2008-05-02,SAT_08,Stockholm,Sweden,EU,"6th edition",HNP,FKM,SDM,2017-08-30,
+1054,"Stockholm ASL",May,2009,2009-05-22,SAT_09,Stockholm,Sweden,EU,"7th edition",SDM,GNO,FKM,2017-08-30,
+1055,"Stockholm ASL",May,2010,2010-05-14,SAT_10,Stockholm,Sweden,EU,"8th edition",GNO,RMM,SDM,2017-08-30,
+1056,"Stockholm ASL",June,2011,2011-06-03,SAT_11,Stockholm,Sweden,EU,"9th edition",FKM,,,2017-08-30,
+1057,"Stockholm ASL",May,2012,2012-05-18,SAT_12,Stockholm,Sweden,EU,"10th edition",HNP,FKM,,2017-08-30,
+1058,"Stockholm ASL",May,2013,2013-05-10,SAT_13,Stockholm,Sweden,EU,"11th edition",FKM,C2E,KIT,2017-08-30,
+1059,"Stockholm ASL",May-June,2014,2014-05-30,SAT_14,Stockholm,Sweden,EU,"12th edition",FKM,,,2017-08-30,
+1060,"Stockholm ASL",May-June,2015,2015-05-15,SAT_15,Stockholm,Sweden,EU,"13th edition",CNA,,,2017-08-30,
+1061,"Stockholm ASL",May-June,2016,2016-05-06,SAT_16,Stockholm,Sweden,EU,"14th edition",FKM,CNA,,2017-08-30,
+1062,"Scandinavian Open",February,2000,2000-02-25,SCO_00,Copenhagen,Denmark,EU,"3th edition",TEG,,FKM,2017-08-30,
+1063,"Scandinavian Open",February,2001,2001-02-01,SCO_01,Copenhagen,Denmark,EU,"4th edition",TEG,FKM,CNN,2017-08-30,
+1064,"Scandinavian Open",February,2002,2002-02-01,SCO_02,Copenhagen,Denmark,EU,"5th edition",TLJ,PGT,TEG,2017-08-30,
+1065,"Scandinavian Open",February,2003,2003-02-01,SCO_03,Copenhagen,Denmark,EU,"6th edition",PGT,FKM,RGC,2017-08-30,
+1066,"Scandinavian Open",February,2004,2004-02-01,SCO_04,Copenhagen,Denmark,EU,"7th edition",MLB,PGT,MGP,2017-08-30,
+1067,"Scandinavian Open",February,2005,2005-02-02,SCO_05,Copenhagen,Denmark,EU,"8th edition",PGT,FKM,LNN,2017-08-30,
+1068,"Scandinavian Open",February,2006,2006-02-22,SCO_06,Copenhagen,Denmark,EU,"9th edition",SFP,PGT,RMM,2017-08-30,
+1069,"Scandinavian Open",February,2007,2007-02-23,SCO_07,Copenhagen,Denmark,EU,"10th edition",SFP,SSB,PGT,2017-08-30,
+1070,"Scandinavian Open",February,2008,2008-02-22,SCO_08,Copenhagen,Denmark,EU,"11th edition",FKM,PGT,MMK,2017-08-30,
+1071,"Scandinavian Open",February,2009,2009-02-20,SCO_09,Copenhagen,Denmark,EU,"12th edition",FKM,MMK,COE,2017-08-30,
+1072,"Scandinavian Open",February,2010,2010-02-26,SCO_10,Copenhagen,Denmark,EU,"13th edition",PGT,FKM,BLM,2017-08-30,
+1073,"Scandinavian Open",February,2011,2011-02-25,SCO_11,Copenhagen,Denmark,EU,"14th edition",SDM,FKM,MMK,2017-08-30,
+1074,"Scandinavian Open",February,2012,2012-02-24,SCO_12,Copenhagen,Denmark,EU,"15th edition",FKM,TEG,CNA,2017-08-30,
+1075,"Scandinavian Open",February,2013,2013-02-22,SCO_13,Copenhagen,Denmark,EU,"16th edition",PGT,SEA,FKM,2017-08-30,
+1076,"Scandinavian Open",February,2014,2014-02-21,SCO_14,Copenhagen,Denmark,EU,"17th edition",FKM,WDD,TEG,2017-08-30,
+1077,"Scandinavian Open",February,1998,1998-04-03,SCO_98,Copenhagen,Denmark,EU,"1th edition",FKM,,HHM,2017-08-30,
+1078,"Scandinavian Open",February,1999,1999-02-26,SCO_99,Copenhagen,Denmark,EU,"2th edition",TEG,TRD,FKM,2017-08-30,
+1079,"Street Fighting in Sioux City (MAGE Fall Con)",September,2015,2015-09-05,SIOUX_15,"Sioux City, IA",USA,US/Ca,"0th edition",WSP,,,2017-08-30,
+1080,Sissukoni,August,2003,2003-08-01,SISSU_03,,Finland,EU,"0th edition",,,FKM,2017-08-30,
+1081,Sissukoni,August,2013,2013-08-23,SISSU_13,Helsinki,Finland,EU,"15th edition",KAT,WDA,,2017-08-30,
+1082,Sissukoni,August,2014,2014-08-22,SISSU_14,Helsinki,Finland,EU,"16th edition",VI0,LI4,KA4,2017-08-30,
+1083,Sissukoni,August,2015,2015-08-21,SISSU_15,Helsinki,Finland,EU,"17th edition",KA4,LI4,RNJ,2017-08-30,
+1084,Sissukoni,August,2016,2016-08-19,SISSU_16,Helsinki,Finland,EU,"18th edition",,,,2017-08-30,
+1085,"SL Association of Brisbane",January-May,2014,2014-01-16,SLAB_14,Brisbane,Australia,other,"1th edition",WRN,WRP,,2017-08-30,
+1086,"San Marino Con",May,2006,2006-05-13,SMAR_06,"San Marino",Italy,EU,"1th edition",PIA,DAU,,2017-08-30,
+1087,"San Marino Con",May,2007,2007-05-11,SMAR_07,"San Marino",Italy,EU,"2th edition",PIA,COA,TIM,2017-08-30,
+1088,"San Marino Con",May,2008,2008-05-16,SMAR_08,"San Marino",Italy,EU,"3th edition",DAU,COS,DOR,2017-08-30,
+1089,"San Marino Con",May,2009,2009-05-15,SMAR_09,"San Marino",Italy,EU,"4th edition",DAU,7SA,TIM,2017-08-30,
+1090,"San Marino Con",May,2013,2013-05-18,SMAR_13,"San Marino",Italy,EU,"5th edition",COA,COS,GAE,2017-08-30,
+1091,"San Marino Con",May,2014,2014-05-25,SMAR_14,"San Marino",Italy,EU,"6th edition",COA,COS,MAG,2017-08-30,
+1092,"Special Carl s : Night",April,2015,2015-04-30,SPEC1_15,Internet,Web,VASL,"1th edition",RIR,,,2017-08-30,
+1093,"Special Carl s : Desert",July,2015,2015-07-31,SPEC2_15,Internet,Web,VASL,"1th edition",,,,2017-08-30,
+1094,"Special Carl s : altogether",July,2016,2016-07-31,SPEC_16,Internet,Web,VASL,"2th edition",,,,2017-08-30,
+1095,"Saint Louis ASL Tournament",July,2000,2000-07-28,STLOU_00,"St-Louis (MO)",USA,US/Ca,"3th edition",BRS,KKD,VNW,2017-08-30,
+1096,"Saint Louis ASL Tournament",July,2001,2001-07-27,STLOU_01,"St-Louis (MO)",USA,US/Ca,"4th edition",SUP,VNW,KKD,2017-08-30,
+1097,"Saint Louis ASL Tournament",July,2002,2002-07-26,STLOU_02,"St-Louis (MO)",USA,US/Ca,"5th edition",VNW,RIR,C26,2017-08-30,
+1098,"Saint Louis ASL Tournament",July,2003,2003-07-25,STLOU_03,"St-Louis (MO)",USA,US/Ca,"6th edition",WSP,SZR,TAG,2017-08-30,
+1099,"Saint Louis ASL Tournament",July,2004,2004-07-23,STLOU_04,"St-Louis (MO)",USA,US/Ca,"7th edition",HMB,KKD,RIR,2017-08-30,
+1100,"Saint Louis ASL Tournament",July,2005,2005-07-29,STLOU_05,"St-Louis (MO)",USA,US/Ca,"8th edition",HMB,VNW,AID,2017-08-30,
+1101,"Saint Louis ASL Tournament",July,2006,2006-07-28,STLOU_06,"St-Louis (MO)",USA,US/Ca,"9th edition",TAG,KKD,ENS,2017-08-30,
+1102,"Saint Louis ASL Tournament",July,2007,2007-07-25,STLOU_07,"St-Louis (MO)",USA,US/Ca,"10th edition",BSB,BTD,GNI,2017-08-30,
+1103,"Saint Louis ASL Tournament",July,2008,2008-07-25,STLOU_08,"St-Louis (MO)",USA,US/Ca,"11th edition",VNW,GNI,HMB,2017-08-30,
+1104,"Saint Louis ASL Tournament",July,2009,2009-07-24,STLOU_09,"St-Louis (MO)",USA,US/Ca,"12th edition",VNW,ILJ,B4D,2017-08-30,
+1105,"Saint Louis ASL Tournament",July,2010,2010-07-23,STLOU_10,"St-Louis (MO)",USA,US/Ca,"13th edition",VNW,KKD,DHR,2017-08-30,
+1106,"Saint Louis ASL Tournament",July,2011,2011-07-27,STLOU_11,"St-Louis (MO)",USA,US/Ca,"14th edition",VNW,12J,WSP,2017-08-30,
+1107,"Saint Louis ASL Tournament",July,2012,2012-07-27,STLOU_12,"St-Louis (MO)",USA,US/Ca,"15th edition",WSP,HMB,DHR,2017-08-30,
+1108,"Saint Louis ASL Tournament",July,2013,2013-07-26,STLOU_13,"St-Louis (MO)",USA,US/Ca,"16th edition",WSC,VNW,KKD,2017-08-30,
+1109,"Saint Louis ASL Tournament",July,2014,2014-07-24,STLOU_14,"St-Louis (MO)",USA,US/Ca,"17th edition",TEG,VNW,DHR,2017-08-30,
+1110,"Saint Louis ASL Tournament",July,2015,2015-07-24,STLOU_15,"St-Louis (MO)",USA,US/Ca,"18th edition",WSP,DHR,ILJ,2017-08-30,
+1111,"Saint Louis ASL Tournament",July,2016,2016-07-29,STLOU_16,"St-Louis (MO)",USA,US/Ca,"19th edition",DHR,SYI,GDD,2017-08-30,
+1112,"Saint Louis ASL Tournament",July,2017,2017-07-28,STLOU_17,"St-Louis (MO)",USA,US/Ca,"20th edition",DHR,PGT,M21,2017-08-30,
+1113,"Supporting Fire",September,2012,2012-09-07,SUPPF_12,Boras,Sweden,EU,"1th edition",HHM,SDM,NNS,2017-08-30,
+1114,"Supporting Fire",November,2013,2013-11-15,SUPPF_13,Boras,Sweden,EU,"2th edition",WDD,CNA,KNM,2017-08-30,
+1115,"Supporting Fire",November,2014,2014-10-17,SUPPF_14,Boras,Sweden,EU,"3th edition",FKM,NNS,KA4,2017-08-30,
+1116,"Supporting Fire",November,2015,2015-11-20,SUPPF_15,Boras,Sweden,EU,"4th edition",WDD,LND,KNK,2017-08-30,
+1117,"Supporting Fire",November,2016,2016-11-18,SUPPF_16,Boras,Sweden,EU,"5th edition",FKM,VI0,LII,2017-08-30,
+1118,"TEXAS TEAM TOURNAMENT",June,2008,2008-06-19,TEXAS_08,"Austin, TX",USA,US/Ca,"16th edition",FLJ,SZR,SKM,2017-08-30,
+1119,"TEXAS TEAM TOURNAMENT",June,2009,2009-06-26,TEXAS_09,"Austin, TX",USA,US/Ca,"17th edition",SNK,FLJ,,2017-08-30,
+1120,"TEXAS TEAM TOURNAMENT",June,2010,2010-06-24,TEXAS_10,"Austin, TX",USA,US/Ca,"18th edition",FLJ,FYG,,2017-08-30,
+1121,"TEXAS TEAM TOURNAMENT",June,2011,2011-06-26,TEXAS_11,"Austin, TX",USA,US/Ca,"19th edition",FYG,CDP,,2017-08-30,
+1122,"TEXAS TEAM TOURNAMENT",June,2012,2012-06-21,TEXAS_12,"Austin, TX",USA,US/Ca,"20th edition",FYG,SKM,,2017-08-30,
+1123,"TEXAS TEAM TOURNAMENT",June,2013,2013-06-21,TEXAS_13,"Austin, TX",USA,US/Ca,"21th edition",TAG,SKM,,2017-08-30,
+1124,"TEXAS TEAM TOURNAMENT",June,2014,2014-06-19,TEXAS_14,"Austin, TX",USA,US/Ca,"22th edition",HS1,SKM,,2017-08-30,
+1125,"March Madness",March,2018,2018-03-16,MARCH_18,"Kansas City",USA,US/Ca,,PAD,BSI,VNW,2020-10-13,
+1126,"TEXAS TEAM TOURNAMENT",June,2016,2016-06-24,TEXAS_16,"Austin, TX",USA,US/Ca,"24th edition",BPJ,GCJ,,2017-08-30,
+1127,"TEXAS TEAM TOURNAMENT",June,2017,2017-06-25,TEXAS_17,"Austin, TX",USA,US/Ca,"25th edition",GCJ,K4R,,2017-08-30,
+1128,"VASL Top League",January-December,2007,2007-01-01,TOP_07,Internet,Web,VASL,"1th edition",PIA,COE,HEO,2017-08-30,
+1129,"VASL Top League",January-December,2008,2008-01-01,TOP_08,Internet,Web,VASL,"2th edition",TRA,COE,CE3,2017-08-30,
+1130,"VASL Top League",January-December,2009,2009-01-01,TOP_09,Internet,Web,VASL,"3th edition",TRA,TAG,RIT,2017-08-30,
+1131,"VASL Top League",January-December,2010,2010-01-01,TOP_10,Internet,Web,VASL,"4th edition",FYG,PIA,WAB,2017-08-30,
+1132,"VASL Top League",January-December,2011,2011-03-01,TOP_11,Internet,Web,VASL,"5th edition",FYG,COE,MEJ,2017-08-30,
+1133,"VASL Top League",January-November,2012,2012-02-29,TOP_12,Internet,Web,VASL,"6th edition",MEJ,FYG,DHR,2017-08-30,
+1134,TRENCH,July,2004,2004-07-01,TREN_04,Diksmuide,Belgique,EU,"0th edition",,,,2017-08-30,
+1135,"Tournoi Sud Mediterrannee",April,2001,2001-04-14,TSM_01,Nimes,France,EU,"1th edition",CNL,DXJ,BXP,2017-08-30,
+1136,"Tournoi Sud Mediterrannee",March-April,2002,2002-03-30,TSM_02,Nimes,France,EU,"2th edition",BXP,CNL,MOI,2017-08-30,
+1137,"Tournoi Sud Mediterrannee",April,2003,2003-04-12,TSM_03,Nimes,France,EU,"3th edition",SZL,MOI,GDC,2017-08-30,
+1138,"Tournoi Sud Mediterrannee",April,2004,2004-04-10,TSM_04,Nimes,France,EU,"4th edition",BXP,GDC,BNF,2017-08-30,
+1139,"Tournoi Sud Mediterrannee",March,2005,2005-03-26,TSM_05,Nimes,France,EU,"5th edition",BNF,GDC,BXP,2017-08-30,
+1140,"Tournoi Sud Mediterrannee",April,2006,2006-04-15,TSM_06,Nimes,France,EU,"6th edition",GDC,TEG,MOI,2017-08-30,
+1141,"Tournoi Sud Mediterrannee",April,2007,2007-04-16,TSM_07,Nimes,France,EU,"7th edition",SFP,GDC,BXP,2017-08-30,
+1142,"Tussle in the Tundra",July,2012,2012-07-20,TUSSL_12,"Manchester (NH)",USA,US/Ca,"0th edition",CDP,,,2017-08-30,
+1143,"Tussle in the Tundra",July,2013,2013-07-26,TUSSL_13,"Manchester (NH)",USA,US/Ca,"0th edition",CDP,,,2017-08-30,
+1144,"Tussle in the Tundra",July,2014,2014-07-25,TUSSL_14,"Manchester (NH)",USA,US/Ca,"0th edition",WAB,L33,HLE,2017-08-30,
+1145,"Tussle in the Tundra",July,2015,2015-07-24,TUSSL_15,"Manchester (NH)",USA,US/Ca,"0th edition",AAR,,,2017-08-30,
+1146,"Tussle in the Tundra",July,2016,2016-07-22,TUSS_16,"Manchester (NH)",USA,US/Ca,"0th edition",GDD,BTG,,2017-08-30,
+1147,"West Coast Melee",February,2000,2000-08-19,WCM_00,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1148,"West Coast Melee",February,2001,2001-02-04,WCM_01,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1149,"West Coast Melee",February,2002,2002-02-01,WCM_02,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1150,"West Coast Melee",February,2003,2003-01-31,WCM_03,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1151,"West Coast Melee",February,2004,2004-02-06,WCM_04,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1152,"West Coast Melee",February,2005,2005-02-06,WCM_05,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1153,"West Coast Melee",February,2006,2006-02-26,WCM_06,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1154,"West Coast Melee",February,2007,2007-02-23,WCM_07,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1155,"West Coast Melee",February,2008,2008-02-22,WCM_08,"Irvine, CA",USA,US/Ca,"0th edition",,,,2017-08-30,
+1156,"West Coast Rumble",November,2008,2008-11-09,WCR_08,Vancouver,Canada,US/Ca,"2th edition",KSD,K2G,EEM,2017-08-30,
+1157,"West Coast Rumble",November,2009,2009-11-08,WCR_09,Vancouver,Canada,US/Ca,"3th edition",KSD,HHD,WER,2017-08-30,
+1158,"West Coast Rumble",November,2010,2010-11-14,WCR_10,Vancouver,Canada,US/Ca,"4th edition",KSD,JSI,K2G,2017-08-30,
+1159,"West Coast Rumble",November,2011,2011-11-06,WCR_11,Vancouver,Canada,US/Ca,"5th edition",KSD,FOR,WER,2017-08-30,
+1160,"West Coast Rumble",November,2012,2012-11-04,WCR_12,Vancouver,Canada,US/Ca,"6th edition",KSD,HHD,141,2017-08-30,
+1161,"West Coast Rumble",November,2013,2013-11-10,WCR_13,Vancouver,Canada,US/Ca,"7th edition",WER,KSD,GYT,2017-08-30,
+1162,"West Coast Rumble",November,2014,2014-11-07,WCR_14,Vancouver,Canada,US/Ca,"8th edition",WER,JSI,KSD,2017-08-30,
+1163,"West Coast Rumble",November,2015,2015-11-06,WCR_15,Vancouver,Canada,US/Ca,"9th edition",KSD,WER,RS2,2017-08-30,
+1164,"West Coast Rumble",November,2016,2016-11-04,WCR_16,Vancouver,Canada,US/Ca,"10th edition",KSD,3KJ,HHD,2017-08-30,
+1165,WeASL,August-November,2008,2008-08-28,WEASL_08,Internet,Web,VASL,"0th edition",HNI,MISSING-6,,2017-08-30,
+1166,"West Wall",May,2001,2001-05-01,WEST_01,Saarbrücken,Germany,EU,"0th edition",BXP,VYX,KRC,2017-08-30,
+1167,"Winter Offensive (only some games)",January,2005,2005-01-01,WOFF_05,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30,
+1168,"Winter Offensive (only some games)",January,2006,2006-01-01,WOFF_06,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30,
+1169,"Winter Offensive (only some games)",January,2008,2008-01-01,WOFF_08,"Bowie, Maryland",USA,US/Ca,"0th edition",,,HYA,2017-08-30,
+1170,"Winter Offensive (only some games)",January,2010,2010-01-01,WOFF_10,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30,
+1171,"Winter Offensive (only some games)",January,2011,2011-01-01,WOFF_11,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30,
+1172,"Winter Offensive (only some games)",January,2012,2012-01-01,WOFF_12,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30,
+1173,"Winter Offensive (only some games)",January,2013,2013-01-01,WOFF_13,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30,
+1174,"Winter Offensive (only some games)",January,2014,2014-01-18,WOFF_14,"Bowie, Maryland",USA,US/Ca,"0th edition",,,,2017-08-30,
+1175,"Winter War",January,2013,2013-01-25,WWAR_13,"Champaign, IL",USA,US/Ca,"0th edition",TRA,WSC,CHT,2017-08-30,
+1176,"Winter War",January,2014,2014-01-25,WWAR_14,"Champaign, IL",USA,US/Ca,"0th edition",RSS,GNI,TRA,2017-08-30,
+1177,"Winter War",February,2015,2015-02-07,WWAR_15,"Champaign, IL",USA,US/Ca,"0th edition",KKD,VNW,DGJ,2017-08-30,
+1178,"Canadian ASL Open",May,2018,2018-05-18,CASLO_18,Winnipeg,Canada,US/Ca,"22nd Edition",KSD,RS2,S2P,2020-06-11,
+1179,"Tournoi du forum français ",October/2018:June/2019,2019,2018-10-01,Forum_19,Internet,Web,VASL,,RRP,C2L,BEB,2020-06-18,
+1180,"Intensive Fire 2017",November,2017,2017-11-15,IF_17,Bournemouth,UK,EU,,,,,2020-06-18,
+1181,"Double One",June,2017,2017-06-22,2ONE_17,Chelmsford,UK,EU,,,,,2020-06-19,
+1182,Grenadier,November,2017,2017-11-01,GREN_17,Hergarten,Germany,EU,,NOB,L2B,KRA,2020-06-24,
+1183,"Stockholm ASL",May,2017,2017-05-26,SAT_17,Stockholm,Sweden,EU,,MGP,PEC,CNA,2020-06-26,
+1184,"Spreading Blaze",August,2017,2017-08-01,ATLAN_17,"Duluth, GA",USA,US/Ca,,SSD,6IJ,WNR,2020-06-26,
+1185,"Supporting Fire",November,2017,2017-11-01,SUPPF_17,Borås,Sweden,EU,,FKM,YGM,HHM,2020-06-27,
+1186,"Double One",June,2018,2018-06-01,2ONE_18,Chelmsford,UK,EU,,,,,2020-06-27,
+1187,Heroes,March,2018,2018-03-01,HERO_18,Blackpool,UK,EU,,BNG,BNC,BER,2020-06-28,
+1188,"Bounding First Fire",November,2018,2018-11-21,BFF_18,Blackpool,UK,EU,,PGT,B7B,,2020-06-28,
+1189,"Death Wish","June - August",2017,2017-06-01,DWISH_17,Internet,Web,VASL,,SEA,LYD,BDS,2020-06-29,
+1190,Grenadier,November,2018,2018-11-01,GREN_18,Hergarten,Germany,EU,,LRJ,BNF,VND,2020-06-29,
+1191,"Death Wish","June - August",2018,2018-06-01,DWISH_18,Internet,Web,VASL,,WAB,,,2020-06-29,
+1192,"VASL Top League","January - December",2018,2018-01-01,LEAG0_18,Internet,Web,VASL,,COA,RHB,BNF,2020-06-30,
+1193,"VASL Eastern US and Canada League","June - September",2018,2018-06-01,LEAG2_18,Internet,Web,VASL,,TRA,SRP,MSD,2020-06-30,
+1194,"Tournoi du forum français ",September/17:June/18,2018,2017-09-27,Forum_18,Internet,Web,VASL,,RRP,C2L,BEB,2020-07-01,
+1195,"Northwest ASL Championship",February,2018,2018-02-09,NWEST_18,"Issaquah (WA)",USA,US/Ca,,,,,2020-07-02,
+1196,"VASL Western US League","January - December",2018,2018-01-01,LEAG3_18,Internet,Web,VASL,,PMD,H7C,KGS,2020-07-02,
+1197,"VASL European and Oceanian League",March-December,2018,2018-03-01,Leag1_18,Internet,Web,VASL,,LYD,VAM,HA6,2020-07-04,
+1198,"VASL Second Line League",June,2018,2018-06-01,LEAG4_18,Internet,Web,VASL,,,,,2020-07-04,
+1199,"West Coast Rumble",November,2017,2017-11-03,WCR_17,Vancouver,Canada,US/Ca,,JSI,141,W87,2020-07-04,
+1200,"West Coast Rumble",November,2018,2018-11-02,WCR_18,Vancouver,Canada,US/Ca,,BSG,JSI,KSD,2020-07-04,
+1201,"Street Fighting in Sioux City",September,2017,2017-09-02,SIOUX_17,"Sioux City, IA",USA,US/Ca,,CRE,116,LRP,2020-07-04,
+1202,"Friendly Fire","August - October",2017,2017-08-09,FRF_17,Linköping,Sweden,EU,,FKM,BLM,TEG,2020-07-06,
+1203,"Friendly Fire",September,2018,2018-09-21,FRF_18,Linköping,Sweden,EU,,FKM,BLM,CNA,2020-07-06,
+1204,"Cyber VASL","January - September",2017,2017-01-03,CYBER_VI,Internet,Web,PBEM,,,,,2020-07-06,
+1205,"Cyber VASL","June/17: March/19",2018,2017-12-28,CYBER_VIII,Internet,Web,PBEM,,,,,2020-07-07,
+1206,"Cyber VASL","July/18: April/19",2019,2018-07-04,CYBER_IX,Internet,Web,PBEM,,,,,2020-07-07,
+1207,"Cyber VASL","December/18: December/19",2019,2018-12-20,CYBER_X,Internet,Web,PBEM,,,,,2020-07-07,
+1208,"Juno Bear",June,2017,2017-06-10,JUNO_17,Sydney,Australia,other,,,,,2020-07-07,
+1209,"Friendly Fire",September,2019,2019-09-27,FRF_19,Linköping,Sweden,EU,,BLM,FKM,YGM,2020-07-07,
+1210,"Supporting Fire",November,2018,2018-11-01,SUPPF_18,Borås,Sweden,EU,,HHM,KNK,DNT,2020-07-07,
+1211,"Scandinavian Open",February,2018,2018-02-28,SCO_18,Copenhagen,Denmark,EU,,KNK,TEG,CDP,2020-07-08,
+1212,"Stockholm ASL",May,2018,2018-05-01,SAT_18,Stockholm,Sweden,EU,,RMM,,,2020-07-09,
+1213,"VASL Special Deluxe","March/17: January/18",2018,2017-03-01,SPECDLX_18,Internet,Web,VASL,,,,,2020-07-09,
+1214,"VASL Special Desert","March/17: February/18",2018,2017-03-01,SPECDES_18,Internet,Web,VASL,,SFN,KSJ,,2020-07-09,
+1215,"VASL Special Night","March/17: May/18",2018,2017-03-01,SPECNIT_18,Internet,Web,VASL,,SMJ,HLS,,2020-07-10,
+1216,"VASL Special Para-Glid","March/17: February/18",2018,2017-03-01,SPECPara_18,Internet,Web,VASL,,TrJ1,SRP,,2020-07-10,
+1217,"Double One",June,2019,2019-06-21,2ONE_19,Chelmsford,UK,EU,"13th Edition",,,,2020-07-11,
+1218,Heroes,March,2019,2019-03-01,HERO_19,Blackpool,UK,EU,,BER,DHR,BNG,2020-07-11,
+1219,"Bounding First Fire",November,2019,2019-11-20,BFF_19,Blackpool,UK,EU,,BNC,E1M,AHI,2020-07-11,
+1220,Grenadier,November,2019,2019-11-07,GREN_19,Hergarten,Germany,EU,,BXP,MLF,KRA,2020-07-11,
+1221,"Human Wave",June,2019,2019-06-20,Hwave_19,Washington,USA,US/Ca,,COW,SND,,2020-07-11,
+1222,"Northwest ASL Championship",February,2019,2019-02-08,NWEST_19,"Issaquah (WA)",USA,US/Ca,,,,,2020-07-11,
+1223,"Scandinavian Open",February,2019,2019-02-28,SCO_19,Copenhagen,Denmark,EU,,DHR,SS8,KNK,2020-07-11,
+1224,"Supporting Fire",November,2019,2019-11-01,SUPPF_19,Borås,Sweden,EU,,HHM,TGL,FKM,2020-07-12,
+1225,"West Coast Rumble",November,2019,2019-11-08,WCR_19,Vancouver,Canada,US/Ca,,BSG,LeJ1,141,2020-07-12,
+1226,"Wild West Fest",October,2019,2019-10-18,WWF_19,,,US/Ca,,,,,2020-07-12,
+1227,Heroes,March,2020,2020-03-04,HERO_20,Blackpool,UK,EU,,VAM,BNC,DHR,2020-07-12,
+1228,"Canadian ASL Open",May,2019,2019-05-17,CASLO_19,Ottawa,Canada,US/Ca,"23rd Edition",3DJ,WN3,HLE,2020-07-12,
+1229,"Tournoi du forum français ","August/19: January/20",2020,2019-08-27,Forum_20,Internet,Web,VASL,,C2L,,,2020-07-13,
+1230,"Human Wave",June,2020,2020-06-24,HWAVE_20,Washington,USA,US/Ca,,DID,DHR,BNG,2020-07-13,
+1231,"Northwest ASL Championship",February,2020,2020-02-07,NWEST_20,"Issaquah (WA)",USA,US/Ca,,,,,2020-07-13,
+1232,"VASL Special Deluxe","January/19: February/20",2020,2019-01-08,SPECDLX_20,Internet,Web,VASL,,FGW,TrJ1,,2020-07-14,
+1233,"VASL Special Desert","January/19: February/20",2020,2019-01-16,SPECDES_20,Internet,Web,VASL,,GYT,KN1,,2020-07-14,
+1234,"VASL Special Night","January/19: February/20",2020,2019-01-16,SPECNIT_19,Internet,Web,VASL,,SMJ,RIR,,2020-07-14,
+1235,"VASL Special PTO","January/19: February/20",2020,2019-01-04,SPECPTO_20,Internet,Web,VASL,,FEJ,CNN,,2020-07-14,
+1236,Sissukoni,August,2017,2017-08-26,Sissu_17,Helsinki,Finland,EU,"19th Edition",,,,2020-07-15,
+1237,Sissukoni,August,2018,2018-08-25,Sissu_18,Helsinki,Finland,EU,"20th Edition",,,,2020-07-15,
+1238,Sissukoni,August,2019,2019-08-23,Sissu_19,Helsinki,Fin,EU,"21st Edition",VI0,LIT,LII,2020-07-15,
+1239,"Ghan Zou",April,2019,2019-04-20,GhanZ_19,Chengdu,China,other,,FGW,,,2020-07-16,
+1240,"ASL Open",April,2019,2019-04-01,OPEN_19,Chicago,USA,US/Ca,,VNW,BSC,DSA,2020-07-16,
+1241,"ASL Open","June - July",2020,2020-06-15,Open_20,Internet,Web,VASL,,SFN,,,2020-07-23,
+1242,"ASL Open",April,2018,2018-04-05,OPEN_18,Chicago,USA,US/Ca,,HNB,KKD,SYI,2020-07-26,
+1243,"ASL Ring",May,2018,2018-05-01,Ring_18,"Villeneuve d'Ascq",France,EU,,DHO,HZS,COP,2020-07-26,
+1244,"ASL Ring",June,2019,2019-06-01,Ring_19,"Villeneuve d'Ascq",France,EU,,BXP,KTA,HZS,2020-07-26,
+1245,"Tournoi du forum français ","September/15: June/16",2016,2015-09-01,Forum_16,Internet,Web,VASL,,PEP,RRP,C2L,2020-08-05,
+1246,"Texas Team Tournament",June,2018,2018-06-28,TEXAS_18,Austin,USA,US/Ca,,LBD,LrR1,,2020-09-28,
+1247,"ASL Ring (VASL)",June,2020,2020-06-02,Ring_20,Internet,Web,EU,,C2L,HZS,COP,2020-08-05,
+1248,"Tussle In The Tundra",August,2019,2019-08-09,TUSS_19,"Manchester (NH)",USA,US/Ca,,OLD,HLE,,2020-08-20,
+1249,"Tussle In The Tundra",August,2020,2020-08-07,TUSS_20,"Manchester (NH)",USA,US/Ca,,DE2,HLE,TYC,2020-08-20,
+1250,"Saint Louis ASL Tournament",July,2018,2018-07-01,STLOU_18,"St Louis",USA,US/Ca,,SZR,DHR,RDT,2020-08-20,
+1251,"Saint Louis ASL Tournament",July,2019,2019-07-01,STLOU_19,"St Louis",USA,US/Ca,,BSB,TEG,JNS,2020-08-20,
+1252,"Saint Louis ASL Tournament",July,2020,2020-07-01,STLOU_20,"St Louis",USA,US/Ca,,BSB,KKD,JNS,2020-08-20,
+1253,"Tournoi du forum français ","September/16: April/17",2017,2016-09-01,Forum_17,Internet,Web,VASL,,RRP,DnP1,,2020-08-20,
+1254,"Alpen Festung",June,2018,2018-06-01,ALPEN_18,Amden,Switzerland,EU,XII,"Daniel Takai",,,2020-08-23,
+1255,"Alpen Festung",Junbe,2019,2019-06-14,ALPEN_19,Amden,Switzerland,EU,XIII,"Marc Blume","Daniel Takai",,2020-08-23,
+1256,"Street Fighting in Sioux City",September,2018,2018-09-01,SIOUX_18,"Sioux City, IA",USA,US/Ca,,116,,,2020-08-23,
+1257,"Street Fighting in Sioux City",August,2019,2019-08-31,SIOUX_19,"Sioux City, IA",USA,US/Ca,,LRP,CRE,,2020-08-23,
+1258,"Intensive Fire",October,2013,2013-10-23,IF_13,Bournemouth,UK,EU,,,,,2020-08-24,
+1259,"Alpen Festung",June,2017,2017-06-09,ALPEN_17,Amden,Switzerland,EU,,,,,2020-08-25,
+1260,Sissukoni,August,2020,2020-08-21,Sissu_20,Helsinki,Finland,EU,,LII,VI0,KAT,2020-08-25,
+1261,"ASL Oktoberfest",October,2017,2017-09-30,ASLOK_17,Cleveland,USA,US/Ca,,COW,TrJ1,RMM,2020-09-11,
+1262,"ASL Oktoberfest",October,2018,2018-09-30,ASLOK_18,Cleveland,USA,US/Ca,,PAS,MDO,R1A,2020-09-11,
+1263,"Bitter End",April,2019,2019-04-12,B-END_19,Raleigh-Durham,USA,US/Ca,,COW,SDO,,2020-09-11,
+1264,"Scandinavian Open",February,2020,2020-02-28,SCO_20,Copenhagen,Denmark,EU,,HHM,TEG,K54,2020-09-11,
+1265,"VASL European and Oceanian League","July - November",2019,2019-07-20,LEAG1_19,Internet,Web,VASL,,C2L,,,2020-09-12,
+1266,"VASL Top League","March - October",2019,2019-03-22,LEAG0_19,Internet,Web,VASL,,,,,2020-09-12,
+1267,"VASL Eastern US and Canada League","March - December",2019,2019-03-29,LEAG2_19,Internet,Web,VASL,,WTJ,,,2020-09-12,
+1268,"VASL Western US League","April - November",2019,2019-04-14,LEAG3_19,Internet,Web,VASL,,KGS,,,2020-09-12,
+1269,"Tussle In The Tundra",July,2011,2011-07-29,TUSS_11,"Manchester (NH)",USA,US/Ca,,TEG,KTN,ES2,2020-09-13,
+1270,"Double One",June,2020,2020-06-26,2ONE_20,Chelmsford,UK,EU,,,,,2020-09-14,
+1271,"NYS ASL Championship",December,2019,2019-12-06,NYS_19,Albany,USA,US/Ca,,SUP,COW,BSB,2020-09-19,
+1272,"ASL Oktoberfest",October,2019,2019-10-08,ASLOK_19,Cleveland,USA,US/Ca,,CSC,VI0,BSB,2020-09-20,
+1273,"Winter Offensive (only some games)",January,2019,2019-01-17,WOFF_19,"Bowie, Maryland",USA,US/Ca,,,,,2020-09-20,
+1274,"NYS ASL Championship",December,2018,2018-11-30,NYS_18,Albany,USA,US/Ca,,TYJ,MDO,SUP,2020-09-20,
+1275,"Bitter End",April,2018,2018-04-20,B-END_18,Raleigh-Durham,USA,US/Ca,,KY4,SDO,COW,2020-09-20,
+1276,"Winter Offensive (only some games)",January,2018,2018-01-11,WOFF_18,Cleveland,USA,US/Ca,,"Bill Cirillo",,,2020-09-20,
+1277,"NYS ASL Championship",December,2017,2017-11-30,NYS_17,Albany,USA,US/Ca,,COW,MIG,SUP,2020-09-20,
+1278,"ASL Oktoberfest",October,2016,2016-10-06,ASLOK_16,Cleveland,USA,US/Ca,,PAS,SZR,COW,2020-09-20,
+1279,"March Madness",March,2019,2019-03-15,MARCH_19,"Kansas City",USA,US/Ca,,KKD,BSI,M21,2020-09-20,
+1280,"Texas Team Tournament",June,2019,2019-06-01,TEXAS_19,Austin,USA,US/Ca,,SKM,TNA,,2020-09-28,
+1281,"Cyber VASL","July/19: July/20",2020,2019-07-08,CYBER_XI,Internet,Web,PBEM,,,,,2020-11-10,
+1282,"West Coast Rumble",November,2020,2020-11-04,WCR_20,Internet,Web,VASL,,STS,GCJ,JSI,2020-11-10,
+1283,"West Coast Melee 2020   WCM XXIII",February,2020,2020-02-27,WCM_20,Ontario,USA,US/Ca,XXIII,"Brandon Liesesmeier",,,2020-11-08,
+1284,"Bodø ASL Open",January,2020,2020-01-24,BASLO_20,Bodø,Norway,EU,,,,,2020-11-09,
+1285,"NYS ASL Championship",December,2020,2020-11-15,NYS_20,Internet,Web,VASL,,TYJ,WGW,CNC,2020-12-20,
+1286,"Cyber VASL","April/20: December/20",2020,2020-04-16,CYBER_XII,Internet,Web,PBEM,,,,,2020-12-21,
+1287,"Street Fighting","November - December",2020,2020-11-07,SIOUX_20,Internet,Web,VASL,,DHR,,,2021-01-18,
+1288,"Cascadia Summer Offensive",August,2020,2020-08-08,CASC_20,Internet,Web,VASL,,BS,BS,BS,2021-01-21,
+1289,"NYS ASL Championship",December,2021,2021-12-02,NYS_21,Albany,USA,US/Ca,,COW,SN3,BSB,2022-01-03,
+1290,"Canadian ASL Open",May,2020,2020-05-15,CASLO_20,Internet,Web,VASL,"24th Edition",NAC,DHR,KSD,2021-02-01,
+1291,NOR-EASTER,March,2021,2021-03-19,NOR-E_21,Internet,Web,VASL,XXVI,PAS,BLB,VaR1,2021-03-27,
+1292,"Alberta Assault",February,2021,2021-02-27,Alta_2021,Internet,Web,VASL,,,,,2021-03-30,
+1293,"Northwest ASL Championship",February,2021,2021-02-13,NWASL_21,Internet,Web,VASL,,,,,2021-04-15,
+1294,"eASL Open","March - April",2021,2021-03-14,eASL_21,Internet,Web,VASL,,TYJ,KSD,PAS,2021-04-30,
+1295,"Friendly Fire",September,2020,2020-09-25,FRF_20,Linköping,Sweden,EU,,SMS,BLM,PEC,2021-05-11,
+1296,"Corona Challenge 2020",December,2020,2020-12-15,CC_20,Bodø,Norway,VASL,1,LIT,BEH,BS,2021-05-19,
+1297,"Corona Challenge 2021",January,2021,2021-01-12,CC_21,Bodø,Norway,VASL,"2nd Edition",LLT,ByA1,BS,2021-05-29,
+1298,"ASL Ring (VASL)","May - June",2021,2021-05-22,Ring_21,Internet,Web,VASL,,C2L,CDP,COP,2021-07-14,
+1299,"Texas Team Tournament",June,2021,2021-06-20,TEXAS_21,Austin,USA,US/Ca,,WSP,FLJ,WRN,2021-07-15,
+1300,"Supporting Fire",November,2020,2020-11-20,SUPPF_20,Borås,Sweden,EU,,FKM,BLM,TrJ2,2021-07-27,
+1301,"Saint Louis ASL Tournament",July,2021,2021-07-23,STLOU_21,"St Louis",USA,US/Ca,,WRN,WSP,SFN,2021-08-07,
+1302,"Texas Team Tournament",June,2015,2015-06-25,TEXAS_15,Austin,USA,US/Ca,,GCJ,HY1,L2C,2021-08-08,
+1303,"Scandinavian Open",August,2021,2021-08-13,SCO_21,Copenhagen,Denmark,EU,,MHM,HGK,SoM1,2021-08-18,
+1304,Pionjärlägret,June,2021,2021-06-24,PioLs_2021,Knivsta,Sweden,VASL,1,FRS,DkM1,GeE1,2021-08-19,
+1305,"Death To Fascism",April,2020,2020-04-13,DtF_20,Internet,Web,VASL,,L33,SRP,,2021-08-31,
+1306,Sissukoni,August,2021,2021-08-27,Sissu_21,Helsinki,Finland,EU,,LII,DkM1,WDA,2021-08-31,
+1307,"Canadian ASL Open",May,2021,2021-05-07,CASLO_21,Internet,Web,VASL,,DHR,K54,CDP,2021-09-04,
+1308,"Hatten in Flames",March,2019,2019-03-15,HiF_19,Rimforsa,Sweden,EU,,RMM,,,2021-09-04,
+1309,"ASL Oktoberfest (partial)",October,2012,2012-10-05,ASLOK_12,Cleveland,USA,US/Ca,,PAS,FYG,CSC,2021-09-04,
+1310,"ASL Oktoberfest (partial)",October,2013,2013-10-11,ASLOK_13,Cleveland,USA,US/Ca,,FYG,VNW,CEJ,2021-09-05,
+1311,"ASL Oktoberfest",October,2014,2014-10-10,"ASLOK _14",Cleveland,USA,US/Ca,,PAS,FYG,BPJ,2021-09-05,
+1312,"West Coast Rumble",November,2023,2023-11-03,WCR_23,Vancouver,Canada,,,141,K2G,GYT,2023-11-11,
+1313,"Maritime Mashup",September,2021,2021-09-24,MM_21,Fredericton,Canada,US/Ca,,RS2,B1,CTA,2021-09-29,
+1314,"VASL Western US League","January - September",2020,2020-01-31,LEAG3_20,Internet,Web,VASL,,RGL,RIT,HLD,2022-01-03,
+1315,"Tournoi du forum français ","January/20: September/21",2021,2020-09-01,Forum_21,Internet,Web,VASL,,C2L,DhP1,,2021-10-06,
+1316,"Red Factories",June,2019,2019-05-31,RF_19,Rimforsa,Sweden,EU,,PEC,,,2021-10-11,
+1317,"ASL Oktoberfest",October,2021,2021-10-05,ASLOK_21,Cleveland,USA,US/Ca,,BSB,CSC,PAS,2021-10-17,
+1318,"Tussle In The Tundra",August,2021,2021-08-06,Tuss_21,"Manchester (NH)",USA,US/Ca,,CDP,DE2,SUP,2021-11-18,
+1319,"ASL Oktoberfest",October,2022,2022-10-05,ASLOK_22,Cleveland,USA,US/Ca,,COW,PAS,TYJ,2022-10-15,
+1320,"Supporting Fire",November,2021,2021-11-19,SUPPF_21,Borås,Sweden,EU,,FKM,SMS,PEC,2022-01-02,
+1321,"VASL Top League","January - September",2020,2020-01-30,LEAG0_20,Internet,Web,VASL,,LRP,HNI,C2L,2022-01-02,
+1322,"VASL European and Oceanian League","January - September",2020,2020-01-30,LEAG1_20,Internet,Web,VASL,,COS,L2B,42K,2022-01-02,
+1323,"VASL Eastern US and Canada League","January - September",2020,2020-01-30,LEAG2_20,Internet,Web,VASL,,HTS,WTJ,TrJ1,2022-01-02,
+1324,"VASL Second Line League","January - September",2020,2020-01-30,LEAG4_20,Internet,Web,VASL,,,,,2022-01-10,
+1325,"VASL European and Oceanian League","January - September",2021,2021-01-30,LEAG1_21,Internet,Web,VASL,,PsD1,ARJ,SzJ1,2022-01-10,
+1326,"VASL Western US League","January - September",2021,2021-01-30,LEAG3_21,Internet,Web,VASL,,ZaF1,RGL,BE3,2022-01-10,
+1327,"VASL Eastern US and Canada League","January - September",2021,2021-01-30,LEAG2_21,Internet,Web,VASL,,SRP,FEJ,AAR,2022-01-10,
+1328,"VASL Top League","January - September",2021,2021-01-30,LEAG0_21,Internet,Web,VASL,,C2L,LRP,CDP,2022-01-10,
+1329,"VASL Second Line League","January - September",2021,2021-01-30,LEAG4_21,Internet,Web,VASL,,,,,2022-01-10,
+1330,"Bounding First Fire ",November,2021,2021-11-18,BFF_21,Blackpool,"United Kingdom",EU,,MSI,PGT,,2022-01-12,
+1331,"Virtual Winter Offensive",January,2022,2022-01-13,VMO2022,Internet,Web,VASL,1st,,,,2022-01-17,
+1332,"ROMA Wargaming Convention",October,2021,2021-10-01,RWG_21,Rome,Italy,EU,,COA,AOM,MIL,2022-02-04,
+1333,"Secret Friendly Fire",May,2021,2021-04-30,SFrF_21,Rimforsa,Sweden,EU,,,,,2022-02-08,
+1334,Heroes,March,2022,2022-03-04,Hero_22,Blackpool,UK,EU,,BNC,VAM,,2022-03-07,
+1335,CyberVASL,March,2022,2020-04-18,CYBER_XIII,Internet,Web,PBEM,XIII,J2M,ELJ,,2022-03-30,
+1336,"Bitter End",April,2022,2022-04-22,B-END_22,Raleigh-Durham,USA,US/Ca,,PAS,DYK,GDD,2022-05-05,
+1337,CyberVASL,March,2022,2020-10-05,CYBER_XIV,Internet,Web,PBEM,XIV,ROV,ELJ,,2022-03-31,
+1338,"Scandinavian Open",March,2022,2022-03-04,SCO_22,Copenhagen,Denmark,EU,,FKM,BLM,SMS,2022-04-11,
+1339,"eASL Open","March - April",2022,2022-03-20,eASL_22,Internet,Web,VASL,,KSD,GCJ,CNC,2022-05-09,
+1340,"Festung Budapest",May,2022,2022-05-13,FEST_BUD_22,Rimforsa,Sweden,EU,,CNA,,,2022-06-02,
+1341,"Canadian ASL Open",May,2022,2022-05-19,CASLO_22,Montreal,Canada,US/Ca,,PAS,BLB,KSD,2022-06-03,
+1342,CyberVASL,March,2022,2021-04-09,CYBER_XV,Internet,Web,PBEM,,,,,2022-06-09,
+1343,Sissukoni,August,2022,2022-08-19,Sissu_22,Helsinki,Finland,EU,,LI4,KA4,LII,2022-08-21,
+1344,"Texas Team Tournament",June,2022,2022-06-16,TEXAS_22,Austin,USA,US/Ca,,TNA,GCJ,22C,2022-07-14,
+1345,ASL-EU,June,2022,2022-06-10,ASL-EU_22,Rome,Italy,EU,,DAU,AOM,COA,2022-07-14,
+1346,"ASL Ring",June,2022,2022-06-03,Ring_22,"Villeneuve d'Ascq",France,EU,,,,,2022-07-15,
+1347,"West Coast Rumble",November,2021,2021-11-07,WCR_21,Vancouver,Canada,US/Ca,"16th Annual",KSD,W87,JSI,2022-07-31,
+1348,"Tournoi du forum français ","September 21 / May 22",2022,2021-09-01,Forum_22,Internet,Web,VASL,,C2L,,BNF,2022-08-21,
+1349,"Saint Louis ASL Tournament",July,2022,2022-07-29,STLOU_22,"St Louis",USA,US/Ca,,VNW,JNS,H7C,2022-08-21,
+1350,"Spreading Blaze",August,2022,2022-08-05,ATLAN_22,Atlanta,USA,US/Ca,,MHM,RAD,WNR,2022-08-23,
+1351,"Cellar Fighting In Omaha",September,2022,2022-09-03,CFiO_22,Omaha,USA,US/Ca,,NN1,WSP,,2022-09-22,
+1352,Tanksgiving,October,2022,2022-10-14,TANKSGIVING,Fredericton,Canada,US/Ca,Inaugural,CnM1,G2D,FaN1,2022-10-16,
+1353,"Bounding First Fire",November,2022,2022-11-17,BFF_22,Blackpool,UK,EU,,PGT,BPJ,ByA1,2022-11-23,
+1354,"Corona Challenge Team Tournament",August,2021,2021-08-14,CCTT_21,Bodø,Norway,VASL,,,,,2022-12-01,
+1355,"Corona Challenge",January,2022,2022-01-14,CC_22,Bodø,Norway,VASL,,ARJ,SHS,BRN,2022-11-29,
+1356,"Supporting Fire",November,2022,2022-11-18,SUPPF_22,Borås,Sweden,EU,,PEC,FKM,TrJ2,2022-12-05,
+1357,"ASL tournament IX",May,2023,2023-05-19,RIM_23,Rimforsa,Sweden,EU,"9th edition",FKM,CNA,PEC,2023-08-12,
+1358,"Bitter End",March,2005,2005-03-19,B-END_05,Raleigh-Durham,USA,US/Ca,,,,,2022-12-22,
+1359,"Bitter End",March,2006,2006-03-17,B-END_06,Raleigh-Durham,USA,US/Ca,,,,,2022-12-22,
+1360,"Winter Offensive (some games only)",January,2007,2007-01-11,WOFF_07,"Bowie, Maryland",USA,US/Ca,,,,,2022-12-22,
+1361,"Bitter End",March,2007,2006-03-16,B-END_07,Raleigh-Durham,USA,US/Ca,,,,,2022-12-22,
+1362,"Winter Offensive (some games only)",January,2017,2017-01-13,WOFF_17,Cleveland,USA,US/Ca,,,,,2022-12-25,
+1363,"Winter Offensive (some games only)",January,2020,2020-01-16,WOFF_20,Bowie,USA,US/Ca,,,,,2022-12-25,
+1364,"VASL European and Oceanian League","January - December",2022,2022-03-01,LEAG1_22,Internet,Web,VASL,,42K,ARJ,SzJ1,2023-01-05,
+1365,"VASL Western US League","January - December",2022,2022-03-01,LEAG3_22,Internet,Web,VASL,,CNE,GNI,BE3,2023-01-05,
+1366,"VASL Second Line League","January - December",2022,2022-03-01,LEAG4_22,Internet,Web,VASL,,RMA,HLS,WAB,2023-01-05,
+1367,"VASL Eastern US and Canada League","January - December",2022,2022-03-01,LEAG2_22,Internet,Web,VASL,,DiJ1,FEJ,KYM,2023-01-05,
+1368,"NYS ASL Championship",December,2022,2022-12-01,NYS_22,Albany,USA,US/Ca,,SUP,HHM,,2023-01-06,
+1369,"Human Wave",July,2021,2021-07-09,HWAVE_21,Washington,USA,US/Ca,,,,,2023-02-02,
+1370,"Human Wave",July,2022,2022-07-08,HWAVE_22,Washington,USA,US/Ca,,,,,2023-02-02,
+1371,"Winter Offensive (some games only)",January,2023,2023-01-12,WOFF_23,Bowie,USA,US/Ca,,,,,2023-02-08,
+1372,"Corona Challenge - Fall","September - December",2022,2022-09-15,CCSE_22,Internet,Web,EU,,,,,2023-02-25,
+1373,WARR1939,February,2023,2023-02-05,WARR1939_23,Internet,Web,VASL,,141,WnA1,TnM1,2023-03-02,
+1374,"Northwest ASL Championship",February,2023,2023-02-10,NWASL_23,Bellevue,USA,US/Ca,,9NR,K2G,FGW,2023-03-04,
+1375,Heroes,March,2023,2023-03-03,Hero_23,Blackpool,UK,EU,,BNC,RYD,BER,2023-03-07,
+1376,"Bitter End (partial)",April,2023,2023-04-14,B-END_23,Raleigh-Durham,USA,US/Ca,,COW,SN3,,2023-04-21,
+1377,"VASL Top League","January - December",2022,2022-03-01,LEAG0_22,Internet,Web,VASL,,C2L,CDP,LRP,2023-05-14,
+1378,"San Marino Com",May,2023,2023-05-05,SMAR_23,"San Marino",Italy,,"12th Edition",7SA,MAG,POS,2023-05-18,
+1379,"Canadian ASL Open",May,2023,2023-05-19,CASLO_23,Fredericton,Canada,US/Ca,,BLB,RS2,KLS,2023-05-27,
+1380,"eASL Open","March - May",2023,2023-03-20,eASL_23,Internet,Web,VASL,,PAS,9NR,BtJ1,2023-05-27,
+1381,e_tASLia,May,2023,2022-05-15,e_tASALia22,Internet,Web,VASL,"1st Edition",DAU,C06,MIL,2023-05-31,
+1382,WARR1940,May,2023,2023-05-01,WARR1940_23,Internet,Web,VASL,,TnM1,,,2023-06-07,
+1383,ASL-EU,June,2023,2023-06-09,ASL-EU_23,Roma,Italy,EU,2nd,DAU,GiM1,MiF1,2023-06-12,
+1384,"ASL Ring",May,2023,2023-05-26,Ring_23,"Villeneuve d'Ascq",France,EU,,C2L,,,2023-06-20,
+1385,"Human Wave",July,2023,2023-07-08,HWAVE_23,Washington,USA,US/Ca,"6th Edition",SN3,CEJ,,2023-07-17,
+1386,"Dare Death Chinese ASL",July,2023,2023-07-21,DareD_23,"Jia Shan",China,other,2nd,HeS1,,,2023-07-28,
+1387,"Spreading Blaze",August,2023,2023-08-04,ATLAN_23,Atlanta,USA,US/Ca,,SUP,RsT1,,2023-08-15,
+1388,Sissukoni,August,2023,2023-08-25,Sissu_23,Helsinki,Finland,EU,"25th edition",WDA,KA4,LI4,2023-08-29,
+1389,WARR1941,August,2023,2023-07-04,WARR1941_23,Internet,Web,VASL,,P3P,RrC1,WrC1,2023-09-03,
+1390,"Tussle in the Tundra",August,2023,2023-08-11,TUSS_23,Manchester,NH,US/Ca,,TEG,HLE,NAC,2023-09-08,
+1391,"Cellar Fighting in Omaha",September,2023,2023-09-02,Cfio_23,Omaha,USA,US/Ca,,LRP,NN1,CRE,2023-09-12,
+1392,"ASL Oktoberfest",October,2023,2023-10-04,ASLOK_23,Cleveland,USA,US/Ca,"37th Edition",VNW,COW,TEG,2023-10-18,
+1393,"Scandinavian Open",March,2023,2023-03-03,SCO_23,Copenhagen,Denmark,EU,,HEO,BLM,MHM,2023-11-01,
+1394,Grenadier,November,2023,2023-11-04,Gren_23,Gelsenkirchen,Germany,EU,,TEG,QTP,HLS,2023-11-09,
+1395,"West Coast Rumble",November,2022,2022-11-04,WCR_22,Vancouver,Canada,US/Ca,,W87,1NA,FlC1,2023-11-11,
+1396,"Bounding First Fire",November,2023,2023-11-17,BFF_23,Blackpool,UK,EU,,PGT,VAM,BNC,2023-11-20,
+1397,"VASL Top League","March - September",2023,2023-03-01,LEAG0_23,Internet,Web,VASL,,C2L,VAM,DHR,2023-11-21,
+1398,"Supporting Fire",November,2023,2023-11-17,SUPPF_23,Borås,Sweden,EU,,FKM,HEO,HGK,2023-11-21,
+1399,"VASL Second Line League","March - September",2023,2023-03-01,LEAG4_23,Internet,Web,VASL,,HHM,LIT,HlJ1,2023-11-21,
+1400,"Tournoi du forum français","October 22 - October 23",2023,2022-10-01,Forum_23,Internet,Web,VASL,,,,,2023-11-22,
+1401,"VASL European and Oceanian League","March - September",2023,2023-03-01,LEAG1_23,Internet,Web,VASL,,HLS,42K,COS,2023-12-01,
+1402,"VASL Eastern US and Canada League","March - September",2023,2023-03-01,LEAG2_23,Internet,Web,VASL,,AEM,GnA1,TrJ1,2023-12-01,
+1403,"VASL Western US League","March - September",2023,2023-03-01,LEAG3_23,Internet,Web,VASL,,RGL,GCJ,GNI,2023-12-01,
+1404,"NYS ASL Championship",December,2023,2023-11-30,NYS_23,Albany,USA,US/Ca,,SUP,,,2023-12-11,
+1405,"Winter Offensive (some games only)",January,2024,2024-01-11,WOFF_24,Bowie,USA,US/Ca,,,,,2024-03-03,
+1406,WARR1942,February,2024,2024-01-26,WARR1942_24,Internet,Web,VASL,,,,,2024-03-04,
+1407,"Northwest ASL Championship",February,2024,2024-02-09,NWASL_24,Bellevue,USA,US/Ca,,WkR1,FGW,9NR,2024-03-04,
+1408,Heroes,March,2024,2024-03-08,Hero_24,Blackpool,UK,EU,,BER,DHR,,2024-03-12,
+1409,CarimASL_2024,January,2024,2024-01-19,CarimASL2024,Carimate,Italy,other,15th,COA,MiF2,7SA,2024-03-25,
+1410,"e-tASLia 2023-2024",july,2023,2023-07-01,e-tASLia23-24,Internet,Web,VASL,2nd,COA,,,2024-03-30,
+1411,"Scandinavian Open",March,2024,2024-03-01,SCO_24,Copenhagen,Denmark,EU,,SMS,SS8,BLM,2024-04-14,
+1412,"Bitter Ender",April,2024,2024-04-19,B-END_24,Raleigh-Durham,USA,US/Ca,,FYG,SN4,,2024-04-27,
+1413,"Tournoi du forum français","October 23 - May 24",2024,2023-10-01,Forum_24,Internet,Web,VASL,,BIE,PEP,,2024-05-20,
+1414,TwilightX,May,2024,2024-05-03,TwilX_24,Rimforsa,Sweden,EU,,PEC,CNA,,2024-05-21,
+1415,NOR-EASTER,April,2018,2018-04-05,NOR-E_18,"Boxborough, MA",USA,US/Ca,22,SUP,MIG,WAB,2024-05-24,
+1416,CASLO,May,2024,2024-05-10,CASLO_24,Victoria,Canada,US/Ca,,KSD,BLB,PKB,2024-05-26,
+1417,"ASL Ring",May,2024,2024-05-16,Ring_24,"Villeneuve d'Ascq",France,EU,,BNF,DHO,TEG,2024-05-28,
+1418,"eASL Open","March - June",2024,2024-03-25,eASL_24,Internet,Web,VASL,,PAS,GCJ,K54,2024-06-20,
+1419,Conscripts,April,2024,2024-04-26,Con_24,Kleineibstadt,Germany,EU,,L2B,RrA2,DrT1,2024-06-20,
+1420,"Dare Death Chinese ASL",July,2024,2024-07-27,DareD_24,Wuhan,China,other,3rd,TEG,ZGX,LiC1,2024-08-09,
+1421,"Texas Team Tournament",June,2024,2024-06-13,TEXAS_24,Austin,USA,US/Ca,"30th Edition",FYG,HS1,,2024-06-30,
+1422,"Saint Louis ASL Tournament",July,2023,2023-07-28,STLOU_23,"St Louis",USA,US/Ca,,WSP,BSB,DHR,2024-07-11,
+1423,"HUMAN WAVE",July,2024,2024-07-12,HWAVE_24,"Washington, DC",USA,US/Ca,"7th Year",GiJ1,SN3,,2024-07-14,
+1424,"Saint Louis ASL Tournament",July,2024,2024-07-26,STLOU_24,"St Louis",USA,US/Ca,,BSB,RDK,JNS,2024-07-31,
+1425,ASL-EU_24,june,2024,2024-06-21,ASL-EU_24,Rome,Italy,EU,,BIE,DAU,BXP,2024-07-31,
+1426,"ASL Oktoberfest (partial)",October,2000,2000-10-05,ASLOK_00,Cleveland,USA,US/Ca,,MHM,MDO,ZZM,2024-08-10,
+1427,"Tussle in the Tundra",August,2024,2024-08-01,Tuss_24,Manchester,USA,US/Ca,,DE2,NAC,RS2,2024-08-12,
+1428,"Spreading Blaze",August,2024,2024-08-01,ATLAN_24,Atlanta,USA,US/Ca,,COW,MHM,RAD,2024-08-12,
+1429,Sissukoni,August,2024,2024-08-23,Sissu_24,Helsinki,Finland,EU,"26th edition",WDA,LI4,KA4,2024-08-31,
+1430,"Double One",June,2024,2024-06-22,2ONE_24,Chelmsford,UK,EU,,,,,2024-08-31,
+1431,"Double One",June,2023,2023-06-23,2ONE_23,Chelmsford,UK,EU,,,,,2024-08-31,

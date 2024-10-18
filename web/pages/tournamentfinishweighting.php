@@ -1,5 +1,8 @@
 <?php
+//local
 include "web/pages/connection.php";
+//remote
+// include "web/pages/connection.php";
 $mysqli2 = new mysqli($host, $username, $password, $database);
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();

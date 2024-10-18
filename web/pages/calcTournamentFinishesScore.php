@@ -1,5 +1,11 @@
 <?php
 set_include_path($_SERVER['DOCUMENT_ROOT']);
+//local
+//include_once "/include/header.php";
+//include_once "/include/navbar.htm";
+//include_once "connection.php";
+//include_once "functions.php";
+//remote
 include_once "web/include/header.php";
 include_once "web/include/navbar.htm";
 include_once "web/pages/connection.php";

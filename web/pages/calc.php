@@ -4,6 +4,9 @@ ini_set('max_execution_time', 800);
 // header('Content-type: text/plain; charset=utf-8');
 // database connection
 set_include_path($_SERVER['DOCUMENT_ROOT']);
+//local
+//include("connection.php");
+//remote
 include("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
@@ -470,8 +473,10 @@ foreach (array_keys($last) as $t) {
 $mysqli->close();
 
 set_include_path($_SERVER['DOCUMENT_ROOT']);
+//local
+//include_once "/include/header.php";
+//remote
 include_once "web/include/header.php";
-
 function factor_k($passelo, $passgames) {
     $k0 = 50; $k1 = 40; $k2 = 30; $k3 = 20; $k4 = 10;
     if($passgames < 10) {
@@ -486,15 +491,26 @@ function factor_k($passelo, $passgames) {
     return ($k4);
 }
 $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
-include("storetransactionstofile.php");
-
+//local
+//include("storetransactionstofile.php");
+//remote
+include("web/pages/storetransactionstofile.php");
 //now run two TopTen calculations and store in tables
-include("calcDiffOpponents.php");
-include("calcTournamentFinishesScore.php");
+//local
+//include("calcDiffOpponents.php");
+//include("calcTournamentFinishesScore.php");
+//remote
+include("web/pages/calcDiffOpponents.php");
+include("web/pages/calcTournamentFinishesScore.php");
 
 ?>
 <body>
-<?php include_once "web/include/navbar.htm";?>
+<?php
+//local
+//include_once "/include/navbar.htm";
+//remote
+include_once "web/include/navbar.htm";
+?>
 <div class="home container-fluid">
     <div class="row">
         <div class="main-content col-md-10 offset-md-1">
@@ -505,6 +521,11 @@ include("calcTournamentFinishesScore.php");
         </div>
     </div>
 </div>
-<?php include_once "web/include/footer.php";?>
+<?php
+//local
+//include_once "/include/footer.php";
+//remote
+include_once "web/include/footer.php";
+?>
 </body>
 </html>
