@@ -4,12 +4,15 @@ ini_set('max_execution_time', 800);
 // header('Content-type: text/plain; charset=utf-8');
 // database connection
 set_include_path($_SERVER['DOCUMENT_ROOT']);
+//local
+//include("connection.php");
+//remote
 include("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
 {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
 // 1. set date variables used in calculations
@@ -24,29 +27,29 @@ $maxdecay = array();
 $playerprogress = [];
 $sql = "select player_ratings.Games, player_ratings.Player1_Namecode from player_ratings";
 if ($stmt = $mysqli->prepare($sql)) {
-  $stmt->execute();
-  $stmt->bind_result($getgames, $playernamecode);
-  while ($row = $stmt->fetch()) {
-    $gamesplayedforprogress[$playernamecode] = $getgames;
-  }
-  $stmt->close();
+    $stmt->execute();
+    $stmt->bind_result($getgames, $playernamecode);
+    while ($row = $stmt->fetch()) {
+        $gamesplayedforprogress[$playernamecode] = $getgames;
+    }
+    $stmt->close();
 } else {
-  echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-  exit();
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    exit();
 }
 
 $sql = "select tournaments.Tournament_ID, tournaments.Tour_type from tournaments where tournaments.Tour_type='PBEM'";
 if ($stmt = $mysqli->prepare($sql)) {
-  $stmt->execute();
-  $stmt->bind_result($gettourid, $gettourtype);
-  while ($row = $stmt->fetch()) {
-    //create tourtype array
-    $tourtype[$gettourid] = $gettourtype;
-  }
-  $stmt->close();
+    $stmt->execute();
+    $stmt->bind_result($gettourid, $gettourtype);
+    while ($row = $stmt->fetch()) {
+        //create tourtype array
+        $tourtype[$gettourid] = $gettourtype;
+    }
+    $stmt->close();
 } else {
-  echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-  exit();
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    exit();
 }
 
 // 1.2 remove previous data
@@ -58,57 +61,63 @@ $stmt->execute();
 $stmt->close();
 
 if (!($stmt1 = $mysqli->prepare("DELETE from player_progress" ))) {
-  echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-  exit();
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    exit();
 }
 $stmt1->execute();
 $stmt1->close();
-
+//use line below when debugging
+//$gars="PEP";
 /*-----------------------------------------------------
 # 2. Initialization of players
 -----------------------------------------------------*/
 $sql = "select players.Fullname, players.Country, players.Player_Namecode from players";
 if ($stmt = $mysqli->prepare($sql)) {
-  $stmt->execute();
-  $stmt->bind_result($getplayername, $getcountry, $playernamecode);
-  while ($row = $stmt->fetch()) {
-    //create empty arrays for each player
-    $playername[$playernamecode] = $getplayername;
-    $country[$playernamecode] = $getcountry;
-    $active[$playernamecode] = "no";
-    $provisional[$playernamecode] = "yes";
-    $hwm[$playernamecode] = 0;
-    $elo[$playernamecode] = 1500;
-    $delta[$playernamecode] = 0;
-    $games[$playernamecode] = 0;
-    $wins[$playernamecode] = 0;
-    $gamesAtt[$playernamecode] = 0;
-    $winsAtt[$playernamecode] = 0;
-    $gamesDef[$playernamecode] = 0;
-    $winsDef[$playernamecode] = 0;
-    $gamesAxis[$playernamecode] = 0;
-    $winsAxis[$playernamecode] = 0;
-    $gamesAllies[$playernamecode] = 0;
-    $winsAllies[$playernamecode] = 0;
-    $streak[$playernamecode] = 0;
-    $highestStreak[$playernamecode] = 0;
-    $maxdecay[$playernamecode] = 0;
-    $decaytodate[$playernamecode] = 0;
-    if ($gamesplayedforprogress == null){
-      $calcprogressperiod=0;
-    } elseif (!array_key_exists($playernamecode, $gamesplayedforprogress)){
-      $calcprogressperiod =0;
-    } else {
-      $calcprogressperiod = floor($gamesplayedforprogress[$playernamecode] / 10);
+    $stmt->execute();
+    $stmt->bind_result($getplayername, $getcountry, $playernamecode);
+    while ($row = $stmt->fetch()) {
+        //create empty arrays for each player
+        $playername[$playernamecode] = $getplayername;
+        $country[$playernamecode] = $getcountry;
+        $active[$playernamecode] = "no";
+        $provisional[$playernamecode] = "yes";
+        $hwm[$playernamecode] = 0;
+        $elo[$playernamecode] = 1500;
+        $delta[$playernamecode] = 0;
+        $games[$playernamecode] = 0;
+        $wins[$playernamecode] = 0;
+        $gamesAtt[$playernamecode] = 0;
+        $winsAtt[$playernamecode] = 0;
+        $gamesDef[$playernamecode] = 0;
+        $winsDef[$playernamecode] = 0;
+        $gamesAxis[$playernamecode] = 0;
+        $winsAxis[$playernamecode] = 0;
+        $gamesAllies[$playernamecode] = 0;
+        $winsAllies[$playernamecode] = 0;
+        $streak[$playernamecode] = 0;
+        $highestStreak[$playernamecode] = 0;
+        $maxdecay[$playernamecode] = 0;
+        $decaytodate[$playernamecode] = 0;
+        if ($gamesplayedforprogress == null){
+            $calcprogressperiod=0;
+        } elseif (!array_key_exists($playernamecode, $gamesplayedforprogress)){
+            $calcprogressperiod =0;
+        } else {
+            $calcprogressperiod = floor($gamesplayedforprogress[$playernamecode] / 10);
+        }
+        $gamesplayedperiod[$playernamecode]= $calcprogressperiod;
+        $nextprogressperiodreached[$playernamecode] = false;
+        $nextprogressperiod[$playernamecode] = 1;
+        // use code below for debugging
+        //if ($playernamecode == $gars) {
+        //    echo "PNC = ",  $elo[$playernamecode];
+        //}
+
     }
-    $gamesplayedperiod[$playernamecode]= $calcprogressperiod;
-    $nextprogressperiodreached[$playernamecode] = false;
-    $nextprogressperiod[$playernamecode] = 1;
-  }
-  $stmt->close();
+    $stmt->close();
 } else {
-  echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-  exit();
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    exit();
 }
 
 /*-----------------------------------------------------
@@ -116,16 +125,16 @@ if ($stmt = $mysqli->prepare($sql)) {
 -----------------------------------------------------*/
 $sql = "SELECT RoundDate,count(*) FROM match_results GROUP BY RoundDate ORDER BY RoundDate";
 if ($stmt = $mysqli->prepare($sql)) {
-  $stmt->execute();
-  $stmt->bind_result($rounddate, $getcount);
-  $b=0;
-  while ($row = $stmt->fetch()) {
-    $gamedays[$b++]= $rounddate;
-  }
-  $stmt->close();
+    $stmt->execute();
+    $stmt->bind_result($rounddate, $getcount);
+    $b=0;
+    while ($row = $stmt->fetch()) {
+        $gamedays[$b++]= $rounddate;
+    }
+    $stmt->close();
 } else {
-  echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-  exit();
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    exit();
 }
 
 // create loop for each day since 1998-04-03
@@ -133,372 +142,390 @@ $begin = new DateTime("1998-04-03");
 $end =new DateTime($date);
 
 for($i = $begin; $i <= $end;$i->modify('+1 day')) {
-  /*-----------------------------------------------------
-  b. For each date on which a game was played ....
-  -----------------------------------------------------*/
-  $gamedate = $i->format('Y-m-d');
+    /*-----------------------------------------------------
+    b. For each date on which a game was played ....
+    -----------------------------------------------------*/
+    $gamedate = $i->format('Y-m-d');
 
-  if (in_array($gamedate, $gamedays, false) != false) {
-    // echo '<pre>checking ' . $gamedate . '</pre>';
-    $sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, Tournament_ID, Round_No, Scenario_ID, RoundDate, Match_ID from match_results WHERE Rounddate=? ORDER BY Round_No";
-    if ($stmt = $mysqli->prepare($sql)) {
-      // bind the parameters and execute
-      $stmt->bind_param("s", $gamedate);
-      $stmt->execute();
-      $stmt->store_result();
-      $stmt->bind_result($f_pnc, $f_role, $f_side, $f_res, $s_pnc, $s_role, $s_side, $s_res, $t_id, $roundno, $scen_id, $date, $matchid);
+    if (in_array($gamedate, $gamedays, false) != false) {
+        // echo '<pre>checking ' . $gamedate . '</pre>';
+        $sql = "select Player1_Namecode, Player1_AttDef, Player1_AlliesAxis, Player1_Result, Player2_Namecode, Player2_AttDef, Player2_AlliesAxis, Player2_Result, Tournament_ID, Round_No, Scenario_ID, RoundDate, Match_ID from match_results WHERE Rounddate=? ORDER BY Round_No";
+        if ($stmt = $mysqli->prepare($sql)) {
+            // bind the parameters and execute
+            $stmt->bind_param("s", $gamedate);
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($f_pnc, $f_role, $f_side, $f_res, $s_pnc, $s_role, $s_side, $s_res, $t_id, $roundno, $scen_id, $date, $matchid);
 
-      while ($row = $stmt->fetch()) {
-        // echo '<pre>match for ' . $f_pnc . ' on ' . $gamedate . '</pre>';
-        //put results data into an array for each player
-        if(!array_key_exists($t_id, $tourtype)) {  // if tourtype is PBEM, don't use
-          $fplayer = array("fpnc" => $f_pnc, "spnc" => $s_pnc, "fres" => $f_res,
-            "fside" => $f_side, "frole" => $f_role, "tid" => $t_id, "roundno" => $roundno,
-            "date" => $date, "scenid" => $scen_id, "upf" => 0);
-          $splayer = array("spnc" => $s_pnc, "fpnc" => $f_pnc, "sres" => $s_res,
-            "sside" => $s_side, "srole" => $f_role, "tid" => $t_id, "roundno" => $roundno,
-            "date" => $date, "scenid" => $scen_id, "ups" => 0);
-          // set first and last dates played for each player
-          if (empty($first[$f_pnc])) {
-            $first[$f_pnc] = $date;
-          }
-          if (empty($first[$s_pnc])) {
-            $first[$s_pnc] = $date;
-          }
-          $last[$f_pnc] = $date;
-          $last[$s_pnc] = $date;
-          // assign results values to arrays
-          if (isset($games[$f_pnc])) {
-            $games[$f_pnc]++;
-          }
-          if (isset($games[$s_pnc])) {
-            $games[$s_pnc]++;
-          }
+            while ($row = $stmt->fetch()) {
+                // echo '<pre>match for ' . $f_pnc . ' on ' . $gamedate . '</pre>';
+                //put results data into an array for each player
+                if(!array_key_exists($t_id, $tourtype)) {  // if tourtype is PBEM, don't use
+                    $fplayer = array("fpnc" => $f_pnc, "spnc" => $s_pnc, "fres" => $f_res,
+                        "fside" => $f_side, "frole" => $f_role, "tid" => $t_id, "roundno" => $roundno,
+                        "date" => $date, "scenid" => $scen_id, "upf" => 0);
+                    $splayer = array("spnc" => $s_pnc, "fpnc" => $f_pnc, "sres" => $s_res,
+                        "sside" => $s_side, "srole" => $f_role, "tid" => $t_id, "roundno" => $roundno,
+                        "date" => $date, "scenid" => $scen_id, "ups" => 0);
+                    // set first and last dates played for each player
+                    if (empty($first[$f_pnc])) {
+                        $first[$f_pnc] = $date;
+                    }
+                    if (empty($first[$s_pnc])) {
+                        $first[$s_pnc] = $date;
+                    }
+                    $last[$f_pnc] = $date;
+                    $last[$s_pnc] = $date;
+                    // assign results values to arrays
+                    if (isset($games[$f_pnc])) {
+                        $games[$f_pnc]++;
+                    }
+                    if (isset($games[$s_pnc])) {
+                        $games[$s_pnc]++;
+                    }
 
-          if ($games[$f_pnc] > 10) {
-            $provisional[$f_pnc] = 0; //0=no
-          } else {
-            $provisional[$f_pnc] = 1;
-          }
+                    if ($games[$f_pnc] > 10) {
+                        $provisional[$f_pnc] = 0; //0=no
+                    } else {
+                        $provisional[$f_pnc] = 1;
+                    }
 
-          if ($games[$s_pnc] > 10) {
-            $provisional[$s_pnc] = 0; //0=no
-          } else {
-            $provisional[$s_pnc] = 1;
-          }
-          if (strtolower($f_role) == "attacker") {
-            $gamesAtt[$f_pnc]++;
-          }
-          if (strtolower($f_role) == "defender") {
-            $gamesDef[$f_pnc]++;
-          }
-          if (strtolower($f_side) == "axis") {
-            $gamesAxis[$f_pnc]++;
-          }
-          if (strtolower($f_side) == "allies") {
-            $gamesAllies[$f_pnc]++;
-          }
-          if (strtolower($s_role) == "attacker") {
-            $gamesAtt[$s_pnc]++;
-          }
-          if (strtolower($s_role) == "defender") {
-            $gamesDef[$s_pnc]++;
-          }
-          if (strtolower($s_side) == "axis") {
-            $gamesAxis[$s_pnc]++;
-          }
-          if (strtolower($s_side) == "allies") {
-            $gamesAllies[$s_pnc]++;
-          }
-          if (strtolower($f_res) == "won") {
-            $f_res = "win";
-          }
-          if (strtolower($f_res) == "loss") {
-            $f_res = "lost";
-          }
-          if (strtolower($f_res) == "win") {
-            $fw = 1;
-            $sw = 0;
-            $wins[$f_pnc]++;
-            if (strtolower($f_role) == "attacker") {
-              $winsAtt[$f_pnc]++;
-            }
-            if (strtolower($f_role) == "defender") {
-              $winsDef[$f_pnc]++;
-            }
-            if (strtolower($f_side) == "axis") {
-              $winsAxis[$f_pnc]++;
-            }
-            if (strtolower($f_side) == "allies") {
-              $winsAllies[$f_pnc]++;
-            }
-            $streak[$f_pnc]++;
-            if ($highestStreak[$f_pnc] < $streak[$f_pnc]) {
-              $highestStreak[$f_pnc] = $streak[$f_pnc];
-            }
-            if ($highestStreak[$s_pnc] < $streak[$s_pnc]) {
-              $highestStreak[$s_pnc] = $streak[$s_pnc];
-            }
-            $streak[$s_pnc] = 0;
-          } elseif ($f_res == "lost") {
-            $fw = 0;
-            $sw = 1;
-            $wins[$s_pnc]++;
-            if (strtolower($s_role) == "attacker") {
-              $winsAtt[$s_pnc]++;
-            }
-            if (strtolower($s_role) == "defender") {
-              $winsDef[$s_pnc]++;
-            }
-            if (strtolower($s_side) == "axis") {
-              $winsAxis[$s_pnc]++;
-            }
-            if (strtolower($s_side) == "allies") {
-              $winsAllies[$s_pnc]++;
-            }
-            $streak[$s_pnc]++;
-            if ($highestStreak[$f_pnc] < $streak[$f_pnc]) {
-              $highestStreak[$f_pnc] = $streak[$f_pnc];
-            }
-            if ($highestStreak[$s_pnc] < $streak[$s_pnc]) {
-              $highestStreak[$s_pnc] = $streak[$s_pnc];
-            }
-            $streak[$f_pnc] = 0;
-          } elseif ($f_res == "draw") {
-            $fw = 0.5;
-            $sw = 0.5;
-            $streak[$s_pnc]++;
-            $streak[$f_pnc]++;
-            if ($highestStreak[$f_pnc] < $streak[$f_pnc]) {
-              $highestStreak[$f_pnc] = $streak[$f_pnc];
-            }
-            if ($highestStreak[$s_pnc] < $streak[$s_pnc]) {
-              $highestStreak[$s_pnc] = $streak[$s_pnc];
-            }
-          }
+                    if ($games[$s_pnc] > 10) {
+                        $provisional[$s_pnc] = 0; //0=no
+                    } else {
+                        $provisional[$s_pnc] = 1;
+                    }
+                    if (strtolower($f_role) == "attacker") {
+                        $gamesAtt[$f_pnc]++;
+                    }
+                    if (strtolower($f_role) == "defender") {
+                        $gamesDef[$f_pnc]++;
+                    }
+                    if (strtolower($f_side) == "axis") {
+                        $gamesAxis[$f_pnc]++;
+                    }
+                    if (strtolower($f_side) == "allies") {
+                        $gamesAllies[$f_pnc]++;
+                    }
+                    if (strtolower($s_role) == "attacker") {
+                        $gamesAtt[$s_pnc]++;
+                    }
+                    if (strtolower($s_role) == "defender") {
+                        $gamesDef[$s_pnc]++;
+                    }
+                    if (strtolower($s_side) == "axis") {
+                        $gamesAxis[$s_pnc]++;
+                    }
+                    if (strtolower($s_side) == "allies") {
+                        $gamesAllies[$s_pnc]++;
+                    }
+                    if (strtolower($f_res) == "won") {
+                        $f_res = "win";
+                    }
+                    if (strtolower($f_res) == "loss") {
+                        $f_res = "lost";
+                    }
+                    if (strtolower($f_res) == "win") {
+                        $fw = 1;
+                        $sw = 0;
+                        $wins[$f_pnc]++;
+                        if (strtolower($f_role) == "attacker") {
+                            $winsAtt[$f_pnc]++;
+                        }
+                        if (strtolower($f_role) == "defender") {
+                            $winsDef[$f_pnc]++;
+                        }
+                        if (strtolower($f_side) == "axis") {
+                            $winsAxis[$f_pnc]++;
+                        }
+                        if (strtolower($f_side) == "allies") {
+                            $winsAllies[$f_pnc]++;
+                        }
+                        $streak[$f_pnc]++;
+                        if ($highestStreak[$f_pnc] < $streak[$f_pnc]) {
+                            $highestStreak[$f_pnc] = $streak[$f_pnc];
+                        }
+                        if ($highestStreak[$s_pnc] < $streak[$s_pnc]) {
+                            $highestStreak[$s_pnc] = $streak[$s_pnc];
+                        }
+                        $streak[$s_pnc] = 0;
+                    } elseif ($f_res == "lost") {
+                        $fw = 0;
+                        $sw = 1;
+                        $wins[$s_pnc]++;
+                        if (strtolower($s_role) == "attacker") {
+                            $winsAtt[$s_pnc]++;
+                        }
+                        if (strtolower($s_role) == "defender") {
+                            $winsDef[$s_pnc]++;
+                        }
+                        if (strtolower($s_side) == "axis") {
+                            $winsAxis[$s_pnc]++;
+                        }
+                        if (strtolower($s_side) == "allies") {
+                            $winsAllies[$s_pnc]++;
+                        }
+                        $streak[$s_pnc]++;
+                        if ($highestStreak[$f_pnc] < $streak[$f_pnc]) {
+                            $highestStreak[$f_pnc] = $streak[$f_pnc];
+                        }
+                        if ($highestStreak[$s_pnc] < $streak[$s_pnc]) {
+                            $highestStreak[$s_pnc] = $streak[$s_pnc];
+                        }
+                        $streak[$f_pnc] = 0;
+                    } elseif ($f_res == "draw") {
+                        $fw = 0.5;
+                        $sw = 0.5;
+                        $streak[$s_pnc]++;
+                        $streak[$f_pnc]++;
+                        if ($highestStreak[$f_pnc] < $streak[$f_pnc]) {
+                            $highestStreak[$f_pnc] = $streak[$f_pnc];
+                        }
+                        if ($highestStreak[$s_pnc] < $streak[$s_pnc]) {
+                            $highestStreak[$s_pnc] = $streak[$s_pnc];
+                        }
+                    }
 
-          // calculate the rating impact of result
-          $dfs = ($elo[$f_pnc] - $elo[$s_pnc]) / 400;
-          $dsf = ($elo[$s_pnc] - $elo[$f_pnc]) / 400;
-          $fwe = 1 / (1 + 10 ** $dsf);
-          $swe = 1 / (1 + 10 ** $dfs);
+                    // calculate the rating impact of result
+                    $dfs = ($elo[$f_pnc] - $elo[$s_pnc]) / 400;
+                    $dsf = ($elo[$s_pnc] - $elo[$f_pnc]) / 400;
+                    $fwe = 1 / (1 + 10 ** $dsf);
+                    $swe = 1 / (1 + 10 ** $dfs);
 
-          $FactorK = factor_k($elo[$f_pnc], $games[$f_pnc]);
-          $upf = $FactorK * ($fw - $fwe);
-          $upf = round($upf,1);
+                    $FactorK = factor_k($elo[$f_pnc], $games[$f_pnc]);
+                    $upf = $FactorK * ($fw - $fwe);
+                    $upf = round($upf,1);
 
-          $FactorK = factor_k($elo[$s_pnc], $games[$s_pnc]);
-          $ups = $FactorK * ($sw - $swe);
-          $ups= round($ups,1);
+                    $FactorK = factor_k($elo[$s_pnc], $games[$s_pnc]);
+                    $ups = $FactorK * ($sw - $swe);
+                    $ups= round($ups,1);
 
-          // stick updated information back in array
-          $fplayer["upf"] = intval($upf * 10) / 10;
-          $splayer["ups"] = intval($ups * 10) / 10;
+                    // stick updated information back in array
+                    $fplayer["upf"] = intval($upf * 10) / 10;
+                    $splayer["ups"] = intval($ups * 10) / 10;
 
-          //$delta[] tracks cumulative rate changes across multiple games on the same day
-          if (empty($delta[$f_pnc])) {
-            $delta[$f_pnc] = $upf;
-          } else {
-            $delta[$f_pnc] += $upf;
-          }
-          if (empty($delta[$s_pnc])) {
-            $delta[$s_pnc] = $ups;
-          } else {
-            $delta[$s_pnc] += $ups;
-          }
+                    //$delta[] tracks cumulative rate changes across multiple games on the same day
+                    if (empty($delta[$f_pnc])) {
+                        $delta[$f_pnc] = $upf;
+                    } else {
+                        $delta[$f_pnc] += $upf;
+                    }
+                    if (empty($delta[$s_pnc])) {
+                        $delta[$s_pnc] = $ups;
+                    } else {
+                        $delta[$s_pnc] += $ups;
+                    }
 
-          // Add rating change and new rating to each match result table for both players
-          $paselof = $elo[$f_pnc] +  $delta[$f_pnc];
-          $paselos = $elo[$s_pnc] + $delta[$s_pnc];
-          $paselof =intval($paselof*10)/10;
-          $paselos =intval($paselos*10)/10;
-          // Prepared statement, stage 1: prepare
-          if (!($stmt1 = $mysqli->prepare("UPDATE match_results SET Player1_RateChange=?, Player1_RatingAfter=?, Player2_RateChange=?, Player2_RatingAfter=? WHERE Match_ID=?"))) {
-            echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-          }
-          // bind the parameters
-          $stmt1->bind_param("ddddi", $fplayer["upf"], $paselof, $splayer["ups"], $paselos, $matchid);
-          // set parameters and execute //
-          $stmt1->execute();
-          $stmt1->close();
+                    // Add rating change and new rating to each match result table for both players
+                    $paselof = $elo[$f_pnc] +  $delta[$f_pnc];
+                    $paselos = $elo[$s_pnc] + $delta[$s_pnc];
+                    $paselof =intval($paselof*10)/10;
+                    $paselos =intval($paselos*10)/10;
+                    // Prepared statement, stage 1: prepare
+                    if (!($stmt1 = $mysqli->prepare("UPDATE match_results SET Player1_RateChange=?, Player1_RatingAfter=?, Player2_RateChange=?, Player2_RatingAfter=? WHERE Match_ID=?"))) {
+                        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+                    }
+                    // bind the parameters
+                    $stmt1->bind_param("ddddi", $fplayer["upf"], $paselof, $splayer["ups"], $paselos, $matchid);
+                    // set parameters and execute //
+                    $stmt1->execute();
+                    $stmt1->close();
 
 
-          //  test code which echoes to screen the rating change per game for $gars
-          /*if ($f_pnc == $gars) {
-            echo "game vs ",$fplayer["spnc"]," points lost/won : ", $fplayer["upf"]," (total : $paselof)\n";
-          }
-          if ($s_pnc == $gars) {
-            echo "game vs ",$splayer["fpnc"]," points lost/won : ", $splayer["ups"]," (total : $paselos)\n";
-          }*/
+                    //  test code which echoes to screen the rating change per game for $gars
+                    //if ($f_pnc == $gars) {
+                    //  echo "game vs ",$fplayer["spnc"]," points lost/won : ", $fplayer["upf"]," (total : $paselof)\n";
+                    //}
+                    //if ($s_pnc == $gars) {
+                    //  echo "game vs ",$splayer["fpnc"]," points lost/won : ", $splayer["ups"]," (total : $paselos)\n";
+                    //}
 
-          //test for progress period
-          $period = $gamesplayedperiod[$f_pnc] * $nextprogressperiod[$f_pnc];
-          $testforperiodmatach = fmod($games[$f_pnc], $period);
-          if ($testforperiodmatach ==0) {
-            $playerprogress[$f_pnc][$nextprogressperiod[$f_pnc]] = intval(($elo[$f_pnc]+ $delta[$f_pnc])*10)/10;
-            $nextprogressperiod[$f_pnc]+=1;
-            $nextprogressperiodreached[$f_pnc] = true;
-          }
-          $period = $gamesplayedperiod[$s_pnc] * $nextprogressperiod[$s_pnc];
-          $testforperiodmatach = fmod($games[$s_pnc], $period);
-          if ($testforperiodmatach ==0) {
-            $playerprogress[$s_pnc][$nextprogressperiod[$s_pnc]] = intval(($elo[$s_pnc]+ $delta[$s_pnc])*10)/10;
-            $nextprogressperiod[$s_pnc]+=1;
-            $nextprogressperiodreached[$s_pnc] = true;
-          }
+                    //test for progress period
+                    $period = $gamesplayedperiod[$f_pnc] * $nextprogressperiod[$f_pnc];
+                    $testforperiodmatach = fmod($games[$f_pnc], $period);
+                    if ($testforperiodmatach ==0) {
+                        $playerprogress[$f_pnc][$nextprogressperiod[$f_pnc]] = intval(($elo[$f_pnc]+ $delta[$f_pnc])*10)/10;
+                        $nextprogressperiod[$f_pnc]+=1;
+                        $nextprogressperiodreached[$f_pnc] = true;
+                    }
+                    $period = $gamesplayedperiod[$s_pnc] * $nextprogressperiod[$s_pnc];
+                    $testforperiodmatach = fmod($games[$s_pnc], $period);
+                    if ($testforperiodmatach ==0) {
+                        $playerprogress[$s_pnc][$nextprogressperiod[$s_pnc]] = intval(($elo[$s_pnc]+ $delta[$s_pnc])*10)/10;
+                        $nextprogressperiod[$s_pnc]+=1;
+                        $nextprogressperiodreached[$s_pnc] = true;
+                    }
+                }
+            }
+
+            // at the end of each day, update the ratings; change players' elo at this point
+            foreach (array_keys($delta) as $t) {
+                $elo[$t] += $delta[$t];
+                if ($hwm[$t] < $elo[$t]) {
+                    $hwm[$t] = $elo[$t];
+                }
+
+                // now save player progress info if required
+                if ($nextprogressperiodreached[$t]== true){
+                    $nextprogressperiodreached[$t]=false;
+                    $playerprogress[$t][$nextprogressperiod[$t]] = intval($elo[$t]*10)/10;
+                    $nextprogressperiod[$t]+=1;
+                    // test code
+                    //    if ($nextprogressperiod[$t]>10) {
+                    //        $periodpause = true;
+                    //    }
+                }
+
+                unset($delta[$t]);
+            }
         }
-      }
+        $stmt->close();
+    } // end of game date loop
 
-      // at the end of each day, update the ratings; change players' elo at this point
-      foreach (array_keys($delta) as $t) {
-        $elo[$t] += $delta[$t];
-        if ($hwm[$t] < $elo[$t]) {
-          $hwm[$t] = $elo[$t];
+    // decay calc after ratingcalc (if any) for this day
+    $date2 = date_create($gamedate);
+    foreach (array_keys($last) as $t) {
+        if (!empty($last[$t])) {
+            $date3 = date_create($last[$t]);
+            $depuis = date_diff($date2, $date3);
+            $sincelastgame = $depuis->format('%a');
+            if ($sincelastgame > 1100) {
+                $sincelastgame -= 1100;
+                if($sincelastgame==1){  // set maximum rating decay
+                    if($maxdecay[$t]==0){$maxdecay[$t]= $elo[$t] * 0.15;}
+                }
+                if(fmod($sincelastgame, 30)== 0) {
+                    $todaysdecay=3;
+                    if(!array_key_exists($t, $decaytodate)){
+                        $decaytodate[$t]=0;
+                    }
+                    if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
+                    if ($todaysdecay < 0){$todaysdecay = 0;}
+                    $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
+                    $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
+                }
+            } else {  // reset maxdecay to zero as player has resumed play
+                $maxdecay[$t]=0;
+            }
         }
-
-        // now save player progress info if required
-        if ($nextprogressperiodreached[$t]== true){
-          $nextprogressperiodreached[$t]=false;
-          $playerprogress[$t][$nextprogressperiod[$t]] = intval($elo[$t]*10)/10;
-          $nextprogressperiod[$t]+=1;
-          // test code
-          //    if ($nextprogressperiod[$t]>10) {
-          //        $periodpause = true;
-          //    }
-        }
-
-        unset($delta[$t]);
-      }
     }
-    $stmt->close();
-  } // end of game date loop
-
-  // decay calc after ratingcalc (if any) for this day
-  $date2 = date_create($gamedate);
-  foreach (array_keys($last) as $t) {
-    if (!empty($last[$t])) {
-      $date3 = date_create($last[$t]);
-      $depuis = date_diff($date2, $date3);
-      $sincelastgame = $depuis->format('%a');
-      if ($sincelastgame > 1100) {
-        $sincelastgame -= 1100;
-        if($sincelastgame==1){  // set maximum rating decay
-          if($maxdecay[$t]==0){$maxdecay[$t]= $elo[$t] * 0.15;}
-        }
-        if(fmod($sincelastgame, 30)== 0) {
-          $todaysdecay=3;
-          if(!array_key_exists($t, $decaytodate)){
-              $decaytodate[$t]=0;
-          }
-          if ($decaytodate[$t] + $todaysdecay >=$maxdecay[$t]){$todaysdecay= $todaysdecay - ($decaytodate[$t] + $todaysdecay - $maxdecay[$t]);}  // maxdecay already applied so no further decay
-          if ($todaysdecay < 0){$todaysdecay = 0;}
-          $elo[$t] = $elo[$t] - $todaysdecay; //decayfactor applied to elo every 30 days;
-          $decaytodate[$t] = $decaytodate[$t] + $todaysdecay; // add today's decay to cumulative decay
-        }
-      } else {  // reset maxdecay to zero as player has resumed play
-        $maxdecay[$t]=0;
-      }
-    }
-  }
 } // end of date loop
 
 // at the end of the final day, update elo/hwm in database
 $xx=0;
 foreach (array_keys($last) as $t) {
-  $finalelo=intval($elo[$t]*10)/10;
-  $finalhwm=intval($hwm[$t]*10)/10;
-  $date = date('Y-M-d h:i:s');
-  $date1 = $last[$t];
-  $date2=date_create($date);
-  $date3=date_create($date1);
-  $depuis  = date_diff($date2,$date3);
-  $sincelastgame = $depuis->format('%a');
-  if ($sincelastgame < 800) {
-    $active=1; // 1=yes
-  } else {
-    $active=0; // 0=no
-  }
+    $finalelo=intval($elo[$t]*10)/10;
+    $finalhwm=intval($hwm[$t]*10)/10;
+    $date = date('Y-M-d h:i:s');
+    $date1 = $last[$t];
+    $date2=date_create($date);
+    $date3=date_create($date1);
+    $depuis  = date_diff($date2,$date3);
+    $sincelastgame = $depuis->format('%a');
+    if ($sincelastgame < 800) {
+        $active=1; // 1=yes
+    } else {
+        $active=0; // 0=no
+    }
 
-  $processed[$xx++] = $t . ' ' . $finalelo;
-  if (!($stmt3 = $mysqli->prepare("INSERT INTO player_ratings (Player1_Namecode, Fullname, Country,
+    $processed[$xx++] = $t . ' ' . $finalelo;
+    if (!($stmt3 = $mysqli->prepare("INSERT INTO player_ratings (Player1_Namecode, Fullname, Country,
       Active, Provisional, FirstDate, LastDate, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, WinsAsAttacker,
       GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak,
       HighestStreak, maxdecay, decaytodate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))) {
-    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-  }
-  // bind the parameters
-  $stmt3->bind_param("sssiissddiiiiiiiiiiiiii", $t, $playername[$t], $country[$t], $active, $provisional[$t],
-    $first[$t], $last[$t], $finalhwm, $finalelo, $games[$t], $wins[$t], $gamesAtt[$t], $winsAtt[$t], $gamesDef[$t],
-    $winsDef[$t], $gamesAxis[$t], $winsAxis[$t], $gamesAllies[$t], $winsAllies[$t], $streak[$t],
-    $highestStreak[$t], $maxdecay[$t], $decaytodate[$t]);
-  // set parameters and execute
-  $stmt3->execute();
-  $stmt3->close();
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    }
+    // bind the parameters
+    $stmt3->bind_param("sssiissddiiiiiiiiiiiiii", $t, $playername[$t], $country[$t], $active, $provisional[$t],
+        $first[$t], $last[$t], $finalhwm, $finalelo, $games[$t], $wins[$t], $gamesAtt[$t], $winsAtt[$t], $gamesDef[$t],
+        $winsDef[$t], $gamesAxis[$t], $winsAxis[$t], $gamesAllies[$t], $winsAllies[$t], $streak[$t],
+        $highestStreak[$t], $maxdecay[$t], $decaytodate[$t]);
+    // set parameters and execute
+    $stmt3->execute();
+    $stmt3->close();
 
-  // store ratings progress data
-  $firstperiod=$secondperiod=$thirdperiod=$fourthperiod=$fifthperiod=$sixthperiod=$seventhperiod=$eighthperiod=$ninthperiod =$tenthperiod =0;
-  if (1< $nextprogressperiod[$t] ) {$firstperiod = $playerprogress[$t][1];}
-  if (2< $nextprogressperiod[$t] ) {$secondperiod = $playerprogress[$t][2];}
-  if (3< $nextprogressperiod[$t] ) {$thirdperiod = $playerprogress[$t][3];}
-  if (4< $nextprogressperiod[$t] ) {$fourthperiod = $playerprogress[$t][4];}
-  if (5< $nextprogressperiod[$t] ) {$fifthperiod = $playerprogress[$t][5];}
-  if (6< $nextprogressperiod[$t] ) {$sixthperiod = $playerprogress[$t][6];}
-  if (7< $nextprogressperiod[$t] ) {$seventhperiod = $playerprogress[$t][7];}
-  if (8< $nextprogressperiod[$t] ) {$eighthperiod = $playerprogress[$t][8];}
-  if (9< $nextprogressperiod[$t] ) {$ninthperiod = $playerprogress[$t][9];}
-  if (10< $nextprogressperiod[$t] ) {$tenthperiod = $playerprogress[$t][10];}
+    // store ratings progress data
+    $firstperiod=$secondperiod=$thirdperiod=$fourthperiod=$fifthperiod=$sixthperiod=$seventhperiod=$eighthperiod=$ninthperiod =$tenthperiod =0;
+    if (1< $nextprogressperiod[$t] ) {$firstperiod = $playerprogress[$t][1];}
+    if (2< $nextprogressperiod[$t] ) {$secondperiod = $playerprogress[$t][2];}
+    if (3< $nextprogressperiod[$t] ) {$thirdperiod = $playerprogress[$t][3];}
+    if (4< $nextprogressperiod[$t] ) {$fourthperiod = $playerprogress[$t][4];}
+    if (5< $nextprogressperiod[$t] ) {$fifthperiod = $playerprogress[$t][5];}
+    if (6< $nextprogressperiod[$t] ) {$sixthperiod = $playerprogress[$t][6];}
+    if (7< $nextprogressperiod[$t] ) {$seventhperiod = $playerprogress[$t][7];}
+    if (8< $nextprogressperiod[$t] ) {$eighthperiod = $playerprogress[$t][8];}
+    if (9< $nextprogressperiod[$t] ) {$ninthperiod = $playerprogress[$t][9];}
+    if (10< $nextprogressperiod[$t] ) {$tenthperiod = $playerprogress[$t][10];}
 
-  if (!($stmt4 = $mysqli->prepare("INSERT INTO player_progress (PlayerName, PlayerNameCode, 1period, 2period, 3period,
+    if (!($stmt4 = $mysqli->prepare("INSERT INTO player_progress (PlayerName, PlayerNameCode, 1period, 2period, 3period,
     4period, 5period, 6period, 7period, 8period, 9period, 10period) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"))) {
-    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-  }
-  // bind the parameters
-  $stmt4->bind_param("ssdddddddddd",  $playername[$t], $t, $firstperiod, $secondperiod, $thirdperiod,
-    $fourthperiod, $fifthperiod, $sixthperiod, $seventhperiod, $eighthperiod, $ninthperiod, $tenthperiod);
-  // set parameters and execute
-  $stmt4->execute();
-  $stmt4->close();
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    }
+    // bind the parameters
+    $stmt4->bind_param("ssdddddddddd",  $playername[$t], $t, $firstperiod, $secondperiod, $thirdperiod,
+        $fourthperiod, $fifthperiod, $sixthperiod, $seventhperiod, $eighthperiod, $ninthperiod, $tenthperiod);
+    // set parameters and execute
+    $stmt4->execute();
+    $stmt4->close();
 }
 
 // ========================
 $mysqli->close();
 
 set_include_path($_SERVER['DOCUMENT_ROOT']);
+//local
+//include_once "/include/header.php";
+//remote
 include_once "web/include/header.php";
-
 function factor_k($passelo, $passgames) {
-  $k0 = 50; $k1 = 40; $k2 = 30; $k3 = 20; $k4 = 10;
-  if($passgames < 10) {
-    return ($k0);
-  } elseif ($passelo < 1800){
-    return ($k1);
-  } elseif ($passelo < 2000) {
-    return ($k2);
-  } elseif ($passelo < 2200) {
-    return ($k3);
-  }
-  return ($k4);
+    $k0 = 50; $k1 = 40; $k2 = 30; $k3 = 20; $k4 = 10;
+    if($passgames < 10) {
+        return ($k0);
+    } elseif ($passelo < 1800){
+        return ($k1);
+    } elseif ($passelo < 2000) {
+        return ($k2);
+    } elseif ($passelo < 2200) {
+        return ($k3);
+    }
+    return ($k4);
 }
 $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
-include("storetransactionstofile.php");
-
+//local
+//include("storetransactionstofile.php");
+//remote
+include("web/pages/storetransactionstofile.php");
 //now run two TopTen calculations and store in tables
-include("calcDiffOpponents.php");
-include("calcTournamentFinishesScore.php");
+//local
+//include("calcDiffOpponents.php");
+//include("calcTournamentFinishesScore.php");
+//remote
+include("web/pages/calcDiffOpponents.php");
+include("web/pages/calcTournamentFinishesScore.php");
 
 ?>
 <body>
-<?php include_once "web/include/navbar.htm";?>
+<?php
+//local
+//include_once "/include/navbar.htm";
+//remote
+include_once "web/include/navbar.htm";
+?>
 <div class="home container-fluid">
-  <div class="row">
-    <div class="main-content col-md-10 offset-md-1">
-      <h2>We did it!</h2>
-        <?php
-          echo '<pre>' .  print_r($nextprogressperiod); echo '</pre>';
-        ?>
+    <div class="row">
+        <div class="main-content col-md-10 offset-md-1">
+            <h2>We did it!</h2>
+            <?php
+            echo '<pre>' .  print_r($nextprogressperiod); echo '</pre>';
+            ?>
+        </div>
     </div>
-  </div>
 </div>
-<?php include_once "web/include/footer.php";?>
+<?php
+//local
+//include_once "/include/footer.php";
+//remote
+include_once "web/include/footer.php";
+?>
 </body>
 </html>
