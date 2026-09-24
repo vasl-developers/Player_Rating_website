@@ -19,7 +19,7 @@ if (mysqli_connect_errno())
   exit();
 }
 $mysqli->set_charset("utf8");
-$sql = "select Winner1, Winner2 from tournaments where Tournament_id like '" . $_GET["tournamentid"] ."%'";
+$sql = "select Winner1, Winner2, Winner3 from tournaments where Tournament_id like '" . $_GET["tournamentid"] ."%'";
 if ($stmt = $mysqli->prepare($sql)) {
   $result = mysqli_query($mysqli, $sql);
   $row = mysqli_fetch_assoc($result);
@@ -39,7 +39,8 @@ if ($stmt = $mysqli->prepare($sql)) {
         $tournamenttoshow=$_GET['tournamentid'];
       ?>
       <h3>Tournament: <?php echo $_GET["tournamentid"]?><a class="content" href="<?php echo $ROOT; ?>web/pages/Tournament Statistical Summary.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Statistical Summary</a></h3>
-      <h5><?php echo $winner1 ?> <?php echo $winner2 ?> <?php echo $winner3 ?>
+      <h3><a class="content" href="<?php echo $ROOT; ?>web/pages/Tournament Historical Summary.php?tournamentcode=<?php echo $tournamenttoshow?>" style="float:right;">See Historical Summary</a></h3>
+      <h5><?php echo $winner1 ?> <?php echo $winner2 ?> <?php echo $winner3 ?></h5>
       <div class="tableFixHead">
       <?php
         include_once("web/pages/showgameresultstable.php");

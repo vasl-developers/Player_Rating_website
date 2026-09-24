@@ -77,6 +77,8 @@ while ($row = $stmt->fetch()) {
 			$p1Result = "draws";
 		} elseif (trim(strtolower($p1Result)) == "lost") {
 			$p1Result = "loses to";
+        } elseif (trim(strtolower($p1Result)) == "lose") {
+            $p1Result = "loses to";
 		} else {
 			$p1Result = "beats";
 		}

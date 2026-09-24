@@ -106,10 +106,7 @@ if ($uploadOK == 1) {
 						$play1res = "win";
 					} elseif ($play1res == "loss") {
 						$play1res = "lost";
-					}
-					if ($play2res == "won") {
-						$play2res = "win";
-					} elseif ($play2res == "loss") {
+					} elseif ($play2res == "lose") {
 						$play2res = "lost";
 					}
 					/* Prepared statement, stage 1: prepare */
@@ -155,25 +152,6 @@ if ($uploadOK == 1) {
 	}
 }
 
-//function getnamecode($playername) {
-//	global $mysqli;
-//	$playername = trim($playername);
-//	if ($stmt5 = $mysqli->prepare("SELECT Fullname, Player_Namecode FROM players")) {
-//		$stmt5->execute();
-//		$stmt5->bind_result($playerfullname, $namecode);
-//		while ($row = $stmt5->fetch()) {
-//			if (strcasecmp(trim($playerfullname), trim($playername)) == 0) {
-//				$pnc = $namecode;
-//				$stmt5->close();
-//				return $pnc;
-//			}
-//		}
-//	} else {
-//		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-//	}
-//	echo "No Player Name Match found for " . $playername . "<br>";
-//	return null;
-//}
 function getnewnamecode($playername, $playernamecode) {
 
 	global $rebuildpnclist;

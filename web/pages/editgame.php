@@ -137,7 +137,7 @@ include_once("web/include/header.php");
                                         echo "<option selected>{$p1resultsel}</option>";
                                     }
                     echo "          <option value='win'>Win</option>";
-                    echo "          <option value='lost'>Lost</option>";
+                    echo "          <option value='lost'>Lose</option>";
                     echo "          <option value='draw'>Draw</option>";
                     echo "        </select>";
                     echo "    </div>";
@@ -181,7 +181,7 @@ include_once("web/include/header.php");
                                         echo "<option selected>{$p2resultsel}</option>";
                                     }
                     echo "          <option value='win'>Win</option>";
-                    echo "          <option value='lost'>Lost</option>";
+                    echo "          <option value='lost'>Lose</option>";
                     echo "          <option value='draw'>Draw</option>";
                     echo "        </select>";
                     echo "    </div>";

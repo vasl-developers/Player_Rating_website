@@ -1,6 +1,6 @@
 <html lang="en">
 <?php
-ini_set('max_execution_time', 800);
+ini_set('max_execution_time', 1200);
 // header('Content-type: text/plain; charset=utf-8');
 // database connection
 set_include_path($_SERVER['DOCUMENT_ROOT']);
@@ -223,6 +223,9 @@ for($i = $begin; $i <= $end;$i->modify('+1 day')) {
                         $f_res = "win";
                     }
                     if (strtolower($f_res) == "loss") {
+                        $f_res = "lost";
+                    }
+                    if (strtolower($f_res) == "lose") {
                         $f_res = "lost";
                     }
                     if (strtolower($f_res) == "win") {

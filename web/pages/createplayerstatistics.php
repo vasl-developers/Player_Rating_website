@@ -31,6 +31,49 @@ $firstcount = 0; $secondcount=0; $thirdcount=0;
 $tournamentfinishscore = 0;
 $numofopponents=0;
 include_once "web/pages/tournamentfinishweighting.php";
+$tourw = array(); $tours = array(); $tourt = array();
+foreach ($tour1 as $tourwin) {
+    $sql2 = "select Year_Held,Base_Name from tournaments  where Tournament_ID=?";
+
+    if ($stmt2 = $mysqli->prepare($sql2)) {
+        $stmt2->bind_param("s", $tourwin);
+        $stmt2->execute();
+        $stmt2->bind_result($year, $tname);
+    }
+    while ($row = $stmt2->fetch()) {
+        $tourw[] = $year . " " . $tname;
+    }
+}
+sort($tourw);
+$stmt2->close();
+foreach ($tour2 as $toursec) {
+    $sql2 = "select Year_Held,Base_Name from tournaments  where Tournament_ID=?";
+
+    if ($stmt2 = $mysqli->prepare($sql2)) {
+        $stmt2->bind_param("s", $toursec);
+        $stmt2->execute();
+        $stmt2->bind_result($year, $tname);
+    }
+    while ($row = $stmt2->fetch()) {
+        $tours[] = $year . " " . $tname;
+    }
+}
+sort($tours);
+$stmt2->close();
+foreach ($tour3 as $tourthi) {
+    $sql2 = "select Year_Held,Base_Name from tournaments  where Tournament_ID=?";
+
+    if ($stmt2 = $mysqli->prepare($sql2)) {
+        $stmt2->bind_param("s", $tourthi);
+        $stmt2->execute();
+        $stmt2->bind_result($year, $tname);
+    }
+    while ($row = $stmt2->fetch()) {
+        $tourt[] = $year . " " . $tname;
+    }
+}
+sort($tourt);
+$stmt2->close();
 
 $sql = " select Fullname, Country, HighWaterMark, ELO, Games, Wins, GamesAsAttacker, WinsAsAttacker, GamesAsDefender, WinsAsDefender, GamesAsAxis, WinsAsAxis, GamesAsAllies, WinsAsAllies, CurrentStreak, HighestStreak from player_ratings where Player1_Namecode=?";
 if ($stmt = $mysqli->prepare($sql)) {
@@ -138,6 +181,28 @@ while ($row = $stmt->fetch()) {
             <div class="col"><?php echo $secondcount ?></div>
             <div class="col">Tournaments 3rd:</div>
             <div class="col"><?php echo $thirdcount ?></div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+            <div class="col"><?php
+                foreach ($tourw as $tourwin) {
+                    echo $tourwin . "<br>";
+                }
+                ?>
+            </div>
+            <div class="col"></div>
+            <div class="col"><?php
+                foreach ($tours as $toursec) {
+                    echo $toursec . "<br>";
+                }
+                ?>
+            </div>
+            <div class="col"></div>
+            <div class="col"><?php
+                foreach ($tourt as $tourthi) {
+                    echo $tourthi . "<br>";
+                }
+                ?>
+            </div>
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 bg-light text-black">
             <div class="col">Tournament Finishes Score:</div>

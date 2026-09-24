@@ -31,12 +31,18 @@ while ($row = $stmt->fetch()) {
     if($winner==$passplayercode){
         $rankingfactor = 1;
         $firstcount = $firstcount+1;
+        //create tournament list array
+        $tour1[] = $newtourcode;
     } elseif($second==$passplayercode){
         $rankingfactor = 0.5;
         $secondcount = $secondcount+1;
+        //create tournament list array
+        $tour2[] = $newtourcode;
     } elseif($third==$passplayercode){
         $rankingfactor = 0.33;
         $thirdcount=$thirdcount+1;
+        //create tournament list array
+        $tour3[] = $newtourcode;
     }
     if($recount<8){
         $sizefactor = 0;
