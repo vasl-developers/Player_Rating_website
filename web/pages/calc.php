@@ -5,9 +5,9 @@ ini_set('max_execution_time', 1200);
 // database connection
 set_include_path($_SERVER['DOCUMENT_ROOT']);
 //local
-//include("connection.php");
+include("connection.php");
 //remote
-include("web/pages/connection.php");
+//include("web/pages/connection.php");
 $mysqli = mysqli_connect($host, $username, $password, $database);
 $mysqli->set_charset("utf8");
 if (mysqli_connect_errno())
@@ -500,11 +500,11 @@ $txt= date("Y-m-d"). " Rating recalculation completed" . "\n";
 include("web/pages/storetransactionstofile.php");
 //now run two TopTen calculations and store in tables
 //local
-//include("calcDiffOpponents.php");
-//include("calcTournamentFinishesScore.php");
+include("calcDiffOpponents.php");
+include("calcTournamentFinishesScore.php");
 //remote
-include("web/pages/calcDiffOpponents.php");
-include("web/pages/calcTournamentFinishesScore.php");
+//include("web/pages/calcDiffOpponents.php");
+//include("web/pages/calcTournamentFinishesScore.php");
 
 ?>
 <body>

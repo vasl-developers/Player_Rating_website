@@ -1,6 +1,6 @@
 <?php
 //local
-include "web/pages/connection.php";
+include "connection.php";
 //remote
 // include "web/pages/connection.php";
 $mysqli2 = new mysqli($host, $username, $password, $database);

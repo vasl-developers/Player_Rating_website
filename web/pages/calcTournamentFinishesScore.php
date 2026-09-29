@@ -3,13 +3,13 @@ set_include_path($_SERVER['DOCUMENT_ROOT']);
 //local
 //include_once "/include/header.php";
 //include_once "/include/navbar.htm";
-//include_once "connection.php";
-//include_once "functions.php";
+include_once "connection.php";
+include_once "functions.php";
 //remote
 include_once "web/include/header.php";
 include_once "web/include/navbar.htm";
-include_once "web/pages/connection.php";
-include_once "web/pages/functions.php";
+//include_once "web/pages/connection.php";
+//include_once "web/pages/functions.php";
 $mysqli = new mysqli($host, $username, $password, $database);
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -39,9 +39,9 @@ if ($stmt3 = $mysqli->prepare($sql3)) {
     }
 }
 $stmt3->close();
-// sort list in order of number of opponents
+// sort list in descendng order of scores
 uasort($playerscore, function ($a, $b) {
-    return $a[1] < $b[1];
+    return $b[1] <=> $a[1];
 });
 $topten = 0;
 // write list of top 15 to table
